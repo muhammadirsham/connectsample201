@@ -1,0 +1,136 @@
+<project toolsVersion="6.11" chroniclePath="../_build/chronicles">
+  <dependency name="pybind11-2.3" linkPath="../_build/target-deps/pybind11-2.3">
+    <package name="pybind11" version="2.3.dev1-28-2b391574" />
+  </dependency>
+  <dependency name="pybind11" linkPath="../_build/target-deps/pybind11">
+    <package name="pybind11" version="2.7.1-08fa9f60" />
+  </dependency>
+  <dependency name="python" linkPath="../_build/target-deps/python">
+    <package name="python" version="3.10.7+nv2-${platform}" />
+  </dependency>
+  <dependency name="python-3.7" linkPath="../_build/target-deps/python-3.7">
+    <package name="python" version="3.7.14+nv2-${platform}" platforms="windows-x86_64 linux-x86_64 linux-aarch64" />
+  </dependency>
+  <dependency name="python-3.8" linkPath="../_build/target-deps/python-3.8">
+    <package name="python" version="3.8.14+nv2-${platform}" />
+  </dependency>
+  <dependency name="python-3.9" linkPath="../_build/target-deps/python-3.9">
+    <package name="python" version="3.9.14+nv2-${platform}" />
+  </dependency>
+  <dependency name="python-3.10" linkPath="../_build/target-deps/python-3.10">
+    <package name="python" version="3.10.7+nv2-${platform}" />
+  </dependency>
+  <dependency name="rapidjson" linkPath="../_build/target-deps/rapidjson">
+    <package name="rapidjson" version="5.2.1-5-b4cf59b6" />
+  </dependency>
+  <dependency name="glfw" linkPath="../_build/target-deps/glfw">
+    <package name="glfw" version="3.3.0+pipeline3462136-${platform}" platforms="windows-x86_64 linux-x86_64 linux-aarch64" />
+    <package name="glfw" version="3.3.0+CC-629-macos-port-${platform}" platforms="macos-universal" /> <!-- CC-629 -->
+  </dependency>
+  <dependency name="doctest" linkPath="../_build/target-deps/doctest">
+    <package name="doctest" version="2.4.0-5386d7f8" />
+  </dependency>
+  <dependency name="concurrentqueue" linkPath="../_build/target-deps/concurrentqueue">
+    <package name="concurrentqueue" version="1.0.0-beta-16-b77e829a"/>
+  </dependency>
+  <dependency name="robinhoodhashing" linkPath="../_build/target-deps/robinhoodhashing">
+    <package name="robinhoodhashing" version="1.0.0-beta-6f27c2e0" />
+  </dependency>
+  <dependency name="abseil" linkPath="../_build/target-deps/abseil">
+    <package name="abseil" version="20210324.0-bf5734a6-${platform}" />
+  </dependency>
+  <dependency name="drivepdk" linkPath="../_build/target-deps/drivepdk" tags="non-redist">
+    <package name="drivepdk_slim" version="5.1.6.1-0" platforms="linux-aarch64" />
+  </dependency>
+  <dependency name="nvtx" linkPath="../_build/target-deps/nvtx">
+    <package name="nvtx" version="5.6.0.18099-lic-${platform}" platforms="windows-x86_64" />
+    <package name="nvtx" version="3-20180925-lic3" platforms="linux-x86_64 linux-aarch64" />
+  </dependency>
+  <dependency name="tracy_client_source" linkPath="../_build/target-deps/tracy_client_source">
+    <package name="tracy_client_source" version="0.8.2.80-05647981-nvidia" />
+  </dependency>
+  <dependency name="cxxopts" linkPath="../_build/target-deps/cxxopts">
+    <package name="cxxopts" version="2.2.0+gl.435" />
+  </dependency>
+  <dependency name="breakpad" linkPath="../_build/target-deps/breakpad">
+    <package name="breakpad" version="148-28f7de2c-${platform}" platforms="windows-x86_64 linux-aarch64 linux-x86_64"/>
+    <package name="breakpad" version="experimental-cbac0cee-${platform}" platforms="macos-universal"/> <!-- CC-608 -->
+  </dependency>
+  <dependency name="forgeaudio" linkPath="../_build/target-deps/forgeaudio">
+    <package name="forgeaudio" version="2.1.0+pipeline5845028.f038b28d-${platform}" />
+  </dependency>
+  <dependency name="libunwind" linkPath="../_build/target-deps/libunwind">
+    <package name="libunwind" version="1.4-15-linux-x86_64-47c3e225" platforms="linux-x86_64"/>
+    <package name="libunwind" version="1.4-14-linux-aarch64-47c3e225" platforms="linux-aarch64"/>
+  </dependency>
+  <dependency name="xed" linkPath="../_build/target-deps/xed" >
+    <package name="xed" version="8.30.0-18-g47be2133-31-655cff24" platforms="windows-x86_64"/>
+  </dependency>
+  <dependency name="cpptoml" linkPath="../_build/target-deps/cpptoml">
+    <package name="cpptoml" version="0.1.1-5-dccb3419" />
+  </dependency>
+  <dependency name="libogg" linkPath="../_build/target-deps/libogg" >
+    <package name="libogg" version="1.3.4+nv1-${platform}" />
+  </dependency>
+  <dependency name="libvorbis" linkPath="../_build/target-deps/libvorbis" >
+    <package name="libvorbis" version="1.3.7+nv2-${platform}" />
+  </dependency>
+  <dependency name="libflac" linkPath="../_build/target-deps/libflac" >
+    <package name="libflac" version="1.3.4+nv2-${platform}" />
+  </dependency>
+  <dependency name="libopus" linkPath="../_build/target-deps/libopus" >
+    <package name="libopus" version="1.3.1+nv1-${platform}" />
+  </dependency>
+  <dependency name="minimp3" linkPath="../_build/target-deps/minimp3">
+    <package name="minimp3" version="0-de6164cd" />
+  </dependency>
+  <dependency name="zlib" linkPath="../_build/target-deps/zlib" >
+    <package name="zlib" version="1.2.13-0-${platform}-static-${config}" />
+  </dependency>
+  <dependency name="DbgHelp" linkPath="../_build/target-deps/DbgHelp" tags="non-redist">
+    <package name="DbgHelp" version="10.0.19041.1" platforms="windows-x86_64"/>
+  </dependency>
+  <dependency name="SDLGameControllerDB" linkPath="../_build/target-deps/SDLGameControllerDB">
+    <package name="SDLGameControllerDB" version="1.0.a0fbff68"/>
+  </dependency>
+  <dependency name="valgrind-header" linkPath="../_build/target-deps/valgrind-header">
+    <package name="valgrind-header" version="1-b80744e7" platforms="linux-x86_64 linux-aarch64" />
+  </dependency>
+  <dependency name="omni_config_cpp" linkPath="../_build/target-deps/omni-config-cpp">
+    <package name="omni-config-cpp" version="2.0.3+tc68" />
+  </dependency>
+  <dependency name="minhook" linkPath="../_build/target-deps/minhook">
+    <package name="minhook" version="1.3.3-next-fd37c48c-${platform}" platforms="windows-x86_64"/>
+  </dependency>
+  <dependency name="valijson" linkPath="../_build/target-deps/valijson">
+    <package name="valijson" version="0.4.3a71e89e" />
+  </dependency>
+  <dependency name="libcurl" linkPath="../_build/target-deps/libcurl">
+    <package name="libcurl" version="7.85.0+nv3-${platform}" />
+  </dependency>
+  <dependency name="openssl" linkPath="../_build/target-deps/openssl">
+    <package name="openssl" version="1.1.1q+nv7-${platform}" />
+  </dependency>
+  <dependency name="ryu" linkPath="../_build/target-deps/ryu">
+    <package name="ryu" version="1.0.0-e499df9e-${platform}" />
+  </dependency>
+  <dependency name="fmt" linkPath="../_build/target-deps/fmt">
+    <package name="fmt" version="7.0.3+nv2" />
+  </dependency>
+  <dependency name="vulkansdk" linkPath="../_build/target-deps/vulkansdk">
+    <package name="vulkansdk" version="1.2.162.1+nv3-${platform}" platforms="windows-x86_64 linux-x86_64 linux-aarch64" />
+    <!-- TODO: CC-800 Need to build vulkansdk from source, but this is a locally-built workaround package for now. The package is published to S3 by Jason Green  -->
+    <package name="vulkansdk" version="1.3.216.0+nv1-macos-universal-local" platforms="macos-universal" />
+  </dependency>
+  <dependency name="imgui" linkPath="../_build/target-deps/imgui">
+    <package name="imgui" version="1.77_WIP-277297b1" />
+  </dependency>
+  <dependency name="freetype" linkPath="../_build/target-deps/freetype">
+    <package name="freetype" version="2.12.1+nv4-${platform}"/>
+  </dependency>
+  <!-- this is for licensing on Linux only -->
+  <dependency name="boost" linkPath="../_build/target-deps/boost">
+    <package name="boost" version="1.71.0.33.765c3f26-${platform}" platforms="linux-x86_64" />
+    <package name="boost" version="1.71.0-${platform}-ad0b8534" platforms="linux-aarch64" />
+  </dependency>
+</project>

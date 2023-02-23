@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_tendon_attachment_root_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxTendonAttachmentRootAPI</compoundname>
+    <basecompoundref refid="class_physx_schema_physx_tendon_attachment_a_p_i" prot="public" virt="non-virtual">PhysxSchemaPhysxTendonAttachmentAPI</basecompoundref>
+    <includes refid="physx_tendon_attachment_root_a_p_i_8h" local="no">physxTendonAttachmentRootAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::MultipleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="129" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="241" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ad52478e4a42dd80bb4e9506578fdde77" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxTendonAttachmentRootAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim(), const TfToken &amp;name=TfToken())</argsstring>
+        <name>PhysxSchemaPhysxTendonAttachmentRootAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+          <defval>TfToken()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> with name <computeroutput>name</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a2deb6156e8ae4887ee9c14c6ee695128" kindref="member">PhysxSchemaPhysxTendonAttachmentRootAPI::Get</ref>( prim.GetStage(), prim.GetPath().AppendProperty( &quot;physxTendon:name&quot;));</para><para>for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="140" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ae25e4cdfd7cfc4d93267454c5471d718" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxTendonAttachmentRootAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj, const TfToken &amp;name)</argsstring>
+        <name>PhysxSchemaPhysxTendonAttachmentRootAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> with name <computeroutput>name</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref>(schemaObj.GetPrim(), name), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="149" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a8b2dcfe3d5a2a11c264ab3d3bab7bd21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxTendonAttachmentRootAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxTendonAttachmentRootAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aa53b87421fbc15993adfd11e9b2045eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TfToken</type>
+        <definition>TfToken GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>Returns the name of this multiple-apply schema instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="169" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a5c5a2bc23b56ea80a76850615253c450" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetStiffnessAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStiffnessAttr</name>
+        <briefdescription>
+<para>Common sub-tendon length spring stiffness. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range [0, inf). Units: force / distance = mass / time / time</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float stiffness = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ab7d259ee6d127ebfa67130f495bc2349" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateStiffnessAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateStiffnessAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a5c5a2bc23b56ea80a76850615253c450" kindref="member">GetStiffnessAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aa2b0bd46cc807dcfea6fd32438e18f03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDampingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDampingAttr</name>
+        <briefdescription>
+<para>Common sub-tendon length damping. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range [0, inf). Units: force / distance * time = mass / time</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float damping = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a155bfc53565dfdd638d2591f4ba5292f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDampingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDampingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aa2b0bd46cc807dcfea6fd32438e18f03" kindref="member">GetDampingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="295" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ae286d50608e53f8e8d7cb14720ea0411" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLimitStiffnessAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLimitStiffnessAttr</name>
+        <briefdescription>
+<para>Common sub-tendon length-limit spring stiffness. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range [0, inf). Units: force / distance = mass / time / time</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float limitStiffness = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="310" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a801895da22cf48e24e59513921c67ef4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLimitStiffnessAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLimitStiffnessAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ae286d50608e53f8e8d7cb14720ea0411" kindref="member">GetLimitStiffnessAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a25304ea511b8e5fe1d3e0cea9d6ef9eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetOffsetAttr</name>
+        <briefdescription>
+<para>Common sub-tendon length offset. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range (-inf, inf). Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float offset = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="333" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a377e35cc5425deec9c911737065f27d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a25304ea511b8e5fe1d3e0cea9d6ef9eb" kindref="member">GetOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a74cc1178e0f1893aeaf7bd8b5d350ea0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetTendonEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTendonEnabledAttr</name>
+        <briefdescription>
+<para>Enables/disables the tendon from contributing to the articulation dynamics. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool tendonEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="355" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ab0ac6fadaad922926bf918b8c21b3470" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateTendonEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateTendonEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a74cc1178e0f1893aeaf7bd8b5d350ea0" kindref="member">GetTendonEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="363" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ac74ade0d84fa71669cba8f1aabe0648a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true, const TfToken instanceName=TfToken())</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const TfToken</type>
+          <declname>instanceName</declname>
+          <defval>TfToken()</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes for a given instance name. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. The names returned will have the proper namespace prefix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a2deb6156e8ae4887ee9c14c6ee695128" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxTendonAttachmentRootAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. <computeroutput>path</computeroutput> must be of the format &lt;path&gt;.physxTendon:name .</para><para>This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/>TfToken<sp/>name<sp/>=<sp/>SdfPath::StripNamespace(path.GetToken());</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ad52478e4a42dd80bb4e9506578fdde77" kindref="member">PhysxSchemaPhysxTendonAttachmentRootAPI</ref>(</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/>stage-&gt;GetPrimAtPath(path.GetPrimPath()),<sp/>name);</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1abb8c790b06c479c602ea779a6cc4debd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxTendonAttachmentRootAPI Get</definition>
+        <argsstring>(const UsdPrim &amp;prim, const TfToken &amp;name)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref> with name <computeroutput>name</computeroutput> holding the prim <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Shorthand for <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI(prim, name)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aa8ff5e877e3474ed29495ff9b7af84be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API bool</type>
+        <definition>static PHYSXSCHEMA_API bool IsSchemaPropertyBaseName</definition>
+        <argsstring>(const TfToken &amp;baseName)</argsstring>
+        <name>IsSchemaPropertyBaseName</name>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>baseName</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the given name <computeroutput>baseName</computeroutput> is the base name of a property of PhysxTendonAttachmentRootAPI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a5cfb97650cc5a6b89c8111fddbb40aa4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API bool</type>
+        <definition>static PHYSXSCHEMA_API bool IsPhysxTendonAttachmentRootAPIPath</definition>
+        <argsstring>(const SdfPath &amp;path, TfToken *name)</argsstring>
+        <name>IsPhysxTendonAttachmentRootAPIPath</name>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>TfToken *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the given path <computeroutput>path</computeroutput> is of an API schema of type PhysxTendonAttachmentRootAPI. </para>        </briefdescription>
+        <detaileddescription>
+<para>If so, it stores the instance name of the schema in <computeroutput>name</computeroutput> and returns true. Otherwise, it returns false. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ae91628c275b44d271ecbf515e31763f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxTendonAttachmentRootAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim, const TfToken &amp;name)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>multiple-apply</bold> API schema to the given <computeroutput>prim</computeroutput> along with the given instance name, <computeroutput>name</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxTendonAttachmentRootAPI:&lt;i&gt;name&lt;/i&gt;&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim. For example, if <computeroutput>name</computeroutput> is &apos;instance1&apos;, the token &apos;PhysxTendonAttachmentRootAPI:instance1&apos; is added to &apos;apiSchemas&apos;.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_tendon_attachment_root_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAttachmentRootAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="230" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="237" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="245" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="249" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WARNING: Draft API, this design is not fixed and may change in the future. </para>    </briefdescription>
+    <detaileddescription>
+<para>Applied to an articulation-link rigid-body Xformable.</para><para>The root API creates a new spatial tendon tree. The root tendon attachment is the only attachment in a tendon tree that does not have a parent, so the parentLink, parentAttachment, and gearing attributes inherited from PhysxTendonAttachmentAPI are ignored for a root.</para><para>Spatial tendons create line-of-sight distance constraints between links of a single articulation. In particular, spatial tendons run through attachments that are positioned relative to a rigid-body link, and their length is defined as a weighted sum of the distance between the attachments in the tendon.</para><para>Spatial tendons may branch, in which case the tendon splits up into multiple conceptual sub-tendons, one for each root-to-leaf path in the tendon tree. The tendon tree starts at the root, and its topology is defined by the attachments&apos; parentLink rel and parentAttachment token.</para><para>It is possible to create multiple attachments per link, see PhysxTendonAttachmentAPI.</para><para>Details on dynamics:</para><para>The length of a sub-tendon in the tree is</para><para>subTendonLength = sum(gearing[i] * |p[i] - p_parent[i]|)</para><para>where the sum is evaluated along the unique tree path between root and leaf. The gearing[i] is the i-th attachment&apos;s gearing, and |p[i] - p_parent[i]| is the distance between the positions of the i-th attachment and its parent attachment.</para><para>Each subtendon has spring-damper dynamics acting on the length constraint</para><para>constraint = 0 = offset + subTendonLength - restLength</para><para>where the offset is a common summand for all sub-tendons of a spatial tendon, and the restLength is specific to a sub-tendon, see the PhysxTendonAttachmentLeafAPI.</para><para>If limits are not active, the sub-tendon force that acts on the leaf is</para><para>F = stiffness * constraint + damping * tendonVelocity</para><para>where tendonVelocity is the sum of the time derivatives of the line-of-sight distances between 1) the leaf and its parent attachment and 2) the tendon root and its first child attachment on the path to the leaf. Stiffness and damping are common parameters for all sub-tendons.</para><para>The 3D force applied at the leaf attachment is equal to</para><para>F * (p_parent - p_leaf).</para><para>where p_leaf and p_parent are the leaf&apos;s position and its parent&apos;s position, respectively. The reaction force acting on the root attachment is</para><para>F * (p_child_leaf - p_root)</para><para>where p_child_leaf is the position of the root&apos;s child attachment that leads to the leaf that produces F, and p_root is the root attachment position. The tendon force is not further propagated through the tendon, so at intermediate attachments (i.e. created by PhysxTendonAttachmentAPI) no forces are applied.</para><para>Note that a spatial tendon may both pull and push on the leaf and root attachments. A string-like, one-sided constraint can be implemented using the sub-tendon&apos;s length limits.</para><para>Sub-tendon length limits constrain the offset length</para><para>lowerLimit &lt;= subTendonLength + offset&lt;= upperLimit</para><para>and, when active, add a restoring spring force parametrized by limitStiffness to the tendon force, analogous to the length constraint force above. Limit dynamics are damped by the tendon-length damping that is applied regardless of a limit being active. Limit parameters are attributes of the PhysxTendonAttachmentLeafAPI. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="239">
+        <label>PhysxSchemaPhysxTendonAttachmentRootAPI</label>
+        <link refid="class_physx_schema_physx_tendon_attachment_root_a_p_i"/>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>PhysxSchemaPhysxTendonAttachmentAPI</label>
+        <link refid="class_physx_schema_physx_tendon_attachment_a_p_i"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="241">
+        <label>PhysxSchemaPhysxTendonAttachmentRootAPI</label>
+        <link refid="class_physx_schema_physx_tendon_attachment_root_a_p_i"/>
+        <childnode refid="242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>PhysxSchemaPhysxTendonAttachmentAPI</label>
+        <link refid="class_physx_schema_physx_tendon_attachment_a_p_i"/>
+      </node>
+    </collaborationgraph>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" line="124" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h" bodystart="123" bodyend="376"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ae91628c275b44d271ecbf515e31763f1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a155bfc53565dfdd638d2591f4ba5292f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1ada7623817d52bc6054396fdce684fc27" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateGearingAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a801895da22cf48e24e59513921c67ef4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateLimitStiffnessAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1af74623ff331ec307c1a056b45cdd8ed4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateLocalPosAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a377e35cc5425deec9c911737065f27d2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1a3d408d99425cb2f239c20f36398f1eef" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateParentAttachmentAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1ac6635b1d4445246aa7ad7419f7ee92d0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateParentLinkRel</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ab7d259ee6d127ebfa67130f495bc2349" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateStiffnessAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ab0ac6fadaad922926bf918b8c21b3470" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>CreateTendonEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a2deb6156e8ae4887ee9c14c6ee695128" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1abb8c790b06c479c602ea779a6cc4debd" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aa2b0bd46cc807dcfea6fd32438e18f03" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1ad9fe36eb5c442fd18e6fed5b52475f2c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetGearingAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ae286d50608e53f8e8d7cb14720ea0411" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetLimitStiffnessAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1a22266b2bf193526e2c628b3b0c4a04f9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetLocalPosAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aa53b87421fbc15993adfd11e9b2045eb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetName</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a25304ea511b8e5fe1d3e0cea9d6ef9eb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1a9e74c5fe371db620011c29bb92cfaa1a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetParentAttachmentAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1aa3969ef90685ddb679abba333eded346" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetParentLinkRel</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ac74ade0d84fa71669cba8f1aabe0648a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a5c5a2bc23b56ea80a76850615253c450" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetStiffnessAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a74cc1178e0f1893aeaf7bd8b5d350ea0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>GetTendonEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1a7dbb97a4d7b89b5c057fcf696cc3b0b9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>IsPhysxTendonAttachmentAPIPath</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a5cfb97650cc5a6b89c8111fddbb40aa4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>IsPhysxTendonAttachmentRootAPIPath</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aa8ff5e877e3474ed29495ff9b7af84be" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>IsSchemaPropertyBaseName</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1aa08d3dbe65aa6f778960117ff72efa17" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>PhysxSchemaPhysxTendonAttachmentAPI</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1a0e83685318cdfe0afc427b1c8c5f1644" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>PhysxSchemaPhysxTendonAttachmentAPI</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ad52478e4a42dd80bb4e9506578fdde77" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>PhysxSchemaPhysxTendonAttachmentRootAPI</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1ae25e4cdfd7cfc4d93267454c5471d718" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>PhysxSchemaPhysxTendonAttachmentRootAPI</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_a_p_i_1a96b21cf7e47b294fa7e03544c4a83987" prot="public" virt="virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>~PhysxSchemaPhysxTendonAttachmentAPI</name></member>
+      <member refid="class_physx_schema_physx_tendon_attachment_root_a_p_i_1a8b2dcfe3d5a2a11c264ab3d3bab7bd21" prot="public" virt="virtual"><scope>PhysxSchemaPhysxTendonAttachmentRootAPI</scope><name>~PhysxSchemaPhysxTendonAttachmentRootAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

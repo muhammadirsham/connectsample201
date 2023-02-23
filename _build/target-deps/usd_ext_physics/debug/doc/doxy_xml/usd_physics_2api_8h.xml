@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="usd_physics_2api_8h" kind="file">
+    <compoundname>api.h</compoundname>
+    <includes local="yes">pxr/base/arch/export.h</includes>
+    <includedby refid="articulation_root_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/articulationRootAPI.h</includedby>
+    <includedby refid="collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h</includedby>
+    <includedby refid="collision_group_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h</includedby>
+    <includedby refid="distance_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/distanceJoint.h</includedby>
+    <includedby refid="drive_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/driveAPI.h</includedby>
+    <includedby refid="filtered_pairs_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/filteredPairsAPI.h</includedby>
+    <includedby refid="fixed_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/fixedJoint.h</includedby>
+    <includedby refid="joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/joint.h</includedby>
+    <includedby refid="limit_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/limitAPI.h</includedby>
+    <includedby refid="mass_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/massAPI.h</includedby>
+    <includedby refid="material_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/materialAPI.h</includedby>
+    <includedby refid="mesh_collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/meshCollisionAPI.h</includedby>
+    <includedby refid="metrics_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/metrics.h</includedby>
+    <includedby refid="prismatic_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/prismaticJoint.h</includedby>
+    <includedby refid="revolute_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h</includedby>
+    <includedby refid="rigid_body_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/rigidBodyAPI.h</includedby>
+    <includedby refid="scene_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/scene.h</includedby>
+    <includedby refid="spherical_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/sphericalJoint.h</includedby>
+    <includedby refid="usd_physics_2tokens_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/tokens.h</includedby>
+    <incdepgraph>
+      <node id="2614">
+        <label>pxr/base/arch/export.h</label>
+      </node>
+      <node id="2613">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/api.h</label>
+        <link refid="usdPhysics/api.h"/>
+        <childnode refid="2614" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2632">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/meshCollisionAPI.h</label>
+        <link refid="mesh_collision_a_p_i_8h"/>
+      </node>
+      <node id="2636">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/tokens.h</label>
+        <link refid="usd_physics_2tokens_8h"/>
+        <childnode refid="2617" relation="include">
+        </childnode>
+        <childnode refid="2618" relation="include">
+        </childnode>
+        <childnode refid="2619" relation="include">
+        </childnode>
+        <childnode refid="2620" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+        <childnode refid="2623" relation="include">
+        </childnode>
+        <childnode refid="2629" relation="include">
+        </childnode>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2631" relation="include">
+        </childnode>
+        <childnode refid="2632" relation="include">
+        </childnode>
+        <childnode refid="2624" relation="include">
+        </childnode>
+        <childnode refid="2625" relation="include">
+        </childnode>
+        <childnode refid="2634" relation="include">
+        </childnode>
+        <childnode refid="2635" relation="include">
+        </childnode>
+        <childnode refid="2626" relation="include">
+        </childnode>
+      </node>
+      <node id="2618">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h</label>
+        <link refid="collision_group_8h"/>
+      </node>
+      <node id="2631">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/materialAPI.h</label>
+        <link refid="material_a_p_i_8h"/>
+      </node>
+      <node id="2617">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h</label>
+        <link refid="collision_a_p_i_8h"/>
+      </node>
+      <node id="2628">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsRackAndPinionJoint.h</label>
+        <link refid="physx_physics_rack_and_pinion_joint_8h"/>
+      </node>
+      <node id="2630">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/massAPI.h</label>
+        <link refid="mass_a_p_i_8h"/>
+      </node>
+      <node id="2623">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/joint.h</label>
+        <link refid="joint_8h"/>
+        <childnode refid="2619" relation="include">
+        </childnode>
+        <childnode refid="2622" relation="include">
+        </childnode>
+        <childnode refid="2624" relation="include">
+        </childnode>
+        <childnode refid="2625" relation="include">
+        </childnode>
+        <childnode refid="2626" relation="include">
+        </childnode>
+        <childnode refid="2627" relation="include">
+        </childnode>
+        <childnode refid="2628" relation="include">
+        </childnode>
+      </node>
+      <node id="2629">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/limitAPI.h</label>
+        <link refid="limit_a_p_i_8h"/>
+      </node>
+      <node id="2624">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/prismaticJoint.h</label>
+        <link refid="prismatic_joint_8h"/>
+      </node>
+      <node id="2620">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/driveAPI.h</label>
+        <link refid="drive_a_p_i_8h"/>
+      </node>
+      <node id="2633">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/metrics.h</label>
+        <link refid="metrics_8h"/>
+      </node>
+      <node id="2625">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h</label>
+        <link refid="revolute_joint_8h"/>
+      </node>
+      <node id="2621">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/filteredPairsAPI.h</label>
+        <link refid="filtered_pairs_a_p_i_8h"/>
+      </node>
+      <node id="2627">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsGearJoint.h</label>
+        <link refid="physx_physics_gear_joint_8h"/>
+      </node>
+      <node id="2616">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/articulationRootAPI.h</label>
+        <link refid="articulation_root_a_p_i_8h"/>
+      </node>
+      <node id="2635">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+      <node id="2622">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/fixedJoint.h</label>
+        <link refid="fixed_joint_8h"/>
+      </node>
+      <node id="2615">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/api.h</label>
+        <link refid="usdPhysics/api.h"/>
+        <childnode refid="2616" relation="include">
+        </childnode>
+        <childnode refid="2617" relation="include">
+        </childnode>
+        <childnode refid="2618" relation="include">
+        </childnode>
+        <childnode refid="2619" relation="include">
+        </childnode>
+        <childnode refid="2620" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+        <childnode refid="2622" relation="include">
+        </childnode>
+        <childnode refid="2623" relation="include">
+        </childnode>
+        <childnode refid="2629" relation="include">
+        </childnode>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2631" relation="include">
+        </childnode>
+        <childnode refid="2632" relation="include">
+        </childnode>
+        <childnode refid="2633" relation="include">
+        </childnode>
+        <childnode refid="2624" relation="include">
+        </childnode>
+        <childnode refid="2625" relation="include">
+        </childnode>
+        <childnode refid="2634" relation="include">
+        </childnode>
+        <childnode refid="2635" relation="include">
+        </childnode>
+        <childnode refid="2626" relation="include">
+        </childnode>
+        <childnode refid="2636" relation="include">
+        </childnode>
+      </node>
+      <node id="2619">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/distanceJoint.h</label>
+        <link refid="distance_joint_8h"/>
+      </node>
+      <node id="2634">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/rigidBodyAPI.h</label>
+        <link refid="rigid_body_a_p_i_8h"/>
+      </node>
+      <node id="2626">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/sphericalJoint.h</label>
+        <link refid="spherical_joint_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usd_physics_2api_8h_1a39da21e3cc8fdafa32dfbe6216f2d53a" prot="public" static="no">
+        <name>USDPHYSICS_API</name>
+        <initializer>ARCH_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/api.h" line="40" column="21" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/api.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usd_physics_2api_8h_1a5461f1261f4c67b8b7a58a2155ca9b4a" prot="public" static="no">
+        <name>USDPHYSICS_API_TEMPLATE_CLASS</name>
+        <param><defname>...</defname></param>
+        <initializer>ARCH_IMPORT_TEMPLATE(class, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/api.h" line="41" column="16" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/api.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usd_physics_2api_8h_1a39c00cef7c64e202415b7eab06612ee4" prot="public" static="no">
+        <name>USDPHYSICS_API_TEMPLATE_STRUCT</name>
+        <param><defname>...</defname></param>
+        <initializer>ARCH_IMPORT_TEMPLATE(struct, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/api.h" line="42" column="16" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/api.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usd_physics_2api_8h_1a75444d941ba55d37fcd3d799369e3059" prot="public" static="no">
+        <name>USDPHYSICS_LOCAL</name>
+        <initializer>ARCH_HIDDEN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/api.h" line="44" column="16" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/api.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>2017<sp/>Pixar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;Apache<sp/>License&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>following<sp/>modification;<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compliance<sp/>with<sp/>the<sp/>Apache<sp/>License<sp/>and<sp/>the<sp/>following<sp/>modification<sp/>to<sp/>it:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>6.<sp/>Trademarks.<sp/>is<sp/>deleted<sp/>and<sp/>replaced<sp/>with:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6.<sp/>Trademarks.<sp/>This<sp/>License<sp/>does<sp/>not<sp/>grant<sp/>permission<sp/>to<sp/>use<sp/>the<sp/>trade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>names,<sp/>trademarks,<sp/>service<sp/>marks,<sp/>or<sp/>product<sp/>names<sp/>of<sp/>the<sp/>Licensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>and<sp/>its<sp/>affiliates,<sp/>except<sp/>as<sp/>required<sp/>to<sp/>comply<sp/>with<sp/>Section<sp/>4(c)<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>the<sp/>License<sp/>and<sp/>to<sp/>reproduce<sp/>the<sp/>content<sp/>of<sp/>the<sp/>NOTICE<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>Apache<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>Apache<sp/>License<sp/>with<sp/>the<sp/>above<sp/>modification<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>Apache<sp/>License<sp/>for<sp/>the<sp/>specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>Apache<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USDPHYSICS_API_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USDPHYSICS_API_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/arch/export.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PXR_STATIC)</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>USDPHYSICS_API</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>USDPHYSICS_API_TEMPLATE_CLASS(...)</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>USDPHYSICS_API_TEMPLATE_STRUCT(...)</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>USDPHYSICS_LOCAL</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>if<sp/>defined(USDPHYSICS_EXPORTS)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>USDPHYSICS_API<sp/>ARCH_EXPORT</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>USDPHYSICS_API_TEMPLATE_CLASS(...)<sp/>ARCH_EXPORT_TEMPLATE(class,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>USDPHYSICS_API_TEMPLATE_STRUCT(...)<sp/>ARCH_EXPORT_TEMPLATE(struct,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>USDPHYSICS_API<sp/>ARCH_IMPORT</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>USDPHYSICS_API_TEMPLATE_CLASS(...)<sp/>ARCH_IMPORT_TEMPLATE(class,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>USDPHYSICS_API_TEMPLATE_STRUCT(...)<sp/>ARCH_IMPORT_TEMPLATE(struct,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>USDPHYSICS_LOCAL<sp/>ARCH_HIDDEN</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/api.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxVehicleAutoGearBoxAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_vehicle_auto_gear_box_a_p_i_8h" local="no">physxVehicleAutoGearBoxAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="67" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="138" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a922d9ad803d554c4efb0b2c34cfe3609" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleAutoGearBoxAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxVehicleAutoGearBoxAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aad8f5032fdc146d5c40cfe5cc30f2da7" kindref="member">PhysxSchemaPhysxVehicleAutoGearBoxAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="73" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a5e196c26f4590679c52010eeb443d915" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleAutoGearBoxAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxVehicleAutoGearBoxAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="81" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1acbf708510392c5bac747fd9f14c1c067" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxVehicleAutoGearBoxAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxVehicleAutoGearBoxAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a55053e8e96fbea6589fbbf0bc6a9a708" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetUpRatiosAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetUpRatiosAttr</name>
+        <briefdescription>
+<para>Value of normalized engine speed (engineRotationSpeed / maxRotationSpeed) that is high enough to increment gear. </para>        </briefdescription>
+        <detaileddescription>
+<para>The first entry is for neutral, then first gear up to the second highest gear. When (engineRotationSpeed / maxRotationSpeed) &gt; upRatios[currentGear] the autobox will begin a transition to currentGear+1 unless currentGear is the highest possible gear or reverse.</para><para>Note: if not defined, the following values will be used: [0.15, 0.65, 0.65, 0.65, 0.65].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float[] physxVehicleAutoGearBox:upRatios</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;float&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;FloatArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a1e7d010c5c43e4d81f67eac4e2808caa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateUpRatiosAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateUpRatiosAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a55053e8e96fbea6589fbbf0bc6a9a708" kindref="member">GetUpRatiosAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a9d1d0238e17822d6b871313491b97133" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDownRatiosAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDownRatiosAttr</name>
+        <briefdescription>
+<para>Value of normalized engine speed (engineRotationSpeed / maxRotationSpeed) that is low enough to decrement gear. </para>        </briefdescription>
+        <detaileddescription>
+<para>The first entry is for second gear then up to the highest gear. When (engineRotationSpeed / maxRotationSpeed) &lt; downRatios[currentGear] the autobox will begin a transition to currentGear-1 unless currentGear is first gear or neutral or reverse.</para><para>Note: if not defined, the following values will be used: [0.5, 0.5, 0.5, 0.5].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float[] physxVehicleAutoGearBox:downRatios</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;float&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;FloatArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1ada2d227feeaba66dc1db727b4936a486" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDownRatiosAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDownRatiosAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a9d1d0238e17822d6b871313491b97133" kindref="member">GetDownRatiosAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a04c4907dea2d341273f4ab19c1e00af7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLatencyAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLatencyAttr</name>
+        <briefdescription>
+<para>The latency time of the automatic gear shift box (unit is seconds [s]). </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the minimum time that must pass between each gear change that is initiated by the automatic gear shift box.</para><para>Note: if not defined, the value 2.0 will be used.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleAutoGearBox:latency</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aca31f4c17570fb458a51c1f1be7b9b4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLatencyAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLatencyAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a04c4907dea2d341273f4ab19c1e00af7" kindref="member">GetLatencyAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="227" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aad8f5032fdc146d5c40cfe5cc30f2da7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleAutoGearBoxAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a922d9ad803d554c4efb0b2c34cfe3609" kindref="member">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a1b9784224486d571e1c126a19c88f80b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleAutoGearBoxAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxVehicleAutoGearBoxAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="127" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="134" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="146" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties of the PhysX vehicle automatic gear shift box. </para>    </briefdescription>
+    <detaileddescription>
+<para>If the automatic gear shift box setup does not need to be shared among vehicle instances, it can be applied to the prim which has PhysxVehicleDriveStandardAPI applied. If the intent is to share the automatic gear shift box setup, PhysxVehicleAutoGearBoxAPI can be applied to a separate prim which can be linked to (see PhysxVehicleDriveStandardAPI). </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" line="62" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h" bodystart="61" bodyend="240"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a1b9784224486d571e1c126a19c88f80b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1ada2d227feeaba66dc1db727b4936a486" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>CreateDownRatiosAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aca31f4c17570fb458a51c1f1be7b9b4a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>CreateLatencyAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a1e7d010c5c43e4d81f67eac4e2808caa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>CreateUpRatiosAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aad8f5032fdc146d5c40cfe5cc30f2da7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a9d1d0238e17822d6b871313491b97133" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>GetDownRatiosAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a04c4907dea2d341273f4ab19c1e00af7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>GetLatencyAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a55053e8e96fbea6589fbbf0bc6a9a708" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>GetUpRatiosAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a922d9ad803d554c4efb0b2c34cfe3609" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>PhysxSchemaPhysxVehicleAutoGearBoxAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1a5e196c26f4590679c52010eeb443d915" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>PhysxSchemaPhysxVehicleAutoGearBoxAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i_1acbf708510392c5bac747fd9f14c1c067" prot="public" virt="virtual"><scope>PhysxSchemaPhysxVehicleAutoGearBoxAPI</scope><name>~PhysxSchemaPhysxVehicleAutoGearBoxAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

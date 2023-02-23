@@ -1,0 +1,16 @@
+Package : nv_usd
+Version : 20.08.nv.1.2.2531.5c573672-win64_py37_debug-main
+Maintainers : ["Aaron Luk", "Paul Molodowitch"]
+Description : Universal Scene Description libraries and packaging for Omniverse
+SWIPAT NvBug : http://nvbugs/2515781
+Repository : ssh://git@gitlab-master.nvidia.com:12051/omniverse/usd-build.git
+License Type : Modified Apache 2.0
+Branch : main
+Commit : 5c573672d4ccd951e4c2252a3c0881560461a2c0
+Time : Thu Oct 13 10:14:40 2022
+Builder Name : DESKTOP-UCUIBJT
+Packman Version : 6.49
+Packagemaker Version : 5.2.9
+CI Build Number : 2531.5c573672
+CI System : Teamcity
+CI Version : 2022.04.4 (build 108763)

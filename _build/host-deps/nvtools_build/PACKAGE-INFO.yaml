@@ -1,0 +1,11 @@
+Package : nvtools_build
+Version : 0.3.3-bef03f74
+Maintainers : N/A
+Description : N/A
+Repository : b'https://gitlab-master.nvidia.com/carbon/nvtools/build.git'
+Branch : master
+Commit : b'bef03f74aa8e90f4110a0efc9c494fcf16605705'
+Time : Thu Apr  7 13:25:01 2022
+Builder Name : brianh-origin
+Packman Version : 6.0-rc5
+Packagemaker Version : 4.0.0-rc7

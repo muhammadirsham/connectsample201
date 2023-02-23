@@ -1,0 +1,20 @@
+pluginsLoaded = [
+    "carb.dictionary.plugin",
+    "carb.settings.plugin",
+    "carb.dictionary.serializer-json.plugin"
+]
+
+[log]
+    level = "warn"
+    flushStandardStreamOutput = true
+    includeSource = true
+    setElapsedTimeUnits = "us"
+    includeThreadId = true
+    includeProcessId = true
+    includeTimeStamp = true
+    outputStream = "stderr"
+
+[plugins]
+    [plugins."carb.scripting-python.plugin"]
+        "pythonHome" =  "../../target-deps/python"
+

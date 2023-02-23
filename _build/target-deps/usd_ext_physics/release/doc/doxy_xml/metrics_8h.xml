@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="metrics_8h" kind="file">
+    <compoundname>metrics.h</compoundname>
+    <includes local="yes">pxr/pxr.h</includes>
+    <includes refid="usd_physics_2api_8h" local="yes">usdPhysics/api.h</includes>
+    <includes local="yes">pxr/base/vt/value.h</includes>
+    <includes local="yes">pxr/usd/usd/object.h</includes>
+    <includes local="yes">pxr/base/tf/token.h</includes>
+    <includes local="yes">pxr/usd/usd/common.h</includes>
+    <incdepgraph>
+      <node id="2919">
+        <label>pxr/base/vt/value.h</label>
+      </node>
+      <node id="2922">
+        <label>pxr/usd/usd/common.h</label>
+      </node>
+      <node id="2918">
+        <label>pxr/base/arch/export.h</label>
+      </node>
+      <node id="2916">
+        <label>pxr/pxr.h</label>
+      </node>
+      <node id="2915">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/metrics.h</label>
+        <link refid="metrics.h"/>
+        <childnode refid="2916" relation="include">
+        </childnode>
+        <childnode refid="2917" relation="include">
+        </childnode>
+        <childnode refid="2919" relation="include">
+        </childnode>
+        <childnode refid="2920" relation="include">
+        </childnode>
+        <childnode refid="2921" relation="include">
+        </childnode>
+        <childnode refid="2922" relation="include">
+        </childnode>
+      </node>
+      <node id="2921">
+        <label>pxr/base/tf/token.h</label>
+      </node>
+      <node id="2917">
+        <label>usdPhysics/api.h</label>
+        <link refid="usd_physics_2api_8h_source"/>
+        <childnode refid="2918" relation="include">
+        </childnode>
+      </node>
+      <node id="2920">
+        <label>pxr/usd/usd/object.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="metrics_8h_1a63ba908d086f1124ede1061c390c2e15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API double</type>
+        <definition>USDPHYSICS_API double UsdPhysicsGetStageKilogramsPerUnit</definition>
+        <argsstring>(const UsdStageWeakPtr &amp;stage)</argsstring>
+        <name>UsdPhysicsGetStageKilogramsPerUnit</name>
+        <param>
+          <type>const UsdStageWeakPtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/metrics.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="metrics_8h_1a1a8f0d08d433f5e0cab9e07982b592ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API bool</type>
+        <definition>USDPHYSICS_API bool UsdPhysicsStageHasAuthoredKilogramsPerUnit</definition>
+        <argsstring>(const UsdStageWeakPtr &amp;stage)</argsstring>
+        <name>UsdPhysicsStageHasAuthoredKilogramsPerUnit</name>
+        <param>
+          <type>const UsdStageWeakPtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <briefdescription>
+<para>Return whether <emphasis>stage</emphasis> has an authored <emphasis>kilogramsPerUnit</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/metrics.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="metrics_8h_1a7e2ade44ed9ee0214aafa30e48044a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API bool</type>
+        <definition>USDPHYSICS_API bool UsdPhysicsSetStageKilogramsPerUnit</definition>
+        <argsstring>(const UsdStageWeakPtr &amp;stage, double kilogramsPerUnit)</argsstring>
+        <name>UsdPhysicsSetStageKilogramsPerUnit</name>
+        <param>
+          <type>const UsdStageWeakPtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kilogramsPerUnit</declname>
+        </param>
+        <briefdescription>
+<para>Author <emphasis>stage</emphasis>&apos;s <emphasis>kilogramsPerUnit</emphasis>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if kilogramsPerUnit was successfully set. The stage&apos;s UsdEditTarget must be either its root layer or session layer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/metrics.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Return <emphasis>stage</emphasis>&apos;s authored <emphasis>kilogramsPerUnit</emphasis>, or 1.0 if unauthored. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>2016<sp/>Pixar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;Apache<sp/>License&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>following<sp/>modification;<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compliance<sp/>with<sp/>the<sp/>Apache<sp/>License<sp/>and<sp/>the<sp/>following<sp/>modification<sp/>to<sp/>it:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>6.<sp/>Trademarks.<sp/>is<sp/>deleted<sp/>and<sp/>replaced<sp/>with:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6.<sp/>Trademarks.<sp/>This<sp/>License<sp/>does<sp/>not<sp/>grant<sp/>permission<sp/>to<sp/>use<sp/>the<sp/>trade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>names,<sp/>trademarks,<sp/>service<sp/>marks,<sp/>or<sp/>product<sp/>names<sp/>of<sp/>the<sp/>Licensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>and<sp/>its<sp/>affiliates,<sp/>except<sp/>as<sp/>required<sp/>to<sp/>comply<sp/>with<sp/>Section<sp/>4(c)<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>the<sp/>License<sp/>and<sp/>to<sp/>reproduce<sp/>the<sp/>content<sp/>of<sp/>the<sp/>NOTICE<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>Apache<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>Apache<sp/>License<sp/>with<sp/>the<sp/>above<sp/>modification<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>Apache<sp/>License<sp/>for<sp/>the<sp/>specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>Apache<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PXR_USD_USD_PHYSICS_METRICS_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PXR_USD_USD_PHYSICS_METRICS_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/pxr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usdPhysics/api.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/vt/value.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/usd/usd/object.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/tf/token.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/usd/usd/common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">PXR_NAMESPACE_OPEN_SCOPE</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">USDPHYSICS_API</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>UsdPhysicsGetStageKilogramsPerUnit(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdStageWeakPtr<sp/>&amp;stage);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">USDPHYSICS_API</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="metrics_8h_1a1a8f0d08d433f5e0cab9e07982b592ce" kindref="member">UsdPhysicsStageHasAuthoredKilogramsPerUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdStageWeakPtr<sp/>&amp;stage);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">USDPHYSICS_API</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="metrics_8h_1a7e2ade44ed9ee0214aafa30e48044a90" kindref="member">UsdPhysicsSetStageKilogramsPerUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdStageWeakPtr<sp/>&amp;stage,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kilogramsPerUnit);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">PXR_NAMESPACE_CLOSE_SCOPE</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>PXR_USD_USD_PHYSICS_METRICS_H</highlight></codeline>
+    </programlisting>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/metrics.h"/>
+  </compounddef>
+</doxygen>

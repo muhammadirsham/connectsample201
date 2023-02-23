@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_e0c12ce17bae69b4467b9db4c304ac64" kind="dir">
+    <compoundname>W:/919a5455eee1e83c/src/usdPhysics</compoundname>
+    <innerfile refid="usd_physics_2api_8h">api.h</innerfile>
+    <innerfile refid="articulation_root_a_p_i_8h">articulationRootAPI.h</innerfile>
+    <innerfile refid="collision_a_p_i_8h">collisionAPI.h</innerfile>
+    <innerfile refid="collision_group_8h">collisionGroup.h</innerfile>
+    <innerfile refid="distance_joint_8h">distanceJoint.h</innerfile>
+    <innerfile refid="drive_a_p_i_8h">driveAPI.h</innerfile>
+    <innerfile refid="filtered_pairs_a_p_i_8h">filteredPairsAPI.h</innerfile>
+    <innerfile refid="fixed_joint_8h">fixedJoint.h</innerfile>
+    <innerfile refid="joint_8h">joint.h</innerfile>
+    <innerfile refid="limit_a_p_i_8h">limitAPI.h</innerfile>
+    <innerfile refid="mass_a_p_i_8h">massAPI.h</innerfile>
+    <innerfile refid="material_a_p_i_8h">materialAPI.h</innerfile>
+    <innerfile refid="mesh_collision_a_p_i_8h">meshCollisionAPI.h</innerfile>
+    <innerfile refid="metrics_8h">metrics.h</innerfile>
+    <innerfile refid="prismatic_joint_8h">prismaticJoint.h</innerfile>
+    <innerfile refid="revolute_joint_8h">revoluteJoint.h</innerfile>
+    <innerfile refid="rigid_body_a_p_i_8h">rigidBodyAPI.h</innerfile>
+    <innerfile refid="scene_8h">scene.h</innerfile>
+    <innerfile refid="spherical_joint_8h">sphericalJoint.h</innerfile>
+    <innerfile refid="usd_physics_2tokens_8h">tokens.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+Package : tinytoml
+Description : A header only C++11 library for parsing TOML.
+Maintainers : avoroshilov@nvidia.com
+SWIPAT NvBug : http://nvbugs/2530633
+Repository : https://gitlab-master.nvidia.com/carbon/Carbonite-externals/tinytoml

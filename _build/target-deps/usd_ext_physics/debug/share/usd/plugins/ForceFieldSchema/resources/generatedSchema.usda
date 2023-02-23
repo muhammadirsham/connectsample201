@@ -1,0 +1,341 @@
+#usda 1.0
+(
+    "WARNING: THIS FILE IS GENERATED.  DO NOT EDIT."
+    customLayerData = {
+        string[] appliedAPISchemas = ["PhysxForceFieldAPI", "PhysxForceFieldSphericalAPI", "PhysxForceFieldPlanarAPI", "PhysxForceFieldLinearAPI", "PhysxForceFieldDragAPI", "PhysxForceFieldNoiseAPI", "PhysxForceFieldWindAPI", "PhysxForceFieldSpinAPI"]
+        dictionary multipleApplyAPISchemas = {
+            string PhysxForceFieldAPI = "physxForceField"
+            string PhysxForceFieldDragAPI = "physxForceField"
+            string PhysxForceFieldLinearAPI = "physxForceField"
+            string PhysxForceFieldNoiseAPI = "physxForceField"
+            string PhysxForceFieldPlanarAPI = "physxForceField"
+            string PhysxForceFieldSphericalAPI = "physxForceField"
+            string PhysxForceFieldSpinAPI = "physxForceField"
+            string PhysxForceFieldWindAPI = "physxForceField"
+        }
+    }
+)
+
+class "PhysxForceFieldAPI" (
+    doc = "Force field base class that simply specifies the position and enables or disables the ForceField."
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+}
+
+class "PhysxForceFieldSphericalAPI" (
+    doc = """A spherical force field that attracts and/or repels rigid bodies from a central point 
+             depending on the function coefficients. Positive values attract and negative values repel.
+             The net force on the rigid body is calculated using 
+             f = constant + linear * r + inverseSquare / r^2, where r is the distance to the center."""
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+    float physxForceFieldSpherical:constant = 0 (
+        displayName = "Constant"
+        doc = "constant applies a steady force."
+    )
+    float physxForceFieldSpherical:inverseSquare = 0 (
+        displayName = "Inverse Square"
+        doc = "inverseSquare sets a force that varies with the reciprocal of the square of the distance to the center."
+    )
+    float physxForceFieldSpherical:linear = 0 (
+        displayName = "Linear"
+        doc = "linear sets a force that varies with distance to the center."
+    )
+}
+
+class "PhysxForceFieldPlanarAPI" (
+    doc = """A planar force field that attracts and/or repels rigid bodies from a plane, defined by a 
+             point and normal vector, depending on the function coefficients. Positive values attract 
+             and negative values repel. The net force on the rigid body is calculated using 
+             f = constant + linear * r + inverseSquare / r^2, where r is the distance to the closest
+             point on the plane."""
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+    float physxForceFieldPlanar:constant = 0 (
+        displayName = "Constant"
+        doc = "constant applies a steady force."
+    )
+    float physxForceFieldPlanar:inverseSquare = 0 (
+        displayName = "Inverse Square"
+        doc = "inverseSquare sets a force that varies with the reciprocal of the square of the distance to the plane."
+    )
+    float physxForceFieldPlanar:linear = 0 (
+        displayName = "Linear"
+        doc = "linear sets a force that varies with distance to the plane."
+    )
+    vector3f physxForceFieldPlanar:normal = (0, 0, 0) (
+        displayName = "Normal"
+        doc = "The normal vector to the plane."
+    )
+}
+
+class "PhysxForceFieldLinearAPI" (
+    doc = """A linear force field that attracts and/or repels rigid bodies from a line, defined by a 
+             point and direction vector, depending on the function coefficients. Positive values attract 
+             and negative values repel. The net force on the rigid body is calculated using 
+             f = constant + linear * r + inverseSquare / r^2, where r is the distance to the closest
+             point on the line."""
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+    float physxForceFieldLinear:constant = 0 (
+        displayName = "Constant"
+        doc = "constant applies a steady force."
+    )
+    vector3f physxForceFieldLinear:direction = (0, 0, 0) (
+        displayName = "Direction"
+        doc = "The direction vector of the line."
+    )
+    float physxForceFieldLinear:inverseSquare = 0 (
+        displayName = "Inverse Square"
+        doc = "inverseSquare sets a force that varies with the reciprocal of the square of the distance to the line."
+    )
+    float physxForceFieldLinear:linear = 0 (
+        displayName = "Linear"
+        doc = "linear sets a force that varies with distance to the line."
+    )
+}
+
+class "PhysxForceFieldDragAPI" (
+    doc = """A force field that slows rigid bodies by generating a force that is opposite to their velocity direction
+             using the forumula f = -linear * v - square * v^2."""
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+    float physxForceFieldDrag:linear = 0 (
+        displayName = "Linear"
+        doc = "linear sets a force that varies proportionally with the speed of the rigid body."
+    )
+    float physxForceFieldDrag:minimumSpeed = 0 (
+        displayName = "Minimum Speed"
+        doc = "Drag forces are not applied below this minimum speed."
+    )
+    float physxForceFieldDrag:square = 0 (
+        displayName = "Square"
+        doc = "square computes a force the varies with the square of the speed of the rigid body."
+    )
+}
+
+class "PhysxForceFieldNoiseAPI" (
+    doc = "A force field that adds randomized motion to a rigid body."
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+    float3 physxForceFieldNoise:amplitude = (0, 0, 0) (
+        displayName = "Amplitude"
+        doc = "The magnitude of the oscillations along each of the three local axes."
+    )
+    float physxForceFieldNoise:drag = 0 (
+        displayName = "Drag"
+        doc = """The drag coefficient determines how quickly the body moves along with the noise.
+                 Smaller values cause the body to react more slowly."""
+    )
+    float3 physxForceFieldNoise:frequency = (0, 0, 0) (
+        displayName = "Frequency"
+        doc = "The frequency of the oscillations for each of the three local axes."
+    )
+}
+
+class "PhysxForceFieldWindAPI" (
+    doc = "A force field that simulates an unsteady wind that pushes rigid bodies."
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+    vector3f physxForceFieldWind:averageDirection = (0, 0, 0) (
+        displayName = "Average Direction"
+        doc = """The initial direction of the wind in the world coordinate system. Wind direction
+                 changes are added to this base direciton."""
+    )
+    float physxForceFieldWind:averageSpeed = 0 (
+        displayName = "Average Speed"
+        doc = """The average speed of the wind. Speed changes are added to this base speed, but
+                 the net speed can never drop below zero."""
+    )
+    float3 physxForceFieldWind:directionVariation = (0, 0, 0) (
+        displayName = "Direction Variation"
+        doc = "The magnitude of the random changes of the wind direction in the world coordinate system."
+    )
+    float3 physxForceFieldWind:directionVariationFrequency = (0, 0, 0) (
+        displayName = "Direction Variation Frequency"
+        doc = "The frequency of the random variations of the wind direction in the world coordinate system."
+    )
+    float physxForceFieldWind:drag = 0 (
+        displayName = "Drag"
+        doc = """The drag coefficient determines how quickly the body moves along with the wind.
+                 Smaller values cause the body to react more slowly."""
+    )
+    float physxForceFieldWind:speedVariation = 0 (
+        displayName = "Speed Variation"
+        doc = "The magnitude of the random changes of the wind speed."
+    )
+    float physxForceFieldWind:speedVariationFrequency = 0 (
+        displayName = "Speed Variation Frequency"
+        doc = "The frequency of the random changes of the wind speed."
+    )
+}
+
+class "PhysxForceFieldSpinAPI" (
+    doc = """A force field that applies forces to rotate rigid bodies around a line, defined by a 
+             spin axis, and varies with the function coefficients. Positive values rotate 
+             clockwise around the spin axis when looking along the axis. The net force on the 
+             rigid body is calculated using f = constant + linear * r + inverseSquare / r^2."""
+)
+{
+    bool physxForceField:enabled = 1 (
+        displayName = "Enabled"
+        doc = "Enable or disable this ForceField. Overrides all other settings."
+    )
+    float3 physxForceField:position = (0, 0, 0) (
+        displayName = "Position"
+        doc = """The location of the force field. Set to (0, 0, 0) to obtain the position
+                 from the prim and continuously update it if it is animated."""
+    )
+    float2 physxForceField:range = (-1, -1) (
+        displayName = "Range"
+        doc = """Forces are not applied when the distance to the force field is outside
+                 of this (minimum, maximum) range. Each force field can have a different 
+                 definition of distance, e.g. for a spherical fore field, the distance is 
+                 to the center, for a plane, the distance is to the closest point on the 
+                 surface, for a line, it is to the closest point on the line. The minimum
+                 or maximum range is ignored if the value is negative."""
+    )
+    float physxForceFieldSpin:constant = 0 (
+        displayName = "Constant"
+        doc = "constant applies a steady force."
+    )
+    float physxForceFieldSpin:inverseSquare = 0 (
+        displayName = "Inverse Square"
+        doc = "inverseSquare sets a force that varies with the reciprocal of the square of the distance to the axis."
+    )
+    float physxForceFieldSpin:linear = 0 (
+        displayName = "Linear"
+        doc = "linear sets a force that varies with distance to the axis."
+    )
+    vector3f physxForceFieldSpin:spinAxis = (0, 0, 0) (
+        displayName = "Spin Axis"
+        doc = "The axis around which rigid bodies are rotated in world coordinates."
+    )
+}
+

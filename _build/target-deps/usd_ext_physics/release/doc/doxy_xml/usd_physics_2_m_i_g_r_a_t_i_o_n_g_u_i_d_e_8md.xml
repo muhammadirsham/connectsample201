@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="usd_physics_2_m_i_g_r_a_t_i_o_n_g_u_i_d_e_8md" kind="file">
+    <compoundname>MIGRATIONGUIDE.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">UsdPhysics<sp/>Migration<sp/>Guide</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">==========================</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">Migration<sp/>from<sp/>legacy<sp/>PhysicsSchema</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">-----------------------------------</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">*<sp/>General:<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/>-<sp/>all<sp/>attributes<sp/>are<sp/>prefixed<sp/>with<sp/>physics,<sp/>so<sp/>say<sp/>density<sp/>is<sp/>now<sp/>physics:density<sp/>attribute</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/>-<sp/>apiName<sp/>removes<sp/>physics<sp/>prefix,<sp/>so<sp/>GetDensity<sp/>is<sp/>still<sp/>used<sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/>-<sp/>PhysicsSchemaPhysicsScene<sp/>is<sp/>now<sp/><ref refid="class_usd_physics_scene" kindref="compound">UsdPhysicsScene</ref><sp/>etc<sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/>-<sp/>units:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>units<sp/>respect<sp/>metersPerUnit</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>all<sp/>dimensional<sp/>angular<sp/>values<sp/>are<sp/>specified<sp/>in<sp/>degrees</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">*<sp/>PhysicsSchemaAPI<sp/>and<sp/>PhysicsSchemaMultipleAPI<sp/>and<sp/>its<sp/>custom<sp/>Unapply<sp/>removed<sp/>-<sp/>use<sp/>native<sp/>UsdPrim::RemoveAPI<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>instead.<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">*<sp/>PhysicsScene:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>PhysicsSchemaPhysicsScene<sp/>to<sp/><ref refid="class_usd_physics_scene" kindref="compound">UsdPhysicsScene</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/>-<sp/>gravity<sp/>replaced<sp/>by<sp/>gravityDirection<sp/>and<sp/>gravityMagnitude</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal"><sp/>values<sp/>can<sp/>be<sp/>used<sp/>now,<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal"><sp/>direction<sp/>(0,0,0)<sp/>will<sp/>pick<sp/>the<sp/>current<sp/>-UpAxis</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>default<sp/>magnitude<sp/>-inf<sp/>will<sp/>pick<sp/>earth<sp/>gravity<sp/>based<sp/>on<sp/>metersPerUnit</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/>-<sp/>invertCollisionGroupFilter<sp/>was<sp/>moved<sp/>to<sp/>PhysxPhysicsScene</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">*<sp/>PhysicsAPI:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/>-<sp/>CreatePhysicsEnabledAttr<sp/>rename<sp/>to<sp/>CreateRigidBodyEnabledAttr</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/>-<sp/>bodyType<sp/>-<sp/>removed,<sp/>was<sp/>not<sp/>used</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/>-<sp/>PhysxRigidBodyAPI::wakeOnStart<sp/>replaced<sp/>by<sp/><sp/><sp/><sp/><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref>::physics::startsAsleep</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/>-<sp/>new<sp/>attributes<sp/>physics::velocity<sp/>and<sp/>physics::angularVelocity<sp/>-<sp/>VelocityAPI<sp/>was<sp/>removed</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/>-<sp/>angularVelocity<sp/>is<sp/>in<sp/>degrees</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/>-<sp/>velocity<sp/>is<sp/>in<sp/>world<sp/>space<sp/>used<sp/>by<sp/>omni.physx,<sp/>there<sp/>will<sp/>be<sp/>a<sp/>flag<sp/>to<sp/>turn<sp/>on<sp/>local<sp/>space<sp/>as<sp/>thats<sp/>the<sp/>default<sp/>behavior<sp/>to<sp/>have<sp/>velocity<sp/>in<sp/>a<sp/>local<sp/>space</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">*<sp/>VelocityAPI:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/>-<sp/>removed<sp/>use<sp/><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref>::physics::velocity<sp/>and<sp/><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref>::physics::angularVelocity<sp/>instead</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">*<sp/>MassPI:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/>-<sp/>mass<sp/>attribute<sp/>changed<sp/>to<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/>-<sp/>density<sp/>attribute<sp/>changed<sp/>to<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/>density<sp/>now<sp/>respects<sp/>metersPerUnit<sp/>so<sp/>a<sp/>density<sp/>1000<sp/>when<sp/>stage<sp/>is<sp/>in<sp/>meters<sp/>is<sp/>0.001<sp/>when<sp/>a<sp/>stage<sp/>is<sp/>in<sp/>cm</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/>-<sp/>centerOfMass<sp/>attribute<sp/>changed<sp/>from<sp/>double3<sp/>to<sp/>point3f</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/>-<sp/>diagonalTensor<sp/>attribute<sp/>changed<sp/>from<sp/>double3<sp/>to<sp/>float3,<sp/>inertia<sp/>respects<sp/>metersPerUnit<sp/>now,<sp/>the<sp/>units<sp/>are<sp/>mass*distance*distance</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/>-<sp/>principalAxes<sp/>attribute<sp/>changed<sp/>from<sp/>quatd<sp/>to<sp/>quatf</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">*<sp/>CollisionAPI:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/>-<sp/>physicsMaterial<sp/>rel<sp/>removed,<sp/>use<sp/>material<sp/>binding<sp/>instead.<sp/>There<sp/>is<sp/>a<sp/>helper<sp/>function<sp/>for<sp/>that<sp/>in<sp/>physicsUtils.py</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>def<sp/>add_physics_material_to_prim(stage,<sp/>prim,<sp/>materialPath):</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bindingAPI<sp/>=<sp/>UsdShade.MaterialBindingAPI.Apply(prim)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>materialPrim<sp/>=<sp/>UsdShade.Material(stage.GetPrimAtPath(materialPath))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bindingAPI.Bind(materialPrim,<sp/>UsdShade.Tokens.weakerThanDescendants,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;physics&quot;)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/>-<sp/>collisionGroup<sp/>rel<sp/>removed,<sp/>use<sp/>collection:colliders<sp/>that<sp/>automatically<sp/>applied<sp/>to<sp/>a<sp/><ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref>.<sp/>Colliders<sp/>that<sp/>belong<sp/>a<sp/>certain<sp/>collision<sp/>group<sp/>are<sp/>now<sp/>defined<sp/>through<sp/>the<sp/>collection<sp/>on<sp/>a<sp/>collisionGroup.</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">*<sp/>PhysxMeshCollisionAPI::approximation<sp/>was<sp/>replaced<sp/>by<sp/><ref refid="class_usd_physics_mesh_collision_a_p_i" kindref="compound">UsdPhysicsMeshCollisionAPI</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/>-<sp/>use<sp/><ref refid="class_usd_physics_mesh_collision_a_p_i" kindref="compound">UsdPhysicsMeshCollisionAPI</ref>::approximation<sp/>to<sp/>define<sp/>the<sp/>mesh<sp/>approximation</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">*<sp/>PhysicsMaterialAPI:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/>-<sp/>density<sp/>attribute<sp/>changed<sp/>from<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>to<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/>density<sp/>now<sp/>respects<sp/>metersPerUnit<sp/>so<sp/>a<sp/>density<sp/>1000<sp/>when<sp/>stage<sp/>is<sp/>in<sp/>meters<sp/>is<sp/>0.001<sp/>when<sp/>a<sp/>stage<sp/>is<sp/>in<sp/>cm</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">*<sp/>CollisionGroup:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/>-<sp/>does<sp/>have<sp/>automatically<sp/>UsdCollection:colliders<sp/>applied,<sp/>this<sp/>collection<sp/>holds<sp/>the<sp/>colliders<sp/>that<sp/>belong<sp/>to<sp/>that<sp/>group</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">*<sp/>FilteringPairsAPI:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_filtered_pairs_a_p_i" kindref="compound">UsdPhysicsFilteredPairsAPI</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">*<sp/>Plane:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/>-<sp/>moved<sp/>to<sp/><ref refid="class_physx_schema_plane" kindref="compound">PhysxSchemaPlane</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">*<sp/>PhysicsJoint:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/>-<sp/>localPos0,<sp/>localPos1<sp/>changed<sp/>from<sp/>float3<sp/>to<sp/>point3f</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/>-<sp/>jointFriction<sp/>-<sp/>was<sp/>never<sp/>used,<sp/>so<sp/>got<sp/>removed</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/>-<sp/>added<sp/>excludeFromArticulation<sp/>that<sp/>defines<sp/>whether<sp/>a<sp/>joint<sp/>should<sp/>be<sp/>excluded<sp/>from<sp/>an<sp/>articulation,<sp/>maximalJoint<sp/>can<sp/>be<sp/>defined<sp/>through<sp/>this</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/>-<sp/>breakForce<sp/>uses<sp/>metersPerUnits<sp/>-<sp/>mass<sp/>*<sp/>distance<sp/>/<sp/>time<sp/>/<sp/>time</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/>-<sp/>breakTorque<sp/>uses<sp/>metersPerUnits<sp/>-<sp/>mass<sp/>*<sp/>distance<sp/>*<sp/>distance<sp/>/<sp/>time<sp/>/<sp/>time</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">*<sp/>RevolutePhysicsJoint:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/>-<sp/>lowerLimit<sp/>-<sp/>units<sp/>in<sp/>degree<sp/>now</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/>-<sp/>upperLimit<sp/>-<sp/>units<sp/>in<sp/>degree<sp/>now</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">*<sp/>PrismaticPhysicsJoint:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_prismatic_joint" kindref="compound">UsdPhysicsPrismaticJoint</ref></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">*<sp/>SphericalPhysicsJoint:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_spherical_joint" kindref="compound">UsdPhysicsSphericalJoint</ref></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/>-<sp/>coneAngle0Limit<sp/>-<sp/>units<sp/>in<sp/>degree<sp/>now</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/>-<sp/>coneAngle1Limit<sp/>-<sp/>units<sp/>in<sp/>degree<sp/>now</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">*<sp/>DistancePhysicsJoint:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_distance_joint" kindref="compound">UsdPhysicsDistanceJoint</ref></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">*<sp/>FixedPhysicsJoint:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_fixed_joint" kindref="compound">UsdPhysicsFixedJoint</ref></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">*<sp/>LimitAPI:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_limit_a_p_i" kindref="compound">UsdPhysicsLimitAPI</ref></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/>-<sp/>low<sp/>-<sp/>in<sp/>degree<sp/>or<sp/>distance</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/>-<sp/>high<sp/>-<sp/>in<sp/>degree<sp/>or<sp/>distance</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">*<sp/>DriveAPI:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/>-<sp/>rename<sp/>to<sp/><ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/>-<sp/>maxForce<sp/>-<sp/>units:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linear<sp/>drive:<sp/><sp/>mass*DIST_UNITS/time/time</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angular<sp/>drive:<sp/>mass*DIST_UNITS*DIST_UNITS/time/time</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/>-<sp/>targetType<sp/>was<sp/>removed<sp/>instead<sp/>its<sp/>possible<sp/>to<sp/>set<sp/>both<sp/>targetPosition<sp/>and<sp/>targetVelocity<sp/>through<sp/>separate<sp/>attributes.</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/>-<sp/>targetPosition/targetVelocity<sp/>for<sp/>angular<sp/>drive<sp/>in<sp/>degree</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">*<sp/>ArticulationAPI:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">*<sp/>ArticulationJointAPI:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/>-<sp/>both<sp/>were<sp/>removed<sp/>and<sp/>ArticulationRootAPI<sp/>has<sp/>been<sp/>introduced.</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/>-<sp/>fixed<sp/>articulations<sp/>should<sp/>have<sp/>ArticulationRootAPI<sp/>on<sp/>a<sp/>root<sp/>joint<sp/>that<sp/>is<sp/>connected<sp/>to<sp/>world<sp/>or<sp/>in<sp/>the<sp/>hierarchy<sp/>above<sp/>the<sp/>joint</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/>-<sp/>floating<sp/>articulations<sp/>should<sp/>have<sp/>ArticulationRootAPI<sp/>on<sp/>a<sp/>body<sp/>where<sp/>articulation<sp/>starts<sp/>on<sp/>in<sp/>a<sp/>hierarchy<sp/>above.<sp/></highlight></codeline>
+    </programlisting>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/MIGRATIONGUIDE.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_material_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxMaterialAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_material_a_p_i_8h" local="no">physxMaterialAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_material_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="68" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_material_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="139" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a5673ab4e9b7f999e049cdf372bcf35f4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxMaterialAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxMaterialAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_material_a_p_i_1a2707608adcb2b670ac075e25f2641c1c" kindref="member">PhysxSchemaPhysxMaterialAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="74" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1ae99634501db235dca6af9f7d15675c33" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxMaterialAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxMaterialAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="82" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1acae247d024a8515fbe3d1178f0b1cef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxMaterialAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxMaterialAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a4af57bccd462b459714481f0675e810f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFrictionCombineModeAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrictionCombineModeAttr</name>
+        <briefdescription>
+<para>Determines the way in which two material properties will be combined to yield a friction or restitution coefficient for a collision. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token physxMaterial:frictionCombineMode = &quot;average&quot;</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>average, min, multiply, max </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a559562c89327d651fc807aef91110a76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFrictionCombineModeAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFrictionCombineModeAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_material_a_p_i_1a4af57bccd462b459714481f0675e810f" kindref="member">GetFrictionCombineModeAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a11eca38ec25cca80e40e7f4984b47635" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetRestitutionCombineModeAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRestitutionCombineModeAttr</name>
+        <briefdescription>
+<para>Determines the way in which two material properties will be combined to yield a friction or restitution coefficient for a collision. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token physxMaterial:restitutionCombineMode = &quot;average&quot;</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>average, min, multiply, max </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1ac8f039e4ed6df6164eb9dffd2cbea9fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateRestitutionCombineModeAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateRestitutionCombineModeAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_material_a_p_i_1a11eca38ec25cca80e40e7f4984b47635" kindref="member">GetRestitutionCombineModeAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a0fa1e505ef251c9b8bceb63b08a2e07c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetImprovePatchFrictionAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetImprovePatchFrictionAttr</name>
+        <briefdescription>
+<para>Flag only has an effect if physxScene:frictionType &quot;patch&quot; friction model is used. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxMaterial:improvePatchFriction = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1af29f058665b7e44eb1eb6807c68653a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateImprovePatchFrictionAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateImprovePatchFrictionAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_material_a_p_i_1a0fa1e505ef251c9b8bceb63b08a2e07c" kindref="member">GetImprovePatchFrictionAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="217" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a2707608adcb2b670ac075e25f2641c1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxMaterialAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_material_a_p_i_1a5673ab4e9b7f999e049cdf372bcf35f4" kindref="member">PhysxSchemaPhysxMaterialAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a9d7506dea098c4e3a96ec22f64bb158e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxMaterialAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxMaterialAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_material_a_p_i" kindref="compound">PhysxSchemaPhysxMaterialAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="128" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_material_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="147" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX material extended parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>For any described attribute <emphasis>Fallback</emphasis> <emphasis>Value</emphasis> or <emphasis>Allowed</emphasis> <emphasis>Values</emphasis> below that are text/tokens, the actual token is published and defined in <ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">PhysxSchemaTokens</ref>. So to set an attribute to the value &quot;rightHanded&quot;, use PhysxSchemaTokens-&gt;rightHanded as the value. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h" bodystart="62" bodyend="230"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a9d7506dea098c4e3a96ec22f64bb158e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a559562c89327d651fc807aef91110a76" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>CreateFrictionCombineModeAttr</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1af29f058665b7e44eb1eb6807c68653a9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>CreateImprovePatchFrictionAttr</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1ac8f039e4ed6df6164eb9dffd2cbea9fb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>CreateRestitutionCombineModeAttr</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a2707608adcb2b670ac075e25f2641c1c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a4af57bccd462b459714481f0675e810f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>GetFrictionCombineModeAttr</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a0fa1e505ef251c9b8bceb63b08a2e07c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>GetImprovePatchFrictionAttr</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a11eca38ec25cca80e40e7f4984b47635" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>GetRestitutionCombineModeAttr</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1a5673ab4e9b7f999e049cdf372bcf35f4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>PhysxSchemaPhysxMaterialAPI</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1ae99634501db235dca6af9f7d15675c33" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>PhysxSchemaPhysxMaterialAPI</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_material_a_p_i_1acae247d024a8515fbe3d1178f0b1cef7" prot="public" virt="virtual"><scope>PhysxSchemaPhysxMaterialAPI</scope><name>~PhysxSchemaPhysxMaterialAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

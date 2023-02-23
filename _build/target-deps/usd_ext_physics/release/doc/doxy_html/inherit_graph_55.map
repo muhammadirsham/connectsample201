@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_usd_physics_joint.html" title="A joint constrains the movement of rigid bodies. " alt="" coords="5,187,124,214"/>
+<area shape="rect" id="node2" href="$class_physx_schema_physx_physics_gear_joint.html" title="Predefined gear joint type. " alt="" coords="173,5,392,47"/>
+<area shape="rect" id="node3" href="$class_physx_schema_physx_physics_rack_and_pinion_joint.html" title="Predefined rack &amp; pinion joint type. " alt="" coords="172,71,393,112"/>
+<area shape="rect" id="node4" href="$class_usd_physics_distance_joint.html" title="Predefined distance joint type (Distance between rigid bodies may be limited to given minimum or maxi..." alt="" coords="197,137,368,163"/>
+<area shape="rect" id="node5" href="$class_usd_physics_fixed_joint.html" title="Predefined fixed joint type (All degrees of freedom are removed.) " alt="" coords="207,187,358,214"/>
+<area shape="rect" id="node6" href="$class_usd_physics_prismatic_joint.html" title="Predefined prismatic joint type (translation along prismatic joint axis is permitted.) " alt="" coords="195,238,370,265"/>
+<area shape="rect" id="node7" href="$class_usd_physics_revolute_joint.html" title="Predefined revolute joint type (rotation along revolute joint axis is permitted.) ..." alt="" coords="199,289,367,315"/>
+<area shape="rect" id="node8" href="$class_usd_physics_spherical_joint.html" title="Predefined spherical joint type (Removes linear degrees of freedom, cone limit may restrict the motio..." alt="" coords="196,339,369,366"/>
+</map>

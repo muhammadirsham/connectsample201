@@ -1,0 +1,5 @@
+<map id="PhysxSchemaPhysxCameraFollowAPI" name="PhysxSchemaPhysxCameraFollowAPI">
+<area shape="rect" id="node3" href="$class_physx_schema_physx_camera_follow_look_a_p_i.html" title="PhysX camera that follows behind the subject&#39;s forward vector as it moves. " alt="" coords="5,155,232,196"/>
+<area shape="rect" id="node4" href="$class_physx_schema_physx_camera_follow_velocity_a_p_i.html" title="PhysX camera that follows behind the subject&#39;s velocity vector as it moves, which allows the subject ..." alt="" coords="256,155,483,196"/>
+<area shape="rect" id="node2" href="$class_physx_schema_physx_camera_a_p_i.html" title="PhysX camera. " alt="" coords="139,5,349,32"/>
+</map>

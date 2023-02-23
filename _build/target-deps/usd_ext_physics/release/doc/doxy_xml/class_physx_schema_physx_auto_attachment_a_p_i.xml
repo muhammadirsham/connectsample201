@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_auto_attachment_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxAutoAttachmentAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_auto_attachment_a_p_i_8h" local="no">physxAutoAttachmentAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_auto_attachment_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_auto_attachment_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="134" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a3a1a77f5f7a031a0a61a155649fa2e24" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxAutoAttachmentAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxAutoAttachmentAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1abda18ec918110426c6eae007b16225f1" kindref="member">PhysxSchemaPhysxAutoAttachmentAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a47dfcd8a4797e2416f55f71faeac344c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxAutoAttachmentAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxAutoAttachmentAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a6e5eb093faa23c6b7b014f1ec20e6942" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxAutoAttachmentAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxAutoAttachmentAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a59591147b34cbc09c444df62b4028040" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableDeformableVertexAttachmentsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableDeformableVertexAttachmentsAttr</name>
+        <briefdescription>
+<para>Enables attaching deformable mesh vertices which overlap with the other actor&apos;s volume. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxAutoAttachment:enableDeformableVertexAttachments = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a1711c2d40b04025676a86c6bda1d966c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableDeformableVertexAttachmentsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableDeformableVertexAttachmentsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1a59591147b34cbc09c444df62b4028040" kindref="member">GetEnableDeformableVertexAttachmentsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1aac182c4d2fc37eb64c52d3f1603af819" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDeformableVertexOverlapOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDeformableVertexOverlapOffsetAttr</name>
+        <briefdescription>
+<para>Deformable mesh vertices are attached if their distance to the other actor&apos;s volume is smaller than the offset. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, max_float) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxAutoAttachment:deformableVertexOverlapOffset = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1adeea2df545178f096b7d7db7a49dea8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDeformableVertexOverlapOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDeformableVertexOverlapOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1aac182c4d2fc37eb64c52d3f1603af819" kindref="member">GetDeformableVertexOverlapOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a2611544dc265836f9a9bd591500b63c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableRigidSurfaceAttachmentsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableRigidSurfaceAttachmentsAttr</name>
+        <briefdescription>
+<para>Enables sampling attachment points on the rigid actor&apos;s surface. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxAutoAttachment:enableRigidSurfaceAttachments = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1acb5a1ae8dedef22fd605c087c80d6a10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableRigidSurfaceAttachmentsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableRigidSurfaceAttachmentsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1a2611544dc265836f9a9bd591500b63c9" kindref="member">GetEnableRigidSurfaceAttachmentsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a930ad60abfd51fab8987f8af1cf73938" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetRigidSurfaceSamplingDistanceAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRigidSurfaceSamplingDistanceAttr</name>
+        <briefdescription>
+<para>Attachment points on the rigid surface are positioned such that their typical neighbor distance matches the sampling distance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use heuristic by default. Range: [0, max_float) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxAutoAttachment:rigidSurfaceSamplingDistance = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a2399e994be253cee4e58f00ce639903b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateRigidSurfaceSamplingDistanceAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateRigidSurfaceSamplingDistanceAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1a930ad60abfd51fab8987f8af1cf73938" kindref="member">GetRigidSurfaceSamplingDistanceAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1ac51049a0a57d0e11ee36f648f50f7af3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableCollisionFilteringAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableCollisionFilteringAttr</name>
+        <briefdescription>
+<para>Enables adding collision filtering in the vicinity of the attachment points. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxAutoAttachment:enableCollisionFiltering = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a7707d16265e169506e0accfd8c96a5a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableCollisionFilteringAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableCollisionFilteringAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1ac51049a0a57d0e11ee36f648f50f7af3" kindref="member">GetEnableCollisionFilteringAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1ab4d829962ff82b874a75490af6de95db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCollisionFilteringOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollisionFilteringOffsetAttr</name>
+        <briefdescription>
+<para>Filering ids are generated for deformable mesh vertices if their distance to the other actor&apos;s volume is smaller than the offset. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use heuristic by default. Range: [0, max_float) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxAutoAttachment:collisionFilteringOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a65fe506dedc37052ca04880ba1437aaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCollisionFilteringOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCollisionFilteringOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1ab4d829962ff82b874a75490af6de95db" kindref="member">GetCollisionFilteringOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="280" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1abda18ec918110426c6eae007b16225f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxAutoAttachmentAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_auto_attachment_a_p_i_1a3a1a77f5f7a031a0a61a155649fa2e24" kindref="member">PhysxSchemaPhysxAutoAttachmentAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a32902001f4a6c4ff90bc442db55aa3f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxAutoAttachmentAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxAutoAttachmentAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_auto_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxAutoAttachmentAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_auto_attachment_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Auto generates the attachment points and filtering ids based on the attributes defined in the API. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h" bodystart="57" bodyend="293"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a32902001f4a6c4ff90bc442db55aa3f7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a65fe506dedc37052ca04880ba1437aaf" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>CreateCollisionFilteringOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1adeea2df545178f096b7d7db7a49dea8e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>CreateDeformableVertexOverlapOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a7707d16265e169506e0accfd8c96a5a8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>CreateEnableCollisionFilteringAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a1711c2d40b04025676a86c6bda1d966c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>CreateEnableDeformableVertexAttachmentsAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1acb5a1ae8dedef22fd605c087c80d6a10" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>CreateEnableRigidSurfaceAttachmentsAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a2399e994be253cee4e58f00ce639903b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>CreateRigidSurfaceSamplingDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1abda18ec918110426c6eae007b16225f1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1ab4d829962ff82b874a75490af6de95db" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>GetCollisionFilteringOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1aac182c4d2fc37eb64c52d3f1603af819" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>GetDeformableVertexOverlapOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1ac51049a0a57d0e11ee36f648f50f7af3" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>GetEnableCollisionFilteringAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a59591147b34cbc09c444df62b4028040" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>GetEnableDeformableVertexAttachmentsAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a2611544dc265836f9a9bd591500b63c9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>GetEnableRigidSurfaceAttachmentsAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a930ad60abfd51fab8987f8af1cf73938" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>GetRigidSurfaceSamplingDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a3a1a77f5f7a031a0a61a155649fa2e24" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>PhysxSchemaPhysxAutoAttachmentAPI</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a47dfcd8a4797e2416f55f71faeac344c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>PhysxSchemaPhysxAutoAttachmentAPI</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_auto_attachment_a_p_i_1a6e5eb093faa23c6b7b014f1ec20e6942" prot="public" virt="virtual"><scope>PhysxSchemaPhysxAutoAttachmentAPI</scope><name>~PhysxSchemaPhysxAutoAttachmentAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

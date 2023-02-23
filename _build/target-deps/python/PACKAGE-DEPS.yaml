@@ -1,0 +1,46 @@
+openssl:
+  licenseFile: openssl-LICENSE.txt
+  packageName: openssl
+  packageType: packman
+  source:
+    branch: merge-request
+    change: 5e4af3d4b050129577cf9ca8cf489d3e74cfd2fd
+    path: https://gitlab/omniverse/externals/openssl-build.git
+    scm: git
+  swipat: '2820294'
+  version: 1.1.1q+nv5-windows-x86_64
+pip:
+  licenseFile: pip-LICENSE.txt
+  packageName: pip
+  packageType: packman
+  source:
+    branch: merge-request
+    change: 7a3e732b7b7d997ea5ffd10491368c8dd133452a
+    path: https://gitlab/omniverse/externals/pip-build.git
+    scm: git
+  swipat: https://nvbugs/3354358
+  version: 21.2.1+nv1
+xz:
+  licenseFile: xz-LICENSE.txt
+  packageName: xz
+  packageType: packman
+  source:
+    branch: merge-request
+    change: 3c7be287fa2d91690bcc2abd2886a8127a2ac2a0
+    path: https://gitlab/omniverse/externals/xz-build.git
+    scm: git
+  swipat: '3381177'
+  version: 5.2.6+nv1-windows-x86_64
+zlib:
+  inheritedFrom:
+  - C:/packman-repo/chk/openssl/1.1.1q+nv5-windows-x86_64/PACKAGE-DEPS.yaml
+  licenseFile: zlib-LICENSE.txt
+  packageName: zlib
+  packageType: packman
+  source:
+    branch: merge-request
+    change: 15c169de6fa466221ec7ea9305ff297c22dd6be1
+    path: https://gitlab/omniverse/externals/zlib-build.git
+    scm: git
+  swipat: '2550776'
+  version: 1.2.13+nv1-windows-x86_64

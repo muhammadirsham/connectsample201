@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="physx_schema_2api_8h" kind="file">
+    <compoundname>api.h</compoundname>
+    <includes local="yes">pxr/base/arch/export.h</includes>
+    <includedby refid="character_controller_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/characterControllerAPI.h</includedby>
+    <includedby refid="physx_schema_2tokens_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/tokens.h</includedby>
+    <includedby refid="physx_articulation_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h</includedby>
+    <includedby refid="physx_articulation_force_sensor_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxArticulationForceSensorAPI.h</includedby>
+    <includedby refid="physx_auto_attachment_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h</includedby>
+    <includedby refid="physx_auto_particle_cloth_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxAutoParticleClothAPI.h</includedby>
+    <includedby refid="physx_camera_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h</includedby>
+    <includedby refid="physx_camera_drone_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCameraDroneAPI.h</includedby>
+    <includedby refid="physx_camera_follow_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowAPI.h</includedby>
+    <includedby refid="physx_camera_follow_look_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h</includedby>
+    <includedby refid="physx_camera_follow_velocity_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowVelocityAPI.h</includedby>
+    <includedby refid="physx_character_controller_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCharacterControllerAPI.h</includedby>
+    <includedby refid="physx_collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h</includedby>
+    <includedby refid="physx_contact_report_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxContactReportAPI.h</includedby>
+    <includedby refid="physx_convex_decomposition_collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxConvexDecompositionCollisionAPI.h</includedby>
+    <includedby refid="physx_convex_hull_collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxConvexHullCollisionAPI.h</includedby>
+    <includedby refid="physx_cooked_data_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxCookedDataAPI.h</includedby>
+    <includedby refid="physx_deformable_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxDeformableAPI.h</includedby>
+    <includedby refid="physx_deformable_body_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxDeformableBodyAPI.h</includedby>
+    <includedby refid="physx_deformable_body_material_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxDeformableBodyMaterialAPI.h</includedby>
+    <includedby refid="physx_deformable_surface_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceAPI.h</includedby>
+    <includedby refid="physx_deformable_surface_material_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h</includedby>
+    <includedby refid="physx_diffuse_particles_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxDiffuseParticlesAPI.h</includedby>
+    <includedby refid="physx_isosurface_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h</includedby>
+    <includedby refid="physx_joint_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxJointAPI.h</includedby>
+    <includedby refid="physx_limit_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h</includedby>
+    <includedby refid="physx_material_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h</includedby>
+    <includedby refid="physx_particle_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxParticleAPI.h</includedby>
+    <includedby refid="physx_particle_cloth_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxParticleClothAPI.h</includedby>
+    <includedby refid="physx_particle_poisson_sampling_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxParticlePoissonSamplingAPI.h</includedby>
+    <includedby refid="physx_particle_set_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxParticleSetAPI.h</includedby>
+    <includedby refid="physx_particle_system_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h</includedby>
+    <includedby refid="physx_p_b_d_material_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxPBDMaterialAPI.h</includedby>
+    <includedby refid="physx_physics_attachment_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h</includedby>
+    <includedby refid="physx_physics_distance_joint_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxPhysicsDistanceJointAPI.h</includedby>
+    <includedby refid="physx_physics_gear_joint_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxPhysicsGearJoint.h</includedby>
+    <includedby refid="physx_physics_rack_and_pinion_joint_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxPhysicsRackAndPinionJoint.h</includedby>
+    <includedby refid="physx_rigid_body_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h</includedby>
+    <includedby refid="physx_scene_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h</includedby>
+    <includedby refid="physx_tendon_attachment_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentAPI.h</includedby>
+    <includedby refid="physx_tendon_attachment_leaf_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentLeafAPI.h</includedby>
+    <includedby refid="physx_tendon_attachment_root_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h</includedby>
+    <includedby refid="physx_tendon_axis_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h</includedby>
+    <includedby refid="physx_tendon_axis_root_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisRootAPI.h</includedby>
+    <includedby refid="physx_triangle_mesh_collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTriangleMeshCollisionAPI.h</includedby>
+    <includedby refid="physx_triangle_mesh_simplification_collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTriangleMeshSimplificationCollisionAPI.h</includedby>
+    <includedby refid="physx_trigger_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxTriggerAPI.h</includedby>
+    <includedby refid="physx_vehicle_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleAPI.h</includedby>
+    <includedby refid="physx_vehicle_auto_gear_box_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h</includedby>
+    <includedby refid="physx_vehicle_clutch_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleClutchAPI.h</includedby>
+    <includedby refid="physx_vehicle_context_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleContextAPI.h</includedby>
+    <includedby refid="physx_vehicle_controller_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleControllerAPI.h</includedby>
+    <includedby refid="physx_vehicle_drive_basic_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveBasicAPI.h</includedby>
+    <includedby refid="physx_vehicle_drive_standard_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h</includedby>
+    <includedby refid="physx_vehicle_engine_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleEngineAPI.h</includedby>
+    <includedby refid="physx_vehicle_gears_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleGearsAPI.h</includedby>
+    <includedby refid="physx_vehicle_suspension_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h</includedby>
+    <includedby refid="physx_vehicle_tire_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h</includedby>
+    <includedby refid="physx_vehicle_tire_friction_table_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h</includedby>
+    <includedby refid="physx_vehicle_wheel_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h</includedby>
+    <includedby refid="physx_vehicle_wheel_attachment_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h</includedby>
+    <includedby refid="physx_vehicle_wheel_controller_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelControllerAPI.h</includedby>
+    <includedby refid="plane_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/plane.h</includedby>
+    <includedby refid="tetrahedral_mesh_8h" local="yes">W:/919a5455eee1e83c/src/physxSchema/tetrahedralMesh.h</includedby>
+    <incdepgraph>
+      <node id="2638">
+        <label>pxr/base/arch/export.h</label>
+      </node>
+      <node id="2637">
+        <label>W:/919a5455eee1e83c/src/physxSchema/api.h</label>
+        <link refid="physxSchema/api.h"/>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2670">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxParticlePoissonSamplingAPI.h</label>
+        <link refid="physx_particle_poisson_sampling_a_p_i_8h"/>
+      </node>
+      <node id="2657">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxDeformableAPI.h</label>
+        <link refid="physx_deformable_a_p_i_8h"/>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2659" relation="include">
+        </childnode>
+      </node>
+      <node id="2685">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTriangleMeshSimplificationCollisionAPI.h</label>
+        <link refid="physx_triangle_mesh_simplification_collision_a_p_i_8h"/>
+      </node>
+      <node id="2654">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxConvexDecompositionCollisionAPI.h</label>
+        <link refid="physx_convex_decomposition_collision_a_p_i_8h"/>
+      </node>
+      <node id="2661">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h</label>
+        <link refid="physx_deformable_surface_material_a_p_i_8h"/>
+      </node>
+      <node id="2686">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTriggerAPI.h</label>
+        <link refid="physx_trigger_a_p_i_8h"/>
+      </node>
+      <node id="2693">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h</label>
+        <link refid="physx_vehicle_drive_standard_a_p_i_8h"/>
+      </node>
+      <node id="2643">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxArticulationForceSensorAPI.h</label>
+        <link refid="physx_articulation_force_sensor_a_p_i_8h"/>
+      </node>
+      <node id="2690">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleContextAPI.h</label>
+        <link refid="physx_vehicle_context_a_p_i_8h"/>
+      </node>
+      <node id="2641">
+        <label>W:/919a5455eee1e83c/src/physxSchema/tokens.h</label>
+        <link refid="physx_schema_2tokens_8h"/>
+        <childnode refid="2640" relation="include">
+        </childnode>
+        <childnode refid="2642" relation="include">
+        </childnode>
+        <childnode refid="2643" relation="include">
+        </childnode>
+        <childnode refid="2644" relation="include">
+        </childnode>
+        <childnode refid="2645" relation="include">
+        </childnode>
+        <childnode refid="2646" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2648" relation="include">
+        </childnode>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2651" relation="include">
+        </childnode>
+        <childnode refid="2652" relation="include">
+        </childnode>
+        <childnode refid="2653" relation="include">
+        </childnode>
+        <childnode refid="2654" relation="include">
+        </childnode>
+        <childnode refid="2655" relation="include">
+        </childnode>
+        <childnode refid="2656" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2660" relation="include">
+        </childnode>
+        <childnode refid="2659" relation="include">
+        </childnode>
+        <childnode refid="2661" relation="include">
+        </childnode>
+        <childnode refid="2662" relation="include">
+        </childnode>
+        <childnode refid="2663" relation="include">
+        </childnode>
+        <childnode refid="2664" relation="include">
+        </childnode>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2666" relation="include">
+        </childnode>
+        <childnode refid="2667" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2669" relation="include">
+        </childnode>
+        <childnode refid="2671" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+        <childnode refid="2673" relation="include">
+        </childnode>
+        <childnode refid="2674" relation="include">
+        </childnode>
+        <childnode refid="2675" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+        <childnode refid="2680" relation="include">
+        </childnode>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2682" relation="include">
+        </childnode>
+        <childnode refid="2683" relation="include">
+        </childnode>
+        <childnode refid="2684" relation="include">
+        </childnode>
+        <childnode refid="2685" relation="include">
+        </childnode>
+        <childnode refid="2686" relation="include">
+        </childnode>
+        <childnode refid="2687" relation="include">
+        </childnode>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2689" relation="include">
+        </childnode>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2691" relation="include">
+        </childnode>
+        <childnode refid="2692" relation="include">
+        </childnode>
+        <childnode refid="2693" relation="include">
+        </childnode>
+        <childnode refid="2694" relation="include">
+        </childnode>
+        <childnode refid="2695" relation="include">
+        </childnode>
+        <childnode refid="2696" relation="include">
+        </childnode>
+        <childnode refid="2697" relation="include">
+        </childnode>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2702" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+      </node>
+      <node id="2642">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h</label>
+        <link refid="physx_articulation_a_p_i_8h"/>
+      </node>
+      <node id="2664">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxJointAPI.h</label>
+        <link refid="physx_joint_a_p_i_8h"/>
+      </node>
+      <node id="2666">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxMaterialAPI.h</label>
+        <link refid="physx_material_a_p_i_8h"/>
+      </node>
+      <node id="2687">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleAPI.h</label>
+        <link refid="physx_vehicle_a_p_i_8h"/>
+      </node>
+      <node id="2684">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTriangleMeshCollisionAPI.h</label>
+        <link refid="physx_triangle_mesh_collision_a_p_i_8h"/>
+      </node>
+      <node id="2650">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowVelocityAPI.h</label>
+        <link refid="physx_camera_follow_velocity_a_p_i_8h"/>
+      </node>
+      <node id="2669">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxParticleSetAPI.h</label>
+        <link refid="physx_particle_set_a_p_i_8h"/>
+      </node>
+      <node id="2655">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxConvexHullCollisionAPI.h</label>
+        <link refid="physx_convex_hull_collision_a_p_i_8h"/>
+      </node>
+      <node id="2658">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxDeformableBodyAPI.h</label>
+        <link refid="physx_deformable_body_a_p_i_8h"/>
+      </node>
+      <node id="2647">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCameraDroneAPI.h</label>
+        <link refid="physx_camera_drone_a_p_i_8h"/>
+      </node>
+      <node id="2695">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleGearsAPI.h</label>
+        <link refid="physx_vehicle_gears_a_p_i_8h"/>
+      </node>
+      <node id="2653">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxContactReportAPI.h</label>
+        <link refid="physx_contact_report_a_p_i_8h"/>
+      </node>
+      <node id="2667">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxParticleAPI.h</label>
+        <link refid="physx_particle_a_p_i_8h"/>
+        <childnode refid="2668" relation="include">
+        </childnode>
+        <childnode refid="2669" relation="include">
+        </childnode>
+      </node>
+      <node id="2692">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveBasicAPI.h</label>
+        <link refid="physx_vehicle_drive_basic_a_p_i_8h"/>
+      </node>
+      <node id="2663">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h</label>
+        <link refid="physx_isosurface_a_p_i_8h"/>
+      </node>
+      <node id="2652">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h</label>
+        <link refid="physx_collision_a_p_i_8h"/>
+      </node>
+      <node id="2680">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentLeafAPI.h</label>
+        <link refid="physx_tendon_attachment_leaf_a_p_i_8h"/>
+      </node>
+      <node id="2700">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h</label>
+        <link refid="physx_vehicle_wheel_attachment_a_p_i_8h"/>
+      </node>
+      <node id="2676">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsRackAndPinionJoint.h</label>
+        <link refid="physx_physics_rack_and_pinion_joint_8h"/>
+      </node>
+      <node id="2696">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h</label>
+        <link refid="physx_vehicle_suspension_a_p_i_8h"/>
+      </node>
+      <node id="2702">
+        <label>W:/919a5455eee1e83c/src/physxSchema/plane.h</label>
+        <link refid="plane_8h"/>
+      </node>
+      <node id="2668">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxParticleClothAPI.h</label>
+        <link refid="physx_particle_cloth_a_p_i_8h"/>
+      </node>
+      <node id="2649">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h</label>
+        <link refid="physx_camera_follow_look_a_p_i_8h"/>
+      </node>
+      <node id="2688">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleAutoGearBoxAPI.h</label>
+        <link refid="physx_vehicle_auto_gear_box_a_p_i_8h"/>
+      </node>
+      <node id="2689">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleClutchAPI.h</label>
+        <link refid="physx_vehicle_clutch_a_p_i_8h"/>
+      </node>
+      <node id="2640">
+        <label>W:/919a5455eee1e83c/src/physxSchema/characterControllerAPI.h</label>
+        <link refid="character_controller_a_p_i_8h"/>
+      </node>
+      <node id="2659">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceAPI.h</label>
+        <link refid="physx_deformable_surface_a_p_i_8h"/>
+      </node>
+      <node id="2678">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h</label>
+        <link refid="physx_scene_a_p_i_8h"/>
+      </node>
+      <node id="2639">
+        <label>W:/919a5455eee1e83c/src/physxSchema/api.h</label>
+        <link refid="physxSchema/api.h"/>
+        <childnode refid="2640" relation="include">
+        </childnode>
+        <childnode refid="2641" relation="include">
+        </childnode>
+        <childnode refid="2642" relation="include">
+        </childnode>
+        <childnode refid="2643" relation="include">
+        </childnode>
+        <childnode refid="2644" relation="include">
+        </childnode>
+        <childnode refid="2645" relation="include">
+        </childnode>
+        <childnode refid="2646" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2648" relation="include">
+        </childnode>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2650" relation="include">
+        </childnode>
+        <childnode refid="2651" relation="include">
+        </childnode>
+        <childnode refid="2652" relation="include">
+        </childnode>
+        <childnode refid="2653" relation="include">
+        </childnode>
+        <childnode refid="2654" relation="include">
+        </childnode>
+        <childnode refid="2655" relation="include">
+        </childnode>
+        <childnode refid="2656" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2660" relation="include">
+        </childnode>
+        <childnode refid="2659" relation="include">
+        </childnode>
+        <childnode refid="2661" relation="include">
+        </childnode>
+        <childnode refid="2662" relation="include">
+        </childnode>
+        <childnode refid="2663" relation="include">
+        </childnode>
+        <childnode refid="2664" relation="include">
+        </childnode>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2666" relation="include">
+        </childnode>
+        <childnode refid="2667" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2669" relation="include">
+        </childnode>
+        <childnode refid="2671" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+        <childnode refid="2673" relation="include">
+        </childnode>
+        <childnode refid="2674" relation="include">
+        </childnode>
+        <childnode refid="2675" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+        <childnode refid="2680" relation="include">
+        </childnode>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2682" relation="include">
+        </childnode>
+        <childnode refid="2683" relation="include">
+        </childnode>
+        <childnode refid="2684" relation="include">
+        </childnode>
+        <childnode refid="2685" relation="include">
+        </childnode>
+        <childnode refid="2686" relation="include">
+        </childnode>
+        <childnode refid="2687" relation="include">
+        </childnode>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2689" relation="include">
+        </childnode>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2691" relation="include">
+        </childnode>
+        <childnode refid="2692" relation="include">
+        </childnode>
+        <childnode refid="2693" relation="include">
+        </childnode>
+        <childnode refid="2694" relation="include">
+        </childnode>
+        <childnode refid="2695" relation="include">
+        </childnode>
+        <childnode refid="2696" relation="include">
+        </childnode>
+        <childnode refid="2697" relation="include">
+        </childnode>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2702" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+      </node>
+      <node id="2683">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisRootAPI.h</label>
+        <link refid="physx_tendon_axis_root_a_p_i_8h"/>
+      </node>
+      <node id="2674">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsDistanceJointAPI.h</label>
+        <link refid="physx_physics_distance_joint_a_p_i_8h"/>
+      </node>
+      <node id="2645">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxAutoParticleClothAPI.h</label>
+        <link refid="physx_auto_particle_cloth_a_p_i_8h"/>
+      </node>
+      <node id="2648">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowAPI.h</label>
+        <link refid="physx_camera_follow_a_p_i_8h"/>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2650" relation="include">
+        </childnode>
+      </node>
+      <node id="2662">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxDiffuseParticlesAPI.h</label>
+        <link refid="physx_diffuse_particles_a_p_i_8h"/>
+      </node>
+      <node id="2698">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h</label>
+        <link refid="physx_vehicle_tire_friction_table_8h"/>
+      </node>
+      <node id="2646">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h</label>
+        <link refid="physx_camera_a_p_i_8h"/>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2648" relation="include">
+        </childnode>
+      </node>
+      <node id="2673">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h</label>
+        <link refid="physx_physics_attachment_8h"/>
+      </node>
+      <node id="2675">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsGearJoint.h</label>
+        <link refid="physx_physics_gear_joint_8h"/>
+      </node>
+      <node id="2651">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCharacterControllerAPI.h</label>
+        <link refid="physx_character_controller_a_p_i_8h"/>
+      </node>
+      <node id="2699">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h</label>
+        <link refid="physx_vehicle_wheel_a_p_i_8h"/>
+      </node>
+      <node id="2681">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentRootAPI.h</label>
+        <link refid="physx_tendon_attachment_root_a_p_i_8h"/>
+      </node>
+      <node id="2701">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelControllerAPI.h</label>
+        <link refid="physx_vehicle_wheel_controller_a_p_i_8h"/>
+      </node>
+      <node id="2672">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPBDMaterialAPI.h</label>
+        <link refid="physx_p_b_d_material_a_p_i_8h"/>
+      </node>
+      <node id="2703">
+        <label>W:/919a5455eee1e83c/src/physxSchema/tetrahedralMesh.h</label>
+        <link refid="tetrahedral_mesh_8h"/>
+      </node>
+      <node id="2697">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h</label>
+        <link refid="physx_vehicle_tire_a_p_i_8h"/>
+      </node>
+      <node id="2671">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h</label>
+        <link refid="physx_particle_system_8h"/>
+      </node>
+      <node id="2677">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h</label>
+        <link refid="physx_rigid_body_a_p_i_8h"/>
+      </node>
+      <node id="2656">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxCookedDataAPI.h</label>
+        <link refid="physx_cooked_data_a_p_i_8h"/>
+      </node>
+      <node id="2694">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleEngineAPI.h</label>
+        <link refid="physx_vehicle_engine_a_p_i_8h"/>
+      </node>
+      <node id="2644">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxAutoAttachmentAPI.h</label>
+        <link refid="physx_auto_attachment_a_p_i_8h"/>
+      </node>
+      <node id="2660">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxDeformableBodyMaterialAPI.h</label>
+        <link refid="physx_deformable_body_material_a_p_i_8h"/>
+      </node>
+      <node id="2665">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h</label>
+        <link refid="physx_limit_a_p_i_8h"/>
+      </node>
+      <node id="2691">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxVehicleControllerAPI.h</label>
+        <link refid="physx_vehicle_controller_a_p_i_8h"/>
+      </node>
+      <node id="2679">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTendonAttachmentAPI.h</label>
+        <link refid="physx_tendon_attachment_a_p_i_8h"/>
+        <childnode refid="2680" relation="include">
+        </childnode>
+        <childnode refid="2681" relation="include">
+        </childnode>
+      </node>
+      <node id="2682">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h</label>
+        <link refid="physx_tendon_axis_a_p_i_8h"/>
+        <childnode refid="2683" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="physx_schema_2api_8h_1a66707a0342c7f6cbbc0a9c70579e3149" prot="public" static="no">
+        <name>PHYSXSCHEMA_API</name>
+        <initializer>ARCH_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/api.h" line="40" column="21" bodyfile="W:/919a5455eee1e83c/src/physxSchema/api.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="physx_schema_2api_8h_1a08e8dfb917a689e6ba7565e6572e4bf6" prot="public" static="no">
+        <name>PHYSXSCHEMA_API_TEMPLATE_CLASS</name>
+        <param><defname>...</defname></param>
+        <initializer>ARCH_IMPORT_TEMPLATE(class, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/api.h" line="41" column="16" bodyfile="W:/919a5455eee1e83c/src/physxSchema/api.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="physx_schema_2api_8h_1a30298e7b5de48be27a0bfa124a4141a8" prot="public" static="no">
+        <name>PHYSXSCHEMA_API_TEMPLATE_STRUCT</name>
+        <param><defname>...</defname></param>
+        <initializer>ARCH_IMPORT_TEMPLATE(struct, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/api.h" line="42" column="16" bodyfile="W:/919a5455eee1e83c/src/physxSchema/api.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="physx_schema_2api_8h_1abe7c63651adae5a479e93e4e05fc5f73" prot="public" static="no">
+        <name>PHYSXSCHEMA_LOCAL</name>
+        <initializer>ARCH_HIDDEN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/api.h" line="44" column="16" bodyfile="W:/919a5455eee1e83c/src/physxSchema/api.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>2017<sp/>Pixar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;Apache<sp/>License&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>following<sp/>modification;<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compliance<sp/>with<sp/>the<sp/>Apache<sp/>License<sp/>and<sp/>the<sp/>following<sp/>modification<sp/>to<sp/>it:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>6.<sp/>Trademarks.<sp/>is<sp/>deleted<sp/>and<sp/>replaced<sp/>with:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6.<sp/>Trademarks.<sp/>This<sp/>License<sp/>does<sp/>not<sp/>grant<sp/>permission<sp/>to<sp/>use<sp/>the<sp/>trade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>names,<sp/>trademarks,<sp/>service<sp/>marks,<sp/>or<sp/>product<sp/>names<sp/>of<sp/>the<sp/>Licensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>and<sp/>its<sp/>affiliates,<sp/>except<sp/>as<sp/>required<sp/>to<sp/>comply<sp/>with<sp/>Section<sp/>4(c)<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>the<sp/>License<sp/>and<sp/>to<sp/>reproduce<sp/>the<sp/>content<sp/>of<sp/>the<sp/>NOTICE<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>Apache<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>Apache<sp/>License<sp/>with<sp/>the<sp/>above<sp/>modification<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>Apache<sp/>License<sp/>for<sp/>the<sp/>specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>Apache<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PHYSXSCHEMA_API_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PHYSXSCHEMA_API_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/arch/export.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(PXR_STATIC)</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API_TEMPLATE_CLASS(...)</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API_TEMPLATE_STRUCT(...)</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_LOCAL</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>if<sp/>defined(PHYSXSCHEMA_EXPORTS)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API<sp/>ARCH_EXPORT</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API_TEMPLATE_CLASS(...)<sp/>ARCH_EXPORT_TEMPLATE(class,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API_TEMPLATE_STRUCT(...)<sp/>ARCH_EXPORT_TEMPLATE(struct,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API<sp/>ARCH_IMPORT</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API_TEMPLATE_CLASS(...)<sp/>ARCH_IMPORT_TEMPLATE(class,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_API_TEMPLATE_STRUCT(...)<sp/>ARCH_IMPORT_TEMPLATE(struct,<sp/>__VA_ARGS__)</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>PHYSXSCHEMA_LOCAL<sp/>ARCH_HIDDEN</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/api.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_physics_attachment" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxPhysicsAttachment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdTyped</basecompoundref>
+    <includes refid="physx_physics_attachment_8h" local="no">physxPhysicsAttachment.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_physics_attachment_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::ConcreteTyped</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="68" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_physics_attachment_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="146" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a8e695ecd25d7f8fb2849077c74828d3e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxPhysicsAttachment</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxPhysicsAttachment</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_physics_attachment" kindref="compound">PhysxSchemaPhysxPhysicsAttachment</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_physics_attachment_1a1cbd34a249247f40f27f93c92b80fe09" kindref="member">PhysxSchemaPhysxPhysicsAttachment::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="74" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a9b8840bdd2cf45300d9ec64eb1f2977b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxPhysicsAttachment</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxPhysicsAttachment</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_physics_attachment" kindref="compound">PhysxSchemaPhysxPhysicsAttachment</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_physics_attachment" kindref="compound">PhysxSchemaPhysxPhysicsAttachment</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="82" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a999138267cdee44e7da0d96dd969991a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxPhysicsAttachment</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxPhysicsAttachment</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a1d0705efc4b3f33b62f53fb49c096ffc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAttachmentEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAttachmentEnabledAttr</name>
+        <briefdescription>
+<para>Enable or disable the attachment. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool attachmentEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a0944d2fcc1b5e8db9f42d3e6a3c3e6d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAttachmentEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAttachmentEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a1d0705efc4b3f33b62f53fb49c096ffc" kindref="member">GetAttachmentEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a96df4894a1d7ebf5d81b9b9bd2de246c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetPoints0Attr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetPoints0Attr</name>
+        <briefdescription>
+<para>Attachment points in Actor 0 local space, defined in the actor&apos;s rest state, if it is deformable. </para>        </briefdescription>
+        <detaileddescription>
+<para>Elements correspond one-to-one to elements in points1 attribute.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>point3f[] points0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;GfVec3f&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Point3fArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1af4f854e171b42c60c86068d4f14ce946" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreatePoints0Attr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreatePoints0Attr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a96df4894a1d7ebf5d81b9b9bd2de246c" kindref="member">GetPoints0Attr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a72636f70abdf87eef15c8018e047075b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetPoints1Attr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetPoints1Attr</name>
+        <briefdescription>
+<para>Attachment points in Actor 1 local space, defined in the actor&apos;s rest state, if it is deformable. </para>        </briefdescription>
+        <detaileddescription>
+<para>Elements correspond one-to-one to elements in points0 attribute.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>point3f[] points1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;GfVec3f&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Point3fArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1ab2ca017ca7dd7ee7b5516943a6664d36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreatePoints1Attr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreatePoints1Attr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a72636f70abdf87eef15c8018e047075b" kindref="member">GetPoints1Attr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1ab5b25a33255e7c2e99fefb2a992a175c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCollisionFilterIndices0Attr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollisionFilterIndices0Attr</name>
+        <briefdescription>
+<para>Indices to geometry of Actor 0 that should not generate collisions with Actor 1 as specified by filterType0. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ignored for rigid bodies.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint[] collisionFilterIndices0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;unsigned int&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UIntArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1aaeb97c8c75270b2afcd39cf1cdb048a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCollisionFilterIndices0Attr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCollisionFilterIndices0Attr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1ab5b25a33255e7c2e99fefb2a992a175c" kindref="member">GetCollisionFilterIndices0Attr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1ad77bdaccd92de47990325e3e39c4d87e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFilterType0Attr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFilterType0Attr</name>
+        <briefdescription>
+<para>Specify if indices in collisionFilterIndices0 correspond to vertices; or mesh cell-geometry, i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>triangles, tetrahedrons, etc.</para><para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token filterType0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>Vertices, Geometry </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a73d3ce1c7d9490e4d286a5e7d0a9c9ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFilterType0Attr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFilterType0Attr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1ad77bdaccd92de47990325e3e39c4d87e" kindref="member">GetFilterType0Attr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1ab6fba3488501b64244ad56d5b4fc6076" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCollisionFilterIndices1Attr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollisionFilterIndices1Attr</name>
+        <briefdescription>
+<para>Indices to mesh triangle/tet/hex/etc. </para>        </briefdescription>
+        <detaileddescription>
+<para>of Actor 1 that should not generate collisions with Actor 0. Ignored for rigid bodies.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint[] collisionFilterIndices1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;unsigned int&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UIntArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="280" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a6d5f6f2ae0b703a3e4a31dfdad4ac9eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCollisionFilterIndices1Attr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCollisionFilterIndices1Attr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1ab6fba3488501b64244ad56d5b4fc6076" kindref="member">GetCollisionFilterIndices1Attr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a77b95ad89ffba83989671d7140f3eaf1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFilterType1Attr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFilterType1Attr</name>
+        <briefdescription>
+<para>Specify if indices in collisionFilterIndices1 correspond to vertices; or mesh cell-geometry, i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>triangles, tetrahedrons, etc.</para><para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token filterType1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>Vertices, Geometry </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a50c0c9cd2c0e9e9b1784da973d765d63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFilterType1Attr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFilterType1Attr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a77b95ad89ffba83989671d7140f3eaf1" kindref="member">GetFilterType1Attr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a7c23555b1310a28438865aa43e8e06e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetActor0Rel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetActor0Rel</name>
+        <briefdescription>
+<para>Reference to the first actor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a53c23135615937c6807fbccf1990d349" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateActor0Rel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateActor0Rel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a7c23555b1310a28438865aa43e8e06e2" kindref="member">GetActor0Rel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a98531889a1f219cccee5b05a7f8a7842" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetActor1Rel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetActor1Rel</name>
+        <briefdescription>
+<para>Reference to the second actor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a60a80087bad2cec5fc53b4dcc9a61f39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateActor1Rel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateActor1Rel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a98531889a1f219cccee5b05a7f8a7842" kindref="member">GetActor1Rel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1aca3e048a13822058dba5247a288d342a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetPointsAttr</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>GetPointsAttr</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Helper attribute access via index in [0,1]. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a96df4894a1d7ebf5d81b9b9bd2de246c" kindref="member">GetPoints0Attr()</ref> and <ref refid="class_physx_schema_physx_physics_attachment_1a72636f70abdf87eef15c8018e047075b" kindref="member">GetPoints1Attr()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="359" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a5b77d3d1a3d97d25db7f9585c0373c1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCollisionFilterIndicesAttr</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>GetCollisionFilterIndicesAttr</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Helper attribute access via index in [0,1]. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1ab5b25a33255e7c2e99fefb2a992a175c" kindref="member">GetCollisionFilterIndices0Attr()</ref> and <ref refid="class_physx_schema_physx_physics_attachment_1ab6fba3488501b64244ad56d5b4fc6076" kindref="member">GetCollisionFilterIndices1Attr()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="364" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1ae82c0aea8b73492b23eef22e868a8c91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFilterTypeAttr</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>GetFilterTypeAttr</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Helper attribute access via index in [0,1]. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1ad77bdaccd92de47990325e3e39c4d87e" kindref="member">GetFilterType0Attr()</ref> and <ref refid="class_physx_schema_physx_physics_attachment_1a77b95ad89ffba83989671d7140f3eaf1" kindref="member">GetFilterType1Attr()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="369" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a19b30f121fea5c3f836563899e827b9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetActorRel</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>GetActorRel</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Helper attribute access via index in [0,1]. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_physx_schema_physx_physics_attachment_1a7c23555b1310a28438865aa43e8e06e2" kindref="member">GetActor0Rel()</ref> and <ref refid="class_physx_schema_physx_physics_attachment_1a98531889a1f219cccee5b05a7f8a7842" kindref="member">GetActor1Rel()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="374" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a1cbd34a249247f40f27f93c92b80fe09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_physics_attachment" kindref="compound">PhysxSchemaPhysxPhysicsAttachment</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxPhysicsAttachment Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_physics_attachment" kindref="compound">PhysxSchemaPhysxPhysicsAttachment</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_physics_attachment_1a8e695ecd25d7f8fb2849077c74828d3e" kindref="member">PhysxSchemaPhysxPhysicsAttachment</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a4c499568e931f54a62e5556af22292ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_physics_attachment" kindref="compound">PhysxSchemaPhysxPhysicsAttachment</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxPhysicsAttachment Define</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Attempt to ensure a <emphasis>UsdPrim</emphasis> adhering to this schema at <computeroutput>path</computeroutput> is defined (according to UsdPrim::IsDefined()) on this stage. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a prim adhering to this schema at <computeroutput>path</computeroutput> is already defined on this stage, return that prim. Otherwise author an <emphasis>SdfPrimSpec</emphasis> with <emphasis>specifier</emphasis> == <emphasis>SdfSpecifierDef</emphasis> and this schema&apos;s prim type name for the prim at <computeroutput>path</computeroutput> at the current EditTarget. Author <emphasis>SdfPrimSpec</emphasis> s with <computeroutput>specifier</computeroutput> == <emphasis>SdfSpecifierDef</emphasis> and empty typeName at the current EditTarget for any nonexistent, or existing but not <emphasis>Defined</emphasis> ancestors.</para><para>The given <emphasis>path</emphasis> must be an absolute prim path that does not contain any variant selections.</para><para>If it is impossible to author any of the necessary PrimSpecs, (for example, in case <emphasis>path</emphasis> cannot map to the current UsdEditTarget&apos;s namespace) issue an error and return an invalid <emphasis>UsdPrim</emphasis>.</para><para>Note that this method may return a defined prim whose typeName does not specify this schema class, in case a stronger typeName opinion overrides the opinion at the current EditTarget. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="150" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_physics_attachment_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="154" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents attachments between physics actors, for example, between a rigid body and a deformable body, or a deformable body and a particle cloth. </para>    </briefdescription>
+    <detaileddescription>
+<para>For any described attribute <emphasis>Fallback</emphasis> <emphasis>Value</emphasis> or <emphasis>Allowed</emphasis> <emphasis>Values</emphasis> below that are text/tokens, the actual token is published and defined in <ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">PhysxSchemaTokens</ref>. So to set an attribute to the value &quot;rightHanded&quot;, use PhysxSchemaTokens-&gt;rightHanded as the value. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxPhysicsAttachment.h" bodystart="62" bodyend="376"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_physics_attachment_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a53c23135615937c6807fbccf1990d349" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreateActor0Rel</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a60a80087bad2cec5fc53b4dcc9a61f39" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreateActor1Rel</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a0944d2fcc1b5e8db9f42d3e6a3c3e6d9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreateAttachmentEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1aaeb97c8c75270b2afcd39cf1cdb048a8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreateCollisionFilterIndices0Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a6d5f6f2ae0b703a3e4a31dfdad4ac9eb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreateCollisionFilterIndices1Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a73d3ce1c7d9490e4d286a5e7d0a9c9ca" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreateFilterType0Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a50c0c9cd2c0e9e9b1784da973d765d63" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreateFilterType1Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1af4f854e171b42c60c86068d4f14ce946" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreatePoints0Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1ab2ca017ca7dd7ee7b5516943a6664d36" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>CreatePoints1Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a4c499568e931f54a62e5556af22292ea" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>Define</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a1cbd34a249247f40f27f93c92b80fe09" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a7c23555b1310a28438865aa43e8e06e2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetActor0Rel</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a98531889a1f219cccee5b05a7f8a7842" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetActor1Rel</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a19b30f121fea5c3f836563899e827b9c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetActorRel</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a1d0705efc4b3f33b62f53fb49c096ffc" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetAttachmentEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1ab5b25a33255e7c2e99fefb2a992a175c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetCollisionFilterIndices0Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1ab6fba3488501b64244ad56d5b4fc6076" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetCollisionFilterIndices1Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a5b77d3d1a3d97d25db7f9585c0373c1a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetCollisionFilterIndicesAttr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1ad77bdaccd92de47990325e3e39c4d87e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetFilterType0Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a77b95ad89ffba83989671d7140f3eaf1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetFilterType1Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1ae82c0aea8b73492b23eef22e868a8c91" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetFilterTypeAttr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a96df4894a1d7ebf5d81b9b9bd2de246c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetPoints0Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a72636f70abdf87eef15c8018e047075b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetPoints1Attr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1aca3e048a13822058dba5247a288d342a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetPointsAttr</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a8e695ecd25d7f8fb2849077c74828d3e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>PhysxSchemaPhysxPhysicsAttachment</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a9b8840bdd2cf45300d9ec64eb1f2977b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>PhysxSchemaPhysxPhysicsAttachment</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_physics_attachment_1a999138267cdee44e7da0d96dd969991a" prot="public" virt="virtual"><scope>PhysxSchemaPhysxPhysicsAttachment</scope><name>~PhysxSchemaPhysxPhysicsAttachment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="md__w_1_919a5455eee1e83c_src_usd_physics__m_i_g_r_a_t_i_o_n_g_u_i_d_e" kind="page">
+    <compoundname>md_W:_919a5455eee1e83c_src_usdPhysics_MIGRATIONGUIDE</compoundname>
+    <title>UsdPhysics Migration Guide</title>
+    <detaileddescription>
+<para><heading level="2">Migration from legacy PhysicsSchema </heading>
+</para><para><itemizedlist>
+<listitem><para>General:<itemizedlist>
+<listitem><para>all attributes are prefixed with physics, so say density is now physics:density attribute</para></listitem><listitem><para>apiName removes physics prefix, so GetDensity is still used</para></listitem><listitem><para>PhysicsSchemaPhysicsScene is now <ref refid="class_usd_physics_scene" kindref="compound">UsdPhysicsScene</ref> etc</para></listitem><listitem><para>units:<itemizedlist>
+<listitem><para>units respect metersPerUnit</para></listitem><listitem><para>all dimensional angular values are specified in degrees</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysicsSchemaAPI and PhysicsSchemaMultipleAPI and its custom Unapply removed - use native UsdPrim::RemoveAPI function instead.</para></listitem><listitem><para>PhysicsScene:<itemizedlist>
+<listitem><para>rename PhysicsSchemaPhysicsScene to <ref refid="class_usd_physics_scene" kindref="compound">UsdPhysicsScene</ref></para></listitem><listitem><para>gravity replaced by gravityDirection and gravityMagnitude default values can be used now, default direction (0,0,0) will pick the current -UpAxis default magnitude -inf will pick earth gravity based on metersPerUnit</para></listitem><listitem><para>invertCollisionGroupFilter was moved to PhysxPhysicsScene</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysicsAPI:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref></para></listitem><listitem><para>CreatePhysicsEnabledAttr rename to CreateRigidBodyEnabledAttr</para></listitem><listitem><para>bodyType - removed, was not used</para></listitem><listitem><para>PhysxRigidBodyAPI::wakeOnStart replaced by UsdPhysicsRigidBodyAPI::physics::startsAsleep</para></listitem><listitem><para>new attributes physics::velocity and physics::angularVelocity - VelocityAPI was removed</para></listitem><listitem><para>angularVelocity is in degrees</para></listitem><listitem><para>velocity is in world space used by omni.physx, there will be a flag to turn on local space as thats the default behavior to have velocity in a local space</para></listitem></itemizedlist>
+</para></listitem><listitem><para>VelocityAPI:<itemizedlist>
+<listitem><para>removed use UsdPhysicsRigidBodyAPI::physics::velocity and UsdPhysicsRigidBodyAPI::physics::angularVelocity instead</para></listitem></itemizedlist>
+</para></listitem><listitem><para>MassPI:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref></para></listitem><listitem><para>mass attribute changed to float</para></listitem><listitem><para>density attribute changed to float, density now respects metersPerUnit so a density 1000 when stage is in meters is 0.001 when a stage is in cm</para></listitem><listitem><para>centerOfMass attribute changed from double3 to point3f</para></listitem><listitem><para>diagonalTensor attribute changed from double3 to float3, inertia respects metersPerUnit now, the units are mass*distance*distance</para></listitem><listitem><para>principalAxes attribute changed from quatd to quatf</para></listitem></itemizedlist>
+</para></listitem><listitem><para>CollisionAPI:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref></para></listitem><listitem><para>physicsMaterial rel removed, use material binding instead. There is a helper function for that in physicsUtils.py def add_physics_material_to_prim(stage, prim, materialPath): bindingAPI = UsdShade.MaterialBindingAPI.Apply(prim) materialPrim = UsdShade.Material(stage.GetPrimAtPath(materialPath)) bindingAPI.Bind(materialPrim, UsdShade.Tokens.weakerThanDescendants, &quot;physics&quot;)</para></listitem><listitem><para>collisionGroup rel removed, use collection:colliders that automatically applied to a <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref>. Colliders that belong a certain collision group are now defined through the collection on a collisionGroup.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxMeshCollisionAPI::approximation was replaced by <ref refid="class_usd_physics_mesh_collision_a_p_i" kindref="compound">UsdPhysicsMeshCollisionAPI</ref><itemizedlist>
+<listitem><para>use UsdPhysicsMeshCollisionAPI::approximation to define the mesh approximation</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysicsMaterialAPI:<itemizedlist>
+<listitem><para>density attribute changed from double to float, density now respects metersPerUnit so a density 1000 when stage is in meters is 0.001 when a stage is in cm</para></listitem></itemizedlist>
+</para></listitem><listitem><para>CollisionGroup:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref></para></listitem><listitem><para>does have automatically UsdCollection:colliders applied, this collection holds the colliders that belong to that group</para></listitem></itemizedlist>
+</para></listitem><listitem><para>FilteringPairsAPI:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_filtered_pairs_a_p_i" kindref="compound">UsdPhysicsFilteredPairsAPI</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>Plane:<itemizedlist>
+<listitem><para>moved to <ref refid="class_physx_schema_plane" kindref="compound">PhysxSchemaPlane</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysicsJoint:<itemizedlist>
+<listitem><para>localPos0, localPos1 changed from float3 to point3f</para></listitem><listitem><para>jointFriction - was never used, so got removed</para></listitem><listitem><para>added excludeFromArticulation that defines whether a joint should be excluded from an articulation, maximalJoint can be defined through this</para></listitem><listitem><para>breakForce uses metersPerUnits - mass * distance / time / time</para></listitem><listitem><para>breakTorque uses metersPerUnits - mass * distance * distance / time / time</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RevolutePhysicsJoint:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref></para></listitem><listitem><para>lowerLimit - units in degree now</para></listitem><listitem><para>upperLimit - units in degree now</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PrismaticPhysicsJoint:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_prismatic_joint" kindref="compound">UsdPhysicsPrismaticJoint</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>SphericalPhysicsJoint:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_spherical_joint" kindref="compound">UsdPhysicsSphericalJoint</ref></para></listitem><listitem><para>coneAngle0Limit - units in degree now</para></listitem><listitem><para>coneAngle1Limit - units in degree now</para></listitem></itemizedlist>
+</para></listitem><listitem><para>DistancePhysicsJoint:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_distance_joint" kindref="compound">UsdPhysicsDistanceJoint</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>FixedPhysicsJoint:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_fixed_joint" kindref="compound">UsdPhysicsFixedJoint</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>LimitAPI:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_limit_a_p_i" kindref="compound">UsdPhysicsLimitAPI</ref></para></listitem><listitem><para>low - in degree or distance</para></listitem><listitem><para>high - in degree or distance</para></listitem></itemizedlist>
+</para></listitem><listitem><para>DriveAPI:<itemizedlist>
+<listitem><para>rename to <ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref></para></listitem><listitem><para>maxForce - units: linear drive: mass*DIST_UNITS/time/time angular drive: mass*DIST_UNITS*DIST_UNITS/time/time</para></listitem><listitem><para>targetType was removed instead its possible to set both targetPosition and targetVelocity through separate attributes.</para></listitem><listitem><para>targetPosition/targetVelocity for angular drive in degree</para></listitem></itemizedlist>
+</para></listitem><listitem><para>ArticulationAPI:</para></listitem><listitem><para>ArticulationJointAPI:<itemizedlist>
+<listitem><para>both were removed and ArticulationRootAPI has been introduced.</para></listitem><listitem><para>fixed articulations should have ArticulationRootAPI on a root joint that is connected to world or in the hierarchy above the joint</para></listitem><listitem><para>floating articulations should have ArticulationRootAPI on a body where articulation starts on in a hierarchy above. </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

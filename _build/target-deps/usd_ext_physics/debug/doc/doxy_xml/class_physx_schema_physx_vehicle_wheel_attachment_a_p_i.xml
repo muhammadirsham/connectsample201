@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxVehicleWheelAttachmentAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_vehicle_wheel_attachment_a_p_i_8h" local="no">physxVehicleWheelAttachmentAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="74" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="145" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a0c7cc154b92e1388a83d489cf02f0dc8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleWheelAttachmentAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxVehicleWheelAttachmentAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ae720c68de00b08dfe7c66e40bff2614b" kindref="member">PhysxSchemaPhysxVehicleWheelAttachmentAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="80" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ab17120e6f037a529534b70ba3b28c14d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleWheelAttachmentAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxVehicleWheelAttachmentAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="88" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aea46b91b88ccee88a1fb0d040ce55e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxVehicleWheelAttachmentAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxVehicleWheelAttachmentAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a81cf43bf2f834a1540321f8bd5008f04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSuspensionTravelDirectionAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSuspensionTravelDirectionAttr</name>
+        <briefdescription>
+<para>The direction of the suspension travel (towards the wheel) in vehicle local space. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float3 physxVehicleWheelAttachment:suspensionTravelDirection</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfVec3f </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float3 </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1af9dc0398c81669b498c57f30ee46762a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSuspensionTravelDirectionAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSuspensionTravelDirectionAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a81cf43bf2f834a1540321f8bd5008f04" kindref="member">GetSuspensionTravelDirectionAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1af9d775e4f076ec4c6685770d34be843e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSuspensionForceAppPointOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSuspensionForceAppPointOffsetAttr</name>
+        <briefdescription>
+<para>The location (in vehicle local space) where the suspension force gets applied. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float3 physxVehicleWheelAttachment:suspensionForceAppPointOffset</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfVec3f </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float3 </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a3165f34204b08bbf115c091b48e0b9aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSuspensionForceAppPointOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSuspensionForceAppPointOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1af9d775e4f076ec4c6685770d34be843e" kindref="member">GetSuspensionForceAppPointOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a60be5c14423b675ec1af8d4ade32a255" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetWheelCenterOfMassOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetWheelCenterOfMassOffsetAttr</name>
+        <briefdescription>
+<para>The location (in vehicle local space) of the wheel centre when at rest. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float3 physxVehicleWheelAttachment:wheelCenterOfMassOffset</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfVec3f </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float3 </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aa87b2ff5bb5f6634e6a4d50eb4d5b41e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateWheelCenterOfMassOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateWheelCenterOfMassOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a60be5c14423b675ec1af8d4ade32a255" kindref="member">GetWheelCenterOfMassOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a048b993c6b114e5cd80ee0d1b8b4ceb7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetTireForceAppPointOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTireForceAppPointOffsetAttr</name>
+        <briefdescription>
+<para>The location (in vehicle local space) where the tire force gets applied. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float3 physxVehicleWheelAttachment:tireForceAppPointOffset</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfVec3f </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float3 </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a1814cd66c07fde8bdc1550bd2342ddb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateTireForceAppPointOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateTireForceAppPointOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a048b993c6b114e5cd80ee0d1b8b4ceb7" kindref="member">GetTireForceAppPointOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a8946054ca1a2e5e10bf8d34bfd69f54e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDrivenAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDrivenAttr</name>
+        <briefdescription>
+<para>True if the tire is driven by the engine through the transmission. </para>        </briefdescription>
+        <detaileddescription>
+<para>Will be ignored if the vehicle has no drive specified (see PhysxVehicleAPI:drive).</para><para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxVehicleWheelAttachment:driven</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a206bae52b5ef3eca7c46f2e1bf44a103" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDrivenAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDrivenAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a8946054ca1a2e5e10bf8d34bfd69f54e" kindref="member">GetDrivenAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a8f9f108bf7c03fd79ef17536e34eee62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetWheelRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetWheelRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleWheelAPI prim. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: either this relationship has to be specified or the prim must have PhysxVehicleWheelAPI applied (none or both of the two is invalid). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a2a05c64dba0c9e6a6a4a523eb2be5522" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateWheelRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateWheelRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a8f9f108bf7c03fd79ef17536e34eee62" kindref="member">GetWheelRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="291" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a9b2b3ad266fa342d51e7e8cd9cfb4a75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetTireRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTireRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleTireAPI prim. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: either this relationship has to be specified or the prim must have PhysxVehicleTireAPI applied (none or both of the two is invalid). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a66598caad423211bf6c16cbc3113879c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateTireRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateTireRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a9b2b3ad266fa342d51e7e8cd9cfb4a75" kindref="member">GetTireRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="308" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a74238e1118a8db7462cfdcbfeaa00a51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetSuspensionRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSuspensionRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleSuspensionAPI prim. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: either this relationship has to be specified or the prim must have PhysxVehicleSuspensionAPI applied (none or both of the two is invalid). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1af6255e3f2a575a50ea53ac4c5839a6ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateSuspensionRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateSuspensionRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a74238e1118a8db7462cfdcbfeaa00a51" kindref="member">GetSuspensionRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a467a034f6ef61d99747441bc98f13e10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetCollisionGroupRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollisionGroupRel</name>
+        <briefdescription>
+<para>A relationship to a PhysicsCollisionGroup instance that defines what the wheel/suspension scene queries should treat as a ground surface to collide against. </para>        </briefdescription>
+        <detaileddescription>
+<para>If not specified, no specific filtering will be applied. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a5cdf3c249cc6be24155271c10abaad84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateCollisionGroupRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateCollisionGroupRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a467a034f6ef61d99747441bc98f13e10" kindref="member">GetCollisionGroupRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="339" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ae720c68de00b08dfe7c66e40bff2614b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleWheelAttachmentAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a0c7cc154b92e1388a83d489cf02f0dc8" kindref="member">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ad8c66ff172869cf01b804be8d60abcbc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleWheelAttachmentAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxVehicleWheelAttachmentAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="134" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="141" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="149" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="153" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>For every wheel of a vehicle, this class defines the attachment properties. </para>    </briefdescription>
+    <detaileddescription>
+<para>Has to be applied to a prim that is a descendant of a prim with PhysxVehicleAPI applied. If the wheel attachment prim (the prim with PhysxVehicleWheelAttachmentAPI applied) is a UsdGeomXformable, then the position and orientation of the prim will be set by the vehicle simulation. If the wheel attachment prim has PhysicsCollisionAPI applied, then none of its descendants are allowed to have PhysicsCollisionAPI applied. If the wheel attachment prim is a UsdGeomXformable but does not have PhysicsCollisionAPI applied, then exactly one direct child prim among all descendants is allowed to have PhysicsCollisionAPI applied. That prim will be interpreted as the collision geometry of the wheel and its position and orientation will be set by the vehicle simulation too (basically, the same transform as for the wheel attachment prim will be used). If there is no desire to have the vehicle simulation control the transform of the wheel attachment prim, then a prim type that is not a UsdGeomXformable should be chosen. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAttachmentAPI.h" bodystart="68" bodyend="352"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ad8c66ff172869cf01b804be8d60abcbc" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a5cdf3c249cc6be24155271c10abaad84" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateCollisionGroupRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a206bae52b5ef3eca7c46f2e1bf44a103" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateDrivenAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a3165f34204b08bbf115c091b48e0b9aa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateSuspensionForceAppPointOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1af6255e3f2a575a50ea53ac4c5839a6ed" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateSuspensionRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1af9dc0398c81669b498c57f30ee46762a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateSuspensionTravelDirectionAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a1814cd66c07fde8bdc1550bd2342ddb0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateTireForceAppPointOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a66598caad423211bf6c16cbc3113879c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateTireRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aa87b2ff5bb5f6634e6a4d50eb4d5b41e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateWheelCenterOfMassOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a2a05c64dba0c9e6a6a4a523eb2be5522" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>CreateWheelRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ae720c68de00b08dfe7c66e40bff2614b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a467a034f6ef61d99747441bc98f13e10" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetCollisionGroupRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a8946054ca1a2e5e10bf8d34bfd69f54e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetDrivenAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1af9d775e4f076ec4c6685770d34be843e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetSuspensionForceAppPointOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a74238e1118a8db7462cfdcbfeaa00a51" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetSuspensionRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a81cf43bf2f834a1540321f8bd5008f04" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetSuspensionTravelDirectionAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a048b993c6b114e5cd80ee0d1b8b4ceb7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetTireForceAppPointOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a9b2b3ad266fa342d51e7e8cd9cfb4a75" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetTireRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a60be5c14423b675ec1af8d4ade32a255" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetWheelCenterOfMassOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a8f9f108bf7c03fd79ef17536e34eee62" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>GetWheelRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1a0c7cc154b92e1388a83d489cf02f0dc8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>PhysxSchemaPhysxVehicleWheelAttachmentAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1ab17120e6f037a529534b70ba3b28c14d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>PhysxSchemaPhysxVehicleWheelAttachmentAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i_1aea46b91b88ccee88a1fb0d040ce55e48" prot="public" virt="virtual"><scope>PhysxSchemaPhysxVehicleWheelAttachmentAPI</scope><name>~PhysxSchemaPhysxVehicleWheelAttachmentAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

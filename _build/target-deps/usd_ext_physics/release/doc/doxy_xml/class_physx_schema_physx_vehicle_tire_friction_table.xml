@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_vehicle_tire_friction_table" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxVehicleTireFrictionTable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdTyped</basecompoundref>
+    <includes refid="physx_vehicle_tire_friction_table_8h" local="no">physxVehicleTireFrictionTable.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_vehicle_tire_friction_table_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::ConcreteTyped</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_vehicle_tire_friction_table_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="141" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1af2011b1a5cdc5e25310d0576643f0c7a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleTireFrictionTable</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxVehicleTireFrictionTable</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_tire_friction_table" kindref="compound">PhysxSchemaPhysxVehicleTireFrictionTable</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_vehicle_tire_friction_table_1acbf47725c66bd3a28fafde4bcf843e23" kindref="member">PhysxSchemaPhysxVehicleTireFrictionTable::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a290bf529496da01305a3f744cace6a8d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleTireFrictionTable</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxVehicleTireFrictionTable</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_tire_friction_table" kindref="compound">PhysxSchemaPhysxVehicleTireFrictionTable</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_vehicle_tire_friction_table" kindref="compound">PhysxSchemaPhysxVehicleTireFrictionTable</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a66b60908dece42da0ee2539be6bf498d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxVehicleTireFrictionTable</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxVehicleTireFrictionTable</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a6d1ee2d2a78ab31124dcebc806ad93f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFrictionValuesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrictionValuesAttr</name>
+        <briefdescription>
+<para>The friction values to use for the tire against the ground materials listed under groundMaterials. </para>        </briefdescription>
+        <detaileddescription>
+<para>The array needs to have the same size as the list of materials specified in groundMaterials.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float[] frictionValues</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;float&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;FloatArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1aa7a06d3017f3f3d67b294e33b7b32ec1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFrictionValuesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFrictionValuesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_friction_table_1a6d1ee2d2a78ab31124dcebc806ad93f5" kindref="member">GetFrictionValuesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a2a94bce75614db07ab5448f3c5224843" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetGroundMaterialsRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGroundMaterialsRel</name>
+        <briefdescription>
+<para>Relationships to Material instances that have PhysicsMaterialAPI applied. </para>        </briefdescription>
+        <detaileddescription>
+<para>For each material, a friction value has to be specified in the frictionValues attribute. If a material is not listed for an instance &quot;A&quot; of this class but is listed in another instance, a friction value of 1 will be used for the instance &quot;A&quot;. If a material is not listed in any instance, the first friction value of all materials is picked.</para><para>Note: at least one relationship has to be specified. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1ad243b5297adc5b204d999cd6ccac5352" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateGroundMaterialsRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateGroundMaterialsRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_friction_table_1a2a94bce75614db07ab5448f3c5224843" kindref="member">GetGroundMaterialsRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="187" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1acbf47725c66bd3a28fafde4bcf843e23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_tire_friction_table" kindref="compound">PhysxSchemaPhysxVehicleTireFrictionTable</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleTireFrictionTable Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_vehicle_tire_friction_table" kindref="compound">PhysxSchemaPhysxVehicleTireFrictionTable</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_vehicle_tire_friction_table_1af2011b1a5cdc5e25310d0576643f0c7a" kindref="member">PhysxSchemaPhysxVehicleTireFrictionTable</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a39b46f33b1b07fa675a69ece807cf7ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_tire_friction_table" kindref="compound">PhysxSchemaPhysxVehicleTireFrictionTable</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleTireFrictionTable Define</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Attempt to ensure a <emphasis>UsdPrim</emphasis> adhering to this schema at <computeroutput>path</computeroutput> is defined (according to UsdPrim::IsDefined()) on this stage. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a prim adhering to this schema at <computeroutput>path</computeroutput> is already defined on this stage, return that prim. Otherwise author an <emphasis>SdfPrimSpec</emphasis> with <emphasis>specifier</emphasis> == <emphasis>SdfSpecifierDef</emphasis> and this schema&apos;s prim type name for the prim at <computeroutput>path</computeroutput> at the current EditTarget. Author <emphasis>SdfPrimSpec</emphasis> s with <computeroutput>specifier</computeroutput> == <emphasis>SdfSpecifierDef</emphasis> and empty typeName at the current EditTarget for any nonexistent, or existing but not <emphasis>Defined</emphasis> ancestors.</para><para>The given <emphasis>path</emphasis> must be an absolute prim path that does not contain any variant selections.</para><para>If it is impossible to author any of the necessary PrimSpecs, (for example, in case <emphasis>path</emphasis> cannot map to the current UsdEditTarget&apos;s namespace) issue an error and return an invalid <emphasis>UsdPrim</emphasis>.</para><para>Note that this method may return a defined prim whose typeName does not specify this schema class, in case a stronger typeName opinion overrides the opinion at the current EditTarget. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="137" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="145" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_friction_table_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="149" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Table defining the friction values of a tire against a given set of ground materials. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireFrictionTable.h" bodystart="57" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1aa7a06d3017f3f3d67b294e33b7b32ec1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>CreateFrictionValuesAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1ad243b5297adc5b204d999cd6ccac5352" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>CreateGroundMaterialsRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a39b46f33b1b07fa675a69ece807cf7ed" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>Define</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1acbf47725c66bd3a28fafde4bcf843e23" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a6d1ee2d2a78ab31124dcebc806ad93f5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>GetFrictionValuesAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a2a94bce75614db07ab5448f3c5224843" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>GetGroundMaterialsRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1af2011b1a5cdc5e25310d0576643f0c7a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>PhysxSchemaPhysxVehicleTireFrictionTable</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a290bf529496da01305a3f744cace6a8d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>PhysxSchemaPhysxVehicleTireFrictionTable</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_friction_table_1a66b60908dece42da0ee2539be6bf498d" prot="public" virt="virtual"><scope>PhysxSchemaPhysxVehicleTireFrictionTable</scope><name>~PhysxSchemaPhysxVehicleTireFrictionTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

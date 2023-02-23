@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4179687C-2D31-AAC9-9638-8325820F45BA}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>HelloWorld</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\_build\windows-x86_64\debug\</OutDir>
+    <IntDir>..\..\..\_build\intermediate\windows-x86_64\HelloWorld\x86_64\debug\</IntDir>
+    <TargetName>HelloWorld</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>..\..\..\_build\host-deps\vc\include;..\..\..\_build\host-deps\winsdk\include\winrt;..\..\..\_build\host-deps\winsdk\include\um;..\..\..\_build\host-deps\winsdk\include\ucrt;..\..\..\_build\host-deps\winsdk\include\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\_build\host-deps\vc\lib\onecore\x64;..\..\..\_build\host-deps\winsdk\lib\ucrt\x64;..\..\..\_build\host-deps\winsdk\lib\um\x64;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(ProjectDir)..\..\..\_build\host-deps\vc\bin\HostX64\x64;$(ProjectDir)..\..\..\_build\host-deps\winsdk\bin\x64;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\_build\windows-x86_64\release\</OutDir>
+    <IntDir>..\..\..\_build\intermediate\windows-x86_64\HelloWorld\x86_64\release\</IntDir>
+    <TargetName>HelloWorld</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>..\..\..\_build\host-deps\vc\include;..\..\..\_build\host-deps\winsdk\include\winrt;..\..\..\_build\host-deps\winsdk\include\um;..\..\..\_build\host-deps\winsdk\include\ucrt;..\..\..\_build\host-deps\winsdk\include\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\_build\host-deps\vc\lib\onecore\x64;..\..\..\_build\host-deps\winsdk\lib\ucrt\x64;..\..\..\_build\host-deps\winsdk\lib\um\x64;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ProjectDir)..\..\..\_build\host-deps\vc\bin\HostX64\x64;$(ProjectDir)..\..\..\_build\host-deps\winsdk\bin\x64;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BOOST_ALL_DYN_LINK;BOOST_LIB_TOOLSET="vc141";TBB_USE_DEBUG=1;_CRT_SECURE_NO_WARNINGS;DEBUG;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\_build\target-deps\python\include;..\..\..\_build\target-deps\usd\debug\include;..\..\..\_build\target-deps\usd_ext_physics\debug\include;..\..\..\_build\target-deps\omni_client_library\include;..\..\..\_build\target-deps\omni_usd_resolver\include;..\..\..\_build\target-deps\tinytoml\include;..\..\..\_build\target-deps\nlohmann-json\include;..\..\..\source\omniUtilsLib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalOptions>/utf-8 /wd4244 /wd4305 /wd4267 -D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SupportJustMyCode>false</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>omniclient.lib;omni_usd_resolver.lib;python37.lib;boost_python37-vc141-mt-gd-x64-1_68.lib;ar.lib;arch.lib;gf.lib;js.lib;kind.lib;pcp.lib;plug.lib;sdf.lib;tf.lib;trace.lib;usd.lib;usdGeom.lib;usdLux.lib;usdPhysics.lib;usdShade.lib;usdUtils.lib;vt.lib;work.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\_build\target-deps\python\libs;..\..\..\_build\target-deps\usd\debug\lib;..\..\..\_build\target-deps\usd_ext_physics\debug\lib;..\..\..\_build\target-deps\omni_client_library\debug;..\..\..\_build\target-deps\omni_usd_resolver\debug;..\..\..\_build\target-deps;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BOOST_ALL_DYN_LINK;BOOST_LIB_TOOLSET="vc141";TBB_USE_DEBUG=0;_CRT_SECURE_NO_WARNINGS;NDEBUG;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\_build\target-deps\python\include;..\..\..\_build\target-deps\usd\release\include;..\..\..\_build\target-deps\usd_ext_physics\release\include;..\..\..\_build\target-deps\omni_client_library\include;..\..\..\_build\target-deps\omni_usd_resolver\include;..\..\..\_build\target-deps\tinytoml\include;..\..\..\_build\target-deps\nlohmann-json\include;..\..\..\source\omniUtilsLib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>/utf-8 /wd4244 /wd4305 /wd4267 -D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SupportJustMyCode>false</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>omniclient.lib;omni_usd_resolver.lib;python37.lib;boost_python37-vc141-mt-x64-1_68.lib;ar.lib;arch.lib;gf.lib;js.lib;kind.lib;pcp.lib;plug.lib;sdf.lib;tf.lib;trace.lib;usd.lib;usdGeom.lib;usdLux.lib;usdPhysics.lib;usdShade.lib;usdUtils.lib;vt.lib;work.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\_build\target-deps\python\libs;..\..\..\_build\target-deps\usd\release\lib;..\..\..\_build\target-deps\usd_ext_physics\release\lib;..\..\..\_build\target-deps\omni_client_library\release;..\..\..\_build\target-deps\omni_usd_resolver\release;..\..\..\_build\target-deps;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\helloWorld\helloWorld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\omniUtilsLib\omniUtilsLib.vcxproj">
+      <Project>{40BB452E-2C1E-D5D2-D5A3-0D89C1E5A055}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

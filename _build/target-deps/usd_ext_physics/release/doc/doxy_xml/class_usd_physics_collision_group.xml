@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_usd_physics_collision_group" kind="class" prot="public">
+    <compoundname>UsdPhysicsCollisionGroup</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdTyped</basecompoundref>
+    <includes refid="collision_group_8h" local="no">collisionGroup.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_usd_physics_collision_group_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::ConcreteTyped</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="73" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_usd_physics_collision_group_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="151" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a92376f7bc80e8d465071b1e0e9e9608b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsCollisionGroup</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>UsdPhysicsCollisionGroup</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_usd_physics_collision_group_1ae235a53909331f71866885a0c0aed4f1" kindref="member">UsdPhysicsCollisionGroup::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="79" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1acce7f582d79391cf879dde8e4afc6f30" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsCollisionGroup</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>UsdPhysicsCollisionGroup</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="87" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a847e305b84c09b9c09e11793cd26d905" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>USDPHYSICS_API</type>
+        <definition>virtual USDPHYSICS_API ~UsdPhysicsCollisionGroup</definition>
+        <argsstring>()</argsstring>
+        <name>~UsdPhysicsCollisionGroup</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a752880d7777311172816a310c11736f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdRelationship</type>
+        <definition>USDPHYSICS_API UsdRelationship GetFilteredGroupsRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFilteredGroupsRel</name>
+        <briefdescription>
+<para>References a list of PhysicsCollisionGroups with which collisions should be ignored. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a1412f4911a73ba33d2f447d123576a42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdRelationship</type>
+        <definition>USDPHYSICS_API UsdRelationship CreateFilteredGroupsRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateFilteredGroupsRel</name>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_collision_group_1a752880d7777311172816a310c11736f5" kindref="member">GetFilteredGroupsRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a540683703a002faeefc11e3f4c1b9db5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdCollectionAPI</type>
+        <definition>USDPHYSICS_API UsdCollectionAPI GetCollidersCollectionAPI</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollidersCollectionAPI</name>
+        <briefdescription>
+<para>Return the UsdCollectionAPI interface used for defining what colliders belong to the CollisionGroup. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="191" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfTokenVector &amp;</type>
+        <definition>static USDPHYSICS_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1ae235a53909331f71866885a0c0aed4f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsCollisionGroup Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_usd_physics_collision_group_1a92376f7bc80e8d465071b1e0e9e9608b" kindref="member">UsdPhysicsCollisionGroup</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a7307e6afe4daa54a5ef4282eb198373f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsCollisionGroup Define</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Attempt to ensure a <emphasis>UsdPrim</emphasis> adhering to this schema at <computeroutput>path</computeroutput> is defined (according to UsdPrim::IsDefined()) on this stage. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a prim adhering to this schema at <computeroutput>path</computeroutput> is already defined on this stage, return that prim. Otherwise author an <emphasis>SdfPrimSpec</emphasis> with <emphasis>specifier</emphasis> == <emphasis>SdfSpecifierDef</emphasis> and this schema&apos;s prim type name for the prim at <computeroutput>path</computeroutput> at the current EditTarget. Author <emphasis>SdfPrimSpec</emphasis> s with <computeroutput>specifier</computeroutput> == <emphasis>SdfSpecifierDef</emphasis> and empty typeName at the current EditTarget for any nonexistent, or existing but not <emphasis>Defined</emphasis> ancestors.</para><para>The given <emphasis>path</emphasis> must be an absolute prim path that does not contain any variant selections.</para><para>If it is impossible to author any of the necessary PrimSpecs, (for example, in case <emphasis>path</emphasis> cannot map to the current UsdEditTarget&apos;s namespace) issue an error and return an invalid <emphasis>UsdPrim</emphasis>.</para><para>Note that this method may return a defined prim whose typeName does not specify this schema class, in case a stronger typeName opinion overrides the opinion at the current EditTarget. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="140" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdSchemaType</type>
+        <definition>USDPHYSICS_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="147" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_usd_physics_collision_group_1adade0ff4639afd184e30c5708ae86f8d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>static USDPHYSICS_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_group_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="155" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_usd_physics_collision_group_1a96538019a0566b8f54f05953ac1c6615" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>USDPHYSICS_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="159" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a collision group for coarse filtering. </para>    </briefdescription>
+    <detaileddescription>
+<para>When a collision occurs between two objects that have a PhysicsCollisionGroup assigned, they will collide with each other unless this PhysicsCollisionGroup pair is filtered. See filteredGroups attribute.</para><para>The user should apply a CollectionAPI:colliders to an instance of this class which maintains a list of PhysicsCollisionAPI rel-s that defines the members of this Collisiongroup. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" line="68" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h" bodystart="67" bodyend="192"/>
+    <listofallmembers>
+      <member refid="class_usd_physics_collision_group_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>_GetSchemaType</name></member>
+      <member refid="class_usd_physics_collision_group_1adade0ff4639afd184e30c5708ae86f8d" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_usd_physics_collision_group_1a96538019a0566b8f54f05953ac1c6615" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>_GetTfType</name></member>
+      <member refid="class_usd_physics_collision_group_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_usd_physics_collision_group_1a1412f4911a73ba33d2f447d123576a42" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>CreateFilteredGroupsRel</name></member>
+      <member refid="class_usd_physics_collision_group_1a7307e6afe4daa54a5ef4282eb198373f" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>Define</name></member>
+      <member refid="class_usd_physics_collision_group_1ae235a53909331f71866885a0c0aed4f1" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>Get</name></member>
+      <member refid="class_usd_physics_collision_group_1a540683703a002faeefc11e3f4c1b9db5" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>GetCollidersCollectionAPI</name></member>
+      <member refid="class_usd_physics_collision_group_1a752880d7777311172816a310c11736f5" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>GetFilteredGroupsRel</name></member>
+      <member refid="class_usd_physics_collision_group_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_usd_physics_collision_group_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>schemaType</name></member>
+      <member refid="class_usd_physics_collision_group_1a92376f7bc80e8d465071b1e0e9e9608b" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>UsdPhysicsCollisionGroup</name></member>
+      <member refid="class_usd_physics_collision_group_1acce7f582d79391cf879dde8e4afc6f30" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>UsdPhysicsCollisionGroup</name></member>
+      <member refid="class_usd_physics_collision_group_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionGroup</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_usd_physics_collision_group_1a847e305b84c09b9c09e11793cd26d905" prot="public" virt="virtual"><scope>UsdPhysicsCollisionGroup</scope><name>~UsdPhysicsCollisionGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

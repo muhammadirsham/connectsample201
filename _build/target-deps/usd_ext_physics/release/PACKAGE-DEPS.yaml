@@ -1,0 +1,35 @@
+nv_usd:
+  licenseFile: nv_usd-LICENSE.md
+  packageName: nv_usd
+  packageType: packman
+  source:
+    branch: null
+    change: null
+    path: https://gitlab/omniverse/usd-build
+    scm: git
+  swipat:
+  - http://nvbugs/2515781
+  version: null
+python:
+  licenseFile: python-LICENSE.txt
+  packageName: python
+  packageType: packman
+  source:
+    branch: null
+    change: null
+    path: https://gitlab/omniverse/externals/python-build.git
+    scm: git
+  swipat: http://nvbugs/3156615
+  version: null
+usd-build:
+  licenseFile: usd-build-LICENSE.md
+  packageName: usd-build
+  packageType: packman
+  source:
+    branch: null
+    change: null
+    path: https://gitlab/omniverse/usd-build
+    scm: git
+  swipat:
+  - http://nvbugs/2515781
+  version: null

@@ -1,0 +1,11 @@
+Package : repo_repoman
+Version : 0.1.1-beta2
+Maintainers : N/A
+Description : N/A
+Repository : b'https://gitlab-master.nvidia.com/carbon/nvtools/multitool.git'
+Branch : add-installer-folders
+Commit : b'f680389fd0b6188ed398cc7a83b5bb81b1a215c3'
+Time : Wed Oct  2 19:55:46 2019
+Builder Name : RICK-DT
+Packman Version : 6.0-rc5
+Packagemaker Version : 4.0.0-rc7

@@ -1,0 +1,11 @@
+Package : nvfilecopy
+Version : 2.0.1-70733582
+Maintainers : N/A
+Description : N/A
+Repository : https://gitlab-master.nvidia.com/carbon/nvtools/nvfilecopy
+Branch : master
+Commit : 70733582fe8781d3df9e97b1215f49f1364890c3
+Time : Mon Jul 18 12:25:55 2022
+Builder Name : pete-5950
+Packman Version : 6.45.1
+Packagemaker Version : 4.0.9-rc2

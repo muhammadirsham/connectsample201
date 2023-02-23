@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="physx_particle_cloth_a_p_i_8h" kind="file">
+    <compoundname>physxParticleClothAPI.h</compoundname>
+    <includes local="yes">pxr/pxr.h</includes>
+    <includes refid="physx_schema_2api_8h" local="yes">.//api.h</includes>
+    <includes refid="physx_particle_a_p_i_8h" local="yes">.//physxParticleAPI.h</includes>
+    <includes local="yes">pxr/usd/usd/prim.h</includes>
+    <includes local="yes">pxr/usd/usd/stage.h</includes>
+    <includes refid="physx_schema_2tokens_8h" local="yes">.//tokens.h</includes>
+    <includes local="yes">pxr/base/vt/value.h</includes>
+    <includes local="yes">pxr/base/gf/vec3d.h</includes>
+    <includes local="yes">pxr/base/gf/vec3f.h</includes>
+    <includes local="yes">pxr/base/gf/matrix4d.h</includes>
+    <includes local="yes">pxr/base/tf/token.h</includes>
+    <includes local="yes">pxr/base/tf/type.h</includes>
+    <incdepgraph>
+      <node id="1995">
+        <label>.//tokens.h</label>
+        <link refid="physx_schema_2tokens_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1989" relation="include">
+        </childnode>
+        <childnode refid="1996" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="1998" relation="include">
+        </childnode>
+      </node>
+      <node id="2001">
+        <label>pxr/base/gf/vec3f.h</label>
+      </node>
+      <node id="1992">
+        <label>pxr/usd/usd/apiSchemaBase.h</label>
+      </node>
+      <node id="1994">
+        <label>pxr/usd/usd/stage.h</label>
+      </node>
+      <node id="1999">
+        <label>pxr/base/vt/value.h</label>
+      </node>
+      <node id="1991">
+        <label>.//physxParticleAPI.h</label>
+        <link refid="physx_particle_a_p_i_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1989" relation="include">
+        </childnode>
+        <childnode refid="1992" relation="include">
+        </childnode>
+        <childnode refid="1993" relation="include">
+        </childnode>
+        <childnode refid="1994" relation="include">
+        </childnode>
+        <childnode refid="1995" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2003" relation="include">
+        </childnode>
+      </node>
+      <node id="1990">
+        <label>pxr/base/arch/export.h</label>
+      </node>
+      <node id="1987">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxParticleClothAPI.h</label>
+        <link refid="physxParticleClothAPI.h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1989" relation="include">
+        </childnode>
+        <childnode refid="1991" relation="include">
+        </childnode>
+        <childnode refid="1993" relation="include">
+        </childnode>
+        <childnode refid="1994" relation="include">
+        </childnode>
+        <childnode refid="1995" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2003" relation="include">
+        </childnode>
+      </node>
+      <node id="1993">
+        <label>pxr/usd/usd/prim.h</label>
+      </node>
+      <node id="2002">
+        <label>pxr/base/gf/matrix4d.h</label>
+      </node>
+      <node id="1988">
+        <label>pxr/pxr.h</label>
+      </node>
+      <node id="1989">
+        <label>.//api.h</label>
+        <link refid="physx_schema_2api_8h_source"/>
+        <childnode refid="1990" relation="include">
+        </childnode>
+      </node>
+      <node id="1996">
+        <label>pxr/base/tf/staticData.h</label>
+      </node>
+      <node id="2000">
+        <label>pxr/base/gf/vec3d.h</label>
+      </node>
+      <node id="1998">
+        <label>vector</label>
+      </node>
+      <node id="1997">
+        <label>pxr/base/tf/token.h</label>
+      </node>
+      <node id="2003">
+        <label>pxr/base/tf/type.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_physx_schema_physx_particle_cloth_a_p_i" prot="public">PhysxSchemaPhysxParticleClothAPI</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>2016<sp/>Pixar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;Apache<sp/>License&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>following<sp/>modification;<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compliance<sp/>with<sp/>the<sp/>Apache<sp/>License<sp/>and<sp/>the<sp/>following<sp/>modification<sp/>to<sp/>it:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>6.<sp/>Trademarks.<sp/>is<sp/>deleted<sp/>and<sp/>replaced<sp/>with:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6.<sp/>Trademarks.<sp/>This<sp/>License<sp/>does<sp/>not<sp/>grant<sp/>permission<sp/>to<sp/>use<sp/>the<sp/>trade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>names,<sp/>trademarks,<sp/>service<sp/>marks,<sp/>or<sp/>product<sp/>names<sp/>of<sp/>the<sp/>Licensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>and<sp/>its<sp/>affiliates,<sp/>except<sp/>as<sp/>required<sp/>to<sp/>comply<sp/>with<sp/>Section<sp/>4(c)<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>the<sp/>License<sp/>and<sp/>to<sp/>reproduce<sp/>the<sp/>content<sp/>of<sp/>the<sp/>NOTICE<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>Apache<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>Apache<sp/>License<sp/>with<sp/>the<sp/>above<sp/>modification<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>Apache<sp/>License<sp/>for<sp/>the<sp/>specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>Apache<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PHYSXSCHEMA_GENERATED_PHYSXPARTICLECLOTHAPI_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PHYSXSCHEMA_GENERATED_PHYSXPARTICLECLOTHAPI_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/pxr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;.//api.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="physx_particle_a_p_i_8h" kindref="compound">.//physxParticleAPI.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/usd/usd/prim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/usd/usd/stage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="physx_schema_2tokens_8h" kindref="compound">.//tokens.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/vt/value.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/gf/vec3d.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/gf/vec3f.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/gf/matrix4d.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/tf/token.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/tf/type.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">PXR_NAMESPACE_OPEN_SCOPE</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SdfAssetPath;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PHYSXPARTICLECLOTHAPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_physx_schema_physx_particle_cloth_a_p_i" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_physx_schema_physx_particle_cloth_a_p_i" kindref="compound">PhysxSchemaPhysxParticleClothAPI</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_particle_a_p_i" kindref="compound">PhysxSchemaPhysxParticleAPI</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64" refid="class_physx_schema_physx_particle_cloth_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdSchemaType<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" kindref="member">schemaType</ref><sp/>=<sp/>UsdSchemaType::SingleApplyAPI;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_physx_schema_physx_particle_cloth_a_p_i_1a0e81936e1813240dcea8e1b3cc570696" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a0e81936e1813240dcea8e1b3cc570696" kindref="member">PhysxSchemaPhysxParticleClothAPI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdPrim&amp;<sp/>prim=UsdPrim())</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_physx_schema_physx_particle_a_p_i" kindref="compound">PhysxSchemaPhysxParticleAPI</ref>(prim)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_physx_schema_physx_particle_cloth_a_p_i_1ac23f7415b30f4fdcedbbfd8ab083e0e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1ac23f7415b30f4fdcedbbfd8ab083e0e4" kindref="member">PhysxSchemaPhysxParticleClothAPI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdSchemaBase&amp;<sp/>schemaObj)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_physx_schema_physx_particle_a_p_i" kindref="compound">PhysxSchemaPhysxParticleAPI</ref>(schemaObj)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a47505b9c1cfa11adc86c98b46b732cf1" kindref="member">~PhysxSchemaPhysxParticleClothAPI</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfTokenVector<sp/>&amp;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" kindref="member">GetSchemaAttributeNames</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeInherited=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i" kindref="compound">PhysxSchemaPhysxParticleClothAPI</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a947bb8d1c100f0273a6f4ecc15e732c3" kindref="member">Get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdStagePtr<sp/>&amp;stage,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SdfPath<sp/>&amp;path);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i" kindref="compound">PhysxSchemaPhysxParticleClothAPI</ref><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a920737462609ef6d7571f4f80a2a0c2e" kindref="member">Apply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdPrim<sp/>&amp;prim);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdSchemaType<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" kindref="member">_GetSchemaType</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>needs<sp/>to<sp/>invoke<sp/>_GetStaticTfType.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">UsdSchemaRegistry;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfType<sp/>&amp;_GetStaticTfType();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_IsTypedSchema();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>override<sp/>SchemaBase<sp/>virtuals.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfType<sp/>&amp;_GetTfType()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SELFCOLLISIONFILTER<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1aa6ae7ce7641dffd6a1c3a5458bebf2ac" kindref="member">GetSelfCollisionFilterAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1ab7729b123bdb78411a6c7e988529bdbb" kindref="member">CreateSelfCollisionFilterAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RESTPOINTS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a36cae7fb08e5aaa9a8b6e1e5b0b80083" kindref="member">GetRestPointsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a5a46d126ead1b4876bb7aaca28cc15af" kindref="member">CreateRestPointsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SPRINGINDICES<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1ac8df3cb215bc2540d43beb6e3acaf96a" kindref="member">GetSpringIndicesAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a5e989fc967545534faa490ed19d88129" kindref="member">CreateSpringIndicesAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SPRINGSTIFFNESSES<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1ab2740fd6d3a9ba080fea7689da720827" kindref="member">GetSpringStiffnessesAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a3345ba41166cb0d4ab9b97a88f585e4b" kindref="member">CreateSpringStiffnessesAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SPRINGDAMPINGS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a0fb471df91c733f6ba03947c890fb508" kindref="member">GetSpringDampingsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a706c7db9eaba6a489d664aa4e95d4237" kindref="member">CreateSpringDampingsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SPRINGRESTLENGTHS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1ae95e5e3507cd60e014c1fef0a66f98ab" kindref="member">GetSpringRestLengthsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a9ba073e7adc7a6ce5be7eaf228455a4c" kindref="member">CreateSpringRestLengthsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PRESSURE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a4a38c348d3e6e052ab65b23e1bcfb0fd" kindref="member">GetPressureAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_particle_cloth_a_p_i_1a1630c1a895795da21d2bc328ec15a7ad" kindref="member">CreatePressureAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====================================================================<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Feel<sp/>free<sp/>to<sp/>add<sp/>custom<sp/>code<sp/>below<sp/>this<sp/>line,<sp/>it<sp/>will<sp/>be<sp/>preserved<sp/>by<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>code<sp/>generator.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Just<sp/>remember<sp/>to:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Close<sp/>the<sp/>class<sp/>declaration<sp/>with<sp/>};<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Close<sp/>the<sp/>namespace<sp/>with<sp/>PXR_NAMESPACE_CLOSE_SCOPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Close<sp/>the<sp/>include<sp/>guard<sp/>with<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====================================================================<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>--(BEGIN<sp/>CUSTOM<sp/>CODE)--</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal">PXR_NAMESPACE_CLOSE_SCOPE</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleClothAPI.h"/>
+  </compounddef>
+</doxygen>

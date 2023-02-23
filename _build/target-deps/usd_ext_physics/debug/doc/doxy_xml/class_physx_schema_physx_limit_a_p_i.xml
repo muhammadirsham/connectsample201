@@ -1,0 +1,560 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_limit_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxLimitAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_limit_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::MultipleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="62" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_limit_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="174" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a60ecb371b97c5b88d76f65f04f474232" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxLimitAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim(), const TfToken &amp;name=TfToken())</argsstring>
+        <name>PhysxSchemaPhysxLimitAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+          <defval>TfToken()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a PhysxSchemaPhysxLimitAPI on UsdPrim <computeroutput>prim</computeroutput> with name <computeroutput>name</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to PhysxSchemaPhysxLimitAPI::Get( prim.GetStage(), prim.GetPath().AppendProperty( &quot;physxLimit:name&quot;));</para><para>for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="73" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a8ff46c61305fb096655dc1b71cfc4da4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxLimitAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj, const TfToken &amp;name)</argsstring>
+        <name>PhysxSchemaPhysxLimitAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Construct a PhysxSchemaPhysxLimitAPI on the prim held by <computeroutput>schemaObj</computeroutput> with name <computeroutput>name</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over PhysxSchemaPhysxLimitAPI(schemaObj.GetPrim(), name), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="82" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1aae1e30a3e4fde7f1b2f66830f3caaac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxLimitAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxLimitAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1aa53b87421fbc15993adfd11e9b2045eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TfToken</type>
+        <definition>TfToken GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>Returns the name of this multiple-apply schema instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="102" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1acca5b7c76acdf12afb0f0ab757f429f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetRestitutionAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRestitutionAttr</name>
+        <briefdescription>
+<para>Controls the amount of bounce when the joint hits a limit. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float restitution = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a1b6bbd585d169b951cfb0d4382ad89ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateRestitutionAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateRestitutionAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See GetRestitutionAttr(), and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a4e7eafca0b58f02d19b837e149611a9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetBounceThresholdAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBounceThresholdAttr</name>
+        <briefdescription>
+<para>Determines the minimum impact velocity which will cause the joint to bounce. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float bounceThreshold = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a95a8431139299a08e433bd8d2cccab83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateBounceThresholdAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateBounceThresholdAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See GetBounceThresholdAttr(), and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a5c5a2bc23b56ea80a76850615253c450" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetStiffnessAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStiffnessAttr</name>
+        <briefdescription>
+<para>If greater than zero, the limit is soft, i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>a spring pulls the joint back to the limit.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float stiffness = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1ab7d259ee6d127ebfa67130f495bc2349" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateStiffnessAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateStiffnessAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See GetStiffnessAttr(), and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1aa2b0bd46cc807dcfea6fd32438e18f03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDampingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDampingAttr</name>
+        <briefdescription>
+<para>If spring is greater than zero, this is the damping of the limit spring. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float damping = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a155bfc53565dfdd638d2591f4ba5292f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDampingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDampingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See GetDampingAttr(), and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a0bc6c25af1260713e3b5d4a41d3adaed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetContactDistanceAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetContactDistanceAttr</name>
+        <briefdescription>
+<para>The distance inside the limit value at which the limit will be considered to be active by the solver. </para>        </briefdescription>
+        <detaileddescription>
+<para>As this value is made larger, the limit becomes active more quickly. It thus becomes less likely to violate the extents of the limit, but more expensive.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float contactDistance = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a2b48985c56d2469757b7b5a99f2cf15c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateContactDistanceAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateContactDistanceAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See GetContactDistanceAttr(), and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="292" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1ac74ade0d84fa71669cba8f1aabe0648a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true, const TfToken instanceName=TfToken())</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const TfToken</type>
+          <declname>instanceName</declname>
+          <defval>TfToken()</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes for a given instance name. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. The names returned will have the proper namespace prefix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a80b356771c35db57ec3586e15c64b288" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API PhysxSchemaPhysxLimitAPI</type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxLimitAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a PhysxSchemaPhysxLimitAPI holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. <computeroutput>path</computeroutput> must be of the format &lt;path&gt;.physxLimit:name .</para><para>This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/>TfToken<sp/>name<sp/>=<sp/>SdfPath::StripNamespace(path.GetToken());</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/>PhysxSchemaPhysxLimitAPI(</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/>stage-&gt;GetPrimAtPath(path.GetPrimPath()),<sp/>name);</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a1318af2965e0a6e3a7bf9f70668d6a51" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API PhysxSchemaPhysxLimitAPI</type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxLimitAPI Get</definition>
+        <argsstring>(const UsdPrim &amp;prim, const TfToken &amp;name)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a PhysxSchemaPhysxLimitAPI with name <computeroutput>name</computeroutput> holding the prim <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Shorthand for PhysxSchemaPhysxLimitAPI(prim, name); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1aa8ff5e877e3474ed29495ff9b7af84be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API bool</type>
+        <definition>static PHYSXSCHEMA_API bool IsSchemaPropertyBaseName</definition>
+        <argsstring>(const TfToken &amp;baseName)</argsstring>
+        <name>IsSchemaPropertyBaseName</name>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>baseName</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the given name <computeroutput>baseName</computeroutput> is the base name of a property of PhysxLimitAPI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1ab37474f6276a8d897c9f5c615350a93d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API bool</type>
+        <definition>static PHYSXSCHEMA_API bool IsPhysxLimitAPIPath</definition>
+        <argsstring>(const SdfPath &amp;path, TfToken *name)</argsstring>
+        <name>IsPhysxLimitAPIPath</name>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>TfToken *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the given path <computeroutput>path</computeroutput> is of an API schema of type PhysxLimitAPI. </para>        </briefdescription>
+        <detaileddescription>
+<para>If so, it stores the instance name of the schema in <computeroutput>name</computeroutput> and returns true. Otherwise, it returns false. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a46f8e6a002d6b6e05b74cb2ed88be67b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API PhysxSchemaPhysxLimitAPI</type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxLimitAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim, const TfToken &amp;name)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>multiple-apply</bold> API schema to the given <computeroutput>prim</computeroutput> along with the given instance name, <computeroutput>name</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxLimitAPI:&lt;i&gt;name&lt;/i&gt;&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim. For example, if <computeroutput>name</computeroutput> is &apos;instance1&apos;, the token &apos;PhysxLimitAPI:instance1&apos; is added to &apos;apiSchemas&apos;.</para><para><simplesect kind="return"><para>A valid PhysxSchemaPhysxLimitAPI object is returned upon success. An invalid (or empty) PhysxSchemaPhysxLimitAPI object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="163" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="170" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="178" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_limit_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="182" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" line="57" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxLimitAPI.h" bodystart="56" bodyend="305"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a46f8e6a002d6b6e05b74cb2ed88be67b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a95a8431139299a08e433bd8d2cccab83" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>CreateBounceThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a2b48985c56d2469757b7b5a99f2cf15c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>CreateContactDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a155bfc53565dfdd638d2591f4ba5292f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>CreateDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a1b6bbd585d169b951cfb0d4382ad89ee" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>CreateRestitutionAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1ab7d259ee6d127ebfa67130f495bc2349" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>CreateStiffnessAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a80b356771c35db57ec3586e15c64b288" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a1318af2965e0a6e3a7bf9f70668d6a51" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a4e7eafca0b58f02d19b837e149611a9d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>GetBounceThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a0bc6c25af1260713e3b5d4a41d3adaed" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>GetContactDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1aa2b0bd46cc807dcfea6fd32438e18f03" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>GetDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1aa53b87421fbc15993adfd11e9b2045eb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>GetName</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1acca5b7c76acdf12afb0f0ab757f429f5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>GetRestitutionAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1ac74ade0d84fa71669cba8f1aabe0648a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a5c5a2bc23b56ea80a76850615253c450" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>GetStiffnessAttr</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1ab37474f6276a8d897c9f5c615350a93d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>IsPhysxLimitAPIPath</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1aa8ff5e877e3474ed29495ff9b7af84be" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>IsSchemaPropertyBaseName</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a60ecb371b97c5b88d76f65f04f474232" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>PhysxSchemaPhysxLimitAPI</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1a8ff46c61305fb096655dc1b71cfc4da4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>PhysxSchemaPhysxLimitAPI</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_limit_a_p_i_1aae1e30a3e4fde7f1b2f66830f3caaac4" prot="public" virt="virtual"><scope>PhysxSchemaPhysxLimitAPI</scope><name>~PhysxSchemaPhysxLimitAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

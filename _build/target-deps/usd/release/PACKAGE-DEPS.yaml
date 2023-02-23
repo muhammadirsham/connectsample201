@@ -1,0 +1,191 @@
+Draco:
+  licenseFile: draco-LICENSE.md
+  packageName: Draco
+  packageType: packman
+  source:
+    branch: null
+    change: null
+    path: https://gitlab/omniverse/externals/draco
+    scm: git
+  swipat:
+  - https://nvbugs/3330483
+  version: null
+alembic:
+  licenseFile: alembic-LICENSE.md
+  packageName: alembic
+  packageType: packman
+  source:
+    branch: null
+    change: null
+    path: https://gitlab/omniverse/externals/alembic
+    scm: git
+  swipat:
+  - http://nvbugs/3045972
+  version: null
+boost:
+  licenseFile: boost-LICENSE.md
+  packageName: boost
+  packageType: packman
+  source:
+    branch: nv-master-python3.7.9_1.68.0
+    change: 9f2381f2f7b6e74a33f4d5b3f0a621e5159345ff
+    path: https://gitlab/carbon/carbonite-externals/boost.git
+    scm: git
+  swipat: null
+  version: 1.68.0.44.9f2381f2-windows-x86_64
+embree:
+  licenseFile: embree-LICENSE.md
+  packageName: embree
+  packageType: packman
+  source:
+    branch: nv-master
+    change: a8010f04e49c5aab2f4a09d0987c27120eb603ad
+    path: https://gitlab/carbon/carbonite-externals/embree
+    scm: git
+  swipat: http://nvbugs/2515781
+  version: 2.17.4-windows-8-a8010f04
+glew:
+  licenseFile: glew-LICENSE.md
+  packageName: glew
+  packageType: packman
+  source:
+    branch: nv-master-bin
+    change: b43e97d6641d5cd58d659b17f7e46e65d5de624a
+    path: https://gitlab/carbon/carbonite-externals/glew
+    scm: git
+  swipat: http://nvbugs/2515781
+  version: 2.1.0-103.b43e97d6-windows
+hdf5:
+  licenseFile: hdf5-LICENSE.md
+  packageName: hdf5
+  packageType: packman
+  source:
+    branch: null
+    change: null
+    path: https://gitlab/omniverse/externals/hdf5
+    scm: git
+  swipat:
+  - https://nvbugs/3109329
+  version: null
+materialx:
+  licenseFile: materialx-LICENSE.txt
+  packageName: materialx
+  packageType: packman
+  source:
+    branch: main
+    change: 63832b6504b5c9fc4309b5869ec2505db9599b23
+    path: https://gitlab/omniverse/externals/materialx-build.git
+    scm: git
+  swipat: https://nvbugs/200738482
+  version: 1.38.4+main.48.63832b65.tc.windows-x86_64
+openexr:
+  licenseFile: openexr-LICENSE.md
+  packageName: openexr
+  packageType: packman
+  source:
+    branch: nv-master
+    change: 99db4eb23c0e9702c12fa748c9c0d844261a593c
+    path: https://gitlab/carbon/carbonite-externals/openexr
+    scm: git
+  swipat: http://nvbugs/2515781
+  version: 2.4.0-windows-6-99db4eb2
+openssl:
+  inheritedFrom:
+  - C:/packman-repo/chk/python/3.7.12+nv1-windows-x86_64/PACKAGE-DEPS.yaml
+  licenseFile: openssl-LICENSE.txt
+  packageName: openssl
+  packageType: packman
+  source:
+    branch: merge-request
+    change: 534dffd13cd47c08b5d2a5ad42a7595e21a901f8
+    path: https://gitlab/omniverse/externals/openssl-build.git
+    scm: git
+  swipat: http://nvbugs/2820294
+  version: 1.1.1l+nv2-windows-x86_64
+opensubdiv:
+  licenseFile: opensubdiv-LICENSE.md
+  packageName: opensubdiv
+  packageType: packman
+  source:
+    branch: nv-master
+    change: e01bf79c5ef3ab94136bc837bb4c287ef83996fd
+    path: https://gitlab/carbon/carbonite-externals/opensubdiv.git
+    scm: git
+  swipat: http://nvbugs/2515781
+  version: 3.4.0-122.e01bf79c-windows-x86_64-release
+pip:
+  inheritedFrom:
+  - C:/packman-repo/chk/python/3.7.12+nv1-windows-x86_64/PACKAGE-DEPS.yaml
+  licenseFile: pip-LICENSE.txt
+  packageName: pip
+  packageType: packman
+  source:
+    branch: merge-request
+    change: 7a3e732b7b7d997ea5ffd10491368c8dd133452a
+    path: https://gitlab/omniverse/externals/pip-build.git
+    scm: git
+  swipat: https://nvbugs/3354358
+  version: 21.2.1+nv1
+python:
+  licenseFile: python-LICENSE.txt
+  packageName: python
+  packageType: packman
+  source:
+    branch: merge-request
+    change: dbfef20960775bca6afffc85cf37fda38c4a411f
+    path: https://gitlab/omniverse/externals/python-build.git
+    scm: git
+  swipat: http://nvbugs/3156615
+  version: 3.7.12+nv1-windows-x86_64
+python_1:
+  inheritedFrom:
+  - C:/packman-repo/chk/materialx/1.38.4+main.48.63832b65.tc.windows-x86_64/PACKAGE-DEPS.yaml
+  licenseFile: python-LICENSE.txt
+  packageName: python
+  packageType: packman
+  source:
+    branch: null
+    change: null
+    path: https://gitlab/omniverse/externals/python-build.git
+    scm: git
+  swipat: http://nvbugs/3156615
+  version: null
+tbb:
+  licenseFile: tbb-LICENSE.txt
+  packageName: tbb
+  packageType: packman
+  source:
+    branch: nv-master-bin
+    change: fc907e8a3d76df2fd9d9df6479099655b3139889
+    path: https://gitlab/carbon/carbonite-externals/tbb
+    scm: git
+  swipat: http://nvbugs/2515781
+  version: 2018_u6-win-5-fc907e8a
+xz:
+  inheritedFrom:
+  - C:/packman-repo/chk/python/3.7.12+nv1-windows-x86_64/PACKAGE-DEPS.yaml
+  licenseFile: xz-LICENSE.txt
+  packageName: xz
+  packageType: packman
+  source:
+    branch: merge-request
+    change: 031e90485eb5ca43e53e9137f8a32ade742e4128
+    path: https://gitlab/omniverse/externals/xz-build.git
+    scm: git
+  swipat: http://nvbugs/3381177
+  version: 5.2.5+nv1-windows-x86_64
+zlib:
+  depth: 1
+  inheritedFrom:
+  - C:/packman-repo/chk/python/3.7.12+nv1-windows-x86_64/PACKAGE-DEPS.yaml
+  - C:/packman-repo/chk/openssl/1.1.1l+nv2-windows-x86_64/PACKAGE-DEPS.yaml
+  licenseFile: zlib-LICENSE.txt
+  packageName: zlib
+  packageType: packman
+  source:
+    branch: merge-request
+    change: ae06c71cacc02a65b7ee5b6827f848be4babc824
+    path: https://gitlab/omniverse/externals/zlib-build.git
+    scm: git
+  swipat: http://nvbugs/2515781
+  version: 1.2.11+nv1-windows-x86_64

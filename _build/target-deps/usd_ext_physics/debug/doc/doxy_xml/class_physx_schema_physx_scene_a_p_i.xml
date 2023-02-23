@@ -1,0 +1,1609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_scene_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxSceneAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_scene_a_p_i_8h" local="no">physxSceneAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_scene_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_scene_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="140" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a3fd24b0522ad8b78f7a4b56c623fce1c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxSceneAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxSceneAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_scene_a_p_i_1a8d301eb6fbd9b2642fe837aea44aad58" kindref="member">PhysxSchemaPhysxSceneAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="75" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a30eace8877de75ff4feee0f9fa615dca" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxSceneAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxSceneAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="83" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a2d6b3370bea3f1b34ea780fb87a5cc22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxSceneAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxSceneAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a4e7eafca0b58f02d19b837e149611a9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetBounceThresholdAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBounceThresholdAttr</name>
+        <briefdescription>
+<para>A contact with a relative velocity below this will not bounce. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float). Default value 0.2 * toleranceSpeed.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxScene:bounceThreshold = 0.2</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a95a8431139299a08e433bd8d2cccab83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateBounceThresholdAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateBounceThresholdAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a4e7eafca0b58f02d19b837e149611a9d" kindref="member">GetBounceThresholdAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1aed7c92a926b7852a9d63e6938df6b9a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFrictionOffsetThresholdAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrictionOffsetThresholdAttr</name>
+        <briefdescription>
+<para>A threshold of contact separation distance used to decide if a contact point will experience friction forces. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float). Default value 0.04 * tolerancesLength.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxScene:frictionOffsetThreshold = 0.04</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a90d75ae21f945d5f08f75b8a437dbffe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFrictionOffsetThresholdAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFrictionOffsetThresholdAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1aed7c92a926b7852a9d63e6938df6b9a1" kindref="member">GetFrictionOffsetThresholdAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a3989d832260c65299451b198b47f3be1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFrictionCorrelationDistanceAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrictionCorrelationDistanceAttr</name>
+        <briefdescription>
+<para>Friction correlation distance used to decide whether contacts are close enough to be merged into a single friction anchor point or not. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float). Default value 0.025 * tolerancesLength.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxScene:frictionCorrelationDistance = 0.025</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a2d0e809f2a2f68431696554ed3bfc81c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFrictionCorrelationDistanceAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFrictionCorrelationDistanceAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a3989d832260c65299451b198b47f3be1" kindref="member">GetFrictionCorrelationDistanceAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a923dc0f3837cb1d7827c6fca73095479" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxBiasCoefficientAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxBiasCoefficientAttr</name>
+        <briefdescription>
+<para>The maximum bias coefficient used in the constraint solver. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, inf)</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxScene:maxBiasCoefficient = inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a27d5a41162a201b456c1f0652043ee30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxBiasCoefficientAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxBiasCoefficientAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a923dc0f3837cb1d7827c6fca73095479" kindref="member">GetMaxBiasCoefficientAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a962adb205b23ba538b75c416dbcb75a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCollisionSystemAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollisionSystemAttr</name>
+        <briefdescription>
+<para>Collision detection system. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token physxScene:collisionSystem = &quot;PCM&quot;</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>PCM, SAT </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a56aeb07f5def068c29bdc98226a704c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCollisionSystemAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCollisionSystemAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a962adb205b23ba538b75c416dbcb75a4" kindref="member">GetCollisionSystemAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a735549d8e9f4b6ca212934dbd7e321e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSolverTypeAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSolverTypeAttr</name>
+        <briefdescription>
+<para>Solver used for the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token physxScene:solverType = &quot;TGS&quot;</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>PGS, TGS </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="276" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a2e43ab41f65768ce25a78a5be2435151" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSolverTypeAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSolverTypeAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a735549d8e9f4b6ca212934dbd7e321e7" kindref="member">GetSolverTypeAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ac124b2a55f77fe5d17d7db659373f13c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetBroadphaseTypeAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBroadphaseTypeAttr</name>
+        <briefdescription>
+<para>Broad phase algorithm used in the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token physxScene:broadphaseType = &quot;GPU&quot;</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>GPU, MBP, SAP </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ac402b063b48f7a7466c6ea68a376780d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateBroadphaseTypeAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateBroadphaseTypeAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1ac124b2a55f77fe5d17d7db659373f13c" kindref="member">GetBroadphaseTypeAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="308" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a25dd7281fde3e2a0c4804eebfe92dce0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFrictionTypeAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrictionTypeAttr</name>
+        <briefdescription>
+<para>Friction type used in simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token physxScene:frictionType = &quot;patch&quot;</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>patch, oneDirectional, twoDirectional </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="324" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a2e2398d756439e1101ccc3919d1268d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFrictionTypeAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFrictionTypeAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a25dd7281fde3e2a0c4804eebfe92dce0" kindref="member">GetFrictionTypeAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="332" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a431eecfd7cfcc67a2a1902c6ad967053" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableCCDAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableCCDAttr</name>
+        <briefdescription>
+<para>Enables a second broad phase check after integration that makes it possible to prevent objects from tunneling through each other. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxScene:enableCCD = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a5c33980c29694cd4911249b85261f0d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableCCDAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableCCDAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a431eecfd7cfcc67a2a1902c6ad967053" kindref="member">GetEnableCCDAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="354" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a3671d08277ae249ea7612341a85b9833" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableStabilizationAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableStabilizationAttr</name>
+        <briefdescription>
+<para>Enables additional stabilization pass in solver. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxScene:enableStabilization = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="368" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1aa8c0171d65751f35d9b20f0fd0f32232" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableStabilizationAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableStabilizationAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a3671d08277ae249ea7612341a85b9833" kindref="member">GetEnableStabilizationAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="376" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a73b24c98c697a06898b4bfc08f215545" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableGPUDynamicsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableGPUDynamicsAttr</name>
+        <briefdescription>
+<para>Enables the GPU dynamics pipeline. </para>        </briefdescription>
+        <detaileddescription>
+<para>Required for GPU only features like deformables.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxScene:enableGPUDynamics = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1acb2988adb47c2c57e0fd615136ebdc69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableGPUDynamicsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableGPUDynamicsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a73b24c98c697a06898b4bfc08f215545" kindref="member">GetEnableGPUDynamicsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="398" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ae51c3ef70dfa7eb31c1b40dbb128c8ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableEnhancedDeterminismAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableEnhancedDeterminismAttr</name>
+        <briefdescription>
+<para>Provides improved determinism at the expense of performance. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxScene:enableEnhancedDeterminism = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="412" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ad19bbcb2feaf33e58737266eda6ef5b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableEnhancedDeterminismAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableEnhancedDeterminismAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1ae51c3ef70dfa7eb31c1b40dbb128c8ca" kindref="member">GetEnableEnhancedDeterminismAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="420" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1aae75ca75b72cc95c0eba4f3266726ccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetTimeStepsPerSecondAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTimeStepsPerSecondAttr</name>
+        <briefdescription>
+<para>Simulation scene step defined as number of steps per second. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that application might cap the number of simulation steps to avoid running more simulations steps with a low frame rate.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:timeStepsPerSecond = 60</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="436" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a049992e67a2ac7820e006fa69ed26243" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateTimeStepsPerSecondAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateTimeStepsPerSecondAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1aae75ca75b72cc95c0eba4f3266726ccf" kindref="member">GetTimeStepsPerSecondAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="444" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a41ea552045c36414cfeee03d7322fcb2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuTempBufferCapacityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuTempBufferCapacityAttr</name>
+        <briefdescription>
+<para>Gpu temp buffer capacity. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuTempBufferCapacity = 16777216</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="458" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a4f62a8b38ee2e39d7e133cb1575b16a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuTempBufferCapacityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuTempBufferCapacityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a41ea552045c36414cfeee03d7322fcb2" kindref="member">GetGpuTempBufferCapacityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="466" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a7def06f5dd711c8db20e478d718612d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuMaxRigidContactCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuMaxRigidContactCountAttr</name>
+        <briefdescription>
+<para>Gpu max rigid contact count. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuMaxRigidContactCount = 524288</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="480" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a82449ea64c8cc92914ecec6ed804c8fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuMaxRigidContactCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuMaxRigidContactCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a7def06f5dd711c8db20e478d718612d6" kindref="member">GetGpuMaxRigidContactCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a2ac3b87026bb010a59c3ec2d33712a2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuMaxRigidPatchCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuMaxRigidPatchCountAttr</name>
+        <briefdescription>
+<para>Gpu max rigid patch count. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuMaxRigidPatchCount = 81920</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="502" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a61b2e80c4c05cf23949476b3b9da5326" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuMaxRigidPatchCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuMaxRigidPatchCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a2ac3b87026bb010a59c3ec2d33712a2c" kindref="member">GetGpuMaxRigidPatchCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="510" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a12d5ac9aa8d5905019b5ebbe67bf7491" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuHeapCapacityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuHeapCapacityAttr</name>
+        <briefdescription>
+<para>Gpu heap capacity. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuHeapCapacity = 67108864</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="524" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1af274fd7e1251d2635884ebf7c776900e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuHeapCapacityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuHeapCapacityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a12d5ac9aa8d5905019b5ebbe67bf7491" kindref="member">GetGpuHeapCapacityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="532" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a62d09529974a1460404a6954467e07e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuFoundLostPairsCapacityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuFoundLostPairsCapacityAttr</name>
+        <briefdescription>
+<para>Gpu found lost pairs capacity. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuFoundLostPairsCapacity = 262144</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="546" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ae8de7ca10490275902cb9f129c7417b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuFoundLostPairsCapacityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuFoundLostPairsCapacityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a62d09529974a1460404a6954467e07e0" kindref="member">GetGpuFoundLostPairsCapacityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="554" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a6cb233e838ff92c69f39c28371d5990e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuFoundLostAggregatePairsCapacityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuFoundLostAggregatePairsCapacityAttr</name>
+        <briefdescription>
+<para>Gpu found lost aggregate pairs capacity. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuFoundLostAggregatePairsCapacity = 1024</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="568" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a305977e95238175fa4aaa872396f3651" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuFoundLostAggregatePairsCapacityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuFoundLostAggregatePairsCapacityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a6cb233e838ff92c69f39c28371d5990e" kindref="member">GetGpuFoundLostAggregatePairsCapacityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="576" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a54777500e6ccc0737326c7e1d5520dbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuTotalAggregatePairsCapacityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuTotalAggregatePairsCapacityAttr</name>
+        <briefdescription>
+<para>Gpu total aggregate pairs capacity. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuTotalAggregatePairsCapacity = 1024</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="590" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a57019bcfeb7196f094b33dfce9bc5318" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuTotalAggregatePairsCapacityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuTotalAggregatePairsCapacityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a54777500e6ccc0737326c7e1d5520dbf" kindref="member">GetGpuTotalAggregatePairsCapacityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="598" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a94cc26f814bc1020d23cb49352cdfc81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuMaxSoftBodyContactsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuMaxSoftBodyContactsAttr</name>
+        <briefdescription>
+<para>Gpu max soft body contacts. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuMaxSoftBodyContacts = 1048576</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="612" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a87ab8e6ffb05ceac8fcd5c685f06482a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuMaxSoftBodyContactsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuMaxSoftBodyContactsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a94cc26f814bc1020d23cb49352cdfc81" kindref="member">GetGpuMaxSoftBodyContactsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="620" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a99f414d61c0b8fcfc9a4c2386356b37c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuMaxParticleContactsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuMaxParticleContactsAttr</name>
+        <briefdescription>
+<para>Gpu max particle contacts. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuMaxParticleContacts = 1048576</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="634" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1afb9b8e1b3236eb08c4f396fea692c28e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuMaxParticleContactsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuMaxParticleContactsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a99f414d61c0b8fcfc9a4c2386356b37c" kindref="member">GetGpuMaxParticleContactsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="642" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a70f9ef14983b88c86cc1b57a459c12e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuMaxNumPartitionsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuMaxNumPartitionsAttr</name>
+        <briefdescription>
+<para>Limitation for the partitions in the GPU dynamics pipeline. </para>        </briefdescription>
+        <detaileddescription>
+<para>This variable must be a power of 2. A value greater than 32 is currently not supported.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuMaxNumPartitions = 8</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="656" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a27d7210a7062666d158ad54954d86792" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuMaxNumPartitionsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuMaxNumPartitionsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a70f9ef14983b88c86cc1b57a459c12e0" kindref="member">GetGpuMaxNumPartitionsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="664" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1af346681eb51d991ec0daa8e7bfc97efa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGpuCollisionStackSizeAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGpuCollisionStackSizeAttr</name>
+        <briefdescription>
+<para>Gpu collision stack size. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:gpuCollisionStackSize = 67108864</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="678" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a9b9d5710198fb1b65d8ecd4c5843112d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGpuCollisionStackSizeAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGpuCollisionStackSizeAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1af346681eb51d991ec0daa8e7bfc97efa" kindref="member">GetGpuCollisionStackSizeAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="686" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a09b1bd683add7fae1ae91c8323053a9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetInvertCollisionGroupFilterAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetInvertCollisionGroupFilterAttr</name>
+        <briefdescription>
+<para>Boolean attribute indicating whether inverted collision group filtering should be used. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default two collisions, that do have a collisionGroup set, collide with each other. Adding a collisionGroup into a collisionGroup filtering will mean that the collision between those groups will be disabled. This boolean attribute does invert the default behavior. Hence two collisions with defined collisionGroups will not collide with each other by default and one does enable the collisions between the groups through the &quot;CollisionGroup&quot; filtering.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxScene:invertCollisionGroupFilter = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="705" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a22b63a9e000af1f23e3c8d512e601ad4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateInvertCollisionGroupFilterAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateInvertCollisionGroupFilterAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a09b1bd683add7fae1ae91c8323053a9d" kindref="member">GetInvertCollisionGroupFilterAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="713" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a97f5ac94b435fa0fe9aac55b9d5c1c97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetReportKinematicKinematicPairsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetReportKinematicKinematicPairsAttr</name>
+        <briefdescription>
+<para>Boolean attribute indicating whether kinematic vs kinematic pairs generate contact reports. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxScene:reportKinematicKinematicPairs = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="728" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ab93024576263c3e08697c6cc076e8595" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateReportKinematicKinematicPairsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateReportKinematicKinematicPairsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a97f5ac94b435fa0fe9aac55b9d5c1c97" kindref="member">GetReportKinematicKinematicPairsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="736" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a5e709d4b0119053919f9e1fca712cefb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetReportKinematicStaticPairsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetReportKinematicStaticPairsAttr</name>
+        <briefdescription>
+<para>Boolean attribute indicating whether kinematic vs static pairs generate contact reports. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxScene:reportKinematicStaticPairs = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="751" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a1b855827b73da102530ce45a2046ac5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateReportKinematicStaticPairsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateReportKinematicStaticPairsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a5e709d4b0119053919f9e1fca712cefb" kindref="member">GetReportKinematicStaticPairsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="759" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a91ee5c388ebcc78d7a42e5660688044c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMinIterationCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMinIterationCountAttr</name>
+        <briefdescription>
+<para>Minimum iteration count for all actors (rigid bodies, cloth, particles etc). </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:minIterationCount = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="773" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ab96ef0b591f7d3a50a5d5e8ad1b9aafe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMinIterationCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMinIterationCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a91ee5c388ebcc78d7a42e5660688044c" kindref="member">GetMinIterationCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="781" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a087cb8f9b82692540c1325226dd4a28f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxIterationCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxIterationCountAttr</name>
+        <briefdescription>
+<para>Maximum iteration count for all actors (rigid bodies, cloth, particles etc). </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uint physxScene:maxIterationCount = 255</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>unsigned int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;UInt </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="795" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a7461260a3e5b892e945d41f9c4110f6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxIterationCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxIterationCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_scene_a_p_i_1a087cb8f9b82692540c1325226dd4a28f" kindref="member">GetMaxIterationCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="803" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a8d301eb6fbd9b2642fe837aea44aad58" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxSceneAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a3fd24b0522ad8b78f7a4b56c623fce1c" kindref="member">PhysxSchemaPhysxSceneAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a1602a48e045d5fc843ea18f1994b9199" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxSceneAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxSceneAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="129" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="136" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="144" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_scene_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="148" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX scene extended parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>Default PhysX material for the scene can be set by using material bind with purpose physics onto the PhysicsScene prim.</para><para>For any described attribute <emphasis>Fallback</emphasis> <emphasis>Value</emphasis> or <emphasis>Allowed</emphasis> <emphasis>Values</emphasis> below that are text/tokens, the actual token is published and defined in <ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">PhysxSchemaTokens</ref>. So to set an attribute to the value &quot;rightHanded&quot;, use PhysxSchemaTokens-&gt;rightHanded as the value. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" line="64" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h" bodystart="63" bodyend="816"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a1602a48e045d5fc843ea18f1994b9199" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a95a8431139299a08e433bd8d2cccab83" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateBounceThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ac402b063b48f7a7466c6ea68a376780d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateBroadphaseTypeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a56aeb07f5def068c29bdc98226a704c1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateCollisionSystemAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a5c33980c29694cd4911249b85261f0d9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateEnableCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ad19bbcb2feaf33e58737266eda6ef5b2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateEnableEnhancedDeterminismAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1acb2988adb47c2c57e0fd615136ebdc69" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateEnableGPUDynamicsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1aa8c0171d65751f35d9b20f0fd0f32232" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateEnableStabilizationAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a2d0e809f2a2f68431696554ed3bfc81c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateFrictionCorrelationDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a90d75ae21f945d5f08f75b8a437dbffe" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateFrictionOffsetThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a2e2398d756439e1101ccc3919d1268d8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateFrictionTypeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a9b9d5710198fb1b65d8ecd4c5843112d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuCollisionStackSizeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a305977e95238175fa4aaa872396f3651" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuFoundLostAggregatePairsCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ae8de7ca10490275902cb9f129c7417b0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuFoundLostPairsCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1af274fd7e1251d2635884ebf7c776900e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuHeapCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a27d7210a7062666d158ad54954d86792" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuMaxNumPartitionsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1afb9b8e1b3236eb08c4f396fea692c28e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuMaxParticleContactsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a82449ea64c8cc92914ecec6ed804c8fe" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuMaxRigidContactCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a61b2e80c4c05cf23949476b3b9da5326" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuMaxRigidPatchCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a87ab8e6ffb05ceac8fcd5c685f06482a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuMaxSoftBodyContactsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a4f62a8b38ee2e39d7e133cb1575b16a6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuTempBufferCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a57019bcfeb7196f094b33dfce9bc5318" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateGpuTotalAggregatePairsCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a22b63a9e000af1f23e3c8d512e601ad4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateInvertCollisionGroupFilterAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a27d5a41162a201b456c1f0652043ee30" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateMaxBiasCoefficientAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a7461260a3e5b892e945d41f9c4110f6f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateMaxIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ab96ef0b591f7d3a50a5d5e8ad1b9aafe" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateMinIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ab93024576263c3e08697c6cc076e8595" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateReportKinematicKinematicPairsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a1b855827b73da102530ce45a2046ac5e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateReportKinematicStaticPairsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a2e43ab41f65768ce25a78a5be2435151" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateSolverTypeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a049992e67a2ac7820e006fa69ed26243" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>CreateTimeStepsPerSecondAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a8d301eb6fbd9b2642fe837aea44aad58" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a4e7eafca0b58f02d19b837e149611a9d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetBounceThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ac124b2a55f77fe5d17d7db659373f13c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetBroadphaseTypeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a962adb205b23ba538b75c416dbcb75a4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetCollisionSystemAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a431eecfd7cfcc67a2a1902c6ad967053" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetEnableCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1ae51c3ef70dfa7eb31c1b40dbb128c8ca" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetEnableEnhancedDeterminismAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a73b24c98c697a06898b4bfc08f215545" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetEnableGPUDynamicsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a3671d08277ae249ea7612341a85b9833" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetEnableStabilizationAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a3989d832260c65299451b198b47f3be1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetFrictionCorrelationDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1aed7c92a926b7852a9d63e6938df6b9a1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetFrictionOffsetThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a25dd7281fde3e2a0c4804eebfe92dce0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetFrictionTypeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1af346681eb51d991ec0daa8e7bfc97efa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuCollisionStackSizeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a6cb233e838ff92c69f39c28371d5990e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuFoundLostAggregatePairsCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a62d09529974a1460404a6954467e07e0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuFoundLostPairsCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a12d5ac9aa8d5905019b5ebbe67bf7491" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuHeapCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a70f9ef14983b88c86cc1b57a459c12e0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuMaxNumPartitionsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a99f414d61c0b8fcfc9a4c2386356b37c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuMaxParticleContactsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a7def06f5dd711c8db20e478d718612d6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuMaxRigidContactCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a2ac3b87026bb010a59c3ec2d33712a2c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuMaxRigidPatchCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a94cc26f814bc1020d23cb49352cdfc81" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuMaxSoftBodyContactsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a41ea552045c36414cfeee03d7322fcb2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuTempBufferCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a54777500e6ccc0737326c7e1d5520dbf" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetGpuTotalAggregatePairsCapacityAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a09b1bd683add7fae1ae91c8323053a9d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetInvertCollisionGroupFilterAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a923dc0f3837cb1d7827c6fca73095479" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetMaxBiasCoefficientAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a087cb8f9b82692540c1325226dd4a28f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetMaxIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a91ee5c388ebcc78d7a42e5660688044c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetMinIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a97f5ac94b435fa0fe9aac55b9d5c1c97" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetReportKinematicKinematicPairsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a5e709d4b0119053919f9e1fca712cefb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetReportKinematicStaticPairsAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a735549d8e9f4b6ca212934dbd7e321e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetSolverTypeAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1aae75ca75b72cc95c0eba4f3266726ccf" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>GetTimeStepsPerSecondAttr</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a3fd24b0522ad8b78f7a4b56c623fce1c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>PhysxSchemaPhysxSceneAPI</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a30eace8877de75ff4feee0f9fa615dca" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>PhysxSchemaPhysxSceneAPI</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_scene_a_p_i_1a2d6b3370bea3f1b34ea780fb87a5cc22" prot="public" virt="virtual"><scope>PhysxSchemaPhysxSceneAPI</scope><name>~PhysxSchemaPhysxSceneAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

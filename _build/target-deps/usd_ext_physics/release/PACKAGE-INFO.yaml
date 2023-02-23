@@ -1,0 +1,17 @@
+Package: usd-ext-physics
+Version: 0.1-90355301
+Maintainers: Ales Borovicka
+Description: Our own physics USD schema
+SWIPAT NvBug: null
+Repository: ssh://git@gitlab-master.nvidia.com:12051/omniverse/usd-ext-physics.git
+License Type: NVIDIA
+Branch: physics-develop
+Commit: 903553013870946205932faf8f012aa7e9fcd9f0
+Time: Tue Dec 21 10:48:07 2021
+Builder Name: DESKTOP-UCUIBJT
+Packman Version: 6.36.1
+Packagemaker Version: 0.4.8
+CI Build Number: '2791.90355301'
+CI System: Teamcity
+CI Version: 2021.2.1 (build 99602)
+TEAMCITY_BUILD_ID: '9170440'

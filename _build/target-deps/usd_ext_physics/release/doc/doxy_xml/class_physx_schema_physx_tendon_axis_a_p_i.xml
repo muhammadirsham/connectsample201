@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_tendon_axis_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxTendonAxisAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <derivedcompoundref refid="class_physx_schema_physx_tendon_axis_root_a_p_i" prot="public" virt="non-virtual">PhysxSchemaPhysxTendonAxisRootAPI</derivedcompoundref>
+    <includes refid="physx_tendon_axis_a_p_i_8h" local="no">physxTendonAxisAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_tendon_axis_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::MultipleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="89" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_tendon_axis_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="201" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1a1bb9f013f367b772ba36c6b1fee296cd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxTendonAxisAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim(), const TfToken &amp;name=TfToken())</argsstring>
+        <name>PhysxSchemaPhysxTendonAxisAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+          <defval>TfToken()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> with name <computeroutput>name</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_tendon_axis_a_p_i_1acd8fe0c38e1936a1ee56f30f001e8803" kindref="member">PhysxSchemaPhysxTendonAxisAPI::Get</ref>( prim.GetStage(), prim.GetPath().AppendProperty( &quot;physxTendon:name&quot;));</para><para>for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="100" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1abf39ed3b2753e36680e809eee0731c76" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxTendonAxisAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj, const TfToken &amp;name)</argsstring>
+        <name>PhysxSchemaPhysxTendonAxisAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> with name <computeroutput>name</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref>(schemaObj.GetPrim(), name), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="109" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1ae18ba47bf22e4e496773989dc3b83447" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxTendonAxisAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxTendonAxisAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1aa53b87421fbc15993adfd11e9b2045eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TfToken</type>
+        <definition>TfToken GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>Returns the name of this multiple-apply schema instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="129" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1ad9fe36eb5c442fd18e6fed5b52475f2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGearingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGearingAttr</name>
+        <briefdescription>
+<para>Joint gearing(s) per joint axis in axis token array, in the same order. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range (-inf, inf). Units: translational axis: unitless rotational axis: distance/degrees</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float[] gearing = [1]</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;float&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;FloatArray </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1ada7623817d52bc6054396fdce684fc27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGearingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGearingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_tendon_axis_a_p_i_1ad9fe36eb5c442fd18e6fed5b52475f2c" kindref="member">GetGearingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="233" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1a4a3ba2871c3812d609ec67f245db0cd2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetJointAxisAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetJointAxisAttr</name>
+        <briefdescription>
+<para>Specifies target joint axis/axes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ignored when the joint only has a single axis, e.g. a revolute joint.</para><para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token[] jointAxis</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;TfToken&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;TokenArray </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="physx_schema_2tokens_8h_1a393f20ccb3241cdd3a3884bd0041317b" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>transX, transY, transZ, rotX, rotY, rotZ </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1a405a6eed0fbd9707cef0bade77f5f852" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateJointAxisAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateJointAxisAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_tendon_axis_a_p_i_1a4a3ba2871c3812d609ec67f245db0cd2" kindref="member">GetJointAxisAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="257" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1ac74ade0d84fa71669cba8f1aabe0648a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true, const TfToken instanceName=TfToken())</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const TfToken</type>
+          <declname>instanceName</declname>
+          <defval>TfToken()</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes for a given instance name. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. The names returned will have the proper namespace prefix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1acd8fe0c38e1936a1ee56f30f001e8803" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxTendonAxisAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. <computeroutput>path</computeroutput> must be of the format &lt;path&gt;.physxTendon:name .</para><para>This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/>TfToken<sp/>name<sp/>=<sp/>SdfPath::StripNamespace(path.GetToken());</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_tendon_axis_a_p_i_1a1bb9f013f367b772ba36c6b1fee296cd" kindref="member">PhysxSchemaPhysxTendonAxisAPI</ref>(</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/>stage-&gt;GetPrimAtPath(path.GetPrimPath()),<sp/>name);</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1ac3eccb4a8ca49c7a6966b9ad1bc07024" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxTendonAxisAPI Get</definition>
+        <argsstring>(const UsdPrim &amp;prim, const TfToken &amp;name)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref> with name <computeroutput>name</computeroutput> holding the prim <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Shorthand for <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI(prim, name)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1aa8ff5e877e3474ed29495ff9b7af84be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API bool</type>
+        <definition>static PHYSXSCHEMA_API bool IsSchemaPropertyBaseName</definition>
+        <argsstring>(const TfToken &amp;baseName)</argsstring>
+        <name>IsSchemaPropertyBaseName</name>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>baseName</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the given name <computeroutput>baseName</computeroutput> is the base name of a property of PhysxTendonAxisAPI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1a8cc7d50341dd8a9e4599293653e857c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API bool</type>
+        <definition>static PHYSXSCHEMA_API bool IsPhysxTendonAxisAPIPath</definition>
+        <argsstring>(const SdfPath &amp;path, TfToken *name)</argsstring>
+        <name>IsPhysxTendonAxisAPIPath</name>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>TfToken *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the given path <computeroutput>path</computeroutput> is of an API schema of type PhysxTendonAxisAPI. </para>        </briefdescription>
+        <detaileddescription>
+<para>If so, it stores the instance name of the schema in <computeroutput>name</computeroutput> and returns true. Otherwise, it returns false. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1a36027dd952d9ca3a70550bba0b3a6e4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxTendonAxisAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim, const TfToken &amp;name)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>const TfToken &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>multiple-apply</bold> API schema to the given <computeroutput>prim</computeroutput> along with the given instance name, <computeroutput>name</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxTendonAxisAPI:&lt;i&gt;name&lt;/i&gt;&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim. For example, if <computeroutput>name</computeroutput> is &apos;instance1&apos;, the token &apos;PhysxTendonAxisAPI:instance1&apos; is added to &apos;apiSchemas&apos;.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_tendon_axis_a_p_i" kindref="compound">PhysxSchemaPhysxTendonAxisAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="190" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="205" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_tendon_axis_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="209" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WARNING: Draft API, this design is not fixed and may change in the future. </para>    </briefdescription>
+    <detaileddescription>
+<para>At this point, we don&apos;t support multi-axis joints (e.g. spherical, D6) or 0-DOF joints (fixed joints) yet.</para><para>Applied to a Physics Joint that must be part of an articulation, e.g. PhysicsRevoluteJoint or PhysicsPrismaticJoint.</para><para>A tendon axis is part of a fixed tendon and contributes to the tendon length via the position of its associated articulation joint axis and the gearing attribute. The tendon applies spring-damper forces to the articulation links that aim to maintain constraints on the tendon lengths that are evaluated at each axis (see dynamics details in the PhysxTendonAxisRootAPI doc).</para><para>A joint may have multiple tendon axes that belong to distinct fixed tendons; therefore, the fixed-tendon APIs are multi-apply and are grouped into tendons by their instance names.</para><para>Fixed tendons do not allow linking arbitrary joint axes of the articulation: The respective joints must all be directly connected to each other in the articulation structure, i.e. each of the joints in the tendon must be connected by a single articulation link to another joint in the same tendon. This implies that fixed tendons can branch along with a branching articulation as well. In addition, the root tendon axis created by applying the PhysxTendonAxisRootAPI must be applied to the articulation joint that is the common ancestor of all joint axes in the fixed tendon.</para><para>In a future version, it will be possible to include multiple axes of a multi-axis joint (e.g. a spherical joint) in the fixed tendon by adding them to the axis token array, and setting their gearing accordingly in the gearing float array (in the same order). Until then, the jointAxis token array will be ignored, and only the first element of the gearing array is considered.</para><para>See the PhysxTendonAxisRootAPI doc for details on the tendon dynamics. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="243">
+        <label>PhysxSchemaPhysxTendonAxisAPI</label>
+        <link refid="class_physx_schema_physx_tendon_axis_a_p_i"/>
+      </node>
+      <node id="244">
+        <label>PhysxSchemaPhysxTendonAxisRootAPI</label>
+        <link refid="class_physx_schema_physx_tendon_axis_root_a_p_i"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" line="84" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxTendonAxisAPI.h" bodystart="83" bodyend="270"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1a36027dd952d9ca3a70550bba0b3a6e4e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1ada7623817d52bc6054396fdce684fc27" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>CreateGearingAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1a405a6eed0fbd9707cef0bade77f5f852" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>CreateJointAxisAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1acd8fe0c38e1936a1ee56f30f001e8803" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1ac3eccb4a8ca49c7a6966b9ad1bc07024" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1ad9fe36eb5c442fd18e6fed5b52475f2c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>GetGearingAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1a4a3ba2871c3812d609ec67f245db0cd2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>GetJointAxisAttr</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1aa53b87421fbc15993adfd11e9b2045eb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>GetName</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1ac74ade0d84fa71669cba8f1aabe0648a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1a8cc7d50341dd8a9e4599293653e857c3" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>IsPhysxTendonAxisAPIPath</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1aa8ff5e877e3474ed29495ff9b7af84be" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>IsSchemaPropertyBaseName</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1a1bb9f013f367b772ba36c6b1fee296cd" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>PhysxSchemaPhysxTendonAxisAPI</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1abf39ed3b2753e36680e809eee0731c76" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>PhysxSchemaPhysxTendonAxisAPI</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_tendon_axis_a_p_i_1ae18ba47bf22e4e496773989dc3b83447" prot="public" virt="virtual"><scope>PhysxSchemaPhysxTendonAxisAPI</scope><name>~PhysxSchemaPhysxTendonAxisAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

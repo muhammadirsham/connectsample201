@@ -1,0 +1,14 @@
+<project toolsVersion="5.0">
+  <dependency name="python" >
+    <package name="python" version="3.10.7+nv1-${platform}" platforms="windows-x86_64 linux-x86_64 linux-aarch64 macos-universal" />
+  </dependency>
+  <dependency name="jsonref" linkPath="../../_build/target-deps/jsonref">
+    <package name="jsonref" version="0.2-00Dev001"/>
+  </dependency>
+  <dependency name="repo_format" tags="non-redist">
+    <package name="repo_format" version="2.0.1" />
+  </dependency>
+  <dependency name="repo_man" tags="non-redist">
+    <package name="repo_man" version="1.4.2" />
+  </dependency>
+</project>

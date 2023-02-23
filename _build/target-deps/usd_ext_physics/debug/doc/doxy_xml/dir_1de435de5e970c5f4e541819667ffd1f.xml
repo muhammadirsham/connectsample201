@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_1de435de5e970c5f4e541819667ffd1f" kind="dir">
+    <compoundname>W:/919a5455eee1e83c/src/physxSchema</compoundname>
+    <innerfile refid="physx_schema_2api_8h">api.h</innerfile>
+    <innerfile refid="character_controller_a_p_i_8h">characterControllerAPI.h</innerfile>
+    <innerfile refid="physx_articulation_a_p_i_8h">physxArticulationAPI.h</innerfile>
+    <innerfile refid="physx_articulation_force_sensor_a_p_i_8h">physxArticulationForceSensorAPI.h</innerfile>
+    <innerfile refid="physx_auto_attachment_a_p_i_8h">physxAutoAttachmentAPI.h</innerfile>
+    <innerfile refid="physx_auto_particle_cloth_a_p_i_8h">physxAutoParticleClothAPI.h</innerfile>
+    <innerfile refid="physx_camera_a_p_i_8h">physxCameraAPI.h</innerfile>
+    <innerfile refid="physx_camera_drone_a_p_i_8h">physxCameraDroneAPI.h</innerfile>
+    <innerfile refid="physx_camera_follow_a_p_i_8h">physxCameraFollowAPI.h</innerfile>
+    <innerfile refid="physx_camera_follow_look_a_p_i_8h">physxCameraFollowLookAPI.h</innerfile>
+    <innerfile refid="physx_camera_follow_velocity_a_p_i_8h">physxCameraFollowVelocityAPI.h</innerfile>
+    <innerfile refid="physx_character_controller_a_p_i_8h">physxCharacterControllerAPI.h</innerfile>
+    <innerfile refid="physx_collision_a_p_i_8h">physxCollisionAPI.h</innerfile>
+    <innerfile refid="physx_contact_report_a_p_i_8h">physxContactReportAPI.h</innerfile>
+    <innerfile refid="physx_convex_decomposition_collision_a_p_i_8h">physxConvexDecompositionCollisionAPI.h</innerfile>
+    <innerfile refid="physx_convex_hull_collision_a_p_i_8h">physxConvexHullCollisionAPI.h</innerfile>
+    <innerfile refid="physx_cooked_data_a_p_i_8h">physxCookedDataAPI.h</innerfile>
+    <innerfile refid="physx_deformable_a_p_i_8h">physxDeformableAPI.h</innerfile>
+    <innerfile refid="physx_deformable_body_a_p_i_8h">physxDeformableBodyAPI.h</innerfile>
+    <innerfile refid="physx_deformable_body_material_a_p_i_8h">physxDeformableBodyMaterialAPI.h</innerfile>
+    <innerfile refid="physx_deformable_surface_a_p_i_8h">physxDeformableSurfaceAPI.h</innerfile>
+    <innerfile refid="physx_deformable_surface_material_a_p_i_8h">physxDeformableSurfaceMaterialAPI.h</innerfile>
+    <innerfile refid="physx_diffuse_particles_a_p_i_8h">physxDiffuseParticlesAPI.h</innerfile>
+    <innerfile refid="physx_isosurface_a_p_i_8h">physxIsosurfaceAPI.h</innerfile>
+    <innerfile refid="physx_joint_a_p_i_8h">physxJointAPI.h</innerfile>
+    <innerfile refid="physx_limit_a_p_i_8h">physxLimitAPI.h</innerfile>
+    <innerfile refid="physx_material_a_p_i_8h">physxMaterialAPI.h</innerfile>
+    <innerfile refid="physx_particle_a_p_i_8h">physxParticleAPI.h</innerfile>
+    <innerfile refid="physx_particle_cloth_a_p_i_8h">physxParticleClothAPI.h</innerfile>
+    <innerfile refid="physx_particle_poisson_sampling_a_p_i_8h">physxParticlePoissonSamplingAPI.h</innerfile>
+    <innerfile refid="physx_particle_set_a_p_i_8h">physxParticleSetAPI.h</innerfile>
+    <innerfile refid="physx_particle_system_8h">physxParticleSystem.h</innerfile>
+    <innerfile refid="physx_p_b_d_material_a_p_i_8h">physxPBDMaterialAPI.h</innerfile>
+    <innerfile refid="physx_physics_attachment_8h">physxPhysicsAttachment.h</innerfile>
+    <innerfile refid="physx_physics_distance_joint_a_p_i_8h">physxPhysicsDistanceJointAPI.h</innerfile>
+    <innerfile refid="physx_physics_gear_joint_8h">physxPhysicsGearJoint.h</innerfile>
+    <innerfile refid="physx_physics_rack_and_pinion_joint_8h">physxPhysicsRackAndPinionJoint.h</innerfile>
+    <innerfile refid="physx_rigid_body_a_p_i_8h">physxRigidBodyAPI.h</innerfile>
+    <innerfile refid="physx_scene_a_p_i_8h">physxSceneAPI.h</innerfile>
+    <innerfile refid="physx_tendon_attachment_a_p_i_8h">physxTendonAttachmentAPI.h</innerfile>
+    <innerfile refid="physx_tendon_attachment_leaf_a_p_i_8h">physxTendonAttachmentLeafAPI.h</innerfile>
+    <innerfile refid="physx_tendon_attachment_root_a_p_i_8h">physxTendonAttachmentRootAPI.h</innerfile>
+    <innerfile refid="physx_tendon_axis_a_p_i_8h">physxTendonAxisAPI.h</innerfile>
+    <innerfile refid="physx_tendon_axis_root_a_p_i_8h">physxTendonAxisRootAPI.h</innerfile>
+    <innerfile refid="physx_triangle_mesh_collision_a_p_i_8h">physxTriangleMeshCollisionAPI.h</innerfile>
+    <innerfile refid="physx_triangle_mesh_simplification_collision_a_p_i_8h">physxTriangleMeshSimplificationCollisionAPI.h</innerfile>
+    <innerfile refid="physx_trigger_a_p_i_8h">physxTriggerAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_a_p_i_8h">physxVehicleAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_auto_gear_box_a_p_i_8h">physxVehicleAutoGearBoxAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_clutch_a_p_i_8h">physxVehicleClutchAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_context_a_p_i_8h">physxVehicleContextAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_controller_a_p_i_8h">physxVehicleControllerAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_drive_basic_a_p_i_8h">physxVehicleDriveBasicAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_drive_standard_a_p_i_8h">physxVehicleDriveStandardAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_engine_a_p_i_8h">physxVehicleEngineAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_gears_a_p_i_8h">physxVehicleGearsAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_suspension_a_p_i_8h">physxVehicleSuspensionAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_tire_a_p_i_8h">physxVehicleTireAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_tire_friction_table_8h">physxVehicleTireFrictionTable.h</innerfile>
+    <innerfile refid="physx_vehicle_wheel_a_p_i_8h">physxVehicleWheelAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_wheel_attachment_a_p_i_8h">physxVehicleWheelAttachmentAPI.h</innerfile>
+    <innerfile refid="physx_vehicle_wheel_controller_a_p_i_8h">physxVehicleWheelControllerAPI.h</innerfile>
+    <innerfile refid="plane_8h">plane.h</innerfile>
+    <innerfile refid="tetrahedral_mesh_8h">tetrahedralMesh.h</innerfile>
+    <innerfile refid="physx_schema_2tokens_8h">tokens.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/"/>
+  </compounddef>
+</doxygen>

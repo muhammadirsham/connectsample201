@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_vehicle_suspension_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxVehicleSuspensionAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_vehicle_suspension_a_p_i_8h" local="no">physxVehicleSuspensionAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="66" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="137" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1ae1b77fb0e917849d3adafdb342553f8f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleSuspensionAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxVehicleSuspensionAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1c5c4c31196f79d22cdc3a0ce99aa29d" kindref="member">PhysxSchemaPhysxVehicleSuspensionAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="72" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a6a397c31fe63dde72c2fefbb836b683b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleSuspensionAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxVehicleSuspensionAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="80" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a39464bab5d5a4631d6268dc42f785d6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxVehicleSuspensionAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxVehicleSuspensionAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a5baf0a5ecd6331a581871ff644c506a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSpringStrengthAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSpringStrengthAttr</name>
+        <briefdescription>
+<para>Spring strength of suspension unit (default unit is kilograms per second-squared [kg s^-2]). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:springStrength</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1ab1e7bac1a7b6509e386ebe24b89f5450" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSpringStrengthAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSpringStrengthAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a5baf0a5ecd6331a581871ff644c506a0" kindref="member">GetSpringStrengthAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a18d4946ef0e5a96ffeadfb8359a6a822" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSpringDamperRateAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSpringDamperRateAttr</name>
+        <briefdescription>
+<para>Spring damper rate of suspension unit (default unit is kilograms per second [kg s^-1]). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:springDamperRate</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a94bbcd7d5f7a169c1c10cfdbd469eb13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSpringDamperRateAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSpringDamperRateAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a18d4946ef0e5a96ffeadfb8359a6a822" kindref="member">GetSpringDamperRateAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a3a96f72ce751a1b639b8f6a8ad939bca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxCompressionAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxCompressionAttr</name>
+        <briefdescription>
+<para>Maximum compression from rest state allowed by suspension spring (default unit is meters [m]). </para>        </briefdescription>
+        <detaileddescription>
+<para>The value has to be positive.</para><para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:maxCompression</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a8e4e18fea080712c8798f3babf0801c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxCompressionAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxCompressionAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a3a96f72ce751a1b639b8f6a8ad939bca" kindref="member">GetMaxCompressionAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1c9d01d7a4f3cb8901e82818e21a4347" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxDroopAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxDroopAttr</name>
+        <briefdescription>
+<para>Maximum elongation from rest state allowed by suspension spring (default unit is meters [m]). </para>        </briefdescription>
+        <detaileddescription>
+<para>The value has to be positive.</para><para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:maxDroop</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1aa0a30d1b917008d462b34b655afdb1ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxDroopAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxDroopAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1c9d01d7a4f3cb8901e82818e21a4347" kindref="member">GetMaxDroopAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7ddbba3a90d6da3c22781db5bec4208b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSprungMassAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSprungMassAttr</name>
+        <briefdescription>
+<para>Mass of vehicle that is supported by suspension spring (default unit is kilograms [kg]). </para>        </briefdescription>
+        <detaileddescription>
+<para>If set to 0, the sprung mass will get computed automatically.</para><para>Note: it is not possible for a vehicle to have some sprung mass values being user-defined and some being computed automatically. Either all values have to be user-defined or all have to be set to 0 for auto-computation.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:sprungMass = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1ae9658d1e7cf5e99f8c408b032e534a53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSprungMassAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSprungMassAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7ddbba3a90d6da3c22781db5bec4208b" kindref="member">GetSprungMassAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a46ea43aae91e71bb85376cf884b40fe6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCamberAtRestAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCamberAtRestAttr</name>
+        <briefdescription>
+<para>Camber angle (in radians) of wheel when the suspension is at its rest position. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:camberAtRest</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1076cb0e6dad49a3557c61e4490fbe3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCamberAtRestAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCamberAtRestAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a46ea43aae91e71bb85376cf884b40fe6" kindref="member">GetCamberAtRestAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a73b1dc359839d57618479adcabfc04a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCamberAtMaxCompressionAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCamberAtMaxCompressionAttr</name>
+        <briefdescription>
+<para>Camber angle (in radians) of wheel when the suspension is at maximum compression. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:camberAtMaxCompression</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="310" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1aa3af4ddb75eff61c3ca9882839912d14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCamberAtMaxCompressionAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCamberAtMaxCompressionAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a73b1dc359839d57618479adcabfc04a8" kindref="member">GetCamberAtMaxCompressionAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7d436f8a976407e23f20a3b7ed9451ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCamberAtMaxDroopAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCamberAtMaxDroopAttr</name>
+        <briefdescription>
+<para>Camber angle (in radians) of wheel when the suspension is at maximum droop. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleSuspension:camberAtMaxDroop</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7f45228ca5d01521d1c56b9afaf351d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCamberAtMaxDroopAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCamberAtMaxDroopAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7d436f8a976407e23f20a3b7ed9451ab" kindref="member">GetCamberAtMaxDroopAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="342" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1c5c4c31196f79d22cdc3a0ce99aa29d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleSuspensionAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1ae1b77fb0e917849d3adafdb342553f8f" kindref="member">PhysxSchemaPhysxVehicleSuspensionAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a515e184178986a533064226c39835cf0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleSuspensionAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxVehicleSuspensionAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="126" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="133" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="141" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_suspension_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="145" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties of a PhysX vehicle wheel suspension. </para>    </briefdescription>
+    <detaileddescription>
+<para>If the suspension setup does not need to be shared among vehicle instances, it can be applied to the prim which has PhysxVehicleWheelAttachmentAPI applied. If the intent is to share the suspension setup, PhysxVehicleSuspensionAPI can be applied to a separate prim which can be linked to (see PhysxVehicleWheelAttachmentAPI). </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" line="61" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleSuspensionAPI.h" bodystart="60" bodyend="355"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a515e184178986a533064226c39835cf0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1aa3af4ddb75eff61c3ca9882839912d14" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateCamberAtMaxCompressionAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7f45228ca5d01521d1c56b9afaf351d9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateCamberAtMaxDroopAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1076cb0e6dad49a3557c61e4490fbe3d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateCamberAtRestAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a8e4e18fea080712c8798f3babf0801c2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateMaxCompressionAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1aa0a30d1b917008d462b34b655afdb1ae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateMaxDroopAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a94bbcd7d5f7a169c1c10cfdbd469eb13" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateSpringDamperRateAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1ab1e7bac1a7b6509e386ebe24b89f5450" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateSpringStrengthAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1ae9658d1e7cf5e99f8c408b032e534a53" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>CreateSprungMassAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1c5c4c31196f79d22cdc3a0ce99aa29d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a73b1dc359839d57618479adcabfc04a8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetCamberAtMaxCompressionAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7d436f8a976407e23f20a3b7ed9451ab" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetCamberAtMaxDroopAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a46ea43aae91e71bb85376cf884b40fe6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetCamberAtRestAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a3a96f72ce751a1b639b8f6a8ad939bca" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetMaxCompressionAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a1c9d01d7a4f3cb8901e82818e21a4347" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetMaxDroopAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a18d4946ef0e5a96ffeadfb8359a6a822" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetSpringDamperRateAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a5baf0a5ecd6331a581871ff644c506a0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetSpringStrengthAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a7ddbba3a90d6da3c22781db5bec4208b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>GetSprungMassAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1ae1b77fb0e917849d3adafdb342553f8f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>PhysxSchemaPhysxVehicleSuspensionAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a6a397c31fe63dde72c2fefbb836b683b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>PhysxSchemaPhysxVehicleSuspensionAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_vehicle_suspension_a_p_i_1a39464bab5d5a4631d6268dc42f785d6e" prot="public" virt="virtual"><scope>PhysxSchemaPhysxVehicleSuspensionAPI</scope><name>~PhysxSchemaPhysxVehicleSuspensionAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

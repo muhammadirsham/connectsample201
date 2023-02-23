@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcxproj", "{4179687C-2D31-AAC9-9638-8325820F45BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LiveSession", "LiveSession\LiveSession.vcxproj", "{F9C9B6FB-657F-2FF1-EE73-29C85A2826F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "omniSensorThread", "omniSensorThread\omniSensorThread.vcxproj", "{0A1B46A2-F613-65F4-1F46-4A790B9E4400}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "omniSimpleSensor", "omniSimpleSensor\omniSimpleSensor.vcxproj", "{3C1131A6-280A-50F8-513C-357D3D942F04}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "omniUsdaWatcher", "omniUsdaWatcher\omniUsdaWatcher.vcxproj", "{5319EDFF-BFA4-5AC4-C8B5-DDB834C0B6C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "omniUtilsLib", "omniUtilsLib\omniUtilsLib.vcxproj", "{40BB452E-2C1E-D5D2-D5A3-0D89C1E5A055}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "omnicli", "omnicli\omnicli.vcxproj", "{5010846A-BCEF-0206-C507-8EDC31666967}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|x64 = debug|x64
+		release|x64 = release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4179687C-2D31-AAC9-9638-8325820F45BA}.debug|x64.ActiveCfg = debug|x64
+		{4179687C-2D31-AAC9-9638-8325820F45BA}.debug|x64.Build.0 = debug|x64
+		{4179687C-2D31-AAC9-9638-8325820F45BA}.release|x64.ActiveCfg = release|x64
+		{4179687C-2D31-AAC9-9638-8325820F45BA}.release|x64.Build.0 = release|x64
+		{F9C9B6FB-657F-2FF1-EE73-29C85A2826F5}.debug|x64.ActiveCfg = debug|x64
+		{F9C9B6FB-657F-2FF1-EE73-29C85A2826F5}.debug|x64.Build.0 = debug|x64
+		{F9C9B6FB-657F-2FF1-EE73-29C85A2826F5}.release|x64.ActiveCfg = release|x64
+		{F9C9B6FB-657F-2FF1-EE73-29C85A2826F5}.release|x64.Build.0 = release|x64
+		{0A1B46A2-F613-65F4-1F46-4A790B9E4400}.debug|x64.ActiveCfg = debug|x64
+		{0A1B46A2-F613-65F4-1F46-4A790B9E4400}.debug|x64.Build.0 = debug|x64
+		{0A1B46A2-F613-65F4-1F46-4A790B9E4400}.release|x64.ActiveCfg = release|x64
+		{0A1B46A2-F613-65F4-1F46-4A790B9E4400}.release|x64.Build.0 = release|x64
+		{3C1131A6-280A-50F8-513C-357D3D942F04}.debug|x64.ActiveCfg = debug|x64
+		{3C1131A6-280A-50F8-513C-357D3D942F04}.debug|x64.Build.0 = debug|x64
+		{3C1131A6-280A-50F8-513C-357D3D942F04}.release|x64.ActiveCfg = release|x64
+		{3C1131A6-280A-50F8-513C-357D3D942F04}.release|x64.Build.0 = release|x64
+		{5319EDFF-BFA4-5AC4-C8B5-DDB834C0B6C4}.debug|x64.ActiveCfg = debug|x64
+		{5319EDFF-BFA4-5AC4-C8B5-DDB834C0B6C4}.debug|x64.Build.0 = debug|x64
+		{5319EDFF-BFA4-5AC4-C8B5-DDB834C0B6C4}.release|x64.ActiveCfg = release|x64
+		{5319EDFF-BFA4-5AC4-C8B5-DDB834C0B6C4}.release|x64.Build.0 = release|x64
+		{40BB452E-2C1E-D5D2-D5A3-0D89C1E5A055}.debug|x64.ActiveCfg = debug|x64
+		{40BB452E-2C1E-D5D2-D5A3-0D89C1E5A055}.debug|x64.Build.0 = debug|x64
+		{40BB452E-2C1E-D5D2-D5A3-0D89C1E5A055}.release|x64.ActiveCfg = release|x64
+		{40BB452E-2C1E-D5D2-D5A3-0D89C1E5A055}.release|x64.Build.0 = release|x64
+		{5010846A-BCEF-0206-C507-8EDC31666967}.debug|x64.ActiveCfg = debug|x64
+		{5010846A-BCEF-0206-C507-8EDC31666967}.debug|x64.Build.0 = debug|x64
+		{5010846A-BCEF-0206-C507-8EDC31666967}.release|x64.ActiveCfg = release|x64
+		{5010846A-BCEF-0206-C507-8EDC31666967}.release|x64.Build.0 = release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

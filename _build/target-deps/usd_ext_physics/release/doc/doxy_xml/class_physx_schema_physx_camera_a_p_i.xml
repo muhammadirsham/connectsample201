@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_camera_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxCameraAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <derivedcompoundref refid="class_physx_schema_physx_camera_drone_a_p_i" prot="public" virt="non-virtual">PhysxSchemaPhysxCameraDroneAPI</derivedcompoundref>
+    <derivedcompoundref refid="class_physx_schema_physx_camera_follow_a_p_i" prot="public" virt="non-virtual">PhysxSchemaPhysxCameraFollowAPI</derivedcompoundref>
+    <includes refid="physx_camera_a_p_i_8h" local="no">physxCameraAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_camera_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_camera_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="134" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1aaeaeb6b503c1c8787c9acda118de8494" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxCameraAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxCameraAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_camera_a_p_i_1a991a559f9d78ca7af3430c95b16453fc" kindref="member">PhysxSchemaPhysxCameraAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1a503303c2b11330b7a067b9059208d6cc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxCameraAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxCameraAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1ac1241fdfb8663ec264460260fc1d839b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxCameraAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxCameraAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1a38c9994ae80b41616fa911b53d0f985d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetPhysxCameraSubjectRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetPhysxCameraSubjectRel</name>
+        <briefdescription>
+<para>Reference to the subject this camera is to track. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1ac04454f2cf881b2d94e722e53a48ebd1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreatePhysxCameraSubjectRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreatePhysxCameraSubjectRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_a_p_i_1a38c9994ae80b41616fa911b53d0f985d" kindref="member">GetPhysxCameraSubjectRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="156" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1a991a559f9d78ca7af3430c95b16453fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxCameraAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_camera_a_p_i_1aaeaeb6b503c1c8787c9acda118de8494" kindref="member">PhysxSchemaPhysxCameraAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1ad18ab0dadcde54cbf5526f114644034e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxCameraAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxCameraAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_camera_a_p_i" kindref="compound">PhysxSchemaPhysxCameraAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX camera. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="133">
+        <label>PhysxSchemaPhysxCameraFollowAPI</label>
+        <link refid="class_physx_schema_physx_camera_follow_a_p_i"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>PhysxSchemaPhysxCameraAPI</label>
+        <link refid="class_physx_schema_physx_camera_a_p_i"/>
+      </node>
+      <node id="134">
+        <label>PhysxSchemaPhysxCameraFollowLookAPI</label>
+        <link refid="class_physx_schema_physx_camera_follow_look_a_p_i"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>PhysxSchemaPhysxCameraDroneAPI</label>
+        <link refid="class_physx_schema_physx_camera_drone_a_p_i"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>PhysxSchemaPhysxCameraFollowVelocityAPI</label>
+        <link refid="class_physx_schema_physx_camera_follow_velocity_a_p_i"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraAPI.h" bodystart="57" bodyend="169"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1ad18ab0dadcde54cbf5526f114644034e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1ac04454f2cf881b2d94e722e53a48ebd1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>CreatePhysxCameraSubjectRel</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a991a559f9d78ca7af3430c95b16453fc" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a38c9994ae80b41616fa911b53d0f985d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>GetPhysxCameraSubjectRel</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1aaeaeb6b503c1c8787c9acda118de8494" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>PhysxSchemaPhysxCameraAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a503303c2b11330b7a067b9059208d6cc" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>PhysxSchemaPhysxCameraAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1ac1241fdfb8663ec264460260fc1d839b" prot="public" virt="virtual"><scope>PhysxSchemaPhysxCameraAPI</scope><name>~PhysxSchemaPhysxCameraAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

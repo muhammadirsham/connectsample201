@@ -1,0 +1,20 @@
+<!--
+***********************************************************************************************
+NVIDIA.ImportBefore.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) NVIDIA. All rights reserved. 
+***********************************************************************************************
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DisableRegistryUse>true</DisableRegistryUse>
+    <VCToolsVersion>14.29.30133</VCToolsVersion>
+    <!-- These values are derived from the relative location of MSBuild.exe -->
+    <VCInstallDir_160>$(MSBuildBinPath)\..\..\..\VC\</VCInstallDir_160>
+    <VCToolsInstallDir_160>$(VCInstallDir_160)Tools\MSVC\$(VCToolsVersion)\</VCToolsInstallDir_160>
+  </PropertyGroup>
+</Project>

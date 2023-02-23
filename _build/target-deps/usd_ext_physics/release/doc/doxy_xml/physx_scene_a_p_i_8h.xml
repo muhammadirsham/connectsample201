@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="physx_scene_a_p_i_8h" kind="file">
+    <compoundname>physxSceneAPI.h</compoundname>
+    <includes local="yes">pxr/pxr.h</includes>
+    <includes refid="physx_schema_2api_8h" local="yes">.//api.h</includes>
+    <includes local="yes">pxr/usd/usd/apiSchemaBase.h</includes>
+    <includes local="yes">pxr/usd/usd/prim.h</includes>
+    <includes local="yes">pxr/usd/usd/stage.h</includes>
+    <includes refid="physx_schema_2tokens_8h" local="yes">.//tokens.h</includes>
+    <includes local="yes">pxr/base/vt/value.h</includes>
+    <includes local="yes">pxr/base/gf/vec3d.h</includes>
+    <includes local="yes">pxr/base/gf/vec3f.h</includes>
+    <includes local="yes">pxr/base/gf/matrix4d.h</includes>
+    <includes local="yes">pxr/base/tf/token.h</includes>
+    <includes local="yes">pxr/base/tf/type.h</includes>
+    <incdepgraph>
+      <node id="2172">
+        <label>.//tokens.h</label>
+        <link refid="physx_schema_2tokens_8h"/>
+        <childnode refid="2166" relation="include">
+        </childnode>
+        <childnode refid="2167" relation="include">
+        </childnode>
+        <childnode refid="2173" relation="include">
+        </childnode>
+        <childnode refid="2174" relation="include">
+        </childnode>
+        <childnode refid="2175" relation="include">
+        </childnode>
+      </node>
+      <node id="2178">
+        <label>pxr/base/gf/vec3f.h</label>
+      </node>
+      <node id="2169">
+        <label>pxr/usd/usd/apiSchemaBase.h</label>
+      </node>
+      <node id="2171">
+        <label>pxr/usd/usd/stage.h</label>
+      </node>
+      <node id="2176">
+        <label>pxr/base/vt/value.h</label>
+      </node>
+      <node id="2168">
+        <label>pxr/base/arch/export.h</label>
+      </node>
+      <node id="2170">
+        <label>pxr/usd/usd/prim.h</label>
+      </node>
+      <node id="2179">
+        <label>pxr/base/gf/matrix4d.h</label>
+      </node>
+      <node id="2166">
+        <label>pxr/pxr.h</label>
+      </node>
+      <node id="2165">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h</label>
+        <link refid="physxSceneAPI.h"/>
+        <childnode refid="2166" relation="include">
+        </childnode>
+        <childnode refid="2167" relation="include">
+        </childnode>
+        <childnode refid="2169" relation="include">
+        </childnode>
+        <childnode refid="2170" relation="include">
+        </childnode>
+        <childnode refid="2171" relation="include">
+        </childnode>
+        <childnode refid="2172" relation="include">
+        </childnode>
+        <childnode refid="2176" relation="include">
+        </childnode>
+        <childnode refid="2177" relation="include">
+        </childnode>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2174" relation="include">
+        </childnode>
+        <childnode refid="2180" relation="include">
+        </childnode>
+      </node>
+      <node id="2167">
+        <label>.//api.h</label>
+        <link refid="physx_schema_2api_8h_source"/>
+        <childnode refid="2168" relation="include">
+        </childnode>
+      </node>
+      <node id="2173">
+        <label>pxr/base/tf/staticData.h</label>
+      </node>
+      <node id="2177">
+        <label>pxr/base/gf/vec3d.h</label>
+      </node>
+      <node id="2175">
+        <label>vector</label>
+      </node>
+      <node id="2174">
+        <label>pxr/base/tf/token.h</label>
+      </node>
+      <node id="2180">
+        <label>pxr/base/tf/type.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_physx_schema_physx_scene_a_p_i" prot="public">PhysxSchemaPhysxSceneAPI</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>2016<sp/>Pixar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;Apache<sp/>License&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>following<sp/>modification;<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compliance<sp/>with<sp/>the<sp/>Apache<sp/>License<sp/>and<sp/>the<sp/>following<sp/>modification<sp/>to<sp/>it:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>6.<sp/>Trademarks.<sp/>is<sp/>deleted<sp/>and<sp/>replaced<sp/>with:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6.<sp/>Trademarks.<sp/>This<sp/>License<sp/>does<sp/>not<sp/>grant<sp/>permission<sp/>to<sp/>use<sp/>the<sp/>trade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>names,<sp/>trademarks,<sp/>service<sp/>marks,<sp/>or<sp/>product<sp/>names<sp/>of<sp/>the<sp/>Licensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>and<sp/>its<sp/>affiliates,<sp/>except<sp/>as<sp/>required<sp/>to<sp/>comply<sp/>with<sp/>Section<sp/>4(c)<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>the<sp/>License<sp/>and<sp/>to<sp/>reproduce<sp/>the<sp/>content<sp/>of<sp/>the<sp/>NOTICE<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>Apache<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>Apache<sp/>License<sp/>with<sp/>the<sp/>above<sp/>modification<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>Apache<sp/>License<sp/>for<sp/>the<sp/>specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>Apache<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PHYSXSCHEMA_GENERATED_PHYSXSCENEAPI_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PHYSXSCHEMA_GENERATED_PHYSXSCENEAPI_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/pxr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;.//api.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/usd/usd/apiSchemaBase.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/usd/usd/prim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/usd/usd/stage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="physx_schema_2tokens_8h" kindref="compound">.//tokens.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/vt/value.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/gf/vec3d.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/gf/vec3f.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/gf/matrix4d.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/tf/token.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/tf/type.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">PXR_NAMESPACE_OPEN_SCOPE</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SdfAssetPath;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PHYSXSCENEAPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_physx_schema_physx_scene_a_p_i" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>UsdAPISchemaBase</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69" refid="class_physx_schema_physx_scene_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdSchemaType<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" kindref="member">schemaType</ref><sp/>=<sp/>UsdSchemaType::SingleApplyAPI;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_physx_schema_physx_scene_a_p_i_1a3fd24b0522ad8b78f7a4b56c623fce1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a3fd24b0522ad8b78f7a4b56c623fce1c" kindref="member">PhysxSchemaPhysxSceneAPI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdPrim&amp;<sp/>prim=UsdPrim())</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>UsdAPISchemaBase(prim)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="class_physx_schema_physx_scene_a_p_i_1a30eace8877de75ff4feee0f9fa615dca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a30eace8877de75ff4feee0f9fa615dca" kindref="member">PhysxSchemaPhysxSceneAPI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdSchemaBase&amp;<sp/>schemaObj)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>UsdAPISchemaBase(schemaObj)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a2d6b3370bea3f1b34ea780fb87a5cc22" kindref="member">~PhysxSchemaPhysxSceneAPI</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfTokenVector<sp/>&amp;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" kindref="member">GetSchemaAttributeNames</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeInherited=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a8d301eb6fbd9b2642fe837aea44aad58" kindref="member">Get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdStagePtr<sp/>&amp;stage,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SdfPath<sp/>&amp;path);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_physx_schema_physx_scene_a_p_i" kindref="compound">PhysxSchemaPhysxSceneAPI</ref><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a1602a48e045d5fc843ea18f1994b9199" kindref="member">Apply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UsdPrim<sp/>&amp;prim);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdSchemaType<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" kindref="member">_GetSchemaType</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>needs<sp/>to<sp/>invoke<sp/>_GetStaticTfType.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">UsdSchemaRegistry;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfType<sp/>&amp;_GetStaticTfType();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_IsTypedSchema();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>override<sp/>SchemaBase<sp/>virtuals.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfType<sp/>&amp;_GetTfType()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>BOUNCETHRESHOLD<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a4e7eafca0b58f02d19b837e149611a9d" kindref="member">GetBounceThresholdAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a95a8431139299a08e433bd8d2cccab83" kindref="member">CreateBounceThresholdAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FRICTIONOFFSETTHRESHOLD<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1aed7c92a926b7852a9d63e6938df6b9a1" kindref="member">GetFrictionOffsetThresholdAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a90d75ae21f945d5f08f75b8a437dbffe" kindref="member">CreateFrictionOffsetThresholdAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FRICTIONCORRELATIONDISTANCE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a3989d832260c65299451b198b47f3be1" kindref="member">GetFrictionCorrelationDistanceAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a2d0e809f2a2f68431696554ed3bfc81c" kindref="member">CreateFrictionCorrelationDistanceAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MAXBIASCOEFFICIENT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a923dc0f3837cb1d7827c6fca73095479" kindref="member">GetMaxBiasCoefficientAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a27d5a41162a201b456c1f0652043ee30" kindref="member">CreateMaxBiasCoefficientAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>COLLISIONSYSTEM<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a962adb205b23ba538b75c416dbcb75a4" kindref="member">GetCollisionSystemAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a56aeb07f5def068c29bdc98226a704c1" kindref="member">CreateCollisionSystemAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SOLVERTYPE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="275"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a735549d8e9f4b6ca212934dbd7e321e7" kindref="member">GetSolverTypeAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a2e43ab41f65768ce25a78a5be2435151" kindref="member">CreateSolverTypeAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>BROADPHASETYPE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1ac124b2a55f77fe5d17d7db659373f13c" kindref="member">GetBroadphaseTypeAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1ac402b063b48f7a7466c6ea68a376780d" kindref="member">CreateBroadphaseTypeAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FRICTIONTYPE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="323"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a25dd7281fde3e2a0c4804eebfe92dce0" kindref="member">GetFrictionTypeAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a2e2398d756439e1101ccc3919d1268d8" kindref="member">CreateFrictionTypeAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ENABLECCD<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="345"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a431eecfd7cfcc67a2a1902c6ad967053" kindref="member">GetEnableCCDAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a5c33980c29694cd4911249b85261f0d9" kindref="member">CreateEnableCCDAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ENABLESTABILIZATION<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="367"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a3671d08277ae249ea7612341a85b9833" kindref="member">GetEnableStabilizationAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1aa8c0171d65751f35d9b20f0fd0f32232" kindref="member">CreateEnableStabilizationAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ENABLEGPUDYNAMICS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="389"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a73b24c98c697a06898b4bfc08f215545" kindref="member">GetEnableGPUDynamicsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1acb2988adb47c2c57e0fd615136ebdc69" kindref="member">CreateEnableGPUDynamicsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ENABLEENHANCEDDETERMINISM<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="411"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1ae51c3ef70dfa7eb31c1b40dbb128c8ca" kindref="member">GetEnableEnhancedDeterminismAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1ad19bbcb2feaf33e58737266eda6ef5b2" kindref="member">CreateEnableEnhancedDeterminismAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TIMESTEPSPERSECOND<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="435"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1aae75ca75b72cc95c0eba4f3266726ccf" kindref="member">GetTimeStepsPerSecondAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a049992e67a2ac7820e006fa69ed26243" kindref="member">CreateTimeStepsPerSecondAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUTEMPBUFFERCAPACITY<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="457"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a41ea552045c36414cfeee03d7322fcb2" kindref="member">GetGpuTempBufferCapacityAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a4f62a8b38ee2e39d7e133cb1575b16a6" kindref="member">CreateGpuTempBufferCapacityAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUMAXRIGIDCONTACTCOUNT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="479"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a7def06f5dd711c8db20e478d718612d6" kindref="member">GetGpuMaxRigidContactCountAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a82449ea64c8cc92914ecec6ed804c8fe" kindref="member">CreateGpuMaxRigidContactCountAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUMAXRIGIDPATCHCOUNT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="501"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a2ac3b87026bb010a59c3ec2d33712a2c" kindref="member">GetGpuMaxRigidPatchCountAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a61b2e80c4c05cf23949476b3b9da5326" kindref="member">CreateGpuMaxRigidPatchCountAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUHEAPCAPACITY<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="523"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a12d5ac9aa8d5905019b5ebbe67bf7491" kindref="member">GetGpuHeapCapacityAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1af274fd7e1251d2635884ebf7c776900e" kindref="member">CreateGpuHeapCapacityAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUFOUNDLOSTPAIRSCAPACITY<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="545"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a62d09529974a1460404a6954467e07e0" kindref="member">GetGpuFoundLostPairsCapacityAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1ae8de7ca10490275902cb9f129c7417b0" kindref="member">CreateGpuFoundLostPairsCapacityAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUFOUNDLOSTAGGREGATEPAIRSCAPACITY<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="567"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a6cb233e838ff92c69f39c28371d5990e" kindref="member">GetGpuFoundLostAggregatePairsCapacityAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a305977e95238175fa4aaa872396f3651" kindref="member">CreateGpuFoundLostAggregatePairsCapacityAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUTOTALAGGREGATEPAIRSCAPACITY<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="589"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a54777500e6ccc0737326c7e1d5520dbf" kindref="member">GetGpuTotalAggregatePairsCapacityAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a57019bcfeb7196f094b33dfce9bc5318" kindref="member">CreateGpuTotalAggregatePairsCapacityAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUMAXSOFTBODYCONTACTS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="611"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a94cc26f814bc1020d23cb49352cdfc81" kindref="member">GetGpuMaxSoftBodyContactsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a87ab8e6ffb05ceac8fcd5c685f06482a" kindref="member">CreateGpuMaxSoftBodyContactsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUMAXPARTICLECONTACTS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="633"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a99f414d61c0b8fcfc9a4c2386356b37c" kindref="member">GetGpuMaxParticleContactsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1afb9b8e1b3236eb08c4f396fea692c28e" kindref="member">CreateGpuMaxParticleContactsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUMAXNUMPARTITIONS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="655"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a70f9ef14983b88c86cc1b57a459c12e0" kindref="member">GetGpuMaxNumPartitionsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a27d7210a7062666d158ad54954d86792" kindref="member">CreateGpuMaxNumPartitionsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"></highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GPUCOLLISIONSTACKSIZE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="677"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1af346681eb51d991ec0daa8e7bfc97efa" kindref="member">GetGpuCollisionStackSizeAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a9b9d5710198fb1b65d8ecd4c5843112d" kindref="member">CreateGpuCollisionStackSizeAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>INVERTCOLLISIONGROUPFILTER<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="704"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a09b1bd683add7fae1ae91c8323053a9d" kindref="member">GetInvertCollisionGroupFilterAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a22b63a9e000af1f23e3c8d512e601ad4" kindref="member">CreateInvertCollisionGroupFilterAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>REPORTKINEMATICKINEMATICPAIRS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="727"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a97f5ac94b435fa0fe9aac55b9d5c1c97" kindref="member">GetReportKinematicKinematicPairsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"></highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1ab93024576263c3e08697c6cc076e8595" kindref="member">CreateReportKinematicKinematicPairsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>REPORTKINEMATICSTATICPAIRS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="750"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a5e709d4b0119053919f9e1fca712cefb" kindref="member">GetReportKinematicStaticPairsAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a1b855827b73da102530ce45a2046ac5e" kindref="member">CreateReportKinematicStaticPairsAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MINITERATIONCOUNT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="772"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a91ee5c388ebcc78d7a42e5660688044c" kindref="member">GetMinIterationCountAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"></highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1ab96ef0b591f7d3a50a5d5e8ad1b9aafe" kindref="member">CreateMinIterationCountAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MAXITERATIONCOUNT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------<sp/>//</highlight></codeline>
+<codeline lineno="794"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a087cb8f9b82692540c1325226dd4a28f" kindref="member">GetMaxIterationCountAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"></highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/>PHYSXSCHEMA_API</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/>UsdAttribute<sp/><ref refid="class_physx_schema_physx_scene_a_p_i_1a7461260a3e5b892e945d41f9c4110f6f" kindref="member">CreateMaxIterationCountAttr</ref>(VtValue<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;defaultValue<sp/>=<sp/>VtValue(),<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSparsely=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"></highlight></codeline>
+<codeline lineno="805"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====================================================================<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Feel<sp/>free<sp/>to<sp/>add<sp/>custom<sp/>code<sp/>below<sp/>this<sp/>line,<sp/>it<sp/>will<sp/>be<sp/>preserved<sp/>by<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>code<sp/>generator.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Just<sp/>remember<sp/>to:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Close<sp/>the<sp/>class<sp/>declaration<sp/>with<sp/>};<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Close<sp/>the<sp/>namespace<sp/>with<sp/>PXR_NAMESPACE_CLOSE_SCOPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="813"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>-<sp/>Close<sp/>the<sp/>include<sp/>guard<sp/>with<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>=====================================================================<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="815"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>--(BEGIN<sp/>CUSTOM<sp/>CODE)--</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="816"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="817"><highlight class="normal"></highlight></codeline>
+<codeline lineno="818"><highlight class="normal">PXR_NAMESPACE_CLOSE_SCOPE</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"></highlight></codeline>
+<codeline lineno="820"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxSceneAPI.h"/>
+  </compounddef>
+</doxygen>

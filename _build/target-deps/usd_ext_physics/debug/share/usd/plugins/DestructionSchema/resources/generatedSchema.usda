@@ -1,0 +1,117 @@
+#usda 1.0
+(
+    "WARNING: THIS FILE IS GENERATED.  DO NOT EDIT."
+    customLayerData = {
+        string[] appliedAPISchemas = ["DestructibleBaseAPI", "DestructibleChunkAPI", "DestructibleBondAPI", "DestructibleInstAPI"]
+        dictionary multipleApplyAPISchemas = {
+        }
+    }
+)
+
+class "DestructibleBaseAPI" (
+    doc = """Applies destructible attributes to any UsdGeomXformable prim
+    and allows mesh descendants to be used to author destruction."""
+)
+{
+    float destruct:defaultBondStrength = -1 (
+        displayName = "Default Bond Strength"
+        doc = """Default value to use for all bonds in the destructible.
+        If not authored, use individual bond strength values."""
+    )
+    float destruct:defaultChunkStrength = -1 (
+        displayName = "Default Chunk Strength"
+        doc = """Default value to use for all chunks in the destructible.
+        If not authored, use individual chunk strength values."""
+    )
+    int destruct:supportDepth = 2147483647 (
+        displayName = "Support Depth"
+        doc = """Desired chunk depth for support graph representation.
+        Leaves that are shallower than this depth and non-leaves at this depth
+        will be support chunks and may be bonded together using bonds.  The
+        setting will make leaf chunks the support chunks."""
+    )
+}
+
+class "DestructibleChunkAPI" (
+    doc = """When applied to a UsdGeomMesh descendant of a prim with the
+    DestructibleBaseAPI, this mesh will be considered part of a destructible
+    hierarchy."""
+)
+{
+    point3f destruct:centroid = (-inf, -inf, -inf) (
+        displayName = "Centroid"
+        doc = """Optional chunk centroid.  If not authored, it will be
+        calculated from the chunk mesh."""
+    )
+    rel destruct:parentChunk (
+        displayName = "Parent Chunk"
+        doc = "The parent chunk prim.  If empty, this chunk is a root."
+    )
+    float destruct:strength = -1 (
+        displayName = "Strength"
+        doc = """The chunk's strength.  Default value = -1.0.  If negative,
+        the chunk's volume will be used."""
+    )
+    float destruct:volume = -inf (
+        displayName = "Volume"
+        doc = """Optional chunk volume.  If not authored, it will be
+        calculated from the chunk mesh."""
+    )
+}
+
+class "DestructibleBondAPI" (
+    doc = """When applied to a UsdGeomXformable descendant of a prim with the
+    DestructibleBaseAPI, this prim may be used to override, delete, or define
+    bonds between chunks."""
+)
+{
+    float destruct:area = -inf (
+        displayName = "Area"
+        doc = """Optional bond area.  If not authored, it will be calculated
+        from the adjoining chunks."""
+    )
+    rel destruct:attached (
+        displayName = "Attached"
+        doc = """If two paths are given, at least one must be a chunk.  If the
+        second path is also a chunk, the bond is internal.  Otherwise the
+        second prim must be a rigid body collider and the bond is external.
+        If only one path is given, the bond is external, attaching to the
+        static world."""
+    )
+    point3f destruct:centroid = (-inf, -inf, -inf) (
+        displayName = "Centroid"
+        doc = """Optional bond centroid.  If not authored, the translation
+        component of this prim's transform will be used as the centroid."""
+    )
+    normal3f destruct:normal = (0, 0, 0) (
+        displayName = "Normal"
+        doc = """Optional bond normal.  If not authored, the Z-axis of the
+        local frame defined by this prim's transform will be used as the
+        normal."""
+    )
+    float destruct:strength = -1 (
+        displayName = "Strength"
+        doc = """The bond's strength.  Default value = -1.0.  If negative, the
+        bond's area will be used."""
+    )
+    bool destruct:unbreakable = 0 (
+        displayName = "Unbreakable"
+        doc = """Whether or not the bond is unbreakable.
+        Default value = false.  If true, the bond has effectively infinite
+        strength."""
+    )
+}
+
+class "DestructibleInstAPI" (
+    doc = """When applied to a UsdGeomXformable, it creates a destructible
+    instance based off of the geometry and attributes defined by a referenced
+    DestructibleBaseAPI."""
+)
+{
+    rel destruct:base (
+        displayName = "base"
+        doc = """The referenced destructible base
+        (see DestructibleBaseAPI)."""
+    )
+}
+

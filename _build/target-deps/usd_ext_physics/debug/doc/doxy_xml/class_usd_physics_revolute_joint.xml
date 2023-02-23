@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_usd_physics_revolute_joint" kind="class" prot="public">
+    <compoundname>UsdPhysicsRevoluteJoint</compoundname>
+    <basecompoundref refid="class_usd_physics_joint" prot="public" virt="non-virtual">UsdPhysicsJoint</basecompoundref>
+    <includes refid="revolute_joint_8h" local="no">revoluteJoint.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_usd_physics_revolute_joint_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::ConcreteTyped</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_usd_physics_revolute_joint_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="147" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a40a1992b2627c865bfd55403af659afa" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsRevoluteJoint</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>UsdPhysicsRevoluteJoint</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_usd_physics_revolute_joint_1a53698d87f82049033bd77f6430906d4c" kindref="member">UsdPhysicsRevoluteJoint::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="75" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1ac0f2230c7ebfacb88a56497a18cd1628" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsRevoluteJoint</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>UsdPhysicsRevoluteJoint</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="83" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a1babfe13bb023055c885f40bc489d29f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>USDPHYSICS_API</type>
+        <definition>virtual USDPHYSICS_API ~UsdPhysicsRevoluteJoint</definition>
+        <argsstring>()</argsstring>
+        <name>~UsdPhysicsRevoluteJoint</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1aecf06d2ecd4ccd348d009e71e28aa9e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetAxisAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAxisAttr</name>
+        <briefdescription>
+<para>Joint axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>uniform token physics:axis = &quot;X&quot;</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>TfToken </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Token </para></entry></row>
+<row>
+<entry thead="no"><para>Variability </para></entry><entry thead="no"><para>SdfVariabilityUniform </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="usd_physics_2tokens_8h_1abecb2253be1aa39fd5a77f62b5dc1adc" kindref="member">Allowed Values</ref> </para></entry><entry thead="no"><para>X, Y, Z </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a1aad3e90ed0a4014a8cb628de99d8d04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateAxisAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAxisAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_revolute_joint_1aecf06d2ecd4ccd348d009e71e28aa9e3" kindref="member">GetAxisAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a3d65805129ce6087273738afc3f2e1cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetLowerLimitAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLowerLimitAttr</name>
+        <briefdescription>
+<para>Lower limit. </para>        </briefdescription>
+        <detaileddescription>
+<para>Units: degrees. -inf means not limited in negative direction.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physics:lowerLimit = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a7272c6977dd78f7a15268fe21d8435aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateLowerLimitAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLowerLimitAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_revolute_joint_1a3d65805129ce6087273738afc3f2e1cc" kindref="member">GetLowerLimitAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a2d6a7bee5c4b87bd2c27c75ac54e645f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetUpperLimitAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetUpperLimitAttr</name>
+        <briefdescription>
+<para>Upper limit. </para>        </briefdescription>
+        <detaileddescription>
+<para>Units: degrees. inf means not limited in positive direction.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physics:upperLimit = inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a1ce009e232b2029a87e02e8a796da324" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateUpperLimitAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateUpperLimitAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_revolute_joint_1a2d6a7bee5c4b87bd2c27c75ac54e645f" kindref="member">GetUpperLimitAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="225" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfTokenVector &amp;</type>
+        <definition>static USDPHYSICS_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a53698d87f82049033bd77f6430906d4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsRevoluteJoint Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_usd_physics_revolute_joint_1a40a1992b2627c865bfd55403af659afa" kindref="member">UsdPhysicsRevoluteJoint</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a1013bcd230d4a852c36adc91c60441e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsRevoluteJoint Define</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Attempt to ensure a <emphasis>UsdPrim</emphasis> adhering to this schema at <computeroutput>path</computeroutput> is defined (according to UsdPrim::IsDefined()) on this stage. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a prim adhering to this schema at <computeroutput>path</computeroutput> is already defined on this stage, return that prim. Otherwise author an <emphasis>SdfPrimSpec</emphasis> with <emphasis>specifier</emphasis> == <emphasis>SdfSpecifierDef</emphasis> and this schema&apos;s prim type name for the prim at <computeroutput>path</computeroutput> at the current EditTarget. Author <emphasis>SdfPrimSpec</emphasis> s with <computeroutput>specifier</computeroutput> == <emphasis>SdfSpecifierDef</emphasis> and empty typeName at the current EditTarget for any nonexistent, or existing but not <emphasis>Defined</emphasis> ancestors.</para><para>The given <emphasis>path</emphasis> must be an absolute prim path that does not contain any variant selections.</para><para>If it is impossible to author any of the necessary PrimSpecs, (for example, in case <emphasis>path</emphasis> cannot map to the current UsdEditTarget&apos;s namespace) issue an error and return an invalid <emphasis>UsdPrim</emphasis>.</para><para>Note that this method may return a defined prim whose typeName does not specify this schema class, in case a stronger typeName opinion overrides the opinion at the current EditTarget. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="136" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdSchemaType</type>
+        <definition>USDPHYSICS_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1adade0ff4639afd184e30c5708ae86f8d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>static USDPHYSICS_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="151" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_usd_physics_revolute_joint_1a96538019a0566b8f54f05953ac1c6615" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>USDPHYSICS_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="155" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Predefined revolute joint type (rotation along revolute joint axis is permitted.) </para>    </briefdescription>
+    <detaileddescription>
+<para>For any described attribute <emphasis>Fallback</emphasis> <emphasis>Value</emphasis> or <emphasis>Allowed</emphasis> <emphasis>Values</emphasis> below that are text/tokens, the actual token is published and defined in <ref refid="usd_physics_2tokens_8h_1abecb2253be1aa39fd5a77f62b5dc1adc" kindref="member">UsdPhysicsTokens</ref>. So to set an attribute to the value &quot;rightHanded&quot;, use UsdPhysicsTokens-&gt;rightHanded as the value. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="331">
+        <label>UsdPhysicsRevoluteJoint</label>
+        <link refid="class_usd_physics_revolute_joint"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>UsdPhysicsJoint</label>
+        <link refid="class_usd_physics_joint"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="333">
+        <label>UsdPhysicsRevoluteJoint</label>
+        <link refid="class_usd_physics_revolute_joint"/>
+        <childnode refid="334" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>UsdPhysicsJoint</label>
+        <link refid="class_usd_physics_joint"/>
+      </node>
+    </collaborationgraph>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" line="64" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h" bodystart="63" bodyend="238"/>
+    <listofallmembers>
+      <member refid="class_usd_physics_revolute_joint_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>_GetSchemaType</name></member>
+      <member refid="class_usd_physics_revolute_joint_1adade0ff4639afd184e30c5708ae86f8d" prot="private" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a96538019a0566b8f54f05953ac1c6615" prot="private" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>_GetTfType</name></member>
+      <member refid="class_usd_physics_revolute_joint_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a1aad3e90ed0a4014a8cb628de99d8d04" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateAxisAttr</name></member>
+      <member refid="class_usd_physics_joint_1a3c4354c477a696fc524bd6b75ed7ad18" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateBody0Rel</name></member>
+      <member refid="class_usd_physics_joint_1a6fa443329827f47757cab08811c90a77" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateBody1Rel</name></member>
+      <member refid="class_usd_physics_joint_1aacd5c7041ece30946de02a28482c0b4b" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateBreakForceAttr</name></member>
+      <member refid="class_usd_physics_joint_1ab60f041a25b552c0b95ee7644c6e10bb" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateBreakTorqueAttr</name></member>
+      <member refid="class_usd_physics_joint_1a10041d624985a04487ad87d2bd009316" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateCollisionEnabledAttr</name></member>
+      <member refid="class_usd_physics_joint_1a47c5965866c9b0692792f187ed93eb9c" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateExcludeFromArticulationAttr</name></member>
+      <member refid="class_usd_physics_joint_1a0fa8350c6c2cec14f03dd8f2813d0747" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateJointEnabledAttr</name></member>
+      <member refid="class_usd_physics_joint_1ad7881851b80050765e16afebf0820f38" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateLocalPos0Attr</name></member>
+      <member refid="class_usd_physics_joint_1a730caab248cd85607efb8c426b3138d2" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateLocalPos1Attr</name></member>
+      <member refid="class_usd_physics_joint_1ac632af557012196ff01b1374d83bc0ac" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateLocalRot0Attr</name></member>
+      <member refid="class_usd_physics_joint_1a60ffa625d6ec33dfe3549b2a742bdbbd" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateLocalRot1Attr</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a7272c6977dd78f7a15268fe21d8435aa" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateLowerLimitAttr</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a1ce009e232b2029a87e02e8a796da324" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>CreateUpperLimitAttr</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a1013bcd230d4a852c36adc91c60441e5" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>Define</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a53698d87f82049033bd77f6430906d4c" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>Get</name></member>
+      <member refid="class_usd_physics_revolute_joint_1aecf06d2ecd4ccd348d009e71e28aa9e3" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetAxisAttr</name></member>
+      <member refid="class_usd_physics_joint_1ac2593077bb1803f61a6e58dc9ea07420" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetBody0Rel</name></member>
+      <member refid="class_usd_physics_joint_1a9f19349e454fcaed39e5c41805a1e584" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetBody1Rel</name></member>
+      <member refid="class_usd_physics_joint_1a07783b09c7b783d2df591b797defaae1" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetBreakForceAttr</name></member>
+      <member refid="class_usd_physics_joint_1abbf7f7d4e01ebacfbf641b899acd91d3" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetBreakTorqueAttr</name></member>
+      <member refid="class_usd_physics_joint_1a0f14d3a308d85b8dcb2104e2f77942f0" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetCollisionEnabledAttr</name></member>
+      <member refid="class_usd_physics_joint_1a703731dd841f8882e4fec9ba6b4f0bfa" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetExcludeFromArticulationAttr</name></member>
+      <member refid="class_usd_physics_joint_1ae66db905deb63d4c9de399e13675506e" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetJointEnabledAttr</name></member>
+      <member refid="class_usd_physics_joint_1ad1272cea9e07d866be6868fff1ee7651" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetLocalPos0Attr</name></member>
+      <member refid="class_usd_physics_joint_1ab91e286a17446ebaea8f19778d4910ff" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetLocalPos1Attr</name></member>
+      <member refid="class_usd_physics_joint_1a186dd00c84e66194a2d55ef904445ffb" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetLocalRot0Attr</name></member>
+      <member refid="class_usd_physics_joint_1a1a4ab96edf8d6922ba2f75c5d369c8be" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetLocalRot1Attr</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a3d65805129ce6087273738afc3f2e1cc" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetLowerLimitAttr</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a2d6a7bee5c4b87bd2c27c75ac54e645f" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>GetUpperLimitAttr</name></member>
+      <member refid="class_usd_physics_revolute_joint_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>schemaType</name></member>
+      <member refid="class_usd_physics_joint_1ae319694b2fe1a6bdc26c2cad77ce44ef" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>UsdPhysicsJoint</name></member>
+      <member refid="class_usd_physics_joint_1a3cabb7cdfb60fcaadbaba28a25c7542e" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>UsdPhysicsJoint</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a40a1992b2627c865bfd55403af659afa" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>UsdPhysicsRevoluteJoint</name></member>
+      <member refid="class_usd_physics_revolute_joint_1ac0f2230c7ebfacb88a56497a18cd1628" prot="public" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>UsdPhysicsRevoluteJoint</name></member>
+      <member refid="class_usd_physics_revolute_joint_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_usd_physics_joint_1ada6aa415b33d1b52959abd4551a49a95" prot="public" virt="virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>~UsdPhysicsJoint</name></member>
+      <member refid="class_usd_physics_revolute_joint_1a1babfe13bb023055c885f40bc489d29f" prot="public" virt="virtual"><scope>UsdPhysicsRevoluteJoint</scope><name>~UsdPhysicsRevoluteJoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

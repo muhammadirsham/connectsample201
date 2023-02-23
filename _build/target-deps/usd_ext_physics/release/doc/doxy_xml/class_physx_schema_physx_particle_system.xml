@@ -1,0 +1,1200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_particle_system" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxParticleSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdTyped</basecompoundref>
+    <includes refid="physx_particle_system_8h" local="no">physxParticleSystem.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_particle_system_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::ConcreteTyped</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="64" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_particle_system_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="142" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1ab46023db0899424f471de8bb10c680d1" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxParticleSystem</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxParticleSystem</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_particle_system" kindref="compound">PhysxSchemaPhysxParticleSystem</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_particle_system_1a830ca8c6510d1531307137240e0ae959" kindref="member">PhysxSchemaPhysxParticleSystem::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="70" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a0e41ff14dbd0701a58ffa10c3f559a2b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxParticleSystem</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxParticleSystem</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_particle_system" kindref="compound">PhysxSchemaPhysxParticleSystem</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_particle_system" kindref="compound">PhysxSchemaPhysxParticleSystem</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="78" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1ae4f5a9542fcc9ce06d04e81bdac57578" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxParticleSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxParticleSystem</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a5df7fbfbcaddc043f2787af19c8f035f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetParticleSystemEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetParticleSystemEnabledAttr</name>
+        <briefdescription>
+<para>Enable or disable the particle system. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool particleSystemEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a2c41b8ac53b43a7c601ce51fb3e500bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateParticleSystemEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateParticleSystemEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a5df7fbfbcaddc043f2787af19c8f035f" kindref="member">GetParticleSystemEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a1c36f0d5064221e3ca2bca8cd65ac829" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetContactOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetContactOffsetAttr</name>
+        <briefdescription>
+<para>Contact offset used for collisions with non-particle objects such as rigid or deformable bodies. </para>        </briefdescription>
+        <detaileddescription>
+<para>Must be larger than restOffset. Default value -inf results in an simulation-determined value. Range: (restOffset, inf) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float contactOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a4d3cdf95c63ea045deaff69ea721bd66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateContactOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateContactOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a1c36f0d5064221e3ca2bca8cd65ac829" kindref="member">GetContactOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a13cd9474ed4711f672588c228d17d496" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetRestOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRestOffsetAttr</name>
+        <briefdescription>
+<para>Rest offset used for collisions with non-particle objects such as rigid or deformable bodies. </para>        </briefdescription>
+        <detaileddescription>
+<para>Must be smaller than contact offset. Default value -inf results in an simulation-determined value. Range: [0, contactOffset) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float restOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a214380d04e806f91809109361cdbe755" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateRestOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateRestOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a13cd9474ed4711f672588c228d17d496" kindref="member">GetRestOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1ac6179f7890c95744ed75b61f862381ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetParticleContactOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetParticleContactOffsetAttr</name>
+        <briefdescription>
+<para>Contact offset used for interactions between particles. </para>        </briefdescription>
+        <detaileddescription>
+<para>Must be larger than solid and fluid rest offsets. Default value -inf results in an simulation-determined value. Range: (max(solidRestOffset, fluidRestOffset), inf) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float particleContactOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a277a573847afc1cd2c32d98a219432b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateParticleContactOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateParticleContactOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1ac6179f7890c95744ed75b61f862381ee" kindref="member">GetParticleContactOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a9dc8d30880f02a87b6826608f0167e9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSolidRestOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSolidRestOffsetAttr</name>
+        <briefdescription>
+<para>Rest offset used for solid-solid or solid-fluid particle interactions. </para>        </briefdescription>
+        <detaileddescription>
+<para>Must be smaller than particleContactOffset. Default value -inf results in an simulation-determined value. Range: [0, particleContactOffset) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float solidRestOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a19a5dd72565fd0b809d8300a91477483" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSolidRestOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSolidRestOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a9dc8d30880f02a87b6826608f0167e9c" kindref="member">GetSolidRestOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a04bcf71cda12a2527f80b60a5ca5aac5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFluidRestOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFluidRestOffsetAttr</name>
+        <briefdescription>
+<para>Rest offset used for fluid-fluid particle interactions. </para>        </briefdescription>
+        <detaileddescription>
+<para>Must be smaller than particleContactOffset. Default value -inf results in an simulation-determined value. Range: [0, particleContactOffset) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float fluidRestOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1aeea4ce884a10f68bd5fec587f6a6219f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFluidRestOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFluidRestOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a04bcf71cda12a2527f80b60a5ca5aac5" kindref="member">GetFluidRestOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="297" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a431eecfd7cfcc67a2a1902c6ad967053" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableCCDAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableCCDAttr</name>
+        <briefdescription>
+<para>Enable continuous collision detection for particles to help avoid tunneling effects. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool enableCCD = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="311" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a5c33980c29694cd4911249b85261f0d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableCCDAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableCCDAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a431eecfd7cfcc67a2a1902c6ad967053" kindref="member">GetEnableCCDAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="319" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a11def6394943c1faee60dd78e842c9c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSolverPositionIterationCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSolverPositionIterationCountAttr</name>
+        <briefdescription>
+<para>Number of solver iterations for position. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [1, 255]</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int solverPositionIterationCount = 16</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a7fb0c52bd04dbacddba4355e02aa790e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSolverPositionIterationCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSolverPositionIterationCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a11def6394943c1faee60dd78e842c9c1" kindref="member">GetSolverPositionIterationCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1aa670e4a3e1e13b2755ffac4c71ea5fae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxDepenetrationVelocityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxDepenetrationVelocityAttr</name>
+        <briefdescription>
+<para>The maximum velocity permitted to be introduced by the solver to depenetrate intersecting particles. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, inf) Units: distance / seconds</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float maxDepenetrationVelocity = inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1aa91d4d8f31a61a2008443f80b83f3b0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxDepenetrationVelocityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxDepenetrationVelocityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1aa670e4a3e1e13b2755ffac4c71ea5fae" kindref="member">GetMaxDepenetrationVelocityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="366" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a6686a1df8085ff95f1d0c0f1dc6513e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSmoothingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSmoothingAttr</name>
+        <briefdescription>
+<para>Smoothing coefficient for particle positions. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not affect dynamics, only rendering output. Range: [0, 1] Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float smoothing = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="382" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a737d50683cc2e4962cb9f23e1f376238" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSmoothingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSmoothingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a6686a1df8085ff95f1d0c0f1dc6513e6" kindref="member">GetSmoothingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a6280f0bb60db260630e49881bbced4e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableAnisotropyAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableAnisotropyAttr</name>
+        <briefdescription>
+<para>Enables use of fluid anisotropy information for rendering. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not affect dynamics, only rendering output.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool enableAnisotropy = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="404" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a8949bd7def9969f12ef1ebb29049aee4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableAnisotropyAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableAnisotropyAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a6280f0bb60db260630e49881bbced4e9" kindref="member">GetEnableAnisotropyAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="412" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1af6db1c9ad9f186e005c4237dce0a2136" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAnisotropyScaleAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAnisotropyScaleAttr</name>
+        <briefdescription>
+<para>Scale of anisotropy for rendering. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, inf) Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float anisotropyScale = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a0dcbf20ad54b2ec11ac99d4b2de29101" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAnisotropyScaleAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAnisotropyScaleAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1af6db1c9ad9f186e005c4237dce0a2136" kindref="member">GetAnisotropyScaleAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="436" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a13760f31522f29120e7159c95605c0e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAnisotropyMinAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAnisotropyMinAttr</name>
+        <briefdescription>
+<para>Minimum scale of anisotropy relative to fluidRestOffset for rendering. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, anisotropyMax] Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float anisotropyMin = 0.2</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="452" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a2f8adc4badd2857642fd4c781961e087" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAnisotropyMinAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAnisotropyMinAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a13760f31522f29120e7159c95605c0e0" kindref="member">GetAnisotropyMinAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="460" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a82dde8f1a0b83c481a43117afb0014fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAnisotropyMaxAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAnisotropyMaxAttr</name>
+        <briefdescription>
+<para>Maximum scale of anisotropy relative to fluidRestOffset for rendering. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [anisotropyMin, inf) Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float anisotropyMax = 2</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="476" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1acb0e81f294b48bdc155ea78b3150f391" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAnisotropyMaxAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAnisotropyMaxAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a82dde8f1a0b83c481a43117afb0014fa" kindref="member">GetAnisotropyMaxAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="484" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1aeca3c4f2eac153d9f091b1ded8b7ef1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetWindAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetWindAttr</name>
+        <briefdescription>
+<para>The wind applied to the current particle system. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: (-inf, inf) Units: distance / seconds</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float3 wind = (0, 0, 0)</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfVec3f </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float3 </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="500" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a2097770495a61c958b587fd9754fcd20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateWindAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateWindAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1aeca3c4f2eac153d9f091b1ded8b7ef1d" kindref="member">GetWindAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="508" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a483da5e969bb51431d8218a3b76ef9d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxParticlesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxParticlesAttr</name>
+        <briefdescription>
+<para>The maximum number of particles in the current particle system. </para>        </briefdescription>
+        <detaileddescription>
+<para>The maximum is increased automatically when particle objects are added to the system. The user can only increase the maximum, decreasing is not allowed. Range: [max(0, maxParticles), inf)</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int maxParticles = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="524" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a996b2de065c372cf3176f1e5f609d7b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxParticlesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxParticlesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a483da5e969bb51431d8218a3b76ef9d9" kindref="member">GetMaxParticlesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="532" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a877d7137784505aac6e675f76433efba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxNeighborhoodAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxNeighborhoodAttr</name>
+        <briefdescription>
+<para>The particle neighborhood size. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int maxNeighborhood = 96</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="546" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1ab5a9b55345642f315b4e1f8294e914c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxNeighborhoodAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxNeighborhoodAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a877d7137784505aac6e675f76433efba" kindref="member">GetMaxNeighborhoodAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="554" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1ad27b8e6b37046acb1750341acc027c44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxVelocityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxVelocityAttr</name>
+        <briefdescription>
+<para>Maximum particle velocity. </para>        </briefdescription>
+        <detaileddescription>
+<para>See also cflCoefficient in PhysxPBDMaterialAPI for limiting particle-particle relative velocity. Range: [0, inf] Units: distance / seconds</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float maxVelocity = inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="570" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a0fd1d634fac90306b241017c41f1af32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxVelocityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxVelocityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1ad27b8e6b37046acb1750341acc027c44" kindref="member">GetMaxVelocityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="578" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a637bbc5a42951faaa74369ff9a2f44bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGlobalSelfCollisionEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGlobalSelfCollisionEnabledAttr</name>
+        <briefdescription>
+<para>If True, self collisions follow particle-object-specific settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>If False, all particle self collisions are disabled, regardless of any other settings. Improves performance if self collisions are not needed.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool globalSelfCollisionEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="593" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a5e93c9671be8f0b7cb50bbbb123765bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGlobalSelfCollisionEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGlobalSelfCollisionEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a637bbc5a42951faaa74369ff9a2f44bf" kindref="member">GetGlobalSelfCollisionEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="601" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a0b8cc86f56369fab713df899ffdb68d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetNonParticleCollisionEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetNonParticleCollisionEnabledAttr</name>
+        <briefdescription>
+<para>Enable or disable particle collision with nonparticle objects for all particles in the system. </para>        </briefdescription>
+        <detaileddescription>
+<para>Improves performance if nonparticle collisions are not needed.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool nonParticleCollisionEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="616" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a488809d0e54c0ff624820ddcaf933e3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateNonParticleCollisionEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateNonParticleCollisionEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a0b8cc86f56369fab713df899ffdb68d8" kindref="member">GetNonParticleCollisionEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="624" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a8d59348831e4c9993479abc7ee7cf3c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetSimulationOwnerRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSimulationOwnerRel</name>
+        <briefdescription>
+<para>Single PhysicsScene that simulates this particle system. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, this is the first PhysicsScene found in the stage using UsdStage::Traverse(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="634" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a787434adf4d664fc5f3982e3a86d6bb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateSimulationOwnerRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateSimulationOwnerRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_particle_system_1a8d59348831e4c9993479abc7ee7cf3c6" kindref="member">GetSimulationOwnerRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="639" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a830ca8c6510d1531307137240e0ae959" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_particle_system" kindref="compound">PhysxSchemaPhysxParticleSystem</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxParticleSystem Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_particle_system" kindref="compound">PhysxSchemaPhysxParticleSystem</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_particle_system_1ab46023db0899424f471de8bb10c680d1" kindref="member">PhysxSchemaPhysxParticleSystem</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a03ecb1051ab9b09d84dd20c4cfca576f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_particle_system" kindref="compound">PhysxSchemaPhysxParticleSystem</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxParticleSystem Define</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Attempt to ensure a <emphasis>UsdPrim</emphasis> adhering to this schema at <computeroutput>path</computeroutput> is defined (according to UsdPrim::IsDefined()) on this stage. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a prim adhering to this schema at <computeroutput>path</computeroutput> is already defined on this stage, return that prim. Otherwise author an <emphasis>SdfPrimSpec</emphasis> with <emphasis>specifier</emphasis> == <emphasis>SdfSpecifierDef</emphasis> and this schema&apos;s prim type name for the prim at <computeroutput>path</computeroutput> at the current EditTarget. Author <emphasis>SdfPrimSpec</emphasis> s with <computeroutput>specifier</computeroutput> == <emphasis>SdfSpecifierDef</emphasis> and empty typeName at the current EditTarget for any nonexistent, or existing but not <emphasis>Defined</emphasis> ancestors.</para><para>The given <emphasis>path</emphasis> must be an absolute prim path that does not contain any variant selections.</para><para>If it is impossible to author any of the necessary PrimSpecs, (for example, in case <emphasis>path</emphasis> cannot map to the current UsdEditTarget&apos;s namespace) issue an error and return an invalid <emphasis>UsdPrim</emphasis>.</para><para>Note that this method may return a defined prim whose typeName does not specify this schema class, in case a stronger typeName opinion overrides the opinion at the current EditTarget. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="131" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="146" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_particle_system_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="150" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX particle system, used to simulate fluids, cloth and inflatables. </para>    </briefdescription>
+    <detaileddescription>
+<para>This prim allows the user to configure the solver parameters that are common to the particle objects associated with this system via their particleSystem relationship. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" line="59" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxParticleSystem.h" bodystart="58" bodyend="652"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_particle_system_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1acb0e81f294b48bdc155ea78b3150f391" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateAnisotropyMaxAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a2f8adc4badd2857642fd4c781961e087" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateAnisotropyMinAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a0dcbf20ad54b2ec11ac99d4b2de29101" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateAnisotropyScaleAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a4d3cdf95c63ea045deaff69ea721bd66" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateContactOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a8949bd7def9969f12ef1ebb29049aee4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateEnableAnisotropyAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a5c33980c29694cd4911249b85261f0d9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateEnableCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1aeea4ce884a10f68bd5fec587f6a6219f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateFluidRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a5e93c9671be8f0b7cb50bbbb123765bd" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateGlobalSelfCollisionEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1aa91d4d8f31a61a2008443f80b83f3b0c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateMaxDepenetrationVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1ab5a9b55345642f315b4e1f8294e914c1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateMaxNeighborhoodAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a996b2de065c372cf3176f1e5f609d7b8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateMaxParticlesAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a0fd1d634fac90306b241017c41f1af32" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateMaxVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a488809d0e54c0ff624820ddcaf933e3d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateNonParticleCollisionEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a277a573847afc1cd2c32d98a219432b7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateParticleContactOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a2c41b8ac53b43a7c601ce51fb3e500bd" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateParticleSystemEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a214380d04e806f91809109361cdbe755" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a787434adf4d664fc5f3982e3a86d6bb8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateSimulationOwnerRel</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a737d50683cc2e4962cb9f23e1f376238" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateSmoothingAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a19a5dd72565fd0b809d8300a91477483" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateSolidRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a7fb0c52bd04dbacddba4355e02aa790e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateSolverPositionIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a2097770495a61c958b587fd9754fcd20" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>CreateWindAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a03ecb1051ab9b09d84dd20c4cfca576f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>Define</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a830ca8c6510d1531307137240e0ae959" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a82dde8f1a0b83c481a43117afb0014fa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetAnisotropyMaxAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a13760f31522f29120e7159c95605c0e0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetAnisotropyMinAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1af6db1c9ad9f186e005c4237dce0a2136" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetAnisotropyScaleAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a1c36f0d5064221e3ca2bca8cd65ac829" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetContactOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a6280f0bb60db260630e49881bbced4e9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetEnableAnisotropyAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a431eecfd7cfcc67a2a1902c6ad967053" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetEnableCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a04bcf71cda12a2527f80b60a5ca5aac5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetFluidRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a637bbc5a42951faaa74369ff9a2f44bf" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetGlobalSelfCollisionEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1aa670e4a3e1e13b2755ffac4c71ea5fae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetMaxDepenetrationVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a877d7137784505aac6e675f76433efba" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetMaxNeighborhoodAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a483da5e969bb51431d8218a3b76ef9d9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetMaxParticlesAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1ad27b8e6b37046acb1750341acc027c44" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetMaxVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a0b8cc86f56369fab713df899ffdb68d8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetNonParticleCollisionEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1ac6179f7890c95744ed75b61f862381ee" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetParticleContactOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a5df7fbfbcaddc043f2787af19c8f035f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetParticleSystemEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a13cd9474ed4711f672588c228d17d496" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a8d59348831e4c9993479abc7ee7cf3c6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetSimulationOwnerRel</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a6686a1df8085ff95f1d0c0f1dc6513e6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetSmoothingAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a9dc8d30880f02a87b6826608f0167e9c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetSolidRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a11def6394943c1faee60dd78e842c9c1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetSolverPositionIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1aeca3c4f2eac153d9f091b1ded8b7ef1d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>GetWindAttr</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1ab46023db0899424f471de8bb10c680d1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>PhysxSchemaPhysxParticleSystem</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1a0e41ff14dbd0701a58ffa10c3f559a2b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>PhysxSchemaPhysxParticleSystem</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_particle_system_1ae4f5a9542fcc9ce06d04e81bdac57578" prot="public" virt="virtual"><scope>PhysxSchemaPhysxParticleSystem</scope><name>~PhysxSchemaPhysxParticleSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{76FF3A1C-62A1-65F2-4B5C-7946379DEC42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\omniUtilsLib">
+      <UniqueIdentifier>{A0A4915B-0C06-6F69-9573-B51B01D4A528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\omniUtilsLib\include">
+      <UniqueIdentifier>{136C49DD-7F79-77C3-0860-73AE746C437A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\omniUtilsLib\source">
+      <UniqueIdentifier>{C052439A-AC62-EF6A-151C-5489014BDE03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\omniUtilsLib\include\LiveSessionConfigFile.h">
+      <Filter>source\omniUtilsLib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\omniUtilsLib\include\LiveSessionInfo.h">
+      <Filter>source\omniUtilsLib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\omniUtilsLib\include\OmniChannel.h">
+      <Filter>source\omniUtilsLib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\omniUtilsLib\include\OmniverseUsdLuxLightCompat.h">
+      <Filter>source\omniUtilsLib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\omniUtilsLib\include\primUtils.h">
+      <Filter>source\omniUtilsLib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\omniUtilsLib\include\xformUtils.h">
+      <Filter>source\omniUtilsLib\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\omniUtilsLib\source\LiveSessionConfigFile.cpp">
+      <Filter>source\omniUtilsLib\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\omniUtilsLib\source\LiveSessionInfo.cpp">
+      <Filter>source\omniUtilsLib\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\omniUtilsLib\source\OmniChannel.cpp">
+      <Filter>source\omniUtilsLib\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\omniUtilsLib\source\OmniverseUsdLuxLightCompat.cpp">
+      <Filter>source\omniUtilsLib\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\.editorconfig" />
+  </ItemGroup>
+</Project>

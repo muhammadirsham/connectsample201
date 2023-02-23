@@ -1,0 +1,5 @@
+Package : msvc 
+Description : Distribution of Microsoft Visual C++ from Microsoft Visual Studio
+Maintainers : cdannemiller@nvidia.com joshuakr@nvidia.com
+SWIPAT NvBug : 
+Repository : https://gitlab-master.nvidia.com/carbon/Carbonite-externals/msvc

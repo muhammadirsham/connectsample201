@@ -1,0 +1,1029 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_rigid_body_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxRigidBodyAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_rigid_body_a_p_i_8h" local="no">physxRigidBodyAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_rigid_body_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_rigid_body_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="134" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a238be7a93835a1a02847d0ade6c4f80b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxRigidBodyAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxRigidBodyAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1abf0357142b753554ca30b7b0c4bd090b" kindref="member">PhysxSchemaPhysxRigidBodyAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1ab54657e86c8ca58b6f8cee9de4f4004b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxRigidBodyAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxRigidBodyAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1ae1af272732d0df08e3a845afa944b3b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxRigidBodyAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxRigidBodyAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1ae797c62f12ab322c362515b4efa1bd93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLinearDampingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLinearDampingAttr</name>
+        <briefdescription>
+<para>Linear damping coefficient. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:linearDamping = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1addbd1f4297a84f6441245d41e681a6e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLinearDampingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLinearDampingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1ae797c62f12ab322c362515b4efa1bd93" kindref="member">GetLinearDampingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a92aaacd202974e3015549ccc46c354fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAngularDampingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAngularDampingAttr</name>
+        <briefdescription>
+<para>Angular damping coefficient. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:angularDamping = 0.05</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a660b94961f3cd397d4c1b8995008524f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAngularDampingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAngularDampingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a92aaacd202974e3015549ccc46c354fa" kindref="member">GetAngularDampingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a809c9a1d401014d2a9d9ad734ebd9d1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxLinearVelocityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxLinearVelocityAttr</name>
+        <briefdescription>
+<para>Max allowable linear velocity for rigid body. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, inf).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:maxLinearVelocity = inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a0f20d77ed76ea56943b1cdcddcb5c8ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxLinearVelocityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxLinearVelocityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a809c9a1d401014d2a9d9ad734ebd9d1a" kindref="member">GetMaxLinearVelocityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a3b59d8f8eabce66ab3be85dbbb2b06c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxAngularVelocityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxAngularVelocityAttr</name>
+        <briefdescription>
+<para>Max allowable angular velocity for rigid body. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, 1e16].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:maxAngularVelocity = 5729.58</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a77864737fa2679a1afb8301100fd0022" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxAngularVelocityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxAngularVelocityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a3b59d8f8eabce66ab3be85dbbb2b06c2" kindref="member">GetMaxAngularVelocityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1ab3c234ffc5c1c704a5c0d1c1641ed6fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSleepThresholdAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSleepThresholdAttr</name>
+        <briefdescription>
+<para>Mass-normalized kinetic energy threshold below which an actor may go to sleep. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float). Default value 0.00005*tolerancesSpeed*tolerancesSpeed.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:sleepThreshold = 0.00005</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1acea04b46c42f5ad3a81e382776fac018" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSleepThresholdAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSleepThresholdAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1ab3c234ffc5c1c704a5c0d1c1641ed6fa" kindref="member">GetSleepThresholdAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a108cce092ff5d825759eaf6b14376f92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetStabilizationThresholdAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStabilizationThresholdAttr</name>
+        <briefdescription>
+<para>Mass-normalized kinetic energy threshold below which an actor may participate in stabilization. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float). Default value 0.00001*tolerancesSpeed*tolerancesSpeed.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:stabilizationThreshold = 0.00001</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1ae068d7adccbf69750b2bd72897aafc5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateStabilizationThresholdAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateStabilizationThresholdAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a108cce092ff5d825759eaf6b14376f92" kindref="member">GetStabilizationThresholdAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1aa670e4a3e1e13b2755ffac4c71ea5fae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxDepenetrationVelocityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxDepenetrationVelocityAttr</name>
+        <briefdescription>
+<para>The maximum depenetration velocity permitted to be introduced by the solver. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:maxDepenetrationVelocity = inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1aa91d4d8f31a61a2008443f80b83f3b0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxDepenetrationVelocityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxDepenetrationVelocityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1aa670e4a3e1e13b2755ffac4c71ea5fae" kindref="member">GetMaxDepenetrationVelocityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1acabdd760c4b4bc9f0d1b62399a82a625" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxContactImpulseAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxContactImpulseAttr</name>
+        <briefdescription>
+<para>Sets a limit on the impulse that may be applied at a contact. </para>        </briefdescription>
+        <detaileddescription>
+<para>The maximum impulse at a contact between two dynamic or kinematic bodies will be the minimum of the two limit values. For a collision between a static and a dynamic body, the impulse is limited by the value for the dynamic body. Allowed range [0, max_float).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxRigidBody:maxContactImpulse = inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a9eebd73340f2cedef00b96c44162e841" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxContactImpulseAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxContactImpulseAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1acabdd760c4b4bc9f0d1b62399a82a625" kindref="member">GetMaxContactImpulseAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a11def6394943c1faee60dd78e842c9c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSolverPositionIterationCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSolverPositionIterationCountAttr</name>
+        <briefdescription>
+<para>Solver position iteration counts for the body. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [1, 255].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxRigidBody:solverPositionIterationCount = 16</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a7fb0c52bd04dbacddba4355e02aa790e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSolverPositionIterationCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSolverPositionIterationCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a11def6394943c1faee60dd78e842c9c1" kindref="member">GetSolverPositionIterationCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a8b3902f02ae055c4c42ee2333d4c4f84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSolverVelocityIterationCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSolverVelocityIterationCountAttr</name>
+        <briefdescription>
+<para>Solver velocity iteration counts for the body. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [1, 255].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxRigidBody:solverVelocityIterationCount = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a48b897c597c3184abdbc2b492510a1ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSolverVelocityIterationCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSolverVelocityIterationCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a8b3902f02ae055c4c42ee2333d4c4f84" kindref="member">GetSolverVelocityIterationCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="364" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a431eecfd7cfcc67a2a1902c6ad967053" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableCCDAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableCCDAttr</name>
+        <briefdescription>
+<para>Enables swept integration for the actor. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxRigidBody:enableCCD = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="378" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a5c33980c29694cd4911249b85261f0d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableCCDAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableCCDAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a431eecfd7cfcc67a2a1902c6ad967053" kindref="member">GetEnableCCDAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="386" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a2fb5ea98887a9f294ccfe0666f315a08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableSpeculativeCCDAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableSpeculativeCCDAttr</name>
+        <briefdescription>
+<para>Register a rigid body to dynamically adjust contact offset based on velocity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This can be used to achieve a CCD effect.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxRigidBody:enableSpeculativeCCD = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="400" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a304f0e100dfe1838f2ca7022067f72ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableSpeculativeCCDAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableSpeculativeCCDAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a2fb5ea98887a9f294ccfe0666f315a08" kindref="member">GetEnableSpeculativeCCDAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="408" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a7ec960c151253ccc836707d1b940efd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetRetainAccelerationsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRetainAccelerationsAttr</name>
+        <briefdescription>
+<para>Carries over forces/accelerations between frames, rather than clearing them. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxRigidBody:retainAccelerations = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="422" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a42225595e790e8dcb8506090d60de5ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateRetainAccelerationsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateRetainAccelerationsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a7ec960c151253ccc836707d1b940efd4" kindref="member">GetRetainAccelerationsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="430" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a49af2807ff6db080b8f168e099349a78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableGyroscopicForcesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableGyroscopicForcesAttr</name>
+        <briefdescription>
+<para>Enables computation of gyroscopic forces on the rigid body. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxRigidBody:enableGyroscopicForces = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="444" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a285bf57cec8ce5bcbc0be4e8a9b73dd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableGyroscopicForcesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableGyroscopicForcesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a49af2807ff6db080b8f168e099349a78" kindref="member">GetEnableGyroscopicForcesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="452" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a8f91651aceeff55d2c051802df17c48a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDisableGravityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDisableGravityAttr</name>
+        <briefdescription>
+<para>Disable gravity for the actor. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxRigidBody:disableGravity = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="466" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a8c8eca567b433812133d8af20e7ff651" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDisableGravityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDisableGravityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a8f91651aceeff55d2c051802df17c48a" kindref="member">GetDisableGravityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="474" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1ab6cc19deb5ddbd81b5679760b3b016fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLockedPosAxisAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLockedPosAxisAttr</name>
+        <briefdescription>
+<para>Collection of flags providing a mechanism to lock motion along/around a specific axis (1 &lt;&lt; 0, 1 &lt;&lt; 1, 1 &lt;&lt; 2). </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxRigidBody:lockedPosAxis = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a39c2059c58471581caa84a555a595fd7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLockedPosAxisAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLockedPosAxisAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1ab6cc19deb5ddbd81b5679760b3b016fa" kindref="member">GetLockedPosAxisAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="496" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a71b97f847a7ab36bc61174478fd7737a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLockedRotAxisAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLockedRotAxisAttr</name>
+        <briefdescription>
+<para>Collection of flags providing a mechanism to lock motion along/around a specific axis (1 &lt;&lt; 0, 1 &lt;&lt; 1, 1 &lt;&lt; 2). </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxRigidBody:lockedRotAxis = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="510" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a52283ffc5999c7c3414d1c2a18d2b986" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLockedRotAxisAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLockedRotAxisAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a71b97f847a7ab36bc61174478fd7737a" kindref="member">GetLockedRotAxisAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="518" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1abf0357142b753554ca30b7b0c4bd090b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxRigidBodyAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_rigid_body_a_p_i_1a238be7a93835a1a02847d0ade6c4f80b" kindref="member">PhysxSchemaPhysxRigidBodyAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a39839456eccd768cfdc1beb69207e93e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxRigidBodyAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxRigidBodyAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_rigid_body_a_p_i" kindref="compound">PhysxSchemaPhysxRigidBodyAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_rigid_body_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX rigid body extended parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxRigidBodyAPI.h" bodystart="57" bodyend="531"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a39839456eccd768cfdc1beb69207e93e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a660b94961f3cd397d4c1b8995008524f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateAngularDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a8c8eca567b433812133d8af20e7ff651" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateDisableGravityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a5c33980c29694cd4911249b85261f0d9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateEnableCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a285bf57cec8ce5bcbc0be4e8a9b73dd3" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateEnableGyroscopicForcesAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a304f0e100dfe1838f2ca7022067f72ef" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateEnableSpeculativeCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1addbd1f4297a84f6441245d41e681a6e9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateLinearDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a39c2059c58471581caa84a555a595fd7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateLockedPosAxisAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a52283ffc5999c7c3414d1c2a18d2b986" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateLockedRotAxisAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a77864737fa2679a1afb8301100fd0022" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateMaxAngularVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a9eebd73340f2cedef00b96c44162e841" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateMaxContactImpulseAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1aa91d4d8f31a61a2008443f80b83f3b0c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateMaxDepenetrationVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a0f20d77ed76ea56943b1cdcddcb5c8ca" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateMaxLinearVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a42225595e790e8dcb8506090d60de5ae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateRetainAccelerationsAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1acea04b46c42f5ad3a81e382776fac018" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateSleepThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a7fb0c52bd04dbacddba4355e02aa790e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateSolverPositionIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a48b897c597c3184abdbc2b492510a1ae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateSolverVelocityIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1ae068d7adccbf69750b2bd72897aafc5f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>CreateStabilizationThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1abf0357142b753554ca30b7b0c4bd090b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a92aaacd202974e3015549ccc46c354fa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetAngularDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a8f91651aceeff55d2c051802df17c48a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetDisableGravityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a431eecfd7cfcc67a2a1902c6ad967053" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetEnableCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a49af2807ff6db080b8f168e099349a78" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetEnableGyroscopicForcesAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a2fb5ea98887a9f294ccfe0666f315a08" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetEnableSpeculativeCCDAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1ae797c62f12ab322c362515b4efa1bd93" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetLinearDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1ab6cc19deb5ddbd81b5679760b3b016fa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetLockedPosAxisAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a71b97f847a7ab36bc61174478fd7737a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetLockedRotAxisAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a3b59d8f8eabce66ab3be85dbbb2b06c2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetMaxAngularVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1acabdd760c4b4bc9f0d1b62399a82a625" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetMaxContactImpulseAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1aa670e4a3e1e13b2755ffac4c71ea5fae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetMaxDepenetrationVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a809c9a1d401014d2a9d9ad734ebd9d1a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetMaxLinearVelocityAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a7ec960c151253ccc836707d1b940efd4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetRetainAccelerationsAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1ab3c234ffc5c1c704a5c0d1c1641ed6fa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetSleepThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a11def6394943c1faee60dd78e842c9c1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetSolverPositionIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a8b3902f02ae055c4c42ee2333d4c4f84" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetSolverVelocityIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a108cce092ff5d825759eaf6b14376f92" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>GetStabilizationThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1a238be7a93835a1a02847d0ade6c4f80b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>PhysxSchemaPhysxRigidBodyAPI</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1ab54657e86c8ca58b6f8cee9de4f4004b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>PhysxSchemaPhysxRigidBodyAPI</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_rigid_body_a_p_i_1ae1af272732d0df08e3a845afa944b3b4" prot="public" virt="virtual"><scope>PhysxSchemaPhysxRigidBodyAPI</scope><name>~PhysxSchemaPhysxRigidBodyAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

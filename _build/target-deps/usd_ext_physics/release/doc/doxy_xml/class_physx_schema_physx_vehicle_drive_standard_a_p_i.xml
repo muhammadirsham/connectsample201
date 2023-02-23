@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxVehicleDriveStandardAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_vehicle_drive_standard_a_p_i_8h" local="no">physxVehicleDriveStandardAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="68" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="139" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1af3d3760594315d60a4457c2924aff9ae" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleDriveStandardAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxVehicleDriveStandardAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a016cba1c767e2e01536ee78d130d3629" kindref="member">PhysxSchemaPhysxVehicleDriveStandardAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="74" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a538fd98f37daaa550335100333b4a1de" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleDriveStandardAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxVehicleDriveStandardAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="82" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a0ab1beaecf4acbeb93e06c65e7582bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxVehicleDriveStandardAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxVehicleDriveStandardAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a55484a5a720887b04569293e238e14b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetEngineRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEngineRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleEngineAPI prim that describes the engine. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: either this relationship has to be specified or the prim must have PhysxVehicleEngineAPI applied (none or both of the two is invalid). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a0a18c2007cc7a3121a37954e11270c1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateEngineRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateEngineRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a55484a5a720887b04569293e238e14b2" kindref="member">GetEngineRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1ac51e3074ed57535a3f1241132b1b4041" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetGearsRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGearsRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleGearsAPI prim that describes the gears. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: either this relationship has to be specified or the prim must have PhysxVehicleGearsAPI applied (none or both of the two is invalid). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a0ed7279823f005f0933421d95133970c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateGearsRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateGearsRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1ac51e3074ed57535a3f1241132b1b4041" kindref="member">GetGearsRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a82740d7601028a0ae0cb3938f0cf0fb2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetAutoGearBoxRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAutoGearBoxRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleAutoGearBoxAPI prim that describes the automatic gear shift box. </para>        </briefdescription>
+        <detaileddescription>
+<para>This relationship is optional and should be omitted if no automatic gear shift is desired. It is also possible to apply PhysxVehicleAutoGearBoxAPI to the prim directly. In that case the relationship must not be defined. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1af52f3abbbec27d502a37a7a4561f6fe8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateAutoGearBoxRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateAutoGearBoxRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a82740d7601028a0ae0cb3938f0cf0fb2" kindref="member">GetAutoGearBoxRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a8f1016543013f783954354c2492aa2a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetClutchRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetClutchRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleClutchAPI prim that describes the clutch. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: either this relationship has to be specified or the prim must have PhysxVehicleClutchAPI applied (none or both of the two is invalid). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a5891baa5a2619eb2046f53788a3df1e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateClutchRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateClutchRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a8f1016543013f783954354c2492aa2a8" kindref="member">GetClutchRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="215" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a016cba1c767e2e01536ee78d130d3629" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleDriveStandardAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1af3d3760594315d60a4457c2924aff9ae" kindref="member">PhysxSchemaPhysxVehicleDriveStandardAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a5cf50d5f16dfbcd15609a8478c0532b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleDriveStandardAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxVehicleDriveStandardAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="128" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="147" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Standard drive model for a PhysX vehicle. </para>    </briefdescription>
+    <detaileddescription>
+<para>The available drive torque will be split equally between all the wheels that are marked as driven (see PhysxVehicleWheelAttachmentAPI).</para><para>If the drive setup does not need to be shared among vehicle instances, it can be applied to the prim which has PhysxVehicleAPI applied. If the intent is to share the drive setup, PhysxVehicleDriveStandardAPI can be applied to a separate prim which can be linked to (see PhysxVehicleAPI). </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleDriveStandardAPI.h" bodystart="62" bodyend="228"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a5cf50d5f16dfbcd15609a8478c0532b7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1af52f3abbbec27d502a37a7a4561f6fe8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>CreateAutoGearBoxRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a5891baa5a2619eb2046f53788a3df1e5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>CreateClutchRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a0a18c2007cc7a3121a37954e11270c1f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>CreateEngineRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a0ed7279823f005f0933421d95133970c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>CreateGearsRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a016cba1c767e2e01536ee78d130d3629" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a82740d7601028a0ae0cb3938f0cf0fb2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>GetAutoGearBoxRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a8f1016543013f783954354c2492aa2a8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>GetClutchRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a55484a5a720887b04569293e238e14b2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>GetEngineRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1ac51e3074ed57535a3f1241132b1b4041" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>GetGearsRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1af3d3760594315d60a4457c2924aff9ae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>PhysxSchemaPhysxVehicleDriveStandardAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a538fd98f37daaa550335100333b4a1de" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>PhysxSchemaPhysxVehicleDriveStandardAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i_1a0ab1beaecf4acbeb93e06c65e7582bcf" prot="public" virt="virtual"><scope>PhysxSchemaPhysxVehicleDriveStandardAPI</scope><name>~PhysxSchemaPhysxVehicleDriveStandardAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

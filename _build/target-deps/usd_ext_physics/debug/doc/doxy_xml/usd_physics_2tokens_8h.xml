@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="usd_physics_2tokens_8h" kind="file">
+    <compoundname>tokens.h</compoundname>
+    <includes local="yes">pxr/pxr.h</includes>
+    <includes refid="usd_physics_2api_8h" local="yes">usdPhysics/api.h</includes>
+    <includes local="yes">pxr/base/tf/staticData.h</includes>
+    <includes local="yes">pxr/base/tf/token.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h</includedby>
+    <includedby refid="collision_group_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h</includedby>
+    <includedby refid="distance_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/distanceJoint.h</includedby>
+    <includedby refid="drive_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/driveAPI.h</includedby>
+    <includedby refid="filtered_pairs_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/filteredPairsAPI.h</includedby>
+    <includedby refid="joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/joint.h</includedby>
+    <includedby refid="limit_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/limitAPI.h</includedby>
+    <includedby refid="mass_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/massAPI.h</includedby>
+    <includedby refid="material_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/materialAPI.h</includedby>
+    <includedby refid="mesh_collision_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/meshCollisionAPI.h</includedby>
+    <includedby refid="prismatic_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/prismaticJoint.h</includedby>
+    <includedby refid="revolute_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h</includedby>
+    <includedby refid="rigid_body_a_p_i_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/rigidBodyAPI.h</includedby>
+    <includedby refid="scene_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/scene.h</includedby>
+    <includedby refid="spherical_joint_8h" local="yes">W:/919a5455eee1e83c/src/usdPhysics/sphericalJoint.h</includedby>
+    <incdepgraph>
+      <node id="3016">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/tokens.h</label>
+        <link refid="usdPhysics/tokens.h"/>
+        <childnode refid="3017" relation="include">
+        </childnode>
+        <childnode refid="3018" relation="include">
+        </childnode>
+        <childnode refid="3020" relation="include">
+        </childnode>
+        <childnode refid="3021" relation="include">
+        </childnode>
+        <childnode refid="3022" relation="include">
+        </childnode>
+      </node>
+      <node id="3019">
+        <label>pxr/base/arch/export.h</label>
+      </node>
+      <node id="3017">
+        <label>pxr/pxr.h</label>
+      </node>
+      <node id="3020">
+        <label>pxr/base/tf/staticData.h</label>
+      </node>
+      <node id="3022">
+        <label>vector</label>
+      </node>
+      <node id="3021">
+        <label>pxr/base/tf/token.h</label>
+      </node>
+      <node id="3018">
+        <label>usdPhysics/api.h</label>
+        <link refid="usd_physics_2api_8h_source"/>
+        <childnode refid="3019" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3039">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/meshCollisionAPI.h</label>
+        <link refid="mesh_collision_a_p_i_8h"/>
+      </node>
+      <node id="3023">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/tokens.h</label>
+        <link refid="usdPhysics/tokens.h"/>
+        <childnode refid="3024" relation="include">
+        </childnode>
+        <childnode refid="3025" relation="include">
+        </childnode>
+        <childnode refid="3026" relation="include">
+        </childnode>
+        <childnode refid="3027" relation="include">
+        </childnode>
+        <childnode refid="3028" relation="include">
+        </childnode>
+        <childnode refid="3029" relation="include">
+        </childnode>
+        <childnode refid="3036" relation="include">
+        </childnode>
+        <childnode refid="3037" relation="include">
+        </childnode>
+        <childnode refid="3038" relation="include">
+        </childnode>
+        <childnode refid="3039" relation="include">
+        </childnode>
+        <childnode refid="3031" relation="include">
+        </childnode>
+        <childnode refid="3032" relation="include">
+        </childnode>
+        <childnode refid="3040" relation="include">
+        </childnode>
+        <childnode refid="3041" relation="include">
+        </childnode>
+        <childnode refid="3033" relation="include">
+        </childnode>
+      </node>
+      <node id="3025">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/collisionGroup.h</label>
+        <link refid="collision_group_8h"/>
+      </node>
+      <node id="3038">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/materialAPI.h</label>
+        <link refid="material_a_p_i_8h"/>
+      </node>
+      <node id="3024">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h</label>
+        <link refid="collision_a_p_i_8h"/>
+      </node>
+      <node id="3035">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsRackAndPinionJoint.h</label>
+        <link refid="physx_physics_rack_and_pinion_joint_8h"/>
+      </node>
+      <node id="3037">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/massAPI.h</label>
+        <link refid="mass_a_p_i_8h"/>
+      </node>
+      <node id="3029">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/joint.h</label>
+        <link refid="joint_8h"/>
+        <childnode refid="3026" relation="include">
+        </childnode>
+        <childnode refid="3030" relation="include">
+        </childnode>
+        <childnode refid="3031" relation="include">
+        </childnode>
+        <childnode refid="3032" relation="include">
+        </childnode>
+        <childnode refid="3033" relation="include">
+        </childnode>
+        <childnode refid="3034" relation="include">
+        </childnode>
+        <childnode refid="3035" relation="include">
+        </childnode>
+      </node>
+      <node id="3036">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/limitAPI.h</label>
+        <link refid="limit_a_p_i_8h"/>
+      </node>
+      <node id="3031">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/prismaticJoint.h</label>
+        <link refid="prismatic_joint_8h"/>
+      </node>
+      <node id="3027">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/driveAPI.h</label>
+        <link refid="drive_a_p_i_8h"/>
+      </node>
+      <node id="3032">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/revoluteJoint.h</label>
+        <link refid="revolute_joint_8h"/>
+      </node>
+      <node id="3028">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/filteredPairsAPI.h</label>
+        <link refid="filtered_pairs_a_p_i_8h"/>
+      </node>
+      <node id="3034">
+        <label>W:/919a5455eee1e83c/src/physxSchema/physxPhysicsGearJoint.h</label>
+        <link refid="physx_physics_gear_joint_8h"/>
+      </node>
+      <node id="3041">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+      <node id="3030">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/fixedJoint.h</label>
+        <link refid="fixed_joint_8h"/>
+      </node>
+      <node id="3026">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/distanceJoint.h</label>
+        <link refid="distance_joint_8h"/>
+      </node>
+      <node id="3040">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/rigidBodyAPI.h</label>
+        <link refid="rigid_body_a_p_i_8h"/>
+      </node>
+      <node id="3033">
+        <label>W:/919a5455eee1e83c/src/usdPhysics/sphericalJoint.h</label>
+        <link refid="spherical_joint_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_usd_physics_tokens_type" prot="public">UsdPhysicsTokensType</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usd_physics_2tokens_8h_1abecb2253be1aa39fd5a77f62b5dc1adc" prot="public" static="no" mutable="no">
+        <type>USDPHYSICS_API TfStaticData&lt; <ref refid="struct_usd_physics_tokens_type" kindref="compound">UsdPhysicsTokensType</ref> &gt;</type>
+        <definition>UsdPhysicsTokens</definition>
+        <argsstring></argsstring>
+        <name>UsdPhysicsTokens</name>
+        <briefdescription>
+<para>A global variable with static, efficient <ref refid="" kindref="compound">TfTokens</ref> for use in all public USD API. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_usd_physics_tokens_type" kindref="compound">UsdPhysicsTokensType</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="349" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>2016<sp/>Pixar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;Apache<sp/>License&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>following<sp/>modification;<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compliance<sp/>with<sp/>the<sp/>Apache<sp/>License<sp/>and<sp/>the<sp/>following<sp/>modification<sp/>to<sp/>it:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>6.<sp/>Trademarks.<sp/>is<sp/>deleted<sp/>and<sp/>replaced<sp/>with:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6.<sp/>Trademarks.<sp/>This<sp/>License<sp/>does<sp/>not<sp/>grant<sp/>permission<sp/>to<sp/>use<sp/>the<sp/>trade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>names,<sp/>trademarks,<sp/>service<sp/>marks,<sp/>or<sp/>product<sp/>names<sp/>of<sp/>the<sp/>Licensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>and<sp/>its<sp/>affiliates,<sp/>except<sp/>as<sp/>required<sp/>to<sp/>comply<sp/>with<sp/>Section<sp/>4(c)<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>the<sp/>License<sp/>and<sp/>to<sp/>reproduce<sp/>the<sp/>content<sp/>of<sp/>the<sp/>NOTICE<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>Apache<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>Apache<sp/>License<sp/>with<sp/>the<sp/>above<sp/>modification<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>Apache<sp/>License<sp/>for<sp/>the<sp/>specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>Apache<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USDPHYSICS_TOKENS_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USDPHYSICS_TOKENS_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>an<sp/>automatically<sp/>generated<sp/>file<sp/>(by<sp/>usdGenSchema.py).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Do<sp/>not<sp/>hand-edit!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/pxr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usdPhysics/api.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/tf/staticData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pxr/base/tf/token.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">PXR_NAMESPACE_OPEN_SCOPE</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="struct_usd_physics_tokens_type" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_usd_physics_tokens_type" kindref="compound">UsdPhysicsTokensType</ref><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>USDPHYSICS_API<sp/><ref refid="struct_usd_physics_tokens_type" kindref="compound">UsdPhysicsTokensType</ref>();</highlight></codeline>
+<codeline lineno="68" refid="struct_usd_physics_tokens_type_1ab8e551727686089fe560592666488b62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1ab8e551727686089fe560592666488b62" kindref="member">acceleration</ref>;</highlight></codeline>
+<codeline lineno="72" refid="struct_usd_physics_tokens_type_1a7000770a2eca2853e9016a0e67789ba4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a7000770a2eca2853e9016a0e67789ba4" kindref="member">angular</ref>;</highlight></codeline>
+<codeline lineno="76" refid="struct_usd_physics_tokens_type_1a88d8087092ddc552eb687b304594d940" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a88d8087092ddc552eb687b304594d940" kindref="member">boundingCube</ref>;</highlight></codeline>
+<codeline lineno="80" refid="struct_usd_physics_tokens_type_1a673b030393099c5ba4e762555d44d6cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a673b030393099c5ba4e762555d44d6cd" kindref="member">boundingSphere</ref>;</highlight></codeline>
+<codeline lineno="84" refid="struct_usd_physics_tokens_type_1a851e05a7572403ec3f6ac5c569aadcc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a851e05a7572403ec3f6ac5c569aadcc0" kindref="member">colliders</ref>;</highlight></codeline>
+<codeline lineno="88" refid="struct_usd_physics_tokens_type_1af02b078fca760513bfe3f691d88f04ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1af02b078fca760513bfe3f691d88f04ea" kindref="member">convexDecomposition</ref>;</highlight></codeline>
+<codeline lineno="92" refid="struct_usd_physics_tokens_type_1a3d3ecb39ccf464b66ac91cc44f77945a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a3d3ecb39ccf464b66ac91cc44f77945a" kindref="member">convexHull</ref>;</highlight></codeline>
+<codeline lineno="96" refid="struct_usd_physics_tokens_type_1acd4a16020e7936268a0244ad11a099bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1acd4a16020e7936268a0244ad11a099bf" kindref="member">distance</ref>;</highlight></codeline>
+<codeline lineno="100" refid="struct_usd_physics_tokens_type_1aa900b66edb538ee4ebd19c39e5296ddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aa900b66edb538ee4ebd19c39e5296ddd" kindref="member">drive</ref>;</highlight></codeline>
+<codeline lineno="104" refid="struct_usd_physics_tokens_type_1a06632e06794d45ccf6a537cffae9d0d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a06632e06794d45ccf6a537cffae9d0d9" kindref="member">force</ref>;</highlight></codeline>
+<codeline lineno="108" refid="struct_usd_physics_tokens_type_1a24c37003b1414e39167b1132f765dfec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a24c37003b1414e39167b1132f765dfec" kindref="member">kilogramsPerUnit</ref>;</highlight></codeline>
+<codeline lineno="112" refid="struct_usd_physics_tokens_type_1a8565c64e7f49fdf5478ac80999284a82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a8565c64e7f49fdf5478ac80999284a82" kindref="member">limit</ref>;</highlight></codeline>
+<codeline lineno="116" refid="struct_usd_physics_tokens_type_1a708efed05b6cb58e7c7de407519b045a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a708efed05b6cb58e7c7de407519b045a" kindref="member">linear</ref>;</highlight></codeline>
+<codeline lineno="120" refid="struct_usd_physics_tokens_type_1af9f5a93b9623fe85d49b58831259be9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1af9f5a93b9623fe85d49b58831259be9c" kindref="member">meshSimplification</ref>;</highlight></codeline>
+<codeline lineno="124" refid="struct_usd_physics_tokens_type_1a96a49c29f4f7aed35b1ee919b37223bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a96a49c29f4f7aed35b1ee919b37223bf" kindref="member">none</ref>;</highlight></codeline>
+<codeline lineno="128" refid="struct_usd_physics_tokens_type_1a5cace409d47714028aedf9ab933848f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a5cace409d47714028aedf9ab933848f7" kindref="member">physicsAngularVelocity</ref>;</highlight></codeline>
+<codeline lineno="132" refid="struct_usd_physics_tokens_type_1a1e94ac00b479ce5c2960ff1136cd0d5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a1e94ac00b479ce5c2960ff1136cd0d5d" kindref="member">physicsApproximation</ref>;</highlight></codeline>
+<codeline lineno="136" refid="struct_usd_physics_tokens_type_1a0460d5f194945164f898979c1e883bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a0460d5f194945164f898979c1e883bc0" kindref="member">physicsAxis</ref>;</highlight></codeline>
+<codeline lineno="140" refid="struct_usd_physics_tokens_type_1a0e22c8829b1680d1b2b3996f67cb8f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a0e22c8829b1680d1b2b3996f67cb8f36" kindref="member">physicsBody0</ref>;</highlight></codeline>
+<codeline lineno="144" refid="struct_usd_physics_tokens_type_1a679e58dbae01e69628fdc648d1674e01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a679e58dbae01e69628fdc648d1674e01" kindref="member">physicsBody1</ref>;</highlight></codeline>
+<codeline lineno="148" refid="struct_usd_physics_tokens_type_1a8e9813aa1635d80758442dc2abfa24cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a8e9813aa1635d80758442dc2abfa24cc" kindref="member">physicsBreakForce</ref>;</highlight></codeline>
+<codeline lineno="152" refid="struct_usd_physics_tokens_type_1a30b1c3e3b06b11c97d40bab23670f7be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a30b1c3e3b06b11c97d40bab23670f7be" kindref="member">physicsBreakTorque</ref>;</highlight></codeline>
+<codeline lineno="156" refid="struct_usd_physics_tokens_type_1a60ee5f7ab0c6a79ada7a5477d7acf6f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a60ee5f7ab0c6a79ada7a5477d7acf6f7" kindref="member">physicsCenterOfMass</ref>;</highlight></codeline>
+<codeline lineno="160" refid="struct_usd_physics_tokens_type_1a82f217bdc2abf2f5195214c82b0da860" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a82f217bdc2abf2f5195214c82b0da860" kindref="member">physicsCollisionEnabled</ref>;</highlight></codeline>
+<codeline lineno="164" refid="struct_usd_physics_tokens_type_1a7f0de5e3cd06a2a1e37a4e8787964c23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a7f0de5e3cd06a2a1e37a4e8787964c23" kindref="member">physicsConeAngle0Limit</ref>;</highlight></codeline>
+<codeline lineno="168" refid="struct_usd_physics_tokens_type_1a0ed7155cc0636f9db3bad86a1a0c624f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a0ed7155cc0636f9db3bad86a1a0c624f" kindref="member">physicsConeAngle1Limit</ref>;</highlight></codeline>
+<codeline lineno="172" refid="struct_usd_physics_tokens_type_1aa91651bd0be874dea158395fe990e205" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aa91651bd0be874dea158395fe990e205" kindref="member">physicsDamping</ref>;</highlight></codeline>
+<codeline lineno="176" refid="struct_usd_physics_tokens_type_1a17917c0c52ddcf8d3fb80b0a1c5bce0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a17917c0c52ddcf8d3fb80b0a1c5bce0a" kindref="member">physicsDensity</ref>;</highlight></codeline>
+<codeline lineno="180" refid="struct_usd_physics_tokens_type_1abfbb2a5404a8efdf4577b4181c32e358" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1abfbb2a5404a8efdf4577b4181c32e358" kindref="member">physicsDiagonalInertia</ref>;</highlight></codeline>
+<codeline lineno="184" refid="struct_usd_physics_tokens_type_1aa386a9a92fa3340717d6374437b451ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aa386a9a92fa3340717d6374437b451ed" kindref="member">physicsDynamicFriction</ref>;</highlight></codeline>
+<codeline lineno="188" refid="struct_usd_physics_tokens_type_1a370a8b36d2a668a9fdf9e4314b7b1459" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a370a8b36d2a668a9fdf9e4314b7b1459" kindref="member">physicsExcludeFromArticulation</ref>;</highlight></codeline>
+<codeline lineno="192" refid="struct_usd_physics_tokens_type_1a1b5c0ed6a9910296d03be3dacae6a2c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a1b5c0ed6a9910296d03be3dacae6a2c9" kindref="member">physicsFilteredGroups</ref>;</highlight></codeline>
+<codeline lineno="196" refid="struct_usd_physics_tokens_type_1aec285266ee4f56361b96631d2986e99a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aec285266ee4f56361b96631d2986e99a" kindref="member">physicsFilteredPairs</ref>;</highlight></codeline>
+<codeline lineno="200" refid="struct_usd_physics_tokens_type_1a7fb5b745169ae6d39f9e1c7049b6c399" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a7fb5b745169ae6d39f9e1c7049b6c399" kindref="member">physicsGravityDirection</ref>;</highlight></codeline>
+<codeline lineno="204" refid="struct_usd_physics_tokens_type_1a5d0f8985d09191005832c9a39c9b91c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a5d0f8985d09191005832c9a39c9b91c5" kindref="member">physicsGravityMagnitude</ref>;</highlight></codeline>
+<codeline lineno="208" refid="struct_usd_physics_tokens_type_1a5bdd788d1a4ccfcc95a22f96bff47348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a5bdd788d1a4ccfcc95a22f96bff47348" kindref="member">physicsHigh</ref>;</highlight></codeline>
+<codeline lineno="212" refid="struct_usd_physics_tokens_type_1aa9f4f77ac84ee5a380d9b33d503cbb4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aa9f4f77ac84ee5a380d9b33d503cbb4c" kindref="member">physicsJointEnabled</ref>;</highlight></codeline>
+<codeline lineno="216" refid="struct_usd_physics_tokens_type_1a480125ca509f610a9cd2de8540ec0795" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a480125ca509f610a9cd2de8540ec0795" kindref="member">physicsKinematicEnabled</ref>;</highlight></codeline>
+<codeline lineno="220" refid="struct_usd_physics_tokens_type_1ae820e938706fe024aa7c4026fe9f0e4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1ae820e938706fe024aa7c4026fe9f0e4d" kindref="member">physicsLocalPos0</ref>;</highlight></codeline>
+<codeline lineno="224" refid="struct_usd_physics_tokens_type_1ad0fed3209481de45d88fd8142f4779a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1ad0fed3209481de45d88fd8142f4779a6" kindref="member">physicsLocalPos1</ref>;</highlight></codeline>
+<codeline lineno="228" refid="struct_usd_physics_tokens_type_1ac3602bb444bdd24064cb2cf5e65eea26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1ac3602bb444bdd24064cb2cf5e65eea26" kindref="member">physicsLocalRot0</ref>;</highlight></codeline>
+<codeline lineno="232" refid="struct_usd_physics_tokens_type_1aca8926b4a6d73422dddc24b3943ec9c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aca8926b4a6d73422dddc24b3943ec9c9" kindref="member">physicsLocalRot1</ref>;</highlight></codeline>
+<codeline lineno="236" refid="struct_usd_physics_tokens_type_1a440b51be819f5e0f9c4569c5f60eb117" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a440b51be819f5e0f9c4569c5f60eb117" kindref="member">physicsLow</ref>;</highlight></codeline>
+<codeline lineno="240" refid="struct_usd_physics_tokens_type_1a3bc3ca95908d9f0571979c8783e21c80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a3bc3ca95908d9f0571979c8783e21c80" kindref="member">physicsLowerLimit</ref>;</highlight></codeline>
+<codeline lineno="244" refid="struct_usd_physics_tokens_type_1a16b3916fdd6c02723d4ba895ddf25f7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a16b3916fdd6c02723d4ba895ddf25f7f" kindref="member">physicsMass</ref>;</highlight></codeline>
+<codeline lineno="248" refid="struct_usd_physics_tokens_type_1aee34a613dfbc66a6e956a8adc90f3955" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aee34a613dfbc66a6e956a8adc90f3955" kindref="member">physicsMaxDistance</ref>;</highlight></codeline>
+<codeline lineno="252" refid="struct_usd_physics_tokens_type_1a478a3e61cb6f1a87e6811b1fb108d4e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a478a3e61cb6f1a87e6811b1fb108d4e1" kindref="member">physicsMaxForce</ref>;</highlight></codeline>
+<codeline lineno="256" refid="struct_usd_physics_tokens_type_1a8b7620d4109540838dcb6fe59dc4b639" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a8b7620d4109540838dcb6fe59dc4b639" kindref="member">physicsMinDistance</ref>;</highlight></codeline>
+<codeline lineno="260" refid="struct_usd_physics_tokens_type_1af9ac12451ac5702cb2d2bb04ee5340c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1af9ac12451ac5702cb2d2bb04ee5340c2" kindref="member">physicsPrincipalAxes</ref>;</highlight></codeline>
+<codeline lineno="264" refid="struct_usd_physics_tokens_type_1aef6d767844fd17ad951a736b8cc3698b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1aef6d767844fd17ad951a736b8cc3698b" kindref="member">physicsRestitution</ref>;</highlight></codeline>
+<codeline lineno="268" refid="struct_usd_physics_tokens_type_1acd8e590f968e7fd258a873ff3145969c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1acd8e590f968e7fd258a873ff3145969c" kindref="member">physicsRigidBodyEnabled</ref>;</highlight></codeline>
+<codeline lineno="272" refid="struct_usd_physics_tokens_type_1a23e5386cede9829aa6a380394326fc06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a23e5386cede9829aa6a380394326fc06" kindref="member">physicsSimulationOwner</ref>;</highlight></codeline>
+<codeline lineno="276" refid="struct_usd_physics_tokens_type_1a661e1647f4571f1d5f741917848fac0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a661e1647f4571f1d5f741917848fac0c" kindref="member">physicsStartsAsleep</ref>;</highlight></codeline>
+<codeline lineno="280" refid="struct_usd_physics_tokens_type_1ac9b5090e23fb4e4750126ba365f11d19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1ac9b5090e23fb4e4750126ba365f11d19" kindref="member">physicsStaticFriction</ref>;</highlight></codeline>
+<codeline lineno="284" refid="struct_usd_physics_tokens_type_1af497c68ddc35ccd0b0ae17dc8a114c31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1af497c68ddc35ccd0b0ae17dc8a114c31" kindref="member">physicsStiffness</ref>;</highlight></codeline>
+<codeline lineno="288" refid="struct_usd_physics_tokens_type_1a29566c6f745da5647fac0f8e3a95b7ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a29566c6f745da5647fac0f8e3a95b7ce" kindref="member">physicsTargetPosition</ref>;</highlight></codeline>
+<codeline lineno="292" refid="struct_usd_physics_tokens_type_1abb5c3d767f353ae9cbe5b71c69adcfd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1abb5c3d767f353ae9cbe5b71c69adcfd0" kindref="member">physicsTargetVelocity</ref>;</highlight></codeline>
+<codeline lineno="296" refid="struct_usd_physics_tokens_type_1a465654f735861c1e16cb0b1169f350bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a465654f735861c1e16cb0b1169f350bd" kindref="member">physicsType</ref>;</highlight></codeline>
+<codeline lineno="300" refid="struct_usd_physics_tokens_type_1a7a19dc83453f60f8293d45fc1b85dabd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a7a19dc83453f60f8293d45fc1b85dabd" kindref="member">physicsUpperLimit</ref>;</highlight></codeline>
+<codeline lineno="304" refid="struct_usd_physics_tokens_type_1a0369d0fca9011840fcf6800e9c645874" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a0369d0fca9011840fcf6800e9c645874" kindref="member">physicsVelocity</ref>;</highlight></codeline>
+<codeline lineno="308" refid="struct_usd_physics_tokens_type_1accb2d2d1b5a4b0e16d916389194ba55e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1accb2d2d1b5a4b0e16d916389194ba55e" kindref="member">rotX</ref>;</highlight></codeline>
+<codeline lineno="312" refid="struct_usd_physics_tokens_type_1a5303765112cb2c4f0ea42828f43219a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a5303765112cb2c4f0ea42828f43219a8" kindref="member">rotY</ref>;</highlight></codeline>
+<codeline lineno="316" refid="struct_usd_physics_tokens_type_1a5600f0eee192deaabd7ff68a77a8d2fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a5600f0eee192deaabd7ff68a77a8d2fc" kindref="member">rotZ</ref>;</highlight></codeline>
+<codeline lineno="320" refid="struct_usd_physics_tokens_type_1a3bdf89b8ab6d381ce3b971940a3c1243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a3bdf89b8ab6d381ce3b971940a3c1243" kindref="member">transX</ref>;</highlight></codeline>
+<codeline lineno="324" refid="struct_usd_physics_tokens_type_1ab074c894e5b94a1f4a20891752e81c3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1ab074c894e5b94a1f4a20891752e81c3e" kindref="member">transY</ref>;</highlight></codeline>
+<codeline lineno="328" refid="struct_usd_physics_tokens_type_1a65b4f60f101d93593ae11bd105d4d2fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a65b4f60f101d93593ae11bd105d4d2fa" kindref="member">transZ</ref>;</highlight></codeline>
+<codeline lineno="332" refid="struct_usd_physics_tokens_type_1abfef76d513c400fd1cdb12b29b37f2f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1abfef76d513c400fd1cdb12b29b37f2f8" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="336" refid="struct_usd_physics_tokens_type_1a84410b1963dd5000efae800ef0ce2054" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a84410b1963dd5000efae800ef0ce2054" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="340" refid="struct_usd_physics_tokens_type_1a78152d0374c642006112dd29d48192a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TfToken<sp/><ref refid="struct_usd_physics_tokens_type_1a78152d0374c642006112dd29d48192a2" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="342" refid="struct_usd_physics_tokens_type_1a06ed732eeddfeba03daedd49167195fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;TfToken&gt;<sp/><ref refid="struct_usd_physics_tokens_type_1a06ed732eeddfeba03daedd49167195fa" kindref="member">allTokens</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USDPHYSICS_API<sp/>TfStaticData&lt;UsdPhysicsTokensType&gt;<sp/><ref refid="usd_physics_2tokens_8h_1abecb2253be1aa39fd5a77f62b5dc1adc" kindref="member">UsdPhysicsTokens</ref>;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal">PXR_NAMESPACE_CLOSE_SCOPE</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h"/>
+  </compounddef>
+</doxygen>

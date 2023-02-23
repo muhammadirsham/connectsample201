@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_usd_physics_collision_a_p_i" kind="class" prot="public">
+    <compoundname>UsdPhysicsCollisionAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="collision_a_p_i_8h" local="no">collisionAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_usd_physics_collision_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="68" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_usd_physics_collision_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="139" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1afd9f9782c89246b8523ef9b3b86002a2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsCollisionAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>UsdPhysicsCollisionAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_usd_physics_collision_a_p_i_1aa30ed12e6ec00972aa974fa833e7343b" kindref="member">UsdPhysicsCollisionAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="74" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a264bdbcd96941bd08a24775297ee889d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsCollisionAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>UsdPhysicsCollisionAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="82" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a70fa411068e8cd90e82ac9429763ed7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>USDPHYSICS_API</type>
+        <definition>virtual USDPHYSICS_API ~UsdPhysicsCollisionAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~UsdPhysicsCollisionAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a0f14d3a308d85b8dcb2104e2f77942f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetCollisionEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollisionEnabledAttr</name>
+        <briefdescription>
+<para>Determines if the PhysicsCollisionAPI is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physics:collisionEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a10041d624985a04487ad87d2bd009316" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateCollisionEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCollisionEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_collision_a_p_i_1a0f14d3a308d85b8dcb2104e2f77942f0" kindref="member">GetCollisionEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a81caba58278bb184b5ed9d0aea85bde6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdRelationship</type>
+        <definition>USDPHYSICS_API UsdRelationship GetSimulationOwnerRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSimulationOwnerRel</name>
+        <briefdescription>
+<para>Single PhysicsScene that will simulate this collider. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default this object belongs to the first PhysicsScene. Note that if a RigidBodyAPI in the hierarchy above has a different simulationOwner then it has a precedence over this relationship. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a5b4bb5ba556491f80c786ab4181b1dcd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdRelationship</type>
+        <definition>USDPHYSICS_API UsdRelationship CreateSimulationOwnerRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateSimulationOwnerRel</name>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_collision_a_p_i_1a81caba58278bb184b5ed9d0aea85bde6" kindref="member">GetSimulationOwnerRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="186" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfTokenVector &amp;</type>
+        <definition>static USDPHYSICS_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1aa30ed12e6ec00972aa974fa833e7343b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsCollisionAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_usd_physics_collision_a_p_i_1afd9f9782c89246b8523ef9b3b86002a2" kindref="member">UsdPhysicsCollisionAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a10fbcb13042e541b2cb9f98cc3444d49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsCollisionAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysicsCollisionAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="128" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdSchemaType</type>
+        <definition>USDPHYSICS_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1adade0ff4639afd184e30c5708ae86f8d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>static USDPHYSICS_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_usd_physics_collision_a_p_i_1a96538019a0566b8f54f05953ac1c6615" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>USDPHYSICS_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="147" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Applies collision attributes to a UsdGeomXformable prim. </para>    </briefdescription>
+    <detaileddescription>
+<para>If a simulation is running this geometry is colliding with other geometries that do have CollisionAPI applied. If a prim in the parent hierarchy does have the RigidBodyAPI applied, this collision is a part of that body. If there is no body in the parent hierarchy, this collision is considered to be a static collision. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/collisionAPI.h" bodystart="62" bodyend="199"/>
+    <listofallmembers>
+      <member refid="class_usd_physics_collision_a_p_i_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1adade0ff4639afd184e30c5708ae86f8d" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a96538019a0566b8f54f05953ac1c6615" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a10fbcb13042e541b2cb9f98cc3444d49" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>Apply</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a10041d624985a04487ad87d2bd009316" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>CreateCollisionEnabledAttr</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a5b4bb5ba556491f80c786ab4181b1dcd" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>CreateSimulationOwnerRel</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1aa30ed12e6ec00972aa974fa833e7343b" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>Get</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a0f14d3a308d85b8dcb2104e2f77942f0" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>GetCollisionEnabledAttr</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a81caba58278bb184b5ed9d0aea85bde6" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>GetSimulationOwnerRel</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>schemaType</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1afd9f9782c89246b8523ef9b3b86002a2" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>UsdPhysicsCollisionAPI</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a264bdbcd96941bd08a24775297ee889d" prot="public" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>UsdPhysicsCollisionAPI</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>UsdPhysicsCollisionAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_usd_physics_collision_a_p_i_1a70fa411068e8cd90e82ac9429763ed7d" prot="public" virt="virtual"><scope>UsdPhysicsCollisionAPI</scope><name>~UsdPhysicsCollisionAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

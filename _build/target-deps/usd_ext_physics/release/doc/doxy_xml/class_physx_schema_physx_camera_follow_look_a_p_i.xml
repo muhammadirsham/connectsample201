@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_camera_follow_look_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxCameraFollowLookAPI</compoundname>
+    <basecompoundref refid="class_physx_schema_physx_camera_follow_a_p_i" prot="public" virt="non-virtual">PhysxSchemaPhysxCameraFollowAPI</basecompoundref>
+    <includes refid="physx_camera_follow_look_a_p_i_8h" local="no">physxCameraFollowLookAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_camera_follow_look_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_camera_follow_look_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="134" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ae188960e3bed9f9a706165663d05837c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxCameraFollowLookAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxCameraFollowLookAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a1787413cef9f4fba958ff64383067443" kindref="member">PhysxSchemaPhysxCameraFollowLookAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ab3778ae9f2709acebe25db5302b863b5" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxCameraFollowLookAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxCameraFollowLookAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ae9312f98ee18bfbf2fb0917e5cedaeed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxCameraFollowLookAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxCameraFollowLookAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ac1130b299b14b7b0fd30a8e9d2926926" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDownHillGroundAngleAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDownHillGroundAngleAttr</name>
+        <briefdescription>
+<para>The minimum pitch angle of the terrain used for a linear interpolation to adjust the pitch of the camera. </para>        </briefdescription>
+        <detaileddescription>
+<para>e.g. -45.0 degrees</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxFollowLookCamera:downHillGroundAngle</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a330ae898d33178999f125f3974f11e1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDownHillGroundAngleAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDownHillGroundAngleAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ac1130b299b14b7b0fd30a8e9d2926926" kindref="member">GetDownHillGroundAngleAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a6b13cafe52440e5cf058ddd092053b42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDownHillGroundPitchAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDownHillGroundPitchAttr</name>
+        <briefdescription>
+<para>The minimum pitch angle of the camera used for a linear interpolation to adjust the pitch of the camera. </para>        </briefdescription>
+        <detaileddescription>
+<para>e.g. 10.0 degrees</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxFollowLookCamera:downHillGroundPitch</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a4a5e187064a23647f85760b4b78e9df8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDownHillGroundPitchAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDownHillGroundPitchAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a6b13cafe52440e5cf058ddd092053b42" kindref="member">GetDownHillGroundPitchAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a131ad46388b142f491e8f57d603336c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetUpHillGroundAngleAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetUpHillGroundAngleAttr</name>
+        <briefdescription>
+<para>The maximum pitch angle of the terrain used for a linear interpolation to adjust the pitch of the camera. </para>        </briefdescription>
+        <detaileddescription>
+<para>e.g. 45.0 degrees</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxFollowLookCamera:upHillGroundAngle</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1aa686b6cbe1b627555ef41ed99077a1d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateUpHillGroundAngleAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateUpHillGroundAngleAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a131ad46388b142f491e8f57d603336c8" kindref="member">GetUpHillGroundAngleAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ac18ba64b3029659cde30182b3fcf4bd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetUpHillGroundPitchAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetUpHillGroundPitchAttr</name>
+        <briefdescription>
+<para>The maximum pitch angle of the camera used for a linear interpolation to adjust the pitch of the camera. </para>        </briefdescription>
+        <detaileddescription>
+<para>e.g. 10.0 degrees</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxFollowLookCamera:upHillGroundPitch</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1aee20044a29c6148bb12cc0f76713d48b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateUpHillGroundPitchAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateUpHillGroundPitchAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ac18ba64b3029659cde30182b3fcf4bd3" kindref="member">GetUpHillGroundPitchAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a37415b2b9ef2c77c592e9ccdd603482d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetVelocityBlendTimeConstantAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetVelocityBlendTimeConstantAttr</name>
+        <briefdescription>
+<para>Filter time constant to blend between the look and velocity vectors, in seconds. </para>        </briefdescription>
+        <detaileddescription>
+<para>e.g. 0.1 seconds</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxFollowLookCamera:velocityBlendTimeConstant</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ac7e1df5d4e4ca763b9e70fc161e1b5e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateVelocityBlendTimeConstantAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateVelocityBlendTimeConstantAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a37415b2b9ef2c77c592e9ccdd603482d" kindref="member">GetVelocityBlendTimeConstantAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a7fc968aed089eff7ca7129347849ffd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFollowReverseSpeedAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFollowReverseSpeedAttr</name>
+        <briefdescription>
+<para>The positive, maximum speed, when driving in reverse, used for a linear interpolation to compute the follow distance of the camera. </para>        </briefdescription>
+        <detaileddescription>
+<para>e.g. 1500.0 cm/sec</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxFollowLookCamera:followReverseSpeed</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a58720b781d2be9acccd31e0f9e9953a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFollowReverseSpeedAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFollowReverseSpeedAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a7fc968aed089eff7ca7129347849ffd3" kindref="member">GetFollowReverseSpeedAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ade0545c90a61911dd9d3259b52cd423d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFollowReverseDistanceAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFollowReverseDistanceAttr</name>
+        <briefdescription>
+<para>The maximum distance, when driving in reverse, used for a linear interpolation to compute the follow distance of the camera. </para>        </briefdescription>
+        <detaileddescription>
+<para>e.g. 3000.0 cm</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxFollowLookCamera:followReverseDistance</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ad7771e1d54c9bc68bbdb54887070f205" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFollowReverseDistanceAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFollowReverseDistanceAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ade0545c90a61911dd9d3259b52cd423d" kindref="member">GetFollowReverseDistanceAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="296" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a1787413cef9f4fba958ff64383067443" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxCameraFollowLookAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ae188960e3bed9f9a706165663d05837c" kindref="member">PhysxSchemaPhysxCameraFollowLookAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1af6297f75729a2d5630d2f569e375a8c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxCameraFollowLookAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxCameraFollowLookAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_camera_follow_look_a_p_i" kindref="compound">PhysxSchemaPhysxCameraFollowLookAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_camera_follow_look_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX camera that follows behind the subject&apos;s forward vector as it moves. </para>    </briefdescription>
+    <detaileddescription>
+<para>Assumes the subject is always upright and does not roll. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="148">
+        <label>PhysxSchemaPhysxCameraFollowAPI</label>
+        <link refid="class_physx_schema_physx_camera_follow_a_p_i"/>
+        <childnode refid="149" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>PhysxSchemaPhysxCameraAPI</label>
+        <link refid="class_physx_schema_physx_camera_a_p_i"/>
+      </node>
+      <node id="147">
+        <label>PhysxSchemaPhysxCameraFollowLookAPI</label>
+        <link refid="class_physx_schema_physx_camera_follow_look_a_p_i"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="151">
+        <label>PhysxSchemaPhysxCameraFollowAPI</label>
+        <link refid="class_physx_schema_physx_camera_follow_a_p_i"/>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>PhysxSchemaPhysxCameraAPI</label>
+        <link refid="class_physx_schema_physx_camera_a_p_i"/>
+      </node>
+      <node id="150">
+        <label>PhysxSchemaPhysxCameraFollowLookAPI</label>
+        <link refid="class_physx_schema_physx_camera_follow_look_a_p_i"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCameraFollowLookAPI.h" bodystart="57" bodyend="309"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1af6297f75729a2d5630d2f569e375a8c8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ab64187f4c4b31805781a987f0b1fe359" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateCameraPositionTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a330ae898d33178999f125f3974f11e1b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateDownHillGroundAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a4a5e187064a23647f85760b4b78e9df8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateDownHillGroundPitchAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a4df0ec339120bb8a13c21dd41cab13ec" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateFollowMaxDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a10d9fecd4ac26ab4e26e92357ebdbe64" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateFollowMaxSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a6ffebc06f5baf2a9ea9a026df35b57e9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateFollowMinDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a856035993586a127d648fe82bfab5afe" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateFollowMinSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ad7771e1d54c9bc68bbdb54887070f205" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateFollowReverseDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a58720b781d2be9acccd31e0f9e9953a5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateFollowReverseSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a48076a42e7f05e41d03fa6cb8096db78" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateFollowTurnRateGainAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1af2a55ae93b712d74305b001bbb9e036d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateLookAheadMaxDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ab995ec74ec9985161a5c7763416a2585" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateLookAheadMaxSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a06dcd38e8ef8a9c504ec29840e577957" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateLookAheadMinDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a2191f8dfbdd8aea7fedf215534cce480" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateLookAheadMinSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1aaa3e0aa947c11cbe1ec77759b33a80bc" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateLookAheadTurnRateGainAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a7bb8a105156a61ac53ca4e91102fe803" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateLookPositionHeightAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a1e514f7180490cf9371ac932b8eba647" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateLookPositionTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1ac04454f2cf881b2d94e722e53a48ebd1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreatePhysxCameraSubjectRel</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a83badc85845b5bd554bbb4de6d574f82" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreatePitchAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a42c9e2cc6faca76a9871a3081a83cfad" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreatePitchAngleTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1adebaedf906ef199a62c9b85316a238d4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreatePositionOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1acfba7085bbcd118e33db9bd2f6f32126" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateSlowPitchAngleSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1aea61790a4a054d3f9d8c7c769be20c62" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateSlowSpeedPitchAngleScaleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1aa686b6cbe1b627555ef41ed99077a1d7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateUpHillGroundAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1aee20044a29c6148bb12cc0f76713d48b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateUpHillGroundPitchAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ac7e1df5d4e4ca763b9e70fc161e1b5e4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateVelocityBlendTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a14758140118ed25f82694fef4ed220f5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateVelocityNormalMinSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a12ba86e4a19ab6e508d6ec6bf8a038fb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateYawAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a723d2690b1df26296f60e2e442e4a9fa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>CreateYawRateTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a1787413cef9f4fba958ff64383067443" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ab9fdb0e0ad74609292d42ca853736646" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetCameraPositionTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ac1130b299b14b7b0fd30a8e9d2926926" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetDownHillGroundAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a6b13cafe52440e5cf058ddd092053b42" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetDownHillGroundPitchAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a15927e77c13b591825f7160581620693" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetFollowMaxDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ac198d2cc1457d2f6b01e1d91abbd9cde" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetFollowMaxSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1affcd4296e917f83638ea35805479c549" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetFollowMinDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a022e3d4a17ae6bc34d672f1a6b291657" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetFollowMinSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ade0545c90a61911dd9d3259b52cd423d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetFollowReverseDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a7fc968aed089eff7ca7129347849ffd3" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetFollowReverseSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ab9eddaa42a47b4f9fa68b021f4f8eb60" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetFollowTurnRateGainAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ae2e123851ed8f93b4967cd74baaaf68f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetLookAheadMaxDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ad0c8df428f948f420f7e21cf05f8e8da" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetLookAheadMaxSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a94d6206ed68961d373b6b9768c3e2f66" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetLookAheadMinDistanceAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a5899323b9a9bea969a9403dab746b08c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetLookAheadMinSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a3561699f869b6c488e7249c0a26ca625" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetLookAheadTurnRateGainAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a3489c034b3803e5a995d51aa674f85ae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetLookPositionHeightAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ac3804704893f7f52f7edf9adf42738da" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetLookPositionTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a38c9994ae80b41616fa911b53d0f985d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetPhysxCameraSubjectRel</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ae70878cc94c2d2716cde0bcb342775e1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetPitchAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a3e85b15f6eb843a7f2c70f96c623886f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetPitchAngleTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a74c00a55f29223358d594a89a3c489a6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetPositionOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1ac9afb21ea7a81d807f25fd92174661f4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetSlowPitchAngleSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a3c003b1731cff2e429a2cc169e14698a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetSlowSpeedPitchAngleScaleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a131ad46388b142f491e8f57d603336c8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetUpHillGroundAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ac18ba64b3029659cde30182b3fcf4bd3" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetUpHillGroundPitchAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1a37415b2b9ef2c77c592e9ccdd603482d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetVelocityBlendTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1aeb376175b38940caa183e2eb06abed32" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetVelocityNormalMinSpeedAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a2b408c0b4cc95a8349a9ac3a58147763" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetYawAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a4578b7963960fc0145874a8ef2e2c5d0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>GetYawRateTimeConstantAttr</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1aaeaeb6b503c1c8787c9acda118de8494" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>PhysxSchemaPhysxCameraAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1a503303c2b11330b7a067b9059208d6cc" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>PhysxSchemaPhysxCameraAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1a4fc4b483acaec06a5b87bfa9ee88af20" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>PhysxSchemaPhysxCameraFollowAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1acfb08a159d5f3f1eb5e98a49deeb5b22" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>PhysxSchemaPhysxCameraFollowAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ae188960e3bed9f9a706165663d05837c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>PhysxSchemaPhysxCameraFollowLookAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ab3778ae9f2709acebe25db5302b863b5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>PhysxSchemaPhysxCameraFollowLookAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_camera_a_p_i_1ac1241fdfb8663ec264460260fc1d839b" prot="public" virt="virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>~PhysxSchemaPhysxCameraAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_a_p_i_1aa6ef46e431e4ef704b8c4681b63e0830" prot="public" virt="virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>~PhysxSchemaPhysxCameraFollowAPI</name></member>
+      <member refid="class_physx_schema_physx_camera_follow_look_a_p_i_1ae9312f98ee18bfbf2fb0917e5cedaeed" prot="public" virt="virtual"><scope>PhysxSchemaPhysxCameraFollowLookAPI</scope><name>~PhysxSchemaPhysxCameraFollowLookAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

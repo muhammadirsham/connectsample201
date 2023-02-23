@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_collision_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxCollisionAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_collision_a_p_i_8h" local="no">physxCollisionAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_collision_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_collision_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="134" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a6856c014ceea5aa3e6cfaf07e00685aa" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxCollisionAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxCollisionAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_collision_a_p_i_1aacc4e6769d0de5648f96d2c3d14fe18c" kindref="member">PhysxSchemaPhysxCollisionAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1acca3c404e527922a350588f7bbe1fde4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxCollisionAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxCollisionAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a6d3d400208bc72bb7badb1fac09e3b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxCollisionAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxCollisionAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a1c36f0d5064221e3ca2bca8cd65ac829" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetContactOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetContactOffsetAttr</name>
+        <briefdescription>
+<para>Contact offset of a collision shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [maximum(0,restOffset), max_float). Default value -inf means default is picked by the simulation based on the shape extent.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxCollision:contactOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a4d3cdf95c63ea045deaff69ea721bd66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateContactOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateContactOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_collision_a_p_i_1a1c36f0d5064221e3ca2bca8cd65ac829" kindref="member">GetContactOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a13cd9474ed4711f672588c228d17d496" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetRestOffsetAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRestOffsetAttr</name>
+        <briefdescription>
+<para>Rest offset of a collision shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range (-max_float, contactOffset). Default value -inf means that the simulation sets a suitable value. For rigid bodies, this value is zero.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxCollision:restOffset = -inf</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a214380d04e806f91809109361cdbe755" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateRestOffsetAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateRestOffsetAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_collision_a_p_i_1a13cd9474ed4711f672588c228d17d496" kindref="member">GetRestOffsetAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a017ea8ce6d2c137c1005f6a54e92fd28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetTorsionalPatchRadiusAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTorsionalPatchRadiusAttr</name>
+        <briefdescription>
+<para>Defines the radius of the contact patch used to apply torsional friction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxCollision:torsionalPatchRadius = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a65596365937ef52ccf600d7612f0f5ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateTorsionalPatchRadiusAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateTorsionalPatchRadiusAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_collision_a_p_i_1a017ea8ce6d2c137c1005f6a54e92fd28" kindref="member">GetTorsionalPatchRadiusAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1aa505b24c35ea88959fb83853d4faef0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMinTorsionalPatchRadiusAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMinTorsionalPatchRadiusAttr</name>
+        <briefdescription>
+<para>Defines the minimum radius of the contact patch used to apply torsional friction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxCollision:minTorsionalPatchRadius = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a6d96b442b0055bd394b3137976692d37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMinTorsionalPatchRadiusAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMinTorsionalPatchRadiusAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_collision_a_p_i_1aa505b24c35ea88959fb83853d4faef0f" kindref="member">GetMinTorsionalPatchRadiusAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="232" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1aacc4e6769d0de5648f96d2c3d14fe18c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxCollisionAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_collision_a_p_i_1a6856c014ceea5aa3e6cfaf07e00685aa" kindref="member">PhysxSchemaPhysxCollisionAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a7e06b325b60b5a85e6f5b57c69e777d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxCollisionAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxCollisionAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_collision_a_p_i" kindref="compound">PhysxSchemaPhysxCollisionAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_collision_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX collision extended parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxCollisionAPI.h" bodystart="57" bodyend="245"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a7e06b325b60b5a85e6f5b57c69e777d7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a4d3cdf95c63ea045deaff69ea721bd66" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>CreateContactOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a6d96b442b0055bd394b3137976692d37" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>CreateMinTorsionalPatchRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a214380d04e806f91809109361cdbe755" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>CreateRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a65596365937ef52ccf600d7612f0f5ad" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>CreateTorsionalPatchRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1aacc4e6769d0de5648f96d2c3d14fe18c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a1c36f0d5064221e3ca2bca8cd65ac829" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>GetContactOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1aa505b24c35ea88959fb83853d4faef0f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>GetMinTorsionalPatchRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a13cd9474ed4711f672588c228d17d496" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>GetRestOffsetAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a017ea8ce6d2c137c1005f6a54e92fd28" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>GetTorsionalPatchRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a6856c014ceea5aa3e6cfaf07e00685aa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>PhysxSchemaPhysxCollisionAPI</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1acca3c404e527922a350588f7bbe1fde4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>PhysxSchemaPhysxCollisionAPI</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_collision_a_p_i_1a6d3d400208bc72bb7badb1fac09e3b2e" prot="public" virt="virtual"><scope>PhysxSchemaPhysxCollisionAPI</scope><name>~PhysxSchemaPhysxCollisionAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

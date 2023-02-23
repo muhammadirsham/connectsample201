@@ -1,0 +1,935 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_isosurface_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxIsosurfaceAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_isosurface_a_p_i_8h" local="no">physxIsosurfaceAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_isosurface_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="64" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_isosurface_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="135" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a6ae8e32d2d763ba8acc3e620b1dd1e28" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxIsosurfaceAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxIsosurfaceAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a451800579f1270860f84d06adfaa4f60" kindref="member">PhysxSchemaPhysxIsosurfaceAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="70" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a47cb5fb0cafcaa7d0efef6037809ba7a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxIsosurfaceAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxIsosurfaceAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="78" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a436706fcdf72a05d06722a4bda5c9f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxIsosurfaceAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxIsosurfaceAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ae5882448e56ff2b932889380fbee2475" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetIsoSurfaceEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetIsoSurfaceEnabledAttr</name>
+        <briefdescription>
+<para>Enable or disable the creation of an isosurface. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxIsosurface:isoSurfaceEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a5b8912b8c5406160e5c1fc711a5cc585" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateIsoSurfaceEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateIsoSurfaceEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1ae5882448e56ff2b932889380fbee2475" kindref="member">GetIsoSurfaceEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a823fc148598a1588637ff63d44210806" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxVerticesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxVerticesAttr</name>
+        <briefdescription>
+<para>Maximum number of vertices the extracted isosurface can have. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [3, inf)</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxIsosurface:maxVertices = 1048576</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a326067f87f1727385f48f456dc30536e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxVerticesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxVerticesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a823fc148598a1588637ff63d44210806" kindref="member">GetMaxVerticesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a4fd3b2f7f7d17093bc152dd576695338" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxTrianglesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxTrianglesAttr</name>
+        <briefdescription>
+<para>Maximum number of triangles the extracted isosurface can have. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [1, inf)</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxIsosurface:maxTriangles = 2097152</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1aa616d01a576d56a0098c85a6501d8e80" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxTrianglesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxTrianglesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a4fd3b2f7f7d17093bc152dd576695338" kindref="member">GetMaxTrianglesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a23989c3e23e2d8a2653a604d6840f232" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxSubgridsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxSubgridsAttr</name>
+        <briefdescription>
+<para>Maximum number of blocks the sparse grid structure can contain. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [1, inf)</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxIsosurface:maxSubgrids = 1024</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a9544981bccd2e95e73123b11406a7fd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxSubgridsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxSubgridsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a23989c3e23e2d8a2653a604d6840f232" kindref="member">GetMaxSubgridsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ad86e5037ed7240af84729a7b717d4990" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGridSpacingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGridSpacingAttr</name>
+        <briefdescription>
+<para>Cell Size of the grid used for isosurface extraction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: (0, inf) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxIsosurface:gridSpacing = 0.25</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ac6c2f70e42f23fe4f996a67a6ba29814" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGridSpacingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGridSpacingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1ad86e5037ed7240af84729a7b717d4990" kindref="member">GetGridSpacingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1aed393865d468a27f4751dfa806bfe6f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetKernelRadiusAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetKernelRadiusAttr</name>
+        <briefdescription>
+<para>Radius of the kernel used to transfer the density to the isosurface grid. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: (0, inf) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxIsosurface:kernelRadius = 0.5</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ac70cdf7e864081224d8cb4467b1a0458" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateKernelRadiusAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateKernelRadiusAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1aed393865d468a27f4751dfa806bfe6f4" kindref="member">GetKernelRadiusAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ae6c0e493ff77e04c09cb3678fa483396" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetIsosurfaceLevelAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetIsosurfaceLevelAttr</name>
+        <briefdescription>
+<para>The level at which the isosurface is located. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allows to control the droplet size. The signed distance field is more negative towards the center of the fluid and positive outside. Range: (-inf, inf) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxIsosurface:isosurfaceLevel = -0.3</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1aad0036d319f482079cf286f5aa67add4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateIsosurfaceLevelAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateIsosurfaceLevelAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1ae6c0e493ff77e04c09cb3678fa483396" kindref="member">GetIsosurfaceLevelAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="307" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a7db659b8b24fc301c95d513ae5a02774" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGridFilteringFlagsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGridFilteringFlagsAttr</name>
+        <briefdescription>
+<para>Encoded grid filtering passes. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxIsosurface:gridFilteringFlags = 19528</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ae8f5c28eb19850ae05cd074f7c70fa1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGridFilteringFlagsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGridFilteringFlagsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a7db659b8b24fc301c95d513ae5a02774" kindref="member">GetGridFilteringFlagsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a5ca9f7c12617d2c585c0a35b1d691506" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetGridSmoothingRadiusRelativeToCellSizeAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGridSmoothingRadiusRelativeToCellSizeAttr</name>
+        <briefdescription>
+<para>The radius used during the smoothing process on the grid. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is measured relative to the grid&apos;s cell size. Range: [0, inf) Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxIsosurface:gridSmoothingRadiusRelativeToCellSize = 0.5</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1aceed1a15ee649b75fc2faa9d5e0daffe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateGridSmoothingRadiusRelativeToCellSizeAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateGridSmoothingRadiusRelativeToCellSizeAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a5ca9f7c12617d2c585c0a35b1d691506" kindref="member">GetGridSmoothingRadiusRelativeToCellSizeAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="353" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a6280f0bb60db260630e49881bbced4e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnableAnisotropyAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnableAnisotropyAttr</name>
+        <briefdescription>
+<para>Enables usage of anisotropy information during isosurface extraction process. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxIsosurface:enableAnisotropy = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a8949bd7def9969f12ef1ebb29049aee4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnableAnisotropyAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnableAnisotropyAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a6280f0bb60db260630e49881bbced4e9" kindref="member">GetEnableAnisotropyAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a13760f31522f29120e7159c95605c0e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAnisotropyMinAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAnisotropyMinAttr</name>
+        <briefdescription>
+<para>The minimal scale anisotropy can apply to a particle radius. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, anisotropyMax] Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxIsosurface:anisotropyMin = 0.1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="391" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a2f8adc4badd2857642fd4c781961e087" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAnisotropyMinAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAnisotropyMinAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a13760f31522f29120e7159c95605c0e0" kindref="member">GetAnisotropyMinAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="399" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a82dde8f1a0b83c481a43117afb0014fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAnisotropyMaxAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAnisotropyMaxAttr</name>
+        <briefdescription>
+<para>The maximal scale anisotropy can apply to a particle radius. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [anisotropyMin, inf) Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxIsosurface:anisotropyMax = 2</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1acb0e81f294b48bdc155ea78b3150f391" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAnisotropyMaxAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAnisotropyMaxAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a82dde8f1a0b83c481a43117afb0014fa" kindref="member">GetAnisotropyMaxAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a7241eab28ef60fed3aaf5af85d564539" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetAnisotropyRadiusAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAnisotropyRadiusAttr</name>
+        <briefdescription>
+<para>Radius that defines the size of the neighborhood used to determine the anisotropy information. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, inf) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxIsosurface:anisotropyRadius = 0.5</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="439" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a01a0f41c38fc6f238c5e008d04cf0e00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateAnisotropyRadiusAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateAnisotropyRadiusAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a7241eab28ef60fed3aaf5af85d564539" kindref="member">GetAnisotropyRadiusAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a0eddb97ad2dbed80873c7a1c50088040" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetNumMeshSmoothingPassesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetNumMeshSmoothingPassesAttr</name>
+        <briefdescription>
+<para>Number of smoothing passes applied to the generated isosurface triangle mesh. </para>        </briefdescription>
+        <detaileddescription>
+<para>Using an even number of passes leads to less shrinking. Range: [0, inf)</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxIsosurface:numMeshSmoothingPasses = 2</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="463" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a675dd327c0968630a846d1da67cbc019" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateNumMeshSmoothingPassesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateNumMeshSmoothingPassesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a0eddb97ad2dbed80873c7a1c50088040" kindref="member">GetNumMeshSmoothingPassesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="471" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a0f1563bbf2d8344dd108f105abbfc62f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetNumMeshNormalSmoothingPassesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetNumMeshNormalSmoothingPassesAttr</name>
+        <briefdescription>
+<para>Number of smoothing passes applied to the generated isosurface triangle mesh&apos;s normals. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, inf)</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxIsosurface:numMeshNormalSmoothingPasses = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="486" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ac3017c622d74b42ea44f27d362787d99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateNumMeshNormalSmoothingPassesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateNumMeshNormalSmoothingPassesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_isosurface_a_p_i_1a0f1563bbf2d8344dd108f105abbfc62f" kindref="member">GetNumMeshNormalSmoothingPassesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="494" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a451800579f1270860f84d06adfaa4f60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxIsosurfaceAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_isosurface_a_p_i_1a6ae8e32d2d763ba8acc3e620b1dd1e28" kindref="member">PhysxSchemaPhysxIsosurfaceAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a133b70fcc700167cbbaeb1f08812151e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxIsosurfaceAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxIsosurfaceAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_isosurface_a_p_i" kindref="compound">PhysxSchemaPhysxIsosurfaceAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="124" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="131" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="139" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_isosurface_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Applied to a PhysxParticleSystem. </para>    </briefdescription>
+    <detaileddescription>
+<para>Defines settings to extract an isosurface from the particles in the particle system. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" line="59" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxIsosurfaceAPI.h" bodystart="58" bodyend="507"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a133b70fcc700167cbbaeb1f08812151e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1acb0e81f294b48bdc155ea78b3150f391" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateAnisotropyMaxAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a2f8adc4badd2857642fd4c781961e087" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateAnisotropyMinAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a01a0f41c38fc6f238c5e008d04cf0e00" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateAnisotropyRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a8949bd7def9969f12ef1ebb29049aee4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateEnableAnisotropyAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ae8f5c28eb19850ae05cd074f7c70fa1f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateGridFilteringFlagsAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1aceed1a15ee649b75fc2faa9d5e0daffe" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateGridSmoothingRadiusRelativeToCellSizeAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ac6c2f70e42f23fe4f996a67a6ba29814" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateGridSpacingAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a5b8912b8c5406160e5c1fc711a5cc585" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateIsoSurfaceEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1aad0036d319f482079cf286f5aa67add4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateIsosurfaceLevelAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ac70cdf7e864081224d8cb4467b1a0458" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateKernelRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a9544981bccd2e95e73123b11406a7fd6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateMaxSubgridsAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1aa616d01a576d56a0098c85a6501d8e80" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateMaxTrianglesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a326067f87f1727385f48f456dc30536e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateMaxVerticesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ac3017c622d74b42ea44f27d362787d99" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateNumMeshNormalSmoothingPassesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a675dd327c0968630a846d1da67cbc019" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>CreateNumMeshSmoothingPassesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a451800579f1270860f84d06adfaa4f60" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a82dde8f1a0b83c481a43117afb0014fa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetAnisotropyMaxAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a13760f31522f29120e7159c95605c0e0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetAnisotropyMinAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a7241eab28ef60fed3aaf5af85d564539" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetAnisotropyRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a6280f0bb60db260630e49881bbced4e9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetEnableAnisotropyAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a7db659b8b24fc301c95d513ae5a02774" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetGridFilteringFlagsAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a5ca9f7c12617d2c585c0a35b1d691506" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetGridSmoothingRadiusRelativeToCellSizeAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ad86e5037ed7240af84729a7b717d4990" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetGridSpacingAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ae5882448e56ff2b932889380fbee2475" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetIsoSurfaceEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1ae6c0e493ff77e04c09cb3678fa483396" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetIsosurfaceLevelAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1aed393865d468a27f4751dfa806bfe6f4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetKernelRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a23989c3e23e2d8a2653a604d6840f232" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetMaxSubgridsAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a4fd3b2f7f7d17093bc152dd576695338" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetMaxTrianglesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a823fc148598a1588637ff63d44210806" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetMaxVerticesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a0f1563bbf2d8344dd108f105abbfc62f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetNumMeshNormalSmoothingPassesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a0eddb97ad2dbed80873c7a1c50088040" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetNumMeshSmoothingPassesAttr</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a6ae8e32d2d763ba8acc3e620b1dd1e28" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>PhysxSchemaPhysxIsosurfaceAPI</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a47cb5fb0cafcaa7d0efef6037809ba7a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>PhysxSchemaPhysxIsosurfaceAPI</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_isosurface_a_p_i_1a436706fcdf72a05d06722a4bda5c9f3d" prot="public" virt="virtual"><scope>PhysxSchemaPhysxIsosurfaceAPI</scope><name>~PhysxSchemaPhysxIsosurfaceAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

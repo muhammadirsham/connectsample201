@@ -1,0 +1,4 @@
+<map id="PhysxSchemaPhysxDeformableAPI" name="PhysxSchemaPhysxDeformableAPI">
+<area shape="rect" id="node2" href="$class_physx_schema_physx_deformable_body_a_p_i.html" title="Applied to a UsdGeomMesh that is to be driven by a deformable body simulation. " alt="" coords="5,80,215,121"/>
+<area shape="rect" id="node3" href="$class_physx_schema_physx_deformable_surface_a_p_i.html" title="Applied to a UsdGeomMesh that is to be simulated as a deformable surface. " alt="" coords="239,80,448,121"/>
+</map>

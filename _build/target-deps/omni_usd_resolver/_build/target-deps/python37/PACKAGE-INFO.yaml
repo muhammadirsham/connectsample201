@@ -1,0 +1,14 @@
+Package : python
+Version : 3.7.12+nv3-windows-x86_64
+Maintainers : Jason Gorski
+Description : Python distribution
+SWIPAT NvBug : [http://nvbugs/3156615, http://nvbugs/3356593]
+Repository : https://gitlab-ci-token:_eH1SAB9gQvhygKmcJtg@gitlab-master.nvidia.com/omniverse/externals/python-build.git
+Branch : Merge-Request
+Commit : 3a4aa0b1eacee7e547bf928e635ff6443bac964c
+Time : Thu Mar  3 11:48:21 2022
+Builder Name : tor-build-winvm01
+Packman Version : 6.42
+Packagemaker Version : 0.3.46
+Platform : windows-x86_64
+CI Build Number : 3.7.12+nv3

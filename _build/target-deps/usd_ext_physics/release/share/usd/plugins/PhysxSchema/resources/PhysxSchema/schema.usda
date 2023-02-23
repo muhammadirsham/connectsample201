@@ -1,0 +1,4601 @@
+#usda 1.0
+(
+	subLayers = [
+	@usdGeom/schema.usda@,
+	@../usdPhysics/schema.usda@
+	]
+)
+
+over "GLOBAL" (
+	customData = {
+	string libraryName = "physxSchema"
+	string libraryPath = "./"
+	string libraryPrefix = "PhysxSchema"
+        dictionary libraryTokens = {
+        dictionary triangleMesh = {
+            string doc = """
+            This token represents the collection name to use
+            with PhysxCookedDataAPI to represent cooked data
+            of a TriangleMesh.
+            """
+            }        
+        dictionary convexHull = {
+            string doc = """
+            This token represents the collection name to use
+            with PhysxCookedDataAPI to represent cooked data
+            of a convexhull.
+            """
+            }        
+        dictionary convexDecomposition = {
+            string doc = """
+            This token represents the collection name to use
+            with PhysxCookedDataAPI to represent cooked data
+            of a convexDecomposition.
+            """
+            }
+        dictionary clothConstaint = {
+            string doc = """
+            This token represents the collection name to use
+            with PhysxCookedDataAPI to represent cooked data
+            of a clothConstaint.
+            """
+            }
+        dictionary physxCollisionCustomGeometry = {
+            string doc = """
+            This token represents the custom geometry option for
+            cones and cylinders. The simulation will not use a convex
+            approximation but a custom geometry instead.
+            """
+            }            
+        }
+	}
+)
+{
+
+}
+
+
+//-----------------------------------------------------------------------------
+// Independent physics schema definitions that are not yet ready to be a part of PhysicsSchema
+//-----------------------------------------------------------------------------
+
+class TetrahedralMesh "TetrahedralMesh"
+(
+    customData = {
+        string className = "TetrahedralMesh"
+    }
+	
+    doc = """Describes a tetrahedral mesh in 3D space."""
+    # Inherits from </PointBased> defined in usdGeom/schema.usda.
+    inherits = </PointBased>
+)  
+{
+    int[] indices (
+        customData = {
+            string apiName = "indices"
+        }
+        displayGroup = "Advanced"
+        displayName = "Indices"
+        doc = """Flat list of the index (into the 'points' attribute) of each vertex of each tetrahedron in the mesh."""
+    )
+}
+
+class Plane "Plane"
+(
+    doc = """Plane geometry primitive. The definition of a plane is a point - Xformable and a normal axis."""
+
+    // note
+    // Will be replaced by native USD plane with extent later
+    inherits = </Mesh>
+)
+{
+    uniform token axis = "Z" (
+        allowedTokens = ["X", "Y", "Z"]
+
+        displayName = "Axis"
+        doc = """The axis along which the plane normal is aligned."""
+    )  
+}
+
+class "CharacterControllerAPI"
+(
+    doc = """CharacterControllerAPI can be applied to a capsuleGeom. It will turn the capsule into 
+    a character controller."""
+
+    inherits = </APISchemaBase>
+)
+{
+    float slopeLimit = 0.3 (
+
+        displayName = "Slope Limit"
+        doc = """Slope limit which the CCT can climb. The limit is expressed as the cosine of the desired limit angle. 
+        A value of 0 disables this feature."""
+    )
+
+    vector3f moveTarget = (0.0, 0.0, 0.0) (
+
+        displayName = "Move Target"
+        doc = """Desired target position that CCT should try to reach."""
+    )
+}
+
+//-----------------------------------------------------------------------------
+// PhysX engine dependent properties
+//-----------------------------------------------------------------------------
+
+
+class "PhysxSceneAPI"
+(
+    doc = """PhysX scene extended parameters.
+    Default PhysX material for the scene can be set by using material bind with purpose physics onto the PhysicsScene prim."""
+    inherits = </APISchemaBase>
+)
+{
+	float physxScene:bounceThreshold = 0.2  (
+        customData = {
+            string apiName = "bounceThreshold"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Bounce Threshold"
+        doc = """A contact with a relative velocity below this will not bounce. Allowed range [0, max_float). Default value 0.2 * toleranceSpeed."""
+   )
+
+	float physxScene:frictionOffsetThreshold = 0.04 (
+        customData = {
+            string apiName = "frictionOffsetThreshold"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Friction Offset Threshold"
+        doc = """A threshold of contact separation distance used to decide if a contact point will experience friction forces. Allowed range [0, max_float). Default value 0.04 * tolerancesLength."""
+   )
+
+	float physxScene:frictionCorrelationDistance =0.025 (
+        customData = {
+            string apiName = "frictionCorrelationDistance"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Friction Correlation Distance"
+        doc = """Friction correlation distance used to decide whether contacts are close enough to be merged into a single friction anchor point or not. Allowed range [0, max_float). Default value 0.025 * tolerancesLength."""
+   )
+
+   	float physxScene:maxBiasCoefficient = inf (
+        customData = {
+            string apiName = "maxBiasCoefficient"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Maximum Bias Coefficient"
+        doc = """The maximum bias coefficient used in the constraint solver. Allowed range [0, inf)"""
+   )
+
+	uniform token physxScene:collisionSystem = "PCM" (
+	    allowedTokens = ["PCM", "SAT"]
+        customData = {
+            string apiName = "collisionSystem"
+        }
+
+        displayName = "Collision System"
+	    doc = """Collision detection system."""
+	)  
+
+	uniform token physxScene:solverType = "TGS" (
+	    allowedTokens = ["PGS", "TGS"]
+        customData = {
+            string apiName = "solverType"
+        }
+
+        displayName = "Solver Type"
+	    doc = """Solver used for the simulation."""
+	)  
+
+	uniform token physxScene:broadphaseType = "GPU" (
+	    allowedTokens = ["GPU", "MBP", "SAP"]
+        customData = {
+            string apiName = "broadphaseType"
+        }
+
+        displayName = "Broadphase Type"
+	    doc = """Broad phase algorithm used in the simulation."""
+	)
+
+	uniform token physxScene:frictionType = "patch" (
+	    allowedTokens = ["patch", "oneDirectional", "twoDirectional"]
+        customData = {
+            string apiName = "frictionType"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Friction Type"
+	    doc = """Friction type used in simulation."""
+	)
+
+	bool physxScene:enableCCD = false (
+        customData = {
+            string apiName = "enableCCD"
+        }
+
+        displayName = "Enable CCD"
+        doc = """Enables a second broad phase check after integration that makes it possible to prevent objects from tunneling through each other."""
+   )
+
+	bool physxScene:enableStabilization = false (
+        customData = {
+            string apiName = "enableStabilization"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Enable Stabilization"
+        doc = """Enables additional stabilization pass in solver."""
+   )
+
+	bool physxScene:enableGPUDynamics = true (
+        customData = {
+            string apiName = "enableGPUDynamics"
+        }
+
+        displayName = "Enable GPU Dynamics"
+        doc = """Enables the GPU dynamics pipeline. Required for GPU only features like deformables."""
+   )
+
+	bool physxScene:enableEnhancedDeterminism = false (
+        customData = {
+            string apiName = "enableEnhancedDeterminism"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Enable Enhanced Determinism"
+        doc = """Provides improved determinism at the expense of performance."""
+   )
+
+	uint physxScene:timeStepsPerSecond = 60 (
+        customData = {
+            string apiName = "timeStepsPerSecond"
+        }
+
+        displayName = "Time Steps Per Second"        
+        doc = """Simulation scene step defined as number of steps per second.
+        Note that application might cap the number of simulation steps to avoid
+        running more simulations steps with a low frame rate."""
+   )
+
+	uint physxScene:gpuTempBufferCapacity = 16777216 (
+        customData = {
+            string apiName = "gpuTempBufferCapacity"
+        }
+
+        displayName = "Gpu Temp Buffer Capacity"
+        displayGroup = "Gpu"
+        doc = """Gpu temp buffer capacity."""
+   )
+
+	uint physxScene:gpuMaxRigidContactCount = 524288 (
+        customData = {
+            string apiName = "gpuMaxRigidContactCount"
+        }
+
+        displayName = "Gpu Max Rigid Contact Count"  
+        displayGroup = "Gpu"
+        doc = """Gpu max rigid contact count."""
+   )
+
+	uint physxScene:gpuMaxRigidPatchCount = 81920 (
+        customData = {
+            string apiName = "gpuMaxRigidPatchCount"
+        }
+
+        displayName = "Gpu Max Rigid Patch Count"
+        displayGroup = "Gpu"
+        doc = """Gpu max rigid patch count."""
+   )
+
+	uint physxScene:gpuHeapCapacity = 67108864 (
+        customData = {
+            string apiName = "gpuHeapCapacity"
+        }
+
+        displayName = "Gpu Heap Capacity"
+        displayGroup = "Gpu"
+        doc = """Gpu heap capacity."""
+   )
+
+	uint physxScene:gpuFoundLostPairsCapacity = 262144 (
+        customData = {
+            string apiName = "gpuFoundLostPairsCapacity"
+        }
+
+        displayName = "Gpu Found Lost Pairs Capacity"
+        displayGroup = "Gpu"
+        doc = """Gpu found lost pairs capacity."""
+   )
+
+	uint physxScene:gpuFoundLostAggregatePairsCapacity = 1024 (
+        customData = {
+            string apiName = "gpuFoundLostAggregatePairsCapacity"
+        }
+
+        displayName = "Gpu Found Lost Aggregate Pairs Capacity"
+        displayGroup = "Gpu"
+        doc = """Gpu found lost aggregate pairs capacity."""
+   )
+
+	uint physxScene:gpuTotalAggregatePairsCapacity = 1024 (
+        customData = {
+            string apiName = "gpuTotalAggregatePairsCapacity"
+        }
+
+        displayName = "Gpu Total Aggregate Pairs Capacity"
+        displayGroup = "Gpu"
+        doc = """Gpu total aggregate pairs capacity."""
+   )
+
+	uint physxScene:gpuMaxSoftBodyContacts = 1048576 (
+        customData = {
+            string apiName = "gpuMaxSoftBodyContacts"
+        }
+
+        displayName = "Gpu Max Softbody Contacts"
+        displayGroup = "Gpu"
+      doc = """Gpu max soft body contacts."""
+   )
+
+	uint physxScene:gpuMaxParticleContacts = 1048576 (
+        customData = {
+            string apiName = "gpuMaxParticleContacts"
+        }
+
+        displayName = "Gpu Max Particle Contacts"
+        displayGroup = "Gpu"
+      doc = """Gpu max particle contacts."""
+   )
+   
+	uint physxScene:gpuMaxNumPartitions = 8 (
+        customData = {
+            string apiName = "gpuMaxNumPartitions"
+        }
+
+        displayName = "Gpu Max Num Partitions"
+        displayGroup = "Gpu"
+      doc = """Limitation for the partitions in the GPU dynamics pipeline. This variable must be a power of 2. A value greater than 32 is currently not supported."""
+   )
+
+   uint physxScene:gpuCollisionStackSize = 67108864 (
+        customData = {
+            string apiName = "gpuCollisionStackSize"
+        }
+
+        displayName = "Gpu Collision Stack Size"
+        displayGroup = "Gpu"
+      doc = """Gpu collision stack size."""
+   )
+
+	bool physxScene:invertCollisionGroupFilter = false (
+        customData = {
+            string apiName = "invertCollisionGroupFilter"
+        }
+
+        displayName = "Inverted Collision Group Filter"
+		doc = """Boolean attribute indicating whether inverted collision group filtering should be used.
+		By default two collisions, that do have a collisionGroup set, collide with each other. Adding
+		a collisionGroup into a collisionGroup filtering will mean that the collision between those groups
+		will be disabled. This boolean attribute does invert the default behavior. Hence two collisions with
+		defined collisionGroups will not collide with each other by default and one does enable the
+		collisions between the groups through the "CollisionGroup" filtering."""
+	)
+
+    bool physxScene:reportKinematicKinematicPairs = false (
+        customData = {
+            string apiName = "reportKinematicKinematicPairs"
+        }
+
+        displayName = "Report Kinematic vs Kinematic Pairs"
+        doc = """Boolean attribute indicating whether kinematic vs kinematic pairs
+        generate contact reports."""
+	)
+
+    bool physxScene:reportKinematicStaticPairs = false (
+        customData = {
+            string apiName = "reportKinematicStaticPairs"
+        }
+
+        displayName = "Report Kinematic vs Static Pairs"
+        doc = """Boolean attribute indicating whether kinematic vs static pairs
+        generate contact reports."""
+	)
+
+    uint physxScene:minIterationCount = 0 (
+    customData = {
+        string apiName = "minIterationCount"
+    }
+        displayName = "Minimum Iteration Count"        
+        doc = """Minimum iteration count for all actors (rigid bodies, cloth, particles etc)."""
+    )
+
+    uint physxScene:maxIterationCount = 255 (
+    customData = {
+        string apiName = "maxIterationCount"
+    }
+        displayName = "Maximum Iteration Count"        
+        doc = """Maximum iteration count for all actors (rigid bodies, cloth, particles etc)."""
+    )    
+}
+
+class "PhysxRigidBodyAPI"
+(
+	doc = """PhysX rigid body extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+	float physxRigidBody:linearDamping = 0.0 (
+        customData = {
+            string apiName = "linearDamping"
+        }
+
+        displayName = "Linear Damping"
+        doc = """Linear damping coefficient. Allowed range [0, max_float)."""
+   )
+
+	float physxRigidBody:angularDamping = 0.05 (
+        customData = {
+            string apiName = "angularDamping"
+        }
+
+        displayName = "Angular Damping"
+        doc = """Angular damping coefficient. Allowed range [0, max_float)."""
+   )
+
+	float physxRigidBody:maxLinearVelocity = inf (
+        customData = {
+            string apiName = "maxLinearVelocity"
+        }
+
+        displayName = "Max Linear Velocity"
+        doc = """Max allowable linear velocity for rigid body. Allowed range [0, inf)."""
+   )
+
+	float physxRigidBody:maxAngularVelocity = 5729.58 (
+        customData = {
+            string apiName = "maxAngularVelocity"
+        }
+
+        displayName = "Max Angular Velocity"
+      doc = """Max allowable angular velocity for rigid body. Allowed range [0, 1e16]."""
+   )
+
+	float physxRigidBody:sleepThreshold = 0.00005 (
+        customData = {
+            string apiName = "sleepThreshold"
+        }
+
+        displayName = "Sleep Threshold"
+      doc = """Mass-normalized kinetic energy threshold below which an actor may go to sleep. Allowed range [0, max_float). Default value 0.00005*tolerancesSpeed*tolerancesSpeed."""
+   )
+
+	float physxRigidBody:stabilizationThreshold = 0.00001 (
+        customData = {
+            string apiName = "stabilizationThreshold"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Stabilization Threshold"
+      doc = """Mass-normalized kinetic energy threshold below which an actor may participate in stabilization. Allowed range [0, max_float). Default value 0.00001*tolerancesSpeed*tolerancesSpeed."""
+   )
+
+	float physxRigidBody:maxDepenetrationVelocity = inf (
+        customData = {
+            string apiName = "maxDepenetrationVelocity"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Max Depenetration Velocity"
+      doc = """The maximum depenetration velocity permitted to be introduced by the solver. Allowed range [0, max_float)."""
+   )
+
+	float physxRigidBody:maxContactImpulse = inf (
+        customData = {
+            string apiName = "maxContactImpulse"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Max Contact Impulse"
+      doc = """Sets a limit on the impulse that may be applied at a contact. The maximum impulse at a contact between two dynamic or kinematic
+		bodies will be the minimum	of the two limit values. For a collision between a static and a dynamic body, the impulse is limited
+		by the value for the dynamic body. Allowed range [0, max_float)."""
+   )
+
+	int physxRigidBody:solverPositionIterationCount = 16 (
+        customData = {
+            string apiName = "solverPositionIterationCount"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Solver Position Iteration Count"
+      doc = """Solver position iteration counts for the body. Allowed range [1, 255]."""
+   )
+
+	int physxRigidBody:solverVelocityIterationCount = 1 (
+        customData = {
+            string apiName = "solverVelocityIterationCount"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Solver Velocity Iteration Count"
+      doc = """Solver velocity iteration counts for the body. Allowed range [1, 255]."""
+   )
+ 
+	bool physxRigidBody:enableCCD = false (
+        customData = {
+            string apiName = "enableCCD"
+        }
+		
+      displayName = "Enable CCD"
+      doc = """Enables swept integration for the actor."""
+   )
+
+	bool physxRigidBody:enableSpeculativeCCD = false (
+        customData = {
+            string apiName = "enableSpeculativeCCD"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Enable Speculative CCD"
+      doc = """Register a rigid body to dynamically adjust contact offset based on velocity. This can be used to achieve a CCD effect."""
+   )
+
+	bool physxRigidBody:retainAccelerations = false (
+        customData = {
+            string apiName = "retainAccelerations"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Retain Accelerations"
+      doc = """Carries over forces/accelerations between frames, rather than clearing them."""
+   )
+
+	bool physxRigidBody:enableGyroscopicForces = true (
+        customData = {
+            string apiName = "enableGyroscopicForces"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Enable Gyroscopic Forces"
+      doc = """Enables computation of gyroscopic forces on the rigid body."""
+   )
+
+	bool physxRigidBody:disableGravity = false (
+        customData = {
+            string apiName = "disableGravity"
+        }
+
+        displayName = "Disable Gravity"
+      doc = """Disable gravity for the actor."""
+   )
+
+	int physxRigidBody:lockedPosAxis = 0 (
+        customData = {
+            string apiName = "lockedPosAxis"
+        }
+
+        displayName = "Locked Pos Axis"
+      doc = """Collection of flags providing a mechanism to lock motion along/around a specific axis (1 << 0, 1 << 1, 1 << 2)."""
+   )
+
+	int physxRigidBody:lockedRotAxis = 0 (
+        customData = {
+            string apiName = "lockedRotAxis"
+        }
+
+        displayName = "Locked Rot Axis"
+      doc = """Collection of flags providing a mechanism to lock motion along/around a specific axis (1 << 0, 1 << 1, 1 << 2)."""
+   )
+}
+
+class "PhysxContactReportAPI"
+(
+	doc = """Enables contact reporting for a rigid body or articulation."""
+   inherits = </APISchemaBase>
+)
+{
+	float physxContactReport:threshold = 1.0 (
+        customData = {
+            string apiName = "threshold"
+        }
+
+        displayName = "Contact Report Threshold"
+      doc = """Sets the force threshold for contact reports."""
+   )
+
+   rel physxContactReport:reportPairs (
+        customData = {
+            string apiName = "reportPairs"
+        }
+
+       displayName = "Report Pairs"
+      doc = """Relationship to objects. If in contact with these objects, contact reports will be sent. If relationship not set or list empty all contacts are reported."""
+   )
+}
+
+class "PhysxCollisionAPI"
+(
+	doc = """PhysX collision extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+	float physxCollision:contactOffset = -inf (
+        customData = {
+            string apiName = "contactOffset"
+        }
+        displayGroup = "Advanced"
+        displayName = "Contact Offset"
+      doc = """Contact offset of a collision shape. Allowed range [maximum(0,restOffset), max_float). 
+		Default value -inf means default is picked by the simulation based on the shape extent."""
+   )
+
+	float physxCollision:restOffset = -inf (
+        customData = {
+            string apiName = "restOffset"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Rest Offset"
+      doc = """Rest offset of a collision shape. Allowed range (-max_float, contactOffset).
+        Default value -inf means that the simulation sets a suitable value. For rigid bodies, this value is zero."""
+   )
+
+	float physxCollision:torsionalPatchRadius = 0.0 (
+        customData = {
+            string apiName = "torsionalPatchRadius"
+        }
+
+		displayGroup = "Advanced"
+      displayName = "Torsional Patch Radius"
+      doc = """Defines the radius of the contact patch used to apply torsional friction. Allowed range [0, max_float)."""
+   )
+
+	float physxCollision:minTorsionalPatchRadius = 0.0 (
+        customData = {
+            string apiName = "minTorsionalPatchRadius"
+        }
+
+		displayGroup = "Advanced"
+   	displayName = "Min Torsional Patch Radius"
+      doc = """Defines the minimum radius of the contact patch used to apply torsional friction. Allowed range [0, max_float)."""
+   )
+}
+
+class "PhysxConvexHullCollisionAPI"
+(
+	doc = """PhysX convex hull collision extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+   int physxConvexHullCollision:hullVertexLimit = 64 (
+        customData = {
+            string apiName = "hullVertexLimit"
+        }
+
+       displayName = "Hull Vertex Limit"
+      doc = """Convex hull vertex limit used for convex hull cooking."""
+   )
+
+	float physxConvexHullCollision:minThickness = 0.001 (
+        customData = {
+            string apiName = "minThickness"
+        }
+
+        displayName = "Min Thickness"
+        displayGroup = "Advanced"
+      doc = """Convex hull min thickness."""
+   )
+}
+
+class "PhysxConvexDecompositionCollisionAPI"
+(
+	doc = """PhysX convex decomposition extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+   int physxConvexDecompositionCollision:hullVertexLimit = 64 (
+        customData = {
+            string apiName = "hullVertexLimit"
+        }
+
+       displayName = "Hull Vertex Limit"
+      doc = """Convex hull vertex limit used for convex hull cooking."""
+   )
+
+	int physxConvexDecompositionCollision:maxConvexHulls = 32 (
+        customData = {
+            string apiName = "maxConvexHulls"
+        }
+
+        displayName = "Max Convex Hulls"
+      doc = """Maximum of convex hulls created during convex decomposition."""
+   )
+
+	float physxConvexDecompositionCollision:minThickness = 0.001 (
+        customData = {
+            string apiName = "minThickness"
+        }
+
+        displayName = "Min Thickness"
+        displayGroup = "Advanced"
+      doc = """Convex hull min thickness."""
+   )
+   
+   	int physxConvexDecompositionCollision:voxelResolution = 500000 (
+        customData = {
+            string apiName = "voxelResolution"
+        }
+
+        displayName = "Voxel Resolution"
+        displayGroup = "Advanced"
+      doc = """Voxel resolution used for convex decomposition."""
+   )
+
+	float physxConvexDecompositionCollision:errorPercentage = 10 (
+        customData = {
+            string apiName = "errorPercentage"
+        }
+
+        displayName = "Error Percentage"
+        displayGroup = "Advanced"
+      doc = """Convex decomposition errorPercentage parameter."""
+   )
+
+   	bool physxConvexDecompositionCollision:shrinkWrap = false (
+        customData = {
+            string apiName = "shrinkWrap"
+        }
+
+        displayName = "Shrink Wrap"
+        displayGroup = "Advanced"
+      doc = """Attempts to adjust the convex hull points so that they are projected onto the surface of the original graphics mesh."""
+   )
+
+}
+
+class "PhysxTriangleMeshSimplificationCollisionAPI"
+(
+	doc = """PhysX triangle mesh simplification extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+	float physxTriangleMeshSimplificationCollision:metric = 0.55 (
+        customData = {
+            string apiName = "simplificationMetric"
+        }
+
+        displayName = "Simplification Metric"
+      doc = """Mesh simplification accuracy."""
+   )
+
+   	float physxTriangleMeshSimplificationCollision:weldTolerance = -inf (
+        customData = {
+            string apiName = "weldTolerance"
+        }
+
+        displayName = "Weld Tolerance"
+        displayGroup = "Advanced"
+      doc = """Mesh weld tolerance, controls the distance at which vertices are welded. 
+      Default -inf will autocompute the welding tolerance based on the mesh size. Zero value will disable welding."""
+   )
+}
+
+class "PhysxTriangleMeshCollisionAPI"
+(
+	doc = """PhysX triangle mesh extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+	float physxTriangleMeshCollision:weldTolerance = -inf (
+        customData = {
+            string apiName = "weldTolerance"
+        }
+
+        displayName = "Weld Tolerance"
+        displayGroup = "Advanced"
+      doc = """Mesh weld tolerance, controls the distance at which vertices are welded. 
+      Default -inf will autocompute the welding tolerance based on the mesh size. Zero value will disable welding."""
+   )
+}
+
+class "PhysxMaterialAPI"
+(
+	doc = """PhysX material extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+   uniform token physxMaterial:frictionCombineMode = "average" (
+        customData = {
+            string apiName = "frictionCombineMode"
+        }       
+	  allowedTokens = ["average", "min", "multiply","max"]
+      displayName = "Friction Combine Mode"
+	  doc = """Determines the way in which two material properties will be combined to yield a friction or restitution coefficient for a collision."""
+   )  
+   uniform token physxMaterial:restitutionCombineMode = "average" (
+        customData = {
+            string apiName = "restitutionCombineMode"
+        }       
+	  allowedTokens = ["average", "min", "multiply","max"]
+      displayName = "Restitution Combine Mode"
+	  doc = """Determines the way in which two material properties will be combined to yield a friction or restitution coefficient for a collision."""
+   )  
+
+	bool physxMaterial:improvePatchFriction = true (
+        customData = {
+            string apiName = "improvePatchFriction"
+        }       
+        displayName = "Improved Patch Friction"
+      doc = """Flag only has an effect if physxScene:frictionType "patch" friction model is used."""
+   )
+}
+
+class PhysxPhysicsGearJoint "PhysxPhysicsGearJoint"
+(
+    doc = """Predefined gear joint type"""
+
+    inherits = </PhysicsJoint>
+)
+{
+    rel physics:hinge0 (
+        customData = {
+            string apiName = "hinge0"
+        }       
+
+        displayName = "Hinge 0"
+        doc = """Relationship to first revolute joint."""
+    )
+
+    rel physics:hinge1 (
+        customData = {
+            string apiName = "hinge1"
+        }       
+        displayName = "Hinge 1"
+        doc = """Relationship to second revolute joint."""
+    )
+
+    float physics:gearRatio = 1.0 (
+        customData = {
+            string apiName = "gearRatio"
+        }       
+
+        displayName = "Gear Ratio"
+        doc = """Gear ratio"""
+    )
+}
+
+class PhysxPhysicsRackAndPinionJoint "PhysxPhysicsRackAndPinionJoint"
+(
+    doc = """Predefined rack & pinion joint type"""
+
+    inherits = </PhysicsJoint>
+)
+{
+    rel physics:hinge (
+        customData = {
+            string apiName = "hinge"
+        }       
+
+        displayName = "Hinge"
+        doc = """Relationship to revolute joint."""
+    )
+
+    rel physics:prismatic (
+        customData = {
+            string apiName = "prismatic"
+        }       
+
+        displayName = "Prismatic"
+        doc = """Relationship to prismatic joint."""
+    )
+
+    float physics:ratio = 1.0 (
+        customData = {
+            string apiName = "ratio"
+        }       
+
+        displayName = "Ratio"
+        doc = """Ratio between angular and linear motion.
+              Range: -(inf, inf)
+              Units: degrees / distance"""
+    )
+}
+
+class "PhysxJointAPI"
+(
+	doc = """PhysX joint extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+	bool physxJoint:enableProjection = false (
+        customData = {
+            string apiName = "enableProjection"
+        }       
+
+        displayGroup = "Advanced"
+        displayName = "Enable Projection"
+      doc = """Whether the actors should get projected for this constraint (the direction will be chosen by PhysX)."""
+   )
+
+	float physxJoint:jointFriction = 0.0 (
+        customData = {
+            string apiName = "jointFriction"
+        }       
+
+        displayGroup = "Advanced"
+        displayName = "Joint Friction"
+      doc = """Joint friction."""
+   )
+
+	float physxJoint:maxJointVelocity = 1000000.0 (
+        customData = {
+            string apiName = "maxJointVelocity"
+        }       
+
+        displayGroup = "Advanced"
+        displayName = "Maximum Joint Velocity"
+      doc = """Maximum joint velocity. Allowed range [0, max_float). Units:
+		Linear joint - DIST_UNIT
+		Angular joint - degree"""
+   )
+
+}
+
+class "PhysxPhysicsDistanceJointAPI"
+(
+	doc = """PhysX distance joint extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+	bool physxPhysicsDistanceJoint:springEnabled = false (
+        customData = {
+            string apiName = "springEnabled"
+        }       
+
+        displayName = "Spring Enabled"
+      doc = """Whether spring should be enabled. (default off)"""
+   )
+
+	float physxPhysicsDistanceJoint:springStiffness = 0.0 (
+        customData = {
+            string apiName = "springStiffness"
+        }       
+
+        displayName = "Spring Stiffness"
+      doc = """Spring stiffness."""
+   )
+
+	float physxPhysicsDistanceJoint:springDamping = 0.0 (
+        customData = {
+            string apiName = "springDamping"
+        }       
+
+        displayName = "Spring Damping"
+      doc = """Spring damping."""
+   )
+}
+
+class "PhysxLimitAPI"
+(
+	inherits = </APISchemaBase>
+
+	customData = {
+		token apiSchemaType = "multipleApply"
+		token propertyNamespacePrefix  = "physxLimit"
+	}  
+)
+{
+	float restitution = 0.0 (        
+        displayName = "Restitution"
+      doc = """Controls the amount of bounce when the joint hits a limit."""
+   )
+
+	float bounceThreshold = 0.0 (
+        displayName = "Bounce Threshold"
+      doc = """Determines the minimum impact velocity which will cause the joint to bounce."""
+   )
+
+	float stiffness = 0.0 (
+        displayName = "Stiffness"
+      doc = """If greater than zero, the limit is soft, i.e. a spring pulls the joint back to the limit."""
+   )
+
+	float damping = 0.0 (
+        displayName = "Damping"
+      doc = """If spring is greater than zero, this is the damping of the limit spring."""
+   )
+
+	float contactDistance = 0.0 (
+        displayName = "Contact Distance"
+      doc = """The distance inside the limit value at which the limit will be considered to be active by the solver. As this value is made larger, the limit becomes active more quickly. It thus becomes less likely to violate the extents of the limit, but more expensive."""
+   )
+}
+
+class "PhysxArticulationAPI"
+(
+	doc = """PhysX articulation extended parameters"""
+   inherits = </APISchemaBase>
+)
+{
+    bool physxArticulation:articulationEnabled = true (
+        customData = {
+            string apiName = "articulationEnabled"
+        }       
+
+        displayName = "Articulation Enabled"
+      doc = """Boolean defining whether articulation is enabled or disabled."""
+    )
+
+	int physxArticulation:solverPositionIterationCount = 32 (
+        customData = {
+            string apiName = "solverPositionIterationCount"
+        }       
+
+        displayName = "Solver Position Iteration Count"
+      doc = """Solver position iteration counts for the body. Allowed range [1, 255]."""
+   )
+
+	int physxArticulation:solverVelocityIterationCount = 1 (
+        customData = {
+            string apiName = "solverVelocityIterationCount"
+        }       
+
+        displayName = "Solver Velocity Iteration Count"
+      doc = """Solver velocity iteration counts for the body. Allowed range [1, 255]."""
+   )
+
+	float physxArticulation:sleepThreshold = 0.00005 (
+        customData = {
+            string apiName = "sleepThreshold"
+        }       
+
+        displayName = "Sleep Threshold"
+      doc = """Mass-normalized kinetic energy threshold below which an actor may go to sleep. Allowed range [0, max_float). Default value 0.00005*tolerancesSpeed*tolerancesSpeed."""
+   )
+
+	float physxArticulation:stabilizationThreshold = 0.00001 (
+        customData = {
+            string apiName = "stabilizationThreshold"
+        }       
+
+        displayName = "Stabilization Threshold"
+      doc = """The mass-normalized kinetic energy threshold below which an articulation may participate in stabilization. Allowed range [0, max_float). Default value 0.00005*tolerancesSpeed*tolerancesSpeed."""
+   )
+
+	bool physxArticulation:enabledSelfCollisions = true (
+        customData = {
+            string apiName = "enabledSelfCollisions"
+        }       
+
+        displayName = "Self Collisions Enabled"
+      doc = """Boolean defining whether self collisions should be enabled or disabled."""
+   )
+}
+
+class "PhysxArticulationForceSensorAPI"
+(
+    doc = """PhysX articulation sensor to measure spatial force.
+    Articulation sensor API must be applied to a UsdGeom.Xformable in order to get
+    a transformation information. The UsdGeom.Xformable must be created under the
+    articulated rigid body in order to compute a relative transformation between the
+    body and the sensor."""
+    inherits = </APISchemaBase>
+)
+{
+    vector3f physxArticulationForceSensor:force = (0.0, 0.0, 0.0) (
+        customData = {
+            string apiName = "force"
+        }       
+ 
+        displayName = "Force"
+        doc = """Spatial force in the local frame of the sensor computed by the simulation."""
+    )
+    vector3f physxArticulationForceSensor:torque = (0.0, 0.0, 0.0) (
+        customData = {
+            string apiName = "torque"
+        }       
+ 
+        displayName = "Torque"
+        doc = """Spatial torque in the local frame of the sensor computed by the simulation."""
+    )
+ 
+    bool physxArticulationForceSensor:sensorEnabled = true (
+        customData = {
+            string apiName = "sensorEnabled"
+        }       
+ 
+        displayName = "Force Sensor Enabled"
+        doc = """Boolean defining whether sensor is enabled."""
+   )
+ 
+    bool physxArticulationForceSensor:worldFrameEnabled = false (
+        customData = {
+            string apiName = "worldFrameEnabled"
+        }       
+ 
+        displayName = "World Frame Force Enabled"
+        doc = """Boolean defining whether reported force is in world frame."""
+   )
+ 
+    bool physxArticulationForceSensor:forwardDynamicsForcesEnabled = true (
+        customData = {
+            string apiName = "forwardDynamicsForcesEnabled"
+        }       
+ 
+        displayName = "Forward Dynamics Forces Enabled"
+        doc = """Boolean defining whether to receive forces from forward dynamics."""
+    )
+ 
+ 
+    bool physxArticulationForceSensor:constraintSolverForcesEnabled = true (
+        customData = {
+            string apiName = "constraintSolverForcesEnabled"
+        }       
+ 
+        displayName = "Constraint Solver Forces Enabled"
+        doc = """Boolean defining whether to receive forces from constraint solver."""
+    )
+}
+
+
+class "PhysxCharacterControllerAPI"
+(
+	doc = """PhysX CCT extended parameters"""
+	inherits = </APISchemaBase>
+)
+{
+	uniform token physxCharacterController:upAxis = "Z" (
+		allowedTokens = ["X", "Y", "Z"]
+        displayName = "Up Axis"
+		doc = """Up axis for stepping functionality."""
+	)
+
+	uniform token physxCharacterController:nonWalkableMode = "preventClimbing" (
+		allowedTokens = ["preventClimbing", "preventClimbingForceSliding"]
+        displayName = "Non Walkable Mode"
+		doc = """The non-walkable mode controls if a character controller slides or not on a non-walkable part."""
+	)	 
+
+	uniform token physxCharacterController:climbingMode = "easy" (
+		allowedTokens = ["easy", "constrained"]
+        displayName = "Climb Mode"
+		doc = """The climbing mode."""
+	)
+
+	float physxCharacterController:invisibleWallHeight = 0.0 (
+        displayName = "Invisible Wall Height"
+      doc = """Height of invisible walls created around non-walkable triangles. Allowed range [0, max_float)."""
+   )
+
+	float physxCharacterController:maxJumpHeight = 0.0 (
+        displayName = "Max Jump Height"
+      doc = """Maximum height a jumping character can reach. Allowed range [0, max_float)."""
+   )
+
+	float physxCharacterController:contactOffset = 0.1 (
+        displayName = "Contact Offset"
+      doc = """The contact offset used by the controller. Allowed range [0, max_float)."""
+   )
+
+	float physxCharacterController:stepOffset = 0.5 (
+        displayName = "Step Offset"
+      doc = """Defines the maximum height of an obstacle which the character can climb. Allowed range [0, max_float)."""
+   )
+
+	float physxCharacterController:scaleCoeff = 0.8 (
+        displayName = "Scale Coefficient"
+      doc = """Scale coefficient for underlying kinematic actor. Allowed range [0, max_float)."""
+   )
+
+	float physxCharacterController:volumeGrowth = 1.5 (
+        displayName = "Volume Growth"
+      doc = """Cached volume growth. Allowed range [0, max_float)."""
+   )
+
+}
+
+class "PhysxTriggerAPI"
+(
+	doc = """PhysX trigger"""
+	inherits = </APISchemaBase>
+)
+{
+   uniform token physxTrigger:enterScriptType = "scriptFile" (
+        customData = {
+            string apiName = "enterScriptType"
+        }       
+
+	  allowedTokens = ["scriptFile", "scriptBuffer"]
+      displayName = "Enter Script Type"
+	  doc = """Enter script type. Script file tries to find a file on disc and execute. Script buffer does execute the provided script string directly."""
+   )  
+
+   uniform token physxTrigger:leaveScriptType = "scriptFile" (
+        customData = {
+            string apiName = "leaveScriptType"
+        }       
+
+	  allowedTokens = ["scriptFile", "scriptBuffer"]
+
+      displayName = "Leave Script Type"
+	  doc = """Leave script type. Script file tries to find a file on disc and execute. Script buffer does execute the provided script string directly."""
+   )  
+
+	uniform token physxTrigger:onEnterScript (
+        customData = {
+            string apiName = "onEnterScript"
+        }       
+
+        displayName = "On Enter Script"
+      doc = """Enter script."""
+   )
+
+	uniform token physxTrigger:onLeaveScript (
+        customData = {
+            string apiName = "onLeaveScript"
+        }       
+
+        displayName = "On Leave Script"
+      doc = """Leave script."""
+   )
+}
+
+class "PhysxCookedDataAPI"
+(
+	doc = """PhysX cooked data storage."""
+       customData = {
+        token apiSchemaType = "multipleApply"
+        token propertyNamespacePrefix  = "physxCookedData"
+    }
+    inherits = </APISchemaBase>
+
+)
+{
+	uchar[] buffer (
+        customData = {
+            string apiName = "buffer"
+        }       
+
+    )
+}
+
+class "PhysxTendonAxisAPI"
+(
+    doc = """WARNING: Draft API, this design is not fixed and may change in the future. At this point, we don't support
+    multi-axis joints (e.g. spherical, D6) or 0-DOF joints (fixed joints) yet.
+    
+    Applied to a Physics Joint that must be part of an articulation, e.g. PhysicsRevoluteJoint or PhysicsPrismaticJoint.
+    
+    A tendon axis is part of a fixed tendon and contributes to the tendon length via the position of its associated
+    articulation joint axis and the gearing attribute. The tendon applies spring-damper forces to the articulation links
+    that aim to maintain constraints on the tendon lengths that are evaluated at each axis (see dynamics details
+    in the PhysxTendonAxisRootAPI doc).
+    
+    A joint may have multiple tendon axes that belong to distinct fixed tendons; therefore, the fixed-tendon APIs are
+    multi-apply and are grouped into tendons by their instance names.
+    
+    Fixed tendons do not allow linking arbitrary joint axes of the articulation: The respective joints must all be
+    directly connected to each other in the articulation structure, i.e. each of the joints in the tendon must be
+    connected by a single articulation link to another joint in the same tendon. This implies that fixed tendons can
+    branch along with a branching articulation as well. In addition, the root tendon axis created by applying the
+    PhysxTendonAxisRootAPI must be applied to the articulation joint that is the common ancestor of all joint
+    axes in the fixed tendon.
+    
+    In a future version, it will be possible to include multiple axes of a multi-axis joint (e.g. a spherical joint)
+    in the fixed tendon by adding them to the axis token array, and setting their gearing accordingly in the gearing
+    float array (in the same order). Until then, the jointAxis token array will be ignored, and only the first element
+    of the gearing array is considered.
+
+    See the PhysxTendonAxisRootAPI doc for details on the tendon dynamics.
+    """
+
+    customData = {
+        token apiSchemaType = "multipleApply"
+        token propertyNamespacePrefix  = "physxTendon"
+    }
+    inherits = </APISchemaBase>
+)
+{
+    float[] gearing = [1.0] (
+        customData = {
+            string apiName = "gearing"
+        }
+        displayName = "Gearing"
+        doc = """Joint gearing(s) per joint axis in axis token array, in the same order. Range (-inf, inf).
+        Units: translational axis: unitless
+               rotational axis:    distance/degrees"""
+    )
+    uniform token[] jointAxis (
+        customData = {
+            string apiName = "jointAxis"
+        }
+        displayName = "Joint Axis"
+        allowedTokens = ["transX", "transY", "transZ", "rotX", "rotY", "rotZ"]
+        doc = """Specifies target joint axis/axes. Ignored when the joint only has a single axis, e.g. a revolute joint."""
+    )
+}
+
+class "PhysxTendonAxisRootAPI"
+(
+    doc = """WARNING: Draft API, this design is not fixed and may change in the future. At this point, we don't support
+    multi-axis joints (e.g. spherical, D6) or 0-DOF joints (fixed joints) yet.
+    
+    Applied to a Physics Joint that must be part of an articulation, e.g. PhysicsRevoluteJoint or PhysicsPrismaticJoint.
+    
+    In addition to creating a regular axis of the fixed tendon, the root API provides attributes that apply to the
+    entire tendon. The root API must be applied to the joint that is the common ancestor of all joint axes in the tendon.
+    
+    For restrictions on tendon structure and grouping of axes into tendons, see PhysxTendonAxisAPI.
+
+    Details on dynamics:
+
+    Fixed tendons create an abstract coupling between degrees of freedom of an articulation. Each tendon axis is
+    associated with an articulation joint and a specific joint axis, i.e. degree of freedom. Since
+    the joint axes in the tendon must follow the articulation with the root axis as the common ancestor, the tendon
+    mirrors the articulation's tree structure. This tree structure is key for the computation of the constraint forces
+    applied by the tendon on the articulation links.
+
+    The length of the fixed tendon at a given axis is evaluated recursively as
+
+    tendonLength[i] = tendonLength[i - 1] + gearing[i] * jointPosition[i]
+    
+    where gearing[i] and jointPosition[i] refer to the i-th tendon axis gearing and corresponding joint axis position in
+    degrees (rotational) or distance units (translational), and tendonLength[i - 1] is the length at the parent tendon
+    axis in the tendon tree. Note that since the tendon length is an abstract construct as a weighted sum of joint
+    positions, negative 'lengths' are possible.
+
+    For the root axis, we define the tendon length to be
+
+    tendonLength[0] = offset + gearing[0] * jointPosition[0]
+    
+    i.e. the parent length for the root is set to the offset attribute.
+
+    Before we can define the fixed-tendon constraint forces, we define the tendon-axis velocity v[i] that damping is
+    acting on. The velocity v[i] is the velocity of the virtual joint between the child link of the tendon axis'
+    articulation joint and the articulation parent link of the tendon's root-axis joint:
+    
+    v[i] = vChild[i] - vRoot
+    
+    where vChild[i] is the velocity of the child link projected onto the tendon-joint axis, and, analogously, vRoot is the
+    root-axis' parent link's velocity projected onto the root axis. For example, consider an articulation with three links
+    connected by two revolute joints, and the first link is a fixed base. The first revolute joint is the root axis of the
+    tendon, and the second axis is between the two moving links. Then, the root-tendon-axis velocity v[0] is equal to the
+    velocity of its joint, and the second tendon-axis velocity is equal to the angular velocity of the third link, since
+    the parent link of the root axis is fixed and has angular velocity zero (i.e. vRoot = 0).
+    
+    Now we can define the constraint force (or torque) applied at the i-th axis
+
+    f[i] = sgn(gearing[i]) * (stiffness * (restLength - tendonLength[i]) + limitForce[i]) - damping * v[i]
+
+    where the signum on the gearing ensures that the force or torque is in the deviation-reducing direction, and the
+    limitForce[i] is an additional force from user-set limits on the tendon length. In particular, it is
+
+    limitForce[i] = limitStiffness * (upperLimit - tendonLength[i])  *if*  tendonLength[i] > upperLimit
+    limitForce[i] = limitStiffness * (lowerLimit - tendonLength[i])  *if*  tendonLength[i] < lowerLimit
+    limitForce[i] = 0  *otherwise*.
+    
+    Setting stiffness to zero allows implementing one-sided constraints using the limit parameters.
+
+    Finally, a reaction force/torque equal and opposing f[i] is applied to the tendon root axis' parent link according to
+    the type of the root-joint axis.
+
+    """
+
+    customData = {
+        token apiSchemaType = "multipleApply"
+        token propertyNamespacePrefix  = "physxTendon"
+    }
+    inherits = </PhysxTendonAxisAPI>
+)
+{
+    float stiffness = 0.0 (
+        customData = {
+            string apiName = "stiffness"
+        }
+	    displayName = "Stiffness"
+        doc = """Tendon length spring stiffness. Range [0, inf).
+        Units: force / distance = mass / time / time"""
+    )
+
+    float damping = 0.0 (
+        customData = {
+            string apiName = "damping"
+        }
+	    displayName = "Damping"
+        doc = """Tendon length damping.  Range [0, inf).
+        Units: force / distance * time = mass / time"""
+    )
+
+    float limitStiffness = 0.0 (
+        customData = {
+            string apiName = "limitStiffness"
+        }
+	    displayName = "Limit Stiffness"
+        doc = """Tendon length-limit spring stiffness. Range [0, inf).
+        Units: force / distance = mass / time / time"""
+    )
+
+    float offset = 0.0 (
+        customData = {
+            string apiName = "offset"
+        }
+	    displayName = "Offset"
+        doc = """Tendon length offset. Range (-inf, inf).
+        Units: distance"""
+    )
+
+    float restLength = 0.0 (
+        customData = {
+            string apiName = "restLength"
+        }
+	    displayName = "Rest Length"
+        doc = """Tendon rest length. Range (-inf, inf).
+        Units: distance"""
+    )
+    float lowerLimit = -inf (
+        customData = {
+            string apiName = "lowerLimit"
+        }
+	    displayName = "Lower Limit"
+        doc = """Tendon length lower limit. Range (-inf, upperLimit].
+        Units: distance"""
+    )
+    float upperLimit = inf (
+        customData = {
+            string apiName = "upperLimit"
+        }
+ 	    displayName = "Upper Limit"
+        doc = """Tendon length upper limit. Range [lowerLimit, inf).
+        Units: distance"""
+    )
+
+    bool tendonEnabled = true (
+        customData = {
+            string apiName = "tendonEnabled"
+        }
+	    displayName = "Tendon Enabled"
+        doc = """Enables/disables the tendon from contributing to the articulation dynamics."""
+    )
+}
+
+class "PhysxTendonAttachmentAPI"
+(
+    doc = """WARNING: Draft API, this design is not fixed and may change in the future.
+    
+    Applied to an articulation-link rigid-body Xformable.
+    
+    A tendon attachment is part of a spatial tendon and is attached to an articulation link. The distance between the
+    attachment and its parent attachment contributes to the length of the tendon, after scaling by the gearing
+    attribute.
+
+    The localPos attribute defines the translational offset of the attachment in the link's local frame; in particular,
+    this means that the offset is scaled together with any scaling applied to the link.
+    
+    An articulation link may have multiple distinct attachments that belong to the same or distinct spatial tendons;
+    therefore, the spatial tendon APIs are multi-apply and each attachment must have a unique instance name that is
+    used in parent-child relationships of the attachments."""
+    
+    customData = {
+        token apiSchemaType = "multipleApply"
+        token propertyNamespacePrefix  = "physxTendon"
+    }
+    inherits = </APISchemaBase>
+)
+{
+    float gearing = 1.0 (
+        customData = {
+            string apiName = "gearing"
+        }
+        displayName = "Gearing"
+        doc = """Attachment distance scaling factor. Range (-inf, inf).
+        Units: unitless"""
+    )
+    point3f localPos = (0,0,0) (
+        customData = {
+            string apiName = "localPos"
+        }
+        displayName = "Local Position"
+        doc = """Location of the attachment. Only considered if API is applied to an articulation link (i.e. with a PhysicsRigidBodyAPI).
+        Units: (local-frame) distance"""
+    )
+    rel parentLink (
+        customData = {
+            string apiName = "parentLink"
+        }
+        displayName = "Parent Link"
+        doc = """Relationship to parent link that has a PhysxTendonAttachmentAPI or PhysxTendonAttachmentRootAPI with instance name parentAttachment applied."""
+    )
+    uniform token parentAttachment (
+        customData = {
+            string apiName = "parentAttachment"
+        }
+        displayName = "Parent Attachment"
+        doc = """API instance name of parent attachment at parentLink."""
+    )
+}
+
+class "PhysxTendonAttachmentRootAPI"
+(
+    doc = """WARNING: Draft API, this design is not fixed and may change in the future.
+
+    Applied to an articulation-link rigid-body Xformable.
+
+    The root API creates a new spatial tendon tree. The root tendon attachment is the only attachment in a tendon tree
+    that does not have a parent, so the parentLink, parentAttachment, and gearing attributes inherited from
+    PhysxTendonAttachmentAPI are ignored for a root.
+
+    Spatial tendons create line-of-sight distance constraints between links of a single articulation. In particular,
+    spatial tendons run through attachments that are positioned relative to a rigid-body link, and their length is
+    defined as a weighted sum of the distance between the attachments in the tendon.
+
+    Spatial tendons may branch, in which case the tendon splits up into multiple conceptual sub-tendons, one for each
+    root-to-leaf path in the tendon tree. The tendon tree starts at the root, and its topology is defined by the
+    attachments' parentLink rel and parentAttachment token.
+
+    It is possible to create multiple attachments per link, see PhysxTendonAttachmentAPI.
+
+    Details on dynamics:
+
+    The length of a sub-tendon in the tree is
+
+    subTendonLength = sum(gearing[i] * |p[i] - p_parent[i]|)
+
+    where the sum is evaluated along the unique tree path between root and leaf. The gearing[i] is the i-th attachment's
+    gearing, and |p[i] - p_parent[i]| is the distance between the positions of the i-th attachment and its parent
+    attachment.
+
+    Each subtendon has spring-damper dynamics acting on the length constraint
+
+    constraint = 0 = offset + subTendonLength - restLength
+
+    where the offset is a common summand for all sub-tendons of a spatial tendon, and the restLength is specific to a
+    sub-tendon, see the PhysxTendonAttachmentLeafAPI.
+
+    If limits are not active, the sub-tendon force that acts on the leaf is
+
+    F = stiffness * constraint + damping * tendonVelocity
+
+    where tendonVelocity is the sum of the time derivatives of the line-of-sight distances between
+        1) the leaf and its parent attachment and
+        2) the tendon root and its first child attachment on the path to the leaf.
+    Stiffness and damping are common parameters for all sub-tendons.
+
+    The 3D force applied at the leaf attachment is equal to 
+
+    F * (p_parent - p_leaf).
+
+    where p_leaf and p_parent are the leaf's position and its parent's position, respectively. The reaction force acting
+    on the root attachment is
+
+    F * (p_child_leaf - p_root)
+
+    where p_child_leaf is the position of the root's child attachment that leads to the leaf that produces F,
+    and p_root is the root attachment position. The tendon force is not further propagated through the tendon, so at
+    intermediate attachments (i.e. created by PhysxTendonAttachmentAPI) no forces are applied.
+
+    Note that a spatial tendon may both pull and push on the leaf and root attachments. A string-like, one-sided constraint
+    can be implemented using the sub-tendon's length limits.
+
+    Sub-tendon length limits constrain the offset length
+
+    lowerLimit <= subTendonLength + offset<= upperLimit
+
+    and, when active, add a restoring spring force parametrized by limitStiffness to the tendon force, analogous to the
+    length constraint force above. Limit dynamics are damped by the tendon-length damping that is applied regardless of
+    a limit being active. Limit parameters are attributes of the PhysxTendonAttachmentLeafAPI."""
+    
+    customData = {
+        token apiSchemaType = "multipleApply"
+        token propertyNamespacePrefix  = "physxTendon"
+    }
+    inherits = </PhysxTendonAttachmentAPI>
+)
+{
+float stiffness = 0.0 (
+        customData = {
+            string apiName = "stiffness"
+        }
+	    displayName = "Stiffness"
+        doc = """Common sub-tendon length spring stiffness. Range [0, inf).
+        Units: force / distance = mass / time / time"""
+    )
+
+    float damping = 0.0 (
+        customData = {
+            string apiName = "damping"
+        }
+	    displayName = "Damping"
+        doc = """Common sub-tendon length damping.  Range [0, inf).
+        Units: force / distance * time = mass / time"""
+    )
+
+    float limitStiffness = 0.0 (
+        customData = {
+            string apiName = "limitStiffness"
+        }
+	    displayName = "Limit Stiffness"
+        doc = """Common sub-tendon length-limit spring stiffness. Range [0, inf).
+        Units: force / distance = mass / time / time"""
+    )
+
+    float offset = 0.0 (
+        customData = {
+            string apiName = "offset"
+        }
+	    displayName = "Offset"
+        doc = """Common sub-tendon length offset. Range (-inf, inf).
+        Units: distance"""
+    )
+
+    bool tendonEnabled = true (
+        customData = {
+            string apiName = "tendonEnabled"
+        }
+	    displayName = "Tendon Enabled"
+        doc = """Enables/disables the tendon from contributing to the articulation dynamics."""
+    )
+
+}
+
+class "PhysxTendonAttachmentLeafAPI"
+(
+    doc = """WARNING: Draft API, this design is not fixed and may change in the future.
+    
+    Applied to an articulation-link rigid-body Xformable.
+    
+    The leaf API creates a new sub-tendon between the leaf and the root attachment. A leaf cannot have any children,
+    i.e. there cannot be another attachment API that refers to a leaf as parent."""
+
+    customData = {
+        token apiSchemaType = "multipleApply"
+        token propertyNamespacePrefix  = "physxTendon"
+    }
+    inherits = </PhysxTendonAttachmentAPI>
+)
+{
+    float restLength = -inf (
+        customData = {
+            string apiName = "restLength"
+        }
+        displayName = "Rest Length"
+        doc = """Sub-tendon rest length. Range [0, inf). If set to a negative value, the rest length is computed internally from the articulation pose and the attachment positions at simulation start.
+        Units: distance"""
+    )
+    float lowerLimit = -inf (
+        customData = {
+            string apiName = "lowerLimit"
+        }
+	    displayName = "Lower Length Limit"
+        doc = """Sub-tendon length lower limit. Range (-inf, upperLimit].
+        Units: distance"""
+    )
+    float upperLimit = inf (
+        customData = {
+            string apiName = "upperLimit"
+        }
+	    displayName = "Upper Length Limit"
+        doc = """Sub-tendon length upper limit. Range [lowerLimit, inf).
+        Units: distance"""
+    )
+}
+
+//
+// vehicles
+//
+
+class "PhysxVehicleContextAPI"
+(
+	doc = """PhysX vehicles general settings. Has to be applied to a PhysicsScene prim."""
+	inherits = </APISchemaBase>
+)
+{
+	uniform token physxVehicleContext:updateMode = "velocityChange" (
+		allowedTokens = ["velocityChange", "acceleration"]
+        customData = {
+			string apiName = "updateMode"
+		}
+        displayName = "Update Mode"
+		doc = """The dynamics of the vehicle simulation can get applied to the PhysX rigid 
+			  body by either applying an acceleration or by using a velocity delta."""
+	)
+
+	float3 physxVehicleContext:upAxis (
+        customData = {
+			string apiName = "upAxis"
+		}
+        displayName = "Up Axis"
+		doc = """The normalized vector defining the general up direction to use for vehicles.
+
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float3 physxVehicleContext:forwardAxis (
+        customData = {
+			string apiName = "forwardAxis"
+		}
+        displayName = "Forward Axis"
+		doc = """The normalized vector defining the general forward direction to use for vehicles.
+
+              Note: this attribute has to be specified (there is no default)."""
+	)
+    
+    float physxVehicleContext:sweepRadiusScale = 1.0 (
+        customData = {
+			string apiName = "sweepRadiusScale"
+		}
+        displayName = "Sweep Radius Scale"
+        doc = """A scaling factor that gets applied to the geometry of the wheel used in the sweep. 
+              Values < 1 result in a smaller swept wheel, while values > 1 result in a larger swept wheel.
+              The value has to be positive.
+              
+              Note: will only affect vehicles that are using sweeps for wheel vs. ground collision 
+                    detection.
+                    
+              Note: this scale will only be used for finding the colliding ground object. The simulation
+                    relevant hit information will then be computed using the original wheel radius and width."""
+    )
+
+    float physxVehicleContext:sweepWidthScale = 1.0 (
+        customData = {
+			string apiName = "sweepWidthScale"
+		}
+        displayName = "Sweep Width Scale"
+        doc = """A scaling factor that gets applied to the geometry of the wheel used in the sweep.
+              Values < 1 result in a thinner swept wheel, while values > 1 result in a fatter swept wheel.
+              The value has to be positive.
+              
+              Note: will only affect vehicles that are using sweeps for wheel vs. ground collision 
+                    detection.
+                    
+              Note: this scale will only be used for finding the colliding ground object. The simulation
+                    relevant hit information will then be computed using the original wheel radius and width."""
+	)
+}
+
+class PhysxVehicleTireFrictionTable "PhysxVehicleTireFrictionTable"
+(
+	doc = """Table defining the friction values of a tire against a given set of ground materials."""
+	inherits = </Typed>
+)
+{
+	rel groundMaterials (
+        displayName = "Ground Materials"
+		doc = """Relationships to Material instances that have PhysicsMaterialAPI applied. For each material, a friction value has to be specified in the frictionValues attribute. If a material is not listed for an instance "A" of this class but is listed in another instance, a friction value of 1 will be used for the instance "A". If a material is not listed in any instance, the first friction value of all materials is picked.
+        
+        Note: at least one relationship has to be specified."""
+	)
+	
+	float[] frictionValues (
+        displayName = "Friction Values"
+		doc = """The friction values to use for the tire against the ground materials listed under groundMaterials. The array needs to have the same size as the list of materials specified in groundMaterials."""
+	)
+}
+
+class "PhysxVehicleWheelAPI"
+(
+	doc = """Properties of a PhysX vehicle wheel. If the wheel setup does not need to be shared among vehicle
+             instances, it can be applied to the prim which has PhysxVehicleWheelAttachmentAPI applied.
+             If the intent is to share the wheel setup, PhysxVehicleWheelAPI can be applied to a separate
+             prim which can be linked to (see PhysxVehicleWheelAttachmentAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleWheel:radius (
+        customData = {
+			string apiName = "radius"
+		}
+        displayName = "Radius"
+		doc = """The radius of the wheel (metal wheel plus tire).
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:width (
+        customData = {
+			string apiName = "width"
+		}
+        displayName = "Width"
+		doc = """The width of the wheel (metal wheel plus tire).
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:mass (
+        customData = {
+			string apiName = "mass"
+		}
+        displayName = "Mass"
+		doc = """The mass of the wheel (metal wheel plus tire).
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:moi (
+        customData = {
+			string apiName = "moi"
+		}
+        displayName = "Moment of Inertia"
+		doc = """The moment of inertia (metal wheel plus tire) about the rolling axis.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:dampingRate (
+        customData = {
+			string apiName = "dampingRate"
+		}
+        displayName = "Damping Rate"
+		doc = """The damping rate applied to the wheel (default unit is kilograms metres-squared per second [kg m^2 s^-1]).
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:maxBrakeTorque (
+        customData = {
+			string apiName = "maxBrakeTorque"
+		}
+        displayName = "Max Brake Torque"
+		doc = """The maximum brake torque that can be applied to the wheel
+			  (default unit is kilograms metres-squared per second-squared [kg m^2 s^-2]).
+              
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:maxHandBrakeTorque (
+        customData = {
+			string apiName = "maxHandBrakeTorque"
+		}
+        displayName = "Max Handbrake Torque"
+		doc = """The maximum hand brake torque that can be applied to the wheel
+			  (default unit is kilograms metres-squared per second-squared [kg m^2 s^-2]).
+              
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:maxSteerAngle (
+        customData = {
+			string apiName = "maxSteerAngle"
+		}
+        displayName = "Max Steer Angle"
+		doc = """The maximum steer angle (in radians) that can be achieved by the wheel.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleWheel:toeAngle (
+        customData = {
+			string apiName = "toeAngle"
+		}
+        displayName = "Toe Angle"
+		doc = """The wheel toe angle (in radians).
+        
+              Note: currently, this attribute is only considered for vehicles using the
+                    PhysxVehicleDriveStandard drive type.
+              
+              Note: this attribute has to be specified (there is no default)."""
+	)
+}
+
+class "PhysxVehicleTireAPI"
+(
+	doc = """Properties of a PhysX vehicle tire. If the tire setup does not need to be shared among vehicle
+             instances, it can be applied to the prim which has PhysxVehicleWheelAttachmentAPI applied.
+             If the intent is to share the tire setup, PhysxVehicleTireAPI can be applied to a separate
+             prim which can be linked to (see PhysxVehicleWheelAttachmentAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleTire:latStiffX (
+        customData = {
+			string apiName = "latStiffX"
+		}
+        displayName = "Lateral Stiffness X"
+		doc = """Tire lateral stiffness is a graph of tire load that has linear behavior near zero load and 
+			  flattens at large loads. The parameter describes the minimum normalized load (load/restLoad)
+			  that gives a flat lateral stiffness response to load.
+              
+              Note: if not defined, the value 2.0 will be used."""
+	)
+	
+	float physxVehicleTire:latStiffY (
+        customData = {
+			string apiName = "latStiffY"
+		}
+        displayName = "Lateral Stiffness Y"
+		doc = """Tire lateral stiffness is a graph of tire load that has linear behavior near zero load and 
+			  flattens at large loads. The parameter describes the maximum possible value of lateralStiffness/restLoad
+			  that occurs when (load/restLoad) >= latStiffX. If load/restLoad is greater than latStiffX then
+			  the lateral stiffness is latStiffY*restLoad, else the lateral stiffness is latStiffY*(load/latStiffX).
+              
+              Note: if not defined, the value 17.095 will be used."""
+	)
+	
+	float physxVehicleTire:longitudinalStiffnessPerUnitGravity (
+        customData = {
+			string apiName = "longitudinalStiffnessPerUnitGravity"
+		}
+        displayName = "Longitudinal Stiffness per Unit Gravity"
+		doc = """Tire longitudinal stiffness per unit gravitational acceleration. Longitudinal stiffness of 
+			  the tire is calculated as gravitationalAcceleration*mLongitudinalStiffnessPerUnitGravity.
+              
+              Note: if not defined, the value 1000 will be used."""
+	)
+	
+	float physxVehicleTire:camberStiffnessPerUnitGravity (
+        customData = {
+			string apiName = "camberStiffnessPerUnitGravity"
+		}
+        displayName = "Camber Stiffness per Unit Gravity"
+		doc = """Tire camber stiffness per unit gravitational acceleration. Camber stiffness of the tire is
+			  calculated as gravitationalAcceleration*mCamberStiffnessPerUnitGravity.
+              
+              Note: if not defined, the value 5.7296 will be used."""
+	)
+	
+	float2[] physxVehicleTire:frictionVsSlipGraph (
+        customData = {
+			string apiName = "frictionVsSlipGraph"
+		}
+        displayName = "Friction vs Slip Graph"
+		doc = """Graph of friction vs longitudinal slip with 3 points. The friction value extracted from this
+			  graph will be multiplied with the friction value of the combination of ground material and tire
+			  type. The array is expected to have 3 entries/points. For the first point, the first value is 
+			  always zero and the second value is the friction available at zero longitudinal slip. For the
+			  second point, the first value is the longitudinal slip with maximum friction and the second
+			  value is the maximum friction. For the third point, the first value is the end point of the graph
+			  and the second value is the friction for slips greater than the end point of the graph. Note that
+			  the friction value of the first point is typically smaller than the friction value of the second
+			  point and the friction value of the second point is typically larger than the friction value of
+			  the third point.
+              
+              Note: if not defined, the following values will be used: [(0.0, 1.0), (0.1, 1.0), (1.0, 1.0)]."""
+	)
+	
+	rel physxVehicleTire:frictionTable (
+        customData = {
+			string apiName = "frictionTable"
+		}
+        displayName = "Friction Table"
+		doc = """A relationship to a PhysxVehicleTireFrictionTable instance.
+        
+              Note: if not defined, any available table will be used. If there is no table in the whole stage, a
+              default will be provided."""
+	)
+}
+
+class "PhysxVehicleSuspensionAPI"
+(
+	doc = """Properties of a PhysX vehicle wheel suspension. If the suspension setup does not need to be shared 
+             among vehicle instances, it can be applied to the prim which has PhysxVehicleWheelAttachmentAPI
+             applied. If the intent is to share the suspension setup, PhysxVehicleSuspensionAPI can be 
+             applied to a separate prim which can be linked to (see PhysxVehicleWheelAttachmentAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleSuspension:springStrength (
+        customData = {
+			string apiName = "springStrength"
+		}
+        displayName = "Spring Strength"
+		doc = """Spring strength of suspension unit (default unit is kilograms per second-squared [kg s^-2]).
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleSuspension:springDamperRate (
+        customData = {
+			string apiName = "springDamperRate"
+		}
+        displayName = "Spring Damper Rate"
+		doc = """Spring damper rate of suspension unit (default unit is kilograms per second [kg s^-1]).
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleSuspension:maxCompression (
+        customData = {
+			string apiName = "maxCompression"
+		}
+        displayName = "Max Compression"
+		doc = """Maximum compression from rest state allowed by suspension spring (default unit is meters [m]).
+			  The value has to be positive.
+              
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleSuspension:maxDroop (
+        customData = {
+			string apiName = "maxDroop"
+		}
+        displayName = "Max Droop"
+		doc = """Maximum elongation from rest state allowed by suspension spring (default unit is meters [m]).
+			  The value has to be positive.
+              
+              Note: this attribute has to be specified (there is no default)."""
+	)
+    
+    float physxVehicleSuspension:sprungMass = 0 (
+        customData = {
+			string apiName = "sprungMass"
+		}
+        displayName = "Sprung Mass"
+		doc = """Mass of vehicle that is supported by suspension spring (default unit is kilograms [kg]).
+              If set to 0, the sprung mass will get computed automatically.
+              
+              Note: it is not possible for a vehicle to have some sprung mass values being user-defined and some 
+              being computed automatically. Either all values have to be user-defined or all have to be set to 0 
+              for auto-computation."""
+	)
+	
+	float physxVehicleSuspension:camberAtRest (
+        customData = {
+			string apiName = "camberAtRest"
+		}
+        displayName = "Camber at Rest"
+		doc = """Camber angle (in radians) of wheel when the suspension is at its rest position.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleSuspension:camberAtMaxCompression (
+        customData = {
+			string apiName = "camberAtMaxCompression"
+		}
+        displayName = "Camber at Max Compression"
+		doc = """Camber angle (in radians) of wheel when the suspension is at maximum compression.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float physxVehicleSuspension:camberAtMaxDroop (
+        customData = {
+			string apiName = "camberAtMaxDroop"
+		}
+        displayName = "Camber at Max Droop"
+		doc = """Camber angle (in radians) of wheel when the suspension is at maximum droop.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+}
+
+class "PhysxVehicleWheelAttachmentAPI"
+(
+	doc = """For every wheel of a vehicle, this class defines the attachment properties. Has to 
+			be applied to a prim that is a descendant of a prim with PhysxVehicleAPI applied. If the wheel
+			attachment prim (the prim with PhysxVehicleWheelAttachmentAPI applied) is a UsdGeomXformable,
+            then the position and orientation of the prim will be set by the vehicle simulation. If the
+            wheel attachment prim has PhysicsCollisionAPI applied, then none of its descendants are allowed
+            to have PhysicsCollisionAPI applied. If the wheel attachment prim is a UsdGeomXformable but does
+            not have PhysicsCollisionAPI applied, then exactly one direct child prim among all descendants
+            is allowed to have PhysicsCollisionAPI applied. That prim will be interpreted as the collision
+            geometry of the wheel and its position and orientation will be set by the vehicle simulation
+            too (basically, the same transform as for the wheel attachment prim will be used). If there is
+            no desire to have the vehicle simulation control the transform of the wheel attachment prim,
+            then a prim type that is not a UsdGeomXformable should be chosen."""
+	inherits = </APISchemaBase>
+)
+{
+	rel physxVehicleWheelAttachment:wheel (
+		customData = {
+			string apiName = "wheel"
+		}
+        displayName = "Wheel"
+		doc = """A relationship to a PhysxVehicleWheelAPI prim.
+        
+              Note: either this relationship has to be specified or the prim must have PhysxVehicleWheelAPI
+                    applied (none or both of the two is invalid)."""
+	)
+	
+	rel physxVehicleWheelAttachment:tire (
+		customData = {
+			string apiName = "tire"
+		}
+        displayName = "Tire"
+		doc = """A relationship to a PhysxVehicleTireAPI prim.
+        
+              Note: either this relationship has to be specified or the prim must have PhysxVehicleTireAPI
+                    applied (none or both of the two is invalid)."""
+	)
+	
+	rel physxVehicleWheelAttachment:suspension (
+		customData = {
+			string apiName = "suspension"
+		}
+        displayName = "Suspension"
+		doc = """A relationship to a PhysxVehicleSuspensionAPI prim.
+        
+              Note: either this relationship has to be specified or the prim must have PhysxVehicleSuspensionAPI
+                    applied (none or both of the two is invalid)."""
+	)
+	
+	float3 physxVehicleWheelAttachment:suspensionTravelDirection (
+		customData = {
+			string apiName = "suspensionTravelDirection"
+		}
+        displayName = "Suspension Travel Direction"
+		doc = """The direction of the suspension travel (towards the wheel) in vehicle local space.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float3 physxVehicleWheelAttachment:suspensionForceAppPointOffset (
+		customData = {
+			string apiName = "suspensionForceAppPointOffset"
+		}
+        displayName = "Suspension Force Application Point Offset"
+		doc = """The location (in vehicle local space) where the suspension force gets applied.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+	
+	float3 physxVehicleWheelAttachment:wheelCenterOfMassOffset (
+		customData = {
+			string apiName = "wheelCenterOfMassOffset"
+		}
+        displayName = "Wheel Center of Mass Offset"
+		doc = """The location (in vehicle local space) of the wheel centre when at rest.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+
+	float3 physxVehicleWheelAttachment:tireForceAppPointOffset (
+		customData = {
+			string apiName = "tireForceAppPointOffset"
+		}
+        displayName = "Tire Force Application Point Offset"
+		doc = """The location (in vehicle local space) where the tire force gets applied.
+        
+              Note: this attribute has to be specified (there is no default)."""
+	)
+
+	bool physxVehicleWheelAttachment:driven (
+		customData = {
+			string apiName = "driven"
+		}
+        displayName = "Driven"
+		doc = """True if the tire is driven by the engine through the transmission. Will be ignored if the vehicle
+				 has no drive specified (see PhysxVehicleAPI:drive).
+                 
+                 Note: this attribute has to be specified (there is no default)."""
+	)
+
+	rel physxVehicleWheelAttachment:collisionGroup (
+		customData = {
+			string apiName = "collisionGroup"
+		}
+        displayName = "Collision Group"
+		doc = "A relationship to a PhysicsCollisionGroup instance that defines what the wheel/suspension scene queries should treat as a ground surface to collide against. If not specified, no specific filtering will be applied."
+	)
+}
+
+class "PhysxVehicleEngineAPI"
+(
+	doc = """Properties of a PhysX vehicle engine. If the engine setup does not need to be shared among vehicle
+             instances, it can be applied to the prim which has PhysxVehicleDriveStandardAPI applied.
+             If the intent is to share the engine setup, PhysxVehicleEngineAPI can be applied to a separate
+             prim which can be linked to (see PhysxVehicleDriveStandardAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleEngine:moi (
+        customData = {
+			string apiName = "moi"
+		}
+        displayName = "Moment of Inertia"
+		doc = """The moment of inertia of the engine around the axis of rotation. The value has to be positive.
+		
+				 Note: if not defined, the value 1.0 will be used. This default value is in meter length scale 
+                 and will get adjusted if another unit is used."""
+	)
+	
+	float physxVehicleEngine:peakTorque (
+        customData = {
+			string apiName = "peakTorque"
+		}
+        displayName = "Peak Torque"
+		doc = """Maximum torque available to apply to the engine when the accelerator pedal is at maximum
+				 (default unit is kilograms meters-squared per second-squared [kg m^2 s^-2]). The value has to be positive.
+				 
+				 Note: the torque available is the value of the accelerator pedal (in range [0, 1]) multiplied
+				 by the normalized torque as computed from torqueCurve (see corresponding attribute)
+				 multiplied by peakTorque.
+				 
+				 Note: if not defined, the value 500.0 will be used. This default value is in meter length scale 
+                 and will get adjusted if another unit is used."""
+	)
+	
+	float physxVehicleEngine:maxRotationSpeed (
+        customData = {
+			string apiName = "maxRotationSpeed"
+		}
+        displayName = "Max Rotation Speed"
+		doc = """Maximum rotation speed of the engine (unit is radians per second [s^-1]). The value has to be positive.
+        
+                 Note: if not defined, the value 600.0 will be used."""
+	)
+	
+	float2[] physxVehicleEngine:torqueCurve (
+        customData = {
+			string apiName = "torqueCurve"
+		}
+        displayName = "Torque Curve"
+		doc = """Graph of normalized torque (torque / peakTorque) against normalized engine speed (engineRotationSpeed / maxRotationSpeed).
+				 
+				 Note: the normalized engine speed is the x-axis of the graph, while the normalized torque is the y-axis of the graph.
+				 No more than 8 data points are supported.
+                 
+                 Note: if not defined, the following values will be used: [(0.0, 0.8), (0.33, 1.0), (1.0, 0.8)]."""
+	)
+	
+	float physxVehicleEngine:dampingRateFullThrottle (
+        customData = {
+			string apiName = "dampingRateFullThrottle"
+		}
+        displayName = "Damping Rate at Full Throttle"
+		doc = """Damping rate of engine when full throttle is applied (default unit is 
+				 kilograms meters-squared per second [kg m^2 s^-1]). The value has to be positive.
+				 
+				 Note: if the clutch is engaged (any gear except neutral) then the damping rate applied 
+				 at run-time is an interpolation between dampingRateZeroThrottleClutchEngaged (see 
+				 corresponding attribute) and dampingRateFullThrottle:
+				 dampingRateZeroThrottleClutchEngaged + 
+				 ((dampingRateFullThrottle-dampingRateZeroThrottleClutchEngaged) * acceleratorPedal).
+				 
+				 Note: if the clutch is disengaged (in neutral gear) the damping rate applied at run-time
+				 is an interpolation between dampingRateZeroThrottleClutchDisengaged (see corresponding 
+				 attribute) and dampingRateFullThrottle:
+				 dampingRateZeroThrottleClutchDisengaged +
+				 ((dampingRateFullThrottle-dampingRateZeroThrottleClutchDisengaged) * acceleratorPedal).
+				 
+				 Note: if not defined, the value 0.15 will be used. This default value is in meter length scale 
+                 and will get adjusted if another unit is used."""
+	)
+	
+	float physxVehicleEngine:dampingRateZeroThrottleClutchEngaged (
+        customData = {
+			string apiName = "dampingRateZeroThrottleClutchEngaged"
+		}
+        displayName = "Damping Rate at Zero Throttle with Clutch Engaged"
+		doc = """Damping rate of engine when not throttle is applied and the clutch is engaged (default 
+				 unit is kilograms meters-squared per second [kg m^2 s^-1]). See attribute "dampingRateFullThrottle"
+				 for information about the effect of the value. The value has to be positive.
+				 
+				 Note: if not defined, the value 2.0 will be used. This default value is in meter length scale 
+                 and will get adjusted if another unit is used."""
+	)
+	
+	float physxVehicleEngine:dampingRateZeroThrottleClutchDisengaged (
+        customData = {
+			string apiName = "dampingRateZeroThrottleClutchDisengaged"
+		}
+        displayName = "Damping Rate at Zero Throttle with Clutch Disengaged"
+		doc = """Damping rate of engine when not throttle is applied and the clutch is disengaged (default 
+				 unit is kilograms meters-squared per second [kg m^2 s^-1]). See attribute "dampingRateFullThrottle"
+				 for information about the effect of the value. The value has to be positive.
+				 
+				 Note: if not defined, the value 0.35 will be used. This default value is in meter length scale 
+                 and will get adjusted if another unit is used."""
+	)
+}
+
+class "PhysxVehicleGearsAPI"
+(
+	doc = """Properties of PhysX vehicle gears. If the gears setup does not need to be shared among vehicle
+             instances, it can be applied to the prim which has PhysxVehicleDriveStandardAPI applied.
+             If the intent is to share the gears setup, PhysxVehicleGearsAPI can be applied to a separate
+             prim which can be linked to (see PhysxVehicleDriveStandardAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float[] physxVehicleGears:ratios (
+        customData = {
+			string apiName = "ratios"
+		}
+        displayName = "Ratios"
+		doc = """The gear ratios. First entry is for reverse, then there is support for up to 30 gears
+				 (neutral has a fixed value of 0 and is not represented in this array). The value for
+				 reverse has to be negative, else a positive value is expected and the ratios have to
+				 form a descending sequence.
+                 
+                 Note: if not defined, the following values will be used: [-4.0, 4.0, 2.0, 1.5, 1.1, 1.0]."""
+	)
+	
+	float physxVehicleGears:ratioScale (
+        customData = {
+			string apiName = "ratioScale"
+		}
+        displayName = "Ratio Scale"
+		doc = """Multiplier for gear ratio values. Final gear ratio is computed as ratios[currentGear] * ratioScale.
+				 The value has to be positive.
+                 
+                 Note: if not defined, the value 4.0 will be used."""
+	)
+	
+	float physxVehicleGears:switchTime (
+        customData = {
+			string apiName = "switchTime"
+		}
+        displayName = "Switch Time"
+		doc = """Time it takes to switch gear (unit is seconds [s]).
+        
+                 Note: if not defined, the value 0.5 will be used."""
+	)
+}
+
+class "PhysxVehicleAutoGearBoxAPI"
+(
+	doc = """Properties of the PhysX vehicle automatic gear shift box. If the automatic gear shift box setup
+             does not need to be shared among vehicle instances, it can be applied to the prim which has 
+             PhysxVehicleDriveStandardAPI applied. If the intent is to share the automatic gear shift box
+             setup, PhysxVehicleAutoGearBoxAPI can be applied to a separate prim which can be linked to 
+             (see PhysxVehicleDriveStandardAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float[] physxVehicleAutoGearBox:upRatios (
+        customData = {
+			string apiName = "upRatios"
+		}
+        displayName = "Up Ratios"
+		doc = """Value of normalized engine speed (engineRotationSpeed / maxRotationSpeed) that is high
+				 enough to increment gear. The first entry is for neutral, then first gear up to the
+				 second highest gear. When (engineRotationSpeed / maxRotationSpeed) > upRatios[currentGear]
+				 the autobox will begin a transition to currentGear+1 unless currentGear is the highest
+				 possible gear or reverse.
+                 
+                 Note: if not defined, the following values will be used: [0.15, 0.65, 0.65, 0.65, 0.65]."""
+	)
+	
+	float[] physxVehicleAutoGearBox:downRatios (
+        customData = {
+			string apiName = "downRatios"
+		}
+        displayName = "Down Ratios"
+		doc = """Value of normalized engine speed (engineRotationSpeed / maxRotationSpeed) that is low
+				 enough to decrement gear. The first entry is for second gear then up to the highest gear.
+				 When (engineRotationSpeed / maxRotationSpeed) < downRatios[currentGear] the autobox will
+				 begin a transition to currentGear-1 unless currentGear is first gear or neutral or reverse.
+                 
+                 Note: if not defined, the following values will be used: [0.5, 0.5, 0.5, 0.5]."""
+	)
+	
+	float physxVehicleAutoGearBox:latency (
+        customData = {
+			string apiName = "latency"
+		}
+        displayName = "Latency"
+		doc = """The latency time of the automatic gear shift box (unit is seconds [s]). This is the minimum
+				 time that must pass between each gear change that is initiated by the automatic gear shift
+				 box.
+                 
+                 Note: if not defined, the value 2.0 will be used."""
+	)
+}
+
+class "PhysxVehicleClutchAPI"
+(
+	doc = """Properties of the PhysX vehicle clutch. If the clutch setup does not need to be shared among vehicle
+             instances, it can be applied to the prim which has PhysxVehicleDriveStandardAPI applied.
+             If the intent is to share the clutch setup, PhysxVehicleClutchAPI can be applied to a separate
+             prim which can be linked to (see PhysxVehicleDriveStandardAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleClutch:strength (
+        customData = {
+			string apiName = "strength"
+		}
+        displayName = "Strength"
+		doc = """Strength of clutch (default unit is kilograms meters-squared per second [kg m^2 s^-1]).
+			  The value has to be positive.
+			  The clutch is the mechanism that couples the engine to the wheels. A stronger clutch more
+			  strongly couples the engine to the wheels, while a clutch of strength zero completely
+			  decouples the engine from the wheels. Stronger clutches more quickly bring the wheels and
+			  engine into equilibrium, while weaker clutches take longer, resulting in periods of clutch
+			  slip and delays in power transmission from the engine to the wheels. The torque generated
+			  by the clutch is proportional to the clutch strength and the velocity difference between
+			  the engine's rotational speed and the rotational speed of the driven wheels after accounting
+			  for the gear ratio. The torque at the clutch is applied negatively to the engine and
+			  positively to the driven wheels.
+			  
+			  Note: if not defined, the value 10.0 will be used. This default value is in meter length scale 
+              and will get adjusted if another unit is used."""
+	)
+}
+
+class "PhysxVehicleDriveBasicAPI"
+(
+	doc = """Very simple drive model for a PhysX vehicle. A torque will be directly applied to the wheels
+			 that are marked as driven (see PhysxVehicleWheelAttachmentAPI) up to the defined peak torque. The torque 
+			 will be proportional to the accelerator value.
+             
+             If the drive setup does not need to be shared among vehicle instances, it can be applied to the
+             prim which has PhysxVehicleAPI applied. If the intent is to share the drive setup, PhysxVehicleDriveBasicAPI
+             can be applied to a separate prim which can be linked to (see PhysxVehicleAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleDriveBasic:peakTorque (
+        customData = {
+			string apiName = "peakTorque"
+		}
+        displayName = "Peak Torque"
+		doc = """Maximum torque to apply to the wheels when the accelerator pedal is at maximum
+				 (default unit is kilograms meters-squared per second-squared [kg m^2 s^-2]). The value has to be positive.
+				 
+				 Note: the applied torque is the value of the accelerator pedal (in range [0, 1]) multiplied
+				 by peakTorque.
+				 
+				 Note: if not defined, the value 500.0 will be used. This default value is in meter length scale 
+                 and will get adjusted if another unit is used."""
+	)
+}
+
+class "PhysxVehicleDriveStandardAPI"
+(
+	doc = """Standard drive model for a PhysX vehicle. The available drive torque will be split equally
+			 between all the wheels that are marked as driven (see PhysxVehicleWheelAttachmentAPI).
+             
+             If the drive setup does not need to be shared among vehicle instances, it can be applied to the
+             prim which has PhysxVehicleAPI applied. If the intent is to share the drive setup, PhysxVehicleDriveStandardAPI
+             can be applied to a separate prim which can be linked to (see PhysxVehicleAPI)."""
+	inherits = </APISchemaBase>
+)
+{
+	rel physxVehicleDriveStandard:engine (
+        customData = {
+			string apiName = "engine"
+		}
+        displayName = "Engine"
+		doc = """A relationship to a PhysxVehicleEngineAPI prim that describes the engine.
+        
+              Note: either this relationship has to be specified or the prim must have PhysxVehicleEngineAPI
+                    applied (none or both of the two is invalid)."""
+	)
+	
+	rel physxVehicleDriveStandard:gears (
+        customData = {
+			string apiName = "gears"
+		}
+        displayName = "Gears"
+		doc = """A relationship to a PhysxVehicleGearsAPI prim that describes the gears.
+        
+              Note: either this relationship has to be specified or the prim must have PhysxVehicleGearsAPI
+                    applied (none or both of the two is invalid)."""
+	)
+	
+	rel physxVehicleDriveStandard:autoGearBox (
+        customData = {
+			string apiName = "autoGearBox"
+		}
+        displayName = "Auto Gear Box"
+		doc = """A relationship to a PhysxVehicleAutoGearBoxAPI prim that describes the automatic gear shift box.
+				 This relationship is optional and should be omitted if no automatic gear shift is desired. It is
+                 also possible to apply PhysxVehicleAutoGearBoxAPI to the prim directly. In that case the relationship
+                 must not be defined."""
+	)
+	
+	rel physxVehicleDriveStandard:clutch (
+        customData = {
+			string apiName = "clutch"
+		}
+        displayName = "Clutch"
+		doc = """A relationship to a PhysxVehicleClutchAPI prim that describes the clutch.
+        
+              Note: either this relationship has to be specified or the prim must have PhysxVehicleClutchAPI
+                    applied (none or both of the two is invalid)."""
+	)
+}
+
+class "PhysxVehicleAPI"
+(
+	doc = """PhysX vehicle. Has to be applied to a prim with PhysicsRigidBodyAPI applied. Wheels can be added by applying PhysxVehicleWheelAttachmentAPI to a prim that is a descendant of the "vehicle" prim."""
+	inherits = </APISchemaBase>
+)
+{
+    bool physxVehicle:vehicleEnabled = true (
+		customData = {
+			string apiName = "vehicleEnabled"
+		}
+        displayName = "Vehicle Simulation Enabled"
+		doc = """Defines whether the vehicle simulation update loop will run for the vehicle or not.
+              
+              Note: if set to false, the prim's rigid body will still get simulated (the PhysicsRigidBodyAPI API schema
+              can be used to turn the body into a kinematic or set velocities to zero at that point).
+              
+              Note: it is an illegal setup to have a vehicle enabled, while the prim's rigid body is disabled or kinematic."""
+	)
+
+	rel physxVehicle:drive (
+		customData = {
+			string apiName = "drive"
+		}
+        displayName = "Drive"
+		doc = """A relationship to a PhysxVehicleDriveBasicAPI or PhysxVehicleDriveStandardAPI prim that describes the 
+				 drive model. If none is specified, it is up to the user to apply torque to the wheels. It is also
+                 possible to apply PhysxVehicleDriveBasicAPI or PhysxVehicleDriveStandardAPI to the prim directly. In 
+                 that case the relationship must not be defined."""
+	)
+    
+    uniform token physxVehicle:suspensionLineQueryType = "raycast" (
+		allowedTokens = ["raycast", "sweep"]
+        customData = {
+			string apiName = "suspensionLineQueryType"
+		}
+        displayName = "Suspension Line Query Type"
+		doc = """Collision of the wheels with the ground surface is detected through scene queries along the suspension direction. 
+			  This attribute defines whether a raycast or a sweep should be used as the query type. Raycasts are faster while sweeps
+              can represent the wheel shape better and thus react earlier to ground surface changes.
+              
+              Note: to use sweeps, all wheels need to have collision geometry defined (either a convex mesh that was generated from
+                    a mesh, a capsule or a sphere)."""
+	)
+	
+	float physxVehicle:subStepThresholdLongitudinalSpeed (
+		customData = {
+			string apiName = "subStepThresholdLongitudinalSpeed"
+		}
+        displayName = "Sub-step Threshold Longitudinal Speed"
+		doc = """Threshold speed that is used to categorize vehicle speed as low speed or high speed for
+			  choosing the sub-step count.
+              
+              Note: if not defined, the value 5.0 will be used. This default value is in meter length scale 
+              and will get adjusted if another unit is used."""
+	)
+	
+	int physxVehicle:lowForwardSpeedSubStepCount (
+		customData = {
+			string apiName = "lowForwardSpeedSubStepCount"
+		}
+        displayName = "Low Forward Speed Sub-step Count"
+		doc = """Number of sub-steps performed in the vehicle dynamics update for vehicles that have
+			  longitudinal speed lower than subStepThresholdLongitudinalSpeed.
+              
+              Note: if not defined, the value 3 will be used."""
+	)
+	
+	int physxVehicle:highForwardSpeedSubStepCount (
+		customData = {
+			string apiName = "highForwardSpeedSubStepCount"
+		}
+        displayName = "High Forward Speed Sub-step Count"
+		doc = """Number of sub-steps performed in the vehicle dynamics update for vehicles that have
+			  longitudinal speed greater than subStepThresholdLongitudinalSpeed.
+              
+              Note: if not defined, the value 1 will be used."""
+	)
+	
+	float physxVehicle:minLongitudinalSlipDenominator (
+		customData = {
+			string apiName = "minLongitudinalSlipDenominator"
+		}
+        displayName = "Min Longitudinal Slip Denominator"
+		doc = """The minimum denominator used in the longitudinal slip calculation. For low longitudinal
+			  velocities, the computation of the longitudinal slip can become unstable. This value defines
+			  the minimum velocity to use when computing the longitudinal slip.
+              
+              Note: if not defined, the value 4.0 will be used. This default value is in meter length scale 
+              and will get adjusted if another unit is used."""
+	)
+}
+
+class "PhysxVehicleControllerAPI"
+(
+	doc = """PhysX vehicle controller that samples user input to drive the vehicle. Has to be applied to a prim with PhysxVehicleAPI applied."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleController:accelerator = 0 (
+		customData = {
+			string apiName = "accelerator"
+		}
+        displayName = "Accelerator"
+		doc = """Driven vehicle. Throttle input, 0.0 to 1.0."""
+	)
+	
+	float physxVehicleController:brake = 0 (
+		customData = {
+			string apiName = "brake"
+		}
+        displayName = "Brake"
+		doc = """Driven vehicle. Brake input, 0.0 to 1.0."""
+	)
+	
+	float physxVehicleController:handbrake = 0 (
+		customData = {
+			string apiName = "handbrake"
+		}
+        displayName = "Handbrake"
+		doc = """Driven vehicle. Handbrake input, 0.0 to 1.0."""
+	)
+	
+	float physxVehicleController:steerLeft = 0 (
+		customData = {
+			string apiName = "steerLeft"
+		}
+        displayName = "Steer Left"
+		doc = """Driven vehicle. Left steering input. 0.0 to 1.0. Net steering is the aggregate of steerRight and steerLeft."""
+	)
+	
+	float physxVehicleController:steerRight = 0 (
+		customData = {
+			string apiName = "steerRight"
+		}
+        displayName = "Steer Right"
+		doc = """Driven vehicle. Right steering input, 0.0 to 1.0. Net steering is the aggregate of steerRight and steerLeft."""
+	)
+
+	bool physxVehicleController:automatic = true (
+		customData = {
+			string apiName = "automatic"
+		}
+        displayName = "Automatic"
+		doc = """Driven vehicle. true = Vehicle automatically shifts gears, false = Manual gear shifts."""
+	)
+	
+	int physxVehicleController:targetGear = 0 (
+		customData = {
+			string apiName = "targetGear"
+		}
+        displayName = "Target Gear"
+		doc = """Driven vehicle. Desired gear to shift into directly. -1 = Reverse, 0 = Neutral, 1 and up = Drive. Only active in manual.
+        
+                 Note: please be aware that this definition differs from the PhysX vehicle API."""
+	)
+}
+
+class "PhysxCameraAPI"
+(
+	doc = """PhysX camera."""
+	inherits = </APISchemaBase>
+)
+{
+    rel physxCamera:subject (
+        displayName = "Subject"
+        doc = "Reference to the subject this camera is to track."
+    )
+}
+
+class "PhysxCameraFollowAPI"
+(
+	doc = """PhysX camera that follows behind the subject as it moves."""
+	inherits = </PhysxCameraAPI>
+)
+{
+	float physxFollowCamera:yawAngle (
+		customData = {
+			string apiName = "yawAngle"
+		}
+        displayName = "Yaw Angle"
+		doc = """The yaw angle of the follow vector around the subject. Zero is directly behind the subject. e.g. 0 degrees"""
+	)
+	
+	float physxFollowCamera:pitchAngle (
+		customData = {
+			string apiName = "pitchAngle"
+		}
+        displayName = "Pitch Angle"
+		doc = """The pitch angle of the follow vector around the subject. Zero is directly behind the subject. e.g. 15 degrees"""
+	)
+ 		
+	float physxFollowCamera:pitchAngleTimeConstant (
+		customData = {
+			string apiName = "pitchAngleTimeConstant"
+		}
+        displayName = "Pitch Angle Time Constant"
+		doc = """Time constant to filter the pitch angle, in seconds. Used to pitch the camera up and down when driving up or down hills. e.g. 0.2 seconds"""
+	)
+	
+	float physxFollowCamera:slowSpeedPitchAngleScale (
+		customData = {
+			string apiName = "slowSpeedPitchAngleScale"
+		}
+        displayName = "Slow Speed Pitch Angle Scale"
+		doc = """Scale of the camera pitch angle at slow speed. This lowers the camera behind the subject at slow speeds. e.g. 0.5"""
+	)
+ 		
+	float physxFollowCamera:slowPitchAngleSpeed (
+		customData = {
+			string apiName = "slowPitchAngleSpeed"
+		}
+        displayName = "Slow Pitch Angle Speed"
+		doc = """Scale of the camera pitch angle at slow speed. This lowers the camera behind the subject at slow speeds. e.g. 1000 cm/sec"""
+	)
+
+	float physxFollowCamera:velocityNormalMinSpeed (
+		customData = {
+			string apiName = "velocityNormalMinSpeed"
+		}
+        displayName = "Velocity Normal Min Speed"
+		doc = """The minimum speed, below which, the subject look vector must be used because the normalized velocity vector is too erratic. e.g. 600.0 cm/sec"""	
+    )
+
+	float physxFollowCamera:followMinSpeed (
+		customData = {
+			string apiName = "followMinSpeed"
+		}
+        displayName = "Follow Min Speed"
+		doc = """The minimum speed used for a linear interpolation to compute the follow distance of the camera. e.g. 300.0 cm/sec"""
+	)
+	
+	float physxFollowCamera:followMinDistance (
+		customData = {
+			string apiName = "followMinDistance"
+		}
+        displayName = "Follow Min Distance"
+		doc = """The minimum distance used for a linear interpolation to compute the follow distance of the camera. e.g. 1500.0 cm"""
+	)
+	
+	float physxFollowCamera:followMaxSpeed (
+		customData = {
+			string apiName = "followMaxSpeed"
+		}
+        displayName = "Follow Max Speed"
+		doc = """The maximum speed used for a linear interpolation to compute the follow distance of the camera. e.g. 3000.0 cm/sec"""
+	)
+	
+	float physxFollowCamera:followMaxDistance (
+		customData = {
+			string apiName = "followMaxDistance"
+		}
+        displayName = "Follow Max Distance"
+		doc = """The maximum distance used for a linear interpolation to compute the follow distance of the camera. e.g. 1000.0 cm"""
+	)
+
+	float physxFollowCamera:yawRateTimeConstant (
+		customData = {
+			string apiName = "yawRateTimeConstant"
+		}
+        displayName = "Yaw Rate Time Constant"
+		doc = """Time constant to filter the subject yaw rate, in seconds. Use to look into turns. e.g. 0.2 sec"""
+	)
+		
+	float physxFollowCamera:followTurnRateGain (
+		customData = {
+			string apiName = "followTurnRateGain"
+		}
+        displayName = "Follow Turn Rate Gain"
+		doc = """A scale factor that multiplies the filtered yaw rate to yaw the camera position behind the subject. Can be any positive or negative number. e.g. 0.2"""
+    )
+	
+	float3 physxFollowCamera:cameraPositionTimeConstant (
+		customData = {
+			string apiName = "cameraPositionTimeConstant"
+		}
+        displayName = "Camera Position Time Constant"
+		doc = """Filter time constant for the position of the camera for each axis, in seconds. e.g. (0.5 sec, 0.1 sec, 0.5 sec)"""
+	)
+	
+	float3 physxFollowCamera:positionOffset (
+		customData = {
+			string apiName = "positionOffset"
+		}
+        displayName = "Position Offset"
+		doc = """Position offset from the subject center of mass from which the camera follow vector and look vector are computed. e.g. (0.0 cm, 10.0 cm, 0.0 cm)"""
+	)
+
+	float physxFollowCamera:lookAheadMinSpeed (
+		customData = {
+			string apiName = "lookAheadMinSpeed"
+		}
+        displayName = "Look Ahead Min Speed"
+		doc = """The minimum speed used for a linear interpolation to compute the look ahead distance of the camera look point. e.g. 0.0 cm/sec"""
+	)
+	
+	float physxFollowCamera:lookAheadMinDistance (
+		customData = {
+			string apiName = "lookAheadMinDistance"
+		}
+        displayName = "Look Ahead Min Distance"
+		doc = """The minimum distance used for a linear interpolation to compute the look ahead distance of the camera look point. e.g. 0.0 cm"""
+	)
+	
+	float physxFollowCamera:lookAheadMaxSpeed (
+		customData = {
+			string apiName = "lookAheadMaxSpeed"
+		}
+        displayName = "Look Ahead Max Speed"
+		doc = """The maximum speed used for a linear interpolation to compute the look ahead distance of the camera look point. e.g. 2000.0 cm"""
+	)
+	
+	float physxFollowFollowCamera:lookAheadMaxDistance (
+		customData = {
+			string apiName = "lookAheadMaxDistance"
+		}
+        displayName = "Look Ahead Max Distance"
+		doc = """The maximum distance used for a linear interpolation to compute the look ahead distance of the camera look point. e.g.  500.0 cm"""
+	)
+	
+	float physxFollowCamera:lookAheadTurnRateGain (
+		customData = {
+			string apiName = "lookAheadTurnRateGain"
+		}
+        displayName = "Look Ahead Turn Rate Gain"
+		doc = """A scale factor that multiplies the filtered yaw rate to yaw the camera look point left or right. Can be any positive or negative number. e.g. 0.2"""
+	)
+		
+	float physxFollowCamera:lookPositionHeight (
+		customData = {
+			string apiName = "lookPositionHeight"
+		}
+        displayName = "Look Position Height"
+		doc = """Distance to elevate the camera look point. e.g. 50.0 cm"""
+	)
+	
+	float3 physxFollowCamera:lookPositionTimeConstant (
+		customData = {
+			string apiName = "lookPositionTimeConstant"
+		}
+        displayName = "Look Position Time Constant"
+		doc = """Filter time constant for the camera look point, in seconds. e.g. (0.2 sec, 0.5 sec, 0.2 sec)"""
+	)
+}
+
+class "PhysxCameraFollowLookAPI"
+(
+	doc = """PhysX camera that follows behind the subject's forward vector as it moves. Assumes the subject is always upright and does not roll."""
+	inherits = </PhysxCameraFollowAPI>
+)
+{
+	float physxFollowLookCamera:downHillGroundAngle (
+		customData = {
+			string apiName = "downHillGroundAngle"
+		}
+        displayName = "Downhill Ground Angle"
+		doc = """The minimum pitch angle of the terrain used for a linear interpolation to adjust the pitch of the camera. e.g. -45.0 degrees"""
+	)
+ 		
+	float physxFollowLookCamera:downHillGroundPitch (
+		customData = {
+			string apiName = "downHillGroundPitch"
+		}
+        displayName = "Downhill Ground Pitch"
+		doc = """The minimum pitch angle of the camera used for a linear interpolation to adjust the pitch of the camera. e.g. 10.0 degrees"""
+	)
+
+	float physxFollowLookCamera:upHillGroundAngle (
+		customData = {
+			string apiName = "upHillGroundAngle"
+		}
+        displayName = "Uphill Ground Angle"
+		doc = """The maximum pitch angle of the terrain used for a linear interpolation to adjust the pitch of the camera. e.g. 45.0 degrees"""
+	)
+ 		
+	float physxFollowLookCamera:upHillGroundPitch (
+		customData = {
+			string apiName = "upHillGroundPitch"
+		}
+        displayName = "Uphill Ground Pitch"
+		doc = """The maximum pitch angle of the camera used for a linear interpolation to adjust the pitch of the camera. e.g. 10.0 degrees"""
+	)
+
+	float physxFollowLookCamera:velocityBlendTimeConstant (
+		customData = {
+			string apiName = "velocityBlendTimeConstant"
+		}
+        displayName = "Velocity Blend Time Constant"
+		doc = """Filter time constant to blend between the look and velocity vectors, in seconds. e.g. 0.1 seconds"""
+	)
+	
+	float physxFollowLookCamera:followReverseSpeed (
+		customData = {
+			string apiName = "followReverseSpeed"
+		}
+        displayName = "Follow Reverse Speed"
+		doc = """The positive, maximum speed, when driving in reverse, used for a linear interpolation to compute the follow distance of the camera. e.g. 1500.0 cm/sec"""
+	)
+	
+	float physxFollowLookCamera:followReverseDistance (
+		customData = {
+			string apiName = "followReverseDistance"
+		}
+        displayName = "Follow Reverse Distance"
+		doc = """The maximum distance, when driving in reverse, used for a linear interpolation to compute the follow distance of the camera. e.g. 3000.0 cm"""
+	)
+}
+
+class "PhysxCameraFollowVelocityAPI"
+(
+	doc = """PhysX camera that follows behind the subject's velocity vector as it moves, which allows the subject to roll and tumble."""
+	inherits = </PhysxCameraFollowAPI>
+)
+{
+}
+
+class "PhysxCameraDroneAPI"
+(
+	doc = """PhysX drone camera that follows its subject from the air as it drives."""
+	inherits = </PhysxCameraAPI>
+)
+{
+	float physxDroneCamera:followHeight (
+		customData = {
+			string apiName = "followHeight"
+		}
+        displayName = "Follow Height"
+		doc = """The height above the subject that the drone attmepts to maintain. e.g. 15 meters"""
+	)
+	
+	float physxDroneCamera:followDistance (
+		customData = {
+			string apiName = "followDistance"
+		}
+        displayName = "Follow Distance"
+		doc = """The distance from the subject that the drone attempts to maintain. e.g. 30 meters"""
+	)
+ 		
+	float physxDroneCamera:maxDistance (
+		customData = {
+			string apiName = "maxDistance"
+		}
+        displayName = "Max Distance"
+		doc = """The maximum distance allowed from the subject before the drone resets to the target position. e.g. 100 meters"""
+	)
+	
+	float physxDroneCamera:maxSpeed (
+		customData = {
+			string apiName = "maxSpeed"
+		}
+        displayName = "Max Speed"
+		doc = """The maximum speed the drone is allowed to move. e.g. 20.0 meters/second"""
+	)
+ 		
+	float physxDroneCamera:horizontalVelocityGain (
+		customData = {
+			string apiName = "horizontalVelocityGain"
+		}
+        displayName = "Horizontal Velocity Gain"
+		doc = """The higher the gain, the faster the drone will accelerate towards the target position. e.g. 1.0"""
+	)
+				
+	float physxDroneCamera:verticalVelocityGain (
+		customData = {
+			string apiName = "verticalVelocityGain"
+		}
+        displayName = "Vertical Velocity Gain"
+		doc = """The higher the gain, the higher the climb or descent rate of the drone to get to the target altitude. e.g. 1.0"""
+	)
+ 		
+	float physxDroneCamera:feedForwardVelocityGain (
+		customData = {
+			string apiName = "feedForwardVelocityGain"
+		}
+        displayName = "Feed Forward Velocity Gain"
+		doc = """The higher the gain, the more closely the drone will match the velocity of the subject and the more connected it will appear. e.g. 0.1"""
+	)
+
+	float physxDroneCamera:velocityFilterTimeConstant (
+		customData = {
+			string apiName = "velocityFilterTimeConstant"
+		}
+        displayName = "Velocity Filter Time Constant"
+		doc = """The velocity of the drone is filtered to make it appear as if it is accelerating. e.g. 1.0 seconds"""
+	)
+ 		
+	float physxDroneCamera:rotationFilterTimeConstant (
+		customData = {
+			string apiName = "rotationFilterTimeConstant"
+		}
+        displayName = "Rotation Filter Time Constant"
+		doc = """The angular velocity of the drone is filtered to make it appear as if it is accelerating. e.g. 0.2 seconds"""
+	)
+	
+	float3 physxDroneCamera:positionOffset (
+		customData = {
+			string apiName = "positionOffset"
+		}
+        displayName = "Position Offset"
+		doc = """An offset vector from the subject origin at which the drone looks. e.g. (0.0 m, 0.0 m, 0.0 m)"""
+	)
+}
+
+class "PhysxVehicleWheelControllerAPI"
+(
+	doc = """PhysX wheel controller that samples user input and allows direct control of the wheel torques and steer angle to drive the vehicle. Has to be applied to a prim with PhysxVehicleWheelAttachmentAPI applied and be a descendant of a prim with a PhysxVehicleAPI applied."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxVehicleWheelController:driveTorque = 0 (
+		customData = {
+			string apiName = "driveTorque"
+		}
+        displayName = "Drive Torque"
+		doc = "NoDrive vehicle. Torque to increase wheel angular rate and speed up."
+	)
+	
+	float physxVehicleWheelController:brakeTorque = 0 (
+		customData = {
+			string apiName = "brakeTorque"
+		}
+        displayName = "Brake Torque"
+		doc = "NoDrive vehicle. Torque to decrease wheel angular rate and slow down. The value has to be greater or equal zero."
+	)
+	
+	float physxVehicleWheelController:steerAngle = 0 (
+		customData = {
+			string apiName = "steerAngle"
+		}
+        displayName = "Steer Angle"
+		doc = "NoDrive vehicle. Steer angle of the wheel in radians."
+	)
+}
+
+// 5.0 particles
+
+class PhysxParticleSystem "PhysxParticleSystem"
+(
+    customData = {
+        string className = "PhysxParticleSystem"
+    }
+
+	doc = """PhysX particle system, used to simulate fluids, cloth and inflatables. This prim allows the user to configure the
+    solver parameters that are common to the particle objects associated with this system via their particleSystem relationship."""
+	inherits = </Typed>
+)
+{
+    bool particleSystemEnabled = True (
+        customData = {
+            string apiName = "particleSystemEnabled"
+        }
+
+        displayName = "Particle System Enabled"
+		doc = """Enable or disable the particle system."""
+	)
+
+    rel simulationOwner (
+        customData = {
+            string apiName = "simulationOwner"
+        }
+
+        displayName = "Simulation Owner"
+        doc = """Single PhysicsScene that simulates this particle system. By default,
+        this is the first PhysicsScene found in the stage using UsdStage::Traverse()."""
+
+    )
+
+	float contactOffset = -inf (
+        customData = {
+            string apiName = "contactOffset"
+        }
+
+        displayName = "Contact Offset"
+		doc = """Contact offset used for collisions with non-particle objects such as rigid or deformable bodies.
+              Must be larger than restOffset. Default value -inf results in an simulation-determined value.
+              Range: (restOffset, inf)
+			  Units: distance"""
+	)
+	
+	float restOffset = -inf (
+        customData = {
+            string apiName = "restOffset"
+        }
+
+        displayName = "Rest Offset"
+		doc = """Rest offset used for collisions with non-particle objects such as rigid or deformable bodies.
+              Must be smaller than contact offset. Default value -inf results in an simulation-determined value.
+              Range: [0, contactOffset)
+			  Units: distance"""
+	)
+	
+	float particleContactOffset = -inf (
+        customData = {
+            string apiName = "particleContactOffset"
+        }
+
+        displayName = "Particle Contact Offset"
+		doc = """Contact offset used for interactions between particles. Must be larger than solid and fluid rest offsets.
+              Default value -inf results in an simulation-determined value.
+              Range: (max(solidRestOffset, fluidRestOffset), inf)
+			  Units: distance"""
+	)
+	
+	float solidRestOffset = -inf (
+        customData = {
+            string apiName = "solidRestOffset"
+        }
+
+        displayName = "Solid Rest Offset"
+		doc = """Rest offset used for solid-solid or solid-fluid particle interactions. Must be smaller than particleContactOffset.
+              Default value -inf results in an simulation-determined value.
+              Range: [0, particleContactOffset)
+              Units: distance"""
+	)
+	
+	float fluidRestOffset = -inf (
+        customData = {
+            string apiName = "fluidRestOffset"
+        }
+
+        displayName = "Fluid Rest Offset"
+		doc = """Rest offset used for fluid-fluid particle interactions. Must be smaller than particleContactOffset.
+              Default value -inf results in an simulation-determined value.
+              Range: [0, particleContactOffset)
+              Units: distance"""
+	)
+
+    bool enableCCD = False (
+        customData = {
+            string apiName = "enableCCD"
+        }
+
+		displayName = "Enable CCD"
+		doc = """Enable continuous collision detection for particles to help avoid tunneling effects."""
+	)
+
+	int solverPositionIterationCount = 16 (
+        customData = {
+            string apiName = "solverPositionIterationCount"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Solver Position Iteration Count"
+		doc = """Number of solver iterations for position.
+              Range: [1, 255]"""
+	)
+
+	float maxDepenetrationVelocity = inf (
+        customData = {
+            string apiName = "maxDepenetrationVelocity"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Max Depenetration Velocity"
+		doc = """The maximum velocity permitted to be introduced by the solver to depenetrate intersecting particles.
+              Range: [0, inf)
+              Units: distance / seconds"""
+	)
+
+	float smoothing = 0.0 (
+        customData = {
+            string apiName = "smoothing"
+        }
+
+        displayName = "Smoothing"
+		doc = """Smoothing coefficient for particle positions. Does not affect dynamics, only rendering output.
+              Range: [0, 1]
+              Units: dimensionless"""
+	)
+
+    bool enableAnisotropy = False (
+        customData = {
+            string apiName = "enableAnisotropy"
+        }
+
+        displayName = "Enable Anisotropy"
+		doc = """Enables use of fluid anisotropy information for rendering. Does not affect dynamics, only rendering output."""
+	)
+	
+	float anisotropyScale = 1.0 (
+        customData = {
+            string apiName = "anisotropyScale"
+        }
+
+        displayName = "Anisotropy Scale"
+		doc = """Scale of anisotropy for rendering.
+              Range: [0, inf)
+              Units: dimensionless"""
+	)
+	
+	float anisotropyMin = 0.2 (
+        customData = {
+            string apiName = "anisotropyMin"
+        }
+
+        displayName = "Anisotropy Min"
+		doc = """Minimum scale of anisotropy relative to fluidRestOffset for rendering.
+              Range: [0, anisotropyMax]
+              Units: dimensionless"""
+	)
+	
+	float anisotropyMax = 2.0 (
+        customData = {
+            string apiName = "anisotropyMax"
+        }
+
+        displayName = "Anisotropy Max"
+		doc = """Maximum scale of anisotropy relative to fluidRestOffset for rendering.
+              Range: [anisotropyMin, inf)
+              Units: dimensionless"""
+	)
+
+	float3 wind = (0.0, 0.0, 0.0) (
+        customData = {
+            string apiName = "wind"
+        }
+
+        displayName = "Wind"
+		doc = """The wind applied to the current particle system.
+              Range: (-inf, inf)
+              Units: distance / seconds"""
+	)
+
+    int maxParticles = 0 (
+        customData = {
+            string apiName = "maxParticles"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Max Particles"
+        doc = """The maximum number of particles in the current particle system. The maximum is increased automatically when particle objects are added to the system.
+              The user can only increase the maximum, decreasing is not allowed.
+              Range: [max(0, maxParticles), inf)"""
+    )
+
+    int maxNeighborhood = 96 (
+        customData = {
+            string apiName = "maxNeighborhood"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Max Neighborhood"
+        doc = """The particle neighborhood size."""
+    )
+
+    float maxVelocity = inf (
+        customData = {
+            string apiName = "maxVelocity"
+        }
+
+        displayName = "Max Velocity"
+        doc = """Maximum particle velocity. See also cflCoefficient in PhysxPBDMaterialAPI for limiting particle-particle relative velocity.
+              Range: [0, inf]
+              Units: distance / seconds"""
+    )
+
+    bool globalSelfCollisionEnabled = True (
+        customData = {
+            string apiName = "globalSelfCollisionEnabled"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Global Self Collision Enabled"
+		doc = """If True, self collisions follow particle-object-specific settings. If False, all particle self collisions are disabled, regardless of any other settings.
+              Improves performance if self collisions are not needed."""
+	)
+
+    bool nonParticleCollisionEnabled = True (
+        customData = {
+            string apiName = "nonParticleCollisionEnabled"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Nonparticle-Objects Collision Enabled"
+		doc = """Enable or disable particle collision with nonparticle objects for all particles in the system.
+              Improves performance if nonparticle collisions are not needed."""
+	)
+}
+
+class "PhysxIsosurfaceAPI"
+(
+    customData = {
+        string className = "PhysxIsosurfaceAPI"
+    }
+	doc = """Applied to a PhysxParticleSystem. Defines settings to extract an isosurface 
+          from the particles in the particle system."""
+	inherits = </APISchemaBase>
+)
+{
+	bool physxIsosurface:isoSurfaceEnabled = True (
+        customData = {
+            string apiName = "isoSurfaceEnabled"
+        }
+
+        displayName = "Isosurface Enabled"
+		doc = """Enable or disable the creation of an isosurface."""
+	)
+	
+	int physxIsosurface:maxVertices = 1048576 (
+        customData = {
+            string apiName = "maxVertices"
+        }
+
+        displayName = "Max Isosurface Vertices"
+		doc = """Maximum number of vertices the extracted isosurface can have.
+              Range: [3, inf)"""
+	)
+	
+	int physxIsosurface:maxTriangles = 2097152 (
+        customData = {
+            string apiName = "maxTriangles"
+        }
+
+        displayName = "Max Isosurface Triangles"
+		doc = """Maximum number of triangles the extracted isosurface can have.
+              Range: [1, inf)"""
+	)
+	
+	int physxIsosurface:maxSubgrids = 1024 (
+        customData = {
+            string apiName = "maxSubgrids"
+        }
+
+        displayName = "Max Isosurface Subgrids"
+		doc = """Maximum number of blocks the sparse grid structure can contain.
+              Range: [1, inf)"""
+	)
+	
+	float physxIsosurface:gridSpacing = 0.25 (
+        customData = {
+            string apiName = "gridSpacing"
+        }
+
+        displayName = "Isosurface Grid Spacing"
+		doc = """Cell Size of the grid used for isosurface extraction.
+              Range: (0, inf)
+              Units: distance"""
+	)
+	
+	float physxIsosurface:kernelRadius = 0.5 (
+        customData = {
+            string apiName = "kernelRadius"
+        }
+
+        displayName = "Isosurface Kernel Radius"
+		doc = """Radius of the kernel used to transfer the density to the isosurface grid.
+              Range: (0, inf)
+              Units: distance"""
+	)
+	
+	float physxIsosurface:isosurfaceLevel = -0.3 (
+        customData = {
+            string apiName = "isosurfaceLevel"
+        }
+
+        displayName = "Isosurface Level"
+		doc = """The level at which the isosurface is located. Allows to control the droplet size.
+              The signed distance field is more negative towards the center of the fluid and positive outside.
+              Range: (-inf, inf)
+              Units: distance"""
+	)
+	
+	int physxIsosurface:gridFilteringFlags = 19528 (
+        customData = {
+            string apiName = "gridFilteringFlags"
+        }
+
+        displayName = "Isosurface Grid Filtering"
+		doc = """Encoded grid filtering passes."""
+	)
+	
+	float physxIsosurface:gridSmoothingRadiusRelativeToCellSize = 0.5 (
+        customData = {
+            string apiName = "gridSmoothingRadiusRelativeToCellSize"
+        }
+
+        displayName = "Isosurface Grid Smoothing Radius"
+		doc = """The radius used during the smoothing process on the grid. It is measured relative to the grid's cell size.
+              Range: [0, inf)
+              Units: dimensionless"""
+	)
+	
+	bool physxIsosurface:enableAnisotropy = False (
+        customData = {
+            string apiName = "enableAnisotropy"
+        }
+
+        displayName = "Isosurface Enable Anisotropy"
+		doc = """Enables usage of anisotropy information during isosurface extraction process."""
+	)
+	
+	float physxIsosurface:anisotropyMin = 0.1 (
+        customData = {
+            string apiName = "anisotropyMin"
+        }
+
+        displayName = "Isosurface Anisotropy Min"
+		doc = """The minimal scale anisotropy can apply to a particle radius.
+              Range: [0, anisotropyMax]
+              Units: dimensionless"""
+	)
+	
+	float physxIsosurface:anisotropyMax = 2.0 (
+        customData = {
+            string apiName = "anisotropyMax"
+        }
+
+        displayName = "Isosurface Anisotropy Max"
+		doc = """The maximal scale anisotropy can apply to a particle radius.
+              Range: [anisotropyMin, inf)
+              Units: dimensionless"""
+	)
+	
+	float physxIsosurface:anisotropyRadius = 0.5 (
+        customData = {
+            string apiName = "anisotropyRadius"
+        }
+
+        displayName = "Isosurface Anisotropy Radius"
+		doc = """Radius that defines the size of the neighborhood used to determine the anisotropy information.
+              Range: [0, inf)
+              Units: distance"""
+	)
+	
+	int physxIsosurface:numMeshSmoothingPasses = 2 (
+        customData = {
+            string apiName = "numMeshSmoothingPasses"
+        }
+
+        displayName = "Isosurface mesh smoothing passes"
+		doc = """Number of smoothing passes applied to the generated isosurface triangle mesh.
+              Using an even number of passes leads to less shrinking.
+              Range: [0, inf)"""
+	)
+	
+	int physxIsosurface:numMeshNormalSmoothingPasses = 0 (
+        customData = {
+            string apiName = "numMeshNormalSmoothingPasses"
+        }
+
+        displayName = "Isosurface mesh normal smoothing passes"
+		doc = """Number of smoothing passes applied to the generated isosurface triangle mesh's normals.
+              Range: [0, inf)"""
+	)
+}
+
+class "PhysxDiffuseParticlesAPI"
+(
+    customData = {
+        string className = "PhysxDiffuseParticlesAPI"
+    }
+	doc = """Applied to a PhysxParticleSystem. Defines settings that the particle system
+          uses to spawn diffuse particles."""
+	inherits = </APISchemaBase>
+)
+{
+	bool physxDiffuseParticles:diffuseParticlesEnabled = True (
+        customData = {
+            string apiName = "diffuseParticlesEnabled"
+        }
+
+        displayName = "Diffuse Particles Enabled"
+		doc = """Enable or disable the creation of diffuse particles."""
+	)
+
+	int physxDiffuseParticles:maxDiffuseParticles = 100000 (
+        customData = {
+            string apiName = "maxDiffuseParticles"
+        }
+
+        displayName = "Max Diffuse Particles"
+		doc = """Maximum number of diffuse particles.
+              Range: [0, inf)"""
+	)
+
+	float physxDiffuseParticles:threshold = 0.01 (
+        customData = {
+            string apiName = "threshold"
+        }
+
+        displayName = "Threshold"
+		doc = """Kinetic energy threshold a particle must reach to spawn a diffuse particle.
+              Range: [0, inf)
+              Units: energy = mass * distance * distance / seconds / seconds"""
+	)
+
+	float physxDiffuseParticles:lifetime = 5 (
+        customData = {
+            string apiName = "lifetime"
+        }
+
+        displayName = "Lifetime"
+		doc = """Lifetime of a spawned particle before it is removed again.
+              Range: [0, inf)
+              Units: seconds"""
+	)
+	
+	float physxDiffuseParticles:airDrag = 0.0 (
+        customData = {
+            string apiName = "airDrag"
+        }
+
+        displayName = "Air Drag"
+		doc = """Air drag force factor for spray particles.
+              Range: [0, inf)
+              Units: dimensionless """
+	)
+	
+	float physxDiffuseParticles:bubbleDrag = 0.5 (
+        customData = {
+            string apiName = "bubbleDrag"
+        }
+
+        displayName = "BubbleDrag"
+		doc = """Fluid drag force factor for bubble particles.
+              Range: [0, inf)
+              Units: dimensionless """
+	)
+
+	float physxDiffuseParticles:buoyancy = 0.8 (
+        customData = {
+            string apiName = "buoyancy"
+        }
+
+        displayName = "Buoyancy"
+		doc = """Buoyancy force factor for bubble particles.
+              Range: [0, inf)
+              Units: dimensionless """
+	)
+
+	float physxDiffuseParticles:kineticEnergyWeight = 0.01 (
+        customData = {
+            string apiName = "kineticEnergyWeight"
+        }
+
+        displayName = "Kinetic Energy Weight"
+		doc = """Contribution from kinetic energy when deciding diffuse particle creation.
+              Range: [0, inf)
+              Units: dimensionless"""
+	)
+	
+	float physxDiffuseParticles:pressureWeight = 1.0 (
+        customData = {
+            string apiName = "pressureWeight"
+        }
+
+        displayName = "Pressure Weight"
+		doc = """Contribution from pressure when deciding diffuse particle creation.
+              Range: [0, inf)
+              Units: dimensionless"""
+	)
+	
+	float physxDiffuseParticles:divergenceWeight = 5.0 (
+        customData = {
+            string apiName = "divergenceWeight"
+        }
+
+        displayName = "Divergence Weight"
+		doc = """Contribution from divergence when deciding diffuse particle creation.
+              Range: [0, inf)
+              Units: dimensionless"""
+	)	
+	
+	
+	float physxDiffuseParticles:collisionDecay = 0.5 (
+        customData = {
+            string apiName = "collisionDecay"
+        }
+
+        displayName = "Collision Decay"
+		doc = """Decay factor of diffuse particles' lifetime after they collide with shapes. 0 == lifetime remains unchanged, 1 == particle disappears immediately.
+              Range: [0, 1]
+              Units: dimensionless"""
+	)
+
+    bool physxDiffuseParticles:useAccurateVelocity = False ( 
+        customData = {
+            string apiName = "useAccurateVelocity"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Use Accurate Velocity"
+		doc = """Enables accurate particle velocity estimation."""
+	)
+}
+
+class "PhysxPBDMaterialAPI"
+(
+    customData = {
+        string className = "PhysxPBDMaterialAPI"
+    }
+
+	doc = """Applied to a USD Material. PhysX position-based-dynamics (PBD) material for particles used to simulate fluids, cloth and inflatables.
+          Currently, only a single material per particle system is supported which applies to all objects that are associated with the system."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxPBDMaterial:particleFriction = 0.2 (
+        customData = {
+            string apiName = "particleFriction"
+        }
+
+        displayName = "Particle Friction"
+		doc = """Particle friction coefficient. The maximal friction force tangential to the surface is equal to the normal force times the particle friction.
+              Range: [0, inf)
+              Units: dimensionless"""
+	)
+
+	float physxPBDMaterial:particleDamping = 0.0 (
+        customData = {
+            string apiName = "particleDamping"
+        }
+
+        displayName = "Particle Damping"
+		doc = """Particle damping.
+              Range: [0, inf)
+              Units: dimensionless """
+	)
+	
+	float physxPBDMaterial:viscosity = 0.0 (
+        customData = {
+            string apiName = "viscosity"
+        }
+
+        displayName = "Viscosity"
+		doc = """Viscosity for fluid particles.
+              Range: [0, inf) 
+              Units: dimensionless"""
+	)
+
+	float physxPBDMaterial:vorticityConfinement = 0.0 (
+        customData = {
+            string apiName = "vorticityConfinement"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Vorticity Confinement"
+		doc = """Vorticity confinement for fluid particles. Helps prevent energy loss due to numerical solver by adding vortex-like accelerations to the particles.
+              Range: [0, inf)
+              Units: dimensionless """
+	)
+
+	float physxPBDMaterial:surfaceTension = 0.0 (
+        customData = {
+            string apiName = "surfaceTension"
+        }
+
+        displayName = "Surface Tension"
+		doc = """Surface tension for fluid particles.
+              Range: [0, inf) 
+              Units: 1 / (distance * distance * distance)"""
+	)
+	
+	float physxPBDMaterial:cohesion = 0.0 (
+        customData = {
+            string apiName = "cohesion"
+        }
+
+        displayName = "Cohesion"
+		doc = """Cohesion for fluid particles.
+              Range: [0, inf)
+              Units: dimensionless"""
+	)
+	
+	float physxPBDMaterial:gravityScale = 0.0 (
+        customData = {
+            string apiName = "gravityScale"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Gravity Scale Factor"
+        doc = """Gravitational acceleration scaling factor. Can be used to approximate lighter-than-air inflatables, for example (-1.0 would invert gravity).
+              Range: (-inf, inf)
+              Units: dimensionless"""
+	)
+
+	float physxPBDMaterial:lift = 0.0 (
+        customData = {
+            string apiName = "lift"
+        }
+
+        displayName = "Lift"
+		doc = """Lift coefficient for cloth and inflatable particle objects. Basic aerodynamic lift model coefficient.
+              Range: [0, inf)
+              Units: dimensionless """
+	)	
+	
+	float physxPBDMaterial:drag = 0.0 (
+        customData = {
+            string apiName = "drag"
+        }
+
+        displayName = "Drag"
+		doc = """Drag coefficient for cloth and inflatable particle objects. Basic aerodynamic drag model coefficient.
+              Range: [0, inf)
+              Units: dimensionless """
+	)
+
+    float physxPBDMaterial:density = 0.0 (
+        customData = {
+            string apiName = "density"
+        }
+
+        displayName = "Density"
+		doc = """Density used to compute particle object mass. If set to 0.0, the simulation determines a default density.
+              A density or mass set with a PhysicsMassAPI on a particle object overrides the material density.
+              Range: [0, inf)
+              Units: mass / distance / distance / distance"""
+	)
+
+    float physxPBDMaterial:cflCoefficient = 1.0 (
+        customData = {
+            string apiName = "cflCoefficient"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "CFL Coefficient"
+		doc = """This coefficient scales the CFL term used to limit relative motion between fluid particles. A very large value disables the limit.
+              Range: [1, inf)
+              Units: dimensionless"""
+	)
+}
+
+class "PhysxParticleAPI"
+(
+    customData = {
+        string className = "PhysxParticleAPI"
+    }
+
+    doc = """Do not apply. Provides parameters shared among particle objects."""
+    inherits = </APISchemaBase>
+)
+{
+    bool physxParticle:particleEnabled = True (
+        customData = {
+            string apiName = "particleEnabled"
+        }
+
+        displayName = "Particle Enabled"
+		doc = """Enable or disable the particle object."""
+	)
+
+    rel physxParticle:particleSystem (
+        customData = {
+            string apiName = "particleSystem"
+        }
+
+        displayName = "Particle System"
+        doc = """Single particle system that the particle-based object belongs to."""
+    )
+
+    bool physxParticle:selfCollision = True (
+        customData = {
+            string apiName = "selfCollision"
+        }
+
+        displayName = "Self Collision"
+        doc = """Enables self-collision of the particles or of the particle object."""
+    )
+
+    int physxParticle:particleGroup = 0 (
+        customData = {
+            string apiName = "particleGroup"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Particle Group"
+        doc = """Group Id of the particles. Particles / objects in different groups in the same system collide with each other.
+              Within the same group in the same system, the collision behavior is controlled by the selfCollision parameter.
+              Range: [0, 2^20)"""
+    )
+}
+
+class "PhysxParticleSetAPI"
+(
+    customData = {
+        string className = "PhysxParticleSetAPI"
+    }
+
+    doc = """Applied to a UsdGeomPointInstancer or a UsdGeomPointBased. Creates a set of particles for granular material or fluid simulation with PhysX."""
+    inherits = </PhysxParticleAPI>
+)
+{
+    bool physxParticle:fluid = True (
+        customData = {
+            string apiName = "fluid"
+        }
+
+        displayName = "Fluid"
+        doc = """Flag to toggle simulation as fluid (True) or solid (False)."""
+    )
+
+    point3f[] physxParticle:simulationPoints (
+        customData = {
+            string apiName= "simulationPoints"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Simulation Points"
+        doc = """This attribute is read-only and is updated from simulation to capture particle-simulation state while smoothed position data
+              is written to the render position/points attribute of the UsdGeomPointInstancer/UsdGeomPoints."""
+    )
+}
+
+class "PhysxParticlePoissonSamplingAPI"
+(
+    customData = {
+        string className = "PhysxParticlePoissonSamplingAPI"
+    }
+
+    doc = """Applied to a UsdGeomMesh which is Poisson-sampled to generate particles in the particles relationship."""
+    inherits = </APISchemaBase>
+)
+{
+    float physxParticlePoissonSampling:samplingDistance = 0 (
+        customData = {
+            string apiName = "samplingDistance"
+        }
+
+        displayName = "Particle Distance"
+        doc = """The distance between the sampled positions. In general, choose a value larger than the corresponding particle rest offset.
+              Default value zero means that a suitable value is auto-determined.
+              Range: [0, inf)
+              Units: distance"""
+    )
+
+    bool physxParticlePoissonSampling:volume = False (
+        customData = {
+            string apiName = "volume"
+        }
+
+        displayName = "Sample inside Volume"
+        doc = """Whether to sample points inside the mesh or not."""
+    )
+
+    int physxParticlePoissonSampling:maxSamples = 50000 (
+        customData = {
+            string apiName = "maxSamples"
+        }
+
+        displayName = "Maximum Number of Samples"
+        doc = """Approximate upper bound on the number of samples. Zero means unbounded.
+              Range: [0, inf)"""
+    )
+
+    rel physxParticlePoissonSampling:particles (
+        customData = {
+            string apiName = "particles"
+        }
+
+        displayName = "Particles"
+        doc = """Relationship to the particle set sampled from the mesh."""
+    )
+}
+
+class "PhysxParticleClothAPI"
+(
+    customData = {
+        string className = "PhysxParticleClothAPI"
+    }
+
+    doc = """Applied to a UsdGeomMesh. The mesh is simulated as a particle-based cloth or inflatable, depending on the mesh geometry
+          and the pressure attribute."""
+    inherits = </PhysxParticleAPI>
+)
+{
+    bool physxParticle:selfCollisionFilter = True (
+        customData = {
+            string apiName = "selfCollisionFilter"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Self Collision Filter"
+        doc = """Whether the simulation should filter particle-particle collisions based on their rest position distances."""
+    )
+
+    // particle data
+    point3f[] physxParticle:restPoints (
+        customData = {
+            string apiName= "restPoints"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Rest Points"
+        doc = """Particle positions in cloth rest configuration."""
+    )
+
+    // spring data
+    uniform int2[] physxParticle:springIndices (
+        customData = {
+            string apiName= "springIndices"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Spring Indices"
+        doc = """List of index pairs describing which points are connected by spring constraints."""
+    )
+
+    float[] physxParticle:springStiffnesses (
+        customData = {
+            string apiName= "springStiffnesses"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Spring Stiffnesses"
+        doc = """Stiffness values for linear-distance springs between a pair of particles as defined by index pairs in springIndices.
+              Range: [0, inf)
+              Units: force / distance = mass / second / second"""
+    )
+
+    float[] physxParticle:springDampings (
+        customData = {
+            string apiName= "springDampings"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Spring Dampings"
+        doc = """Coefficients for linear-distance dampers between a pair of particles as defined by index pairs in springIndices.
+              Range: [0, inf)
+              Units: force * second / distance = mass / second"""
+    )
+
+    float[] physxParticle:springRestLengths (
+        customData = {
+            string apiName= "springRestLengths"
+        }
+
+        displayGroup = "Advanced"
+        displayName = "Spring Rest Lengths"
+        doc = """Spring rest lengths corresponding to spring index pairs.
+              Range: (-inf, inf)
+              Units: distance"""
+    )
+
+    float physxParticle:pressure = 0.0 (
+        customData = {
+            string apiName = "pressure"
+        }
+
+        displayName = "Pressure"
+        doc = """Pressure: If > 0, a particle cloth has an additional pressure constraint 
+              that provides inflatable (i.e. balloon-like) dynamics. The pressure times the rest volume defines 
+              the volume the inflatable tries to match. Pressure only works well for closed or approximately closed meshes.
+              Range: [0, inf)
+              Units: dimensionless"""
+    )
+}
+
+class "PhysxAutoParticleClothAPI"
+(
+    customData = {
+        string className = "PhysxAutoParticleClothAPI"
+    }
+
+    doc = """Applied to a UsdGeomMesh with PhysxParticleClothAPI. Defines parameters to automatically compute spring constraints."""
+    inherits = </APISchemaBase>
+)
+{
+    float physxAutoParticleCloth:springStretchStiffness = 1.5 (
+        customData = {
+            string apiName = "springStretchStiffness"
+        }
+
+        displayName = "Stretch Stiffness"
+        doc = """Stretch stiffness. Represents a stiffness for linear springs placed between particles to counteract stretching.
+              Range: [0, inf)
+              Units: force / distance = mass / second / second"""
+    )
+
+    float physxAutoParticleCloth:springBendStiffness = 1.5 (
+        customData = {
+            string apiName = "springBendStiffness"
+        }
+
+        displayName = "Bend Stiffness"
+        doc = """Bend stiffness. Represents a stiffness for linear springs placed in a way to counteract bending.
+              Range: [0, inf)
+              Units:  force / distance = mass / second / second"""
+    )
+
+    float physxAutoParticleCloth:springShearStiffness = 1.5 (
+        customData = {
+            string apiName = "springShearStiffness"
+        }
+
+        displayName = "Shear Stiffness"
+        doc = """Shear stiffness. Represents a stiffness for linear springs placed in a way to counteract shear.
+              Range: [0, inf)
+              Units:  force / distance = mass / second / second"""
+    )
+
+    float physxAutoParticleCloth:springDamping = 10.0 (
+        customData = {
+            string apiName = "springDamping"
+        }
+
+        displayName = "Spring Damping"
+        doc = """Damping on cloth spring constraints. Applies to all constraints parametrized by stiffness attributes.
+              Range: [0, inf)
+              Units: force * second / distance = mass / second"""
+    )
+}
+
+class "PhysxDeformableBodyMaterialAPI"
+(
+    customData = {
+        string className = "PhysxDeformableBodyMaterialAPI"
+    }
+
+	doc = """Applied to USD Material. Defines material properties for deformable bodies. See PhysxDeformableAPI for more information on how to bind a material to the entire collision tetrahedral mesh, or multiple materials to UsdGeomSubsets of the mesh."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxDeformableBodyMaterial:density = 0.0 (
+		customData = {
+			string apiName= "density"
+		}
+		
+		displayName = "Density"
+		doc = """Material density. If set to 0.0, the simulation determines a default density. A density or mass set with a PhysicsMassAPI overrides the material density.
+			  Range: [0, inf)
+			  Units: mass / distance / distance / distance"""
+	)
+	
+	float physxDeformableBodyMaterial:elasticityDamping = 0.005 (
+		customData = {
+			string apiName = "elasticityDamping"
+		}
+		
+		displayName = "Elasticity Damping"
+		doc = """Material damping parameter. Use values much smaller than one for good results.
+		      Range: [0, inf)
+			  Units: dimensionless"""
+	)
+	
+	float physxDeformableBodyMaterial:dynamicFriction = 0.25 (
+		customData = {
+			string apiName = "dynamicFriction"
+		}
+		
+		displayName = "Dynamic Friction"
+		doc = """Dynamic friction coefficient.
+		      Range: [0, inf)
+			  Units: dimensionless"""
+	)
+
+	float physxDeformableBodyMaterial:youngsModulus = 50000000.0 (
+		customData = {
+			string apiName = "youngsModulus"
+		}
+		
+		displayName = "Young's Modulus"
+		doc = """Young's modulus, i.e. the tensile stiffness of the material.
+		      Range: [0, inf)
+			  Units: force / area = mass/distance/seconds/seconds"""
+	)
+	
+	float physxDeformableBodyMaterial:poissonsRatio = 0.45 (
+		customData = {
+			string apiName = "poissonsRatio"
+		}
+		
+		displayName = "Poisson's Ratio"
+		doc = """Poissons's ratio which defines the material's volume preservation under stress.
+		      Range: [0, 0.5]
+			  Units: dimensionless"""
+	)
+	
+	float physxDeformableBodyMaterial:dampingScale = 1.0 (
+		customData = {
+			string apiName= "dampingScale"
+		}
+		
+		displayName = "Damping Scale"
+		doc = """Experimental parameter. Try a high damping together with a scale of zero for a water-bed like effect.
+		      Range: [0, 1]
+			  Units: dimensionless"""
+	)
+}
+
+class "PhysxDeformableSurfaceMaterialAPI"
+(
+    customData = {
+        string className = "PhysxDeformableSurfaceMaterialAPI"
+    }
+	
+	doc = """Applied to USD Material. Defines material properties for deformable surfaces. See PhysxDeformableAPI for more information on how to bind a material to the entire mesh, or multiple materials to UsdGeomSubsets of the mesh."""
+	inherits = </APISchemaBase>
+)
+{
+	float physxDeformableSurfaceMaterial:density = 0.0 (
+		customData = {
+			string apiName= "density"
+		}
+		
+		displayName = "Density"
+		doc = """Material density. If set to 0.0, the simulation determines a default density. A density or mass set with a PhysicsMassAPI overrides the material density.
+			  Range: [0, inf)
+			  Units: mass / distance / distance / distance"""
+	)
+	
+	float physxDeformableSurfaceMaterial:elasticityDamping = 0.005 (
+		customData = {
+			string apiName = "elasticityDamping"
+		}
+		
+		displayName = "Elasticity Damping"
+		doc = """Material damping parameter. Use values much smaller than one for good results.
+		      Range: [0, inf)
+			  Units: dimensionless"""
+	)
+	
+	float physxDeformableSurfaceMaterial:dynamicFriction = 0.25 (
+		customData = {
+			string apiName = "dynamicFriction"
+		}
+		
+		displayName = "Dynamic Friction"
+		doc = """Dynamic friction coefficient.
+		      Range: [0, inf)
+			  Units: dimensionless"""
+	)
+
+	float physxDeformableSurfaceMaterial:youngsModulus = 50000000.0 (
+		customData = {
+			string apiName = "youngsModulus"
+		}
+		
+		displayName = "Young's Modulus"
+		doc = """Young's modulus, i.e. the tensile stiffness of the material; used to determine bending stiffness.
+			  Range: [0, inf)
+			  Units: force / area = mass/distance/seconds/seconds"""
+	)
+	
+	float physxDeformableSurfaceMaterial:poissonsRatio = 0.45 (
+		customData = {
+			string apiName = "poissonsRatio"
+		}
+		
+		displayName = "Poisson's Ratio"
+		doc = """Poissons's ratio which defines the material's volume preservation under stress.
+		      Range: [0, 0.5]
+			  Units: dimensionless"""
+	)
+	
+	float physxDeformableSurfaceMaterial:thickness = 0.001 (
+		customData = {
+			string apiName= "thickness"
+		}
+		
+		displayName = "Thickness"
+		doc = """Virtual thickness of cloth mesh. Used to determine bending stiffness, and mass from density.
+		      Range: [0.0, inf)
+			  Units: distance"""
+	)
+
+	float physxDeformableSurfaceMaterial:bendingDamping = 0.0 (
+		customData = {
+			string apiName= "bendingDamping"
+		}
+		
+		displayName = "Bending Damping"
+		doc = """Cloth material damping on bending constraints.
+		      Range: [0, 1]
+			  Units: torque * seconds / degrees = mass * distance * distance  / seconds / degrees"""
+	)
+}
+
+class "PhysxDeformableAPI"
+(
+    customData = {
+        string className = "PhysxDeformableAPI"
+    }
+	
+	doc = """Do not apply. Base API that provides attributes common to both deformable bodies and surfaces.
+	      Derived APIs are applied to UsdGeomMesh in order to create a deformable physics object.
+		  Note that the UsdGeomMesh points attribute becomes a read-only attribute for a deformable as the mesh is driven by the simulation.
+		  """
+	inherits = </APISchemaBase>
+)
+{
+    bool physxDeformable:deformableEnabled = True (
+        customData = {
+            string apiName = "deformableEnabled"
+        }
+
+        displayName = "Deformable Enabled"
+		doc = """Enable or disable the deformable object."""
+	)
+
+	uint physxDeformable:solverPositionIterationCount = 16 (
+		customData = {
+			string apiName= "solverPositionIterationCount"
+		}
+		
+		displayName = "Solver Position Iterations"
+		doc = """ Number of solver position iterations per time step.
+			  Range: [1, 255]"""
+	)
+
+	float physxDeformable:vertexVelocityDamping = 0.005 (
+		customData = {
+			string apiName= "vertexVelocityDamping"
+		}
+		
+		displayName = "Vertex Velocity Damping"
+		doc = """Artificial damping on the vertex velocity, which may approximate aerodynamic drag.
+		      Range: [0, inf)
+			  Units: 1/seconds"""
+	)
+	
+	float physxDeformable:sleepDamping = 10.0 (
+		customData = {
+			string apiName= "sleepDamping"
+		}
+		
+		displayName = "Sleep Damping"
+		doc = """Additional damping term if vertex velocity drops below settlingThreshold.
+		      Range: [0, inf)
+			  Units: 1/seconds"""
+	)
+	
+	float physxDeformable:sleepThreshold = 0.05 (
+		customData = {
+			string apiName= "sleepThreshold"
+		}
+		
+		displayName = "Sleep Threshold"
+		doc = """Velocity threshold under which the vertex becomes a candidate for sleeping.
+		      Range: [0, inf)
+			  Units: distance/seconds"""
+	)
+	
+	float physxDeformable:settlingThreshold = 0.10 (
+		customData = {
+			string apiName= "settlingThreshold"
+		}
+		
+		displayName = "Settling Threshold"
+		doc = """Threshold vertex velocity under which sleep damping is applied in addition to velocity damping.
+		      Range: [0, inf]
+			  Units: distance/seconds"""
+	)
+	
+	bool physxDeformable:selfCollision = False (
+		customData = {
+			string apiName= "selfCollision"
+		}
+		
+		displayName = "Enable Self Collision"
+		doc = """Enables self collisions on the deformable, preventing self intersections."""
+	)
+	
+	float physxDeformable:selfCollisionFilterDistance = -inf (
+		customData = {
+			string apiName= "selfCollisionFilterDistance"
+		}
+		
+		displayName = "Self Collision Filter Distance"
+		doc = """Distance under which self-collisions are disabled. Default value -inf means default is picked by the simulation.
+		      Range: [2*physxCollision:contactOffset, max_float]
+			  Units: distance"""
+	)
+	
+	bool physxDeformable:enableCCD = False (
+        customData = {
+            string apiName = "enableCCD"
+        }
+
+		displayName = "Enable CCD"
+		doc = """Distance based CCD."""
+	)
+	
+	point3f[] physxDeformable:restPoints (
+		customData = {
+			string apiName= "restPoints"
+		}
+		
+		displayGroup = "Advanced"
+		displayName = "Rest Points"
+		doc = """Rest points of the UsdGeomMesh in local coordinates.
+			  Units: distance"""
+	)
+	
+	point3f[] physxDeformable:simulationVelocities (
+		customData = {
+			string apiName= "simulationVelocities"
+		}
+		
+		displayGroup = "Advanced"
+		displayName = "Simulation Mesh Vertex Velocities"
+		doc = """Simulation mesh vertex velocities in local coordinates.
+			  Units: distance / seconds"""
+	)
+	
+	uniform int[] physxDeformable:simulationIndices (
+		customData = {
+			string apiName= "simulationIndices"
+		}
+		
+		displayGroup = "Advanced"
+		displayName = "Simulation Mesh Indices"
+		doc = """Simulation mesh indices."""
+	)
+}
+
+class "PhysxDeformableBodyAPI"
+(
+    customData = {
+        string className = "PhysxDeformableBodyAPI"
+    }
+	
+	doc = """Applied to a UsdGeomMesh that is to be driven by a deformable body simulation.
+	      See PhysxDeformableAPI for information on how to define the deformable body's material properties."""
+	inherits = </PhysxDeformableAPI>
+)
+{
+	bool physxDeformable:disableGravity = False (
+		customData = {
+			string apiName = "disableGravity"
+		}
+
+        displayName = "Disable Gravity"
+		doc = """Disable gravity for the actor."""
+	)	
+
+	uniform int[] physxDeformable:collisionIndices (
+		customData = {
+			string apiName= "collisionIndices"
+		}
+		
+		displayGroup = "Advanced"
+		displayName = "Collision Mesh Indices"
+		doc = """Mesh indices that define the collision tetrahedral mesh together with the collisionPoints attribute."""
+	)
+	
+	point3f[] physxDeformable:collisionPoints (
+		customData = {
+			string apiName= "collisionPoints"
+		}
+		
+		displayGroup = "Advanced"
+		displayName = "Collision Mesh Points"
+		doc = """Mesh points in local coordinates that define the collision tetrahedral mesh together with the collisionIndices attribute.
+			  This attribute is read-only and may be updated from simulation data to reflect the current simulation state."""
+	)
+	
+	point3f[] physxDeformable:collisionRestPoints (
+		customData = {
+			string apiName= "collisionRestPoints"
+		}
+		
+		displayGroup = "Advanced"
+		displayName = "Collision Mesh Rest Points"
+		doc = """Mesh rest points in local coordinates that define the rest pose of the collision tetrahedral mesh together with the collisionIndices attribute."""
+	)
+	
+	point3f[] physxDeformable:simulationPoints (
+		customData = {
+			string apiName= "simulationPoints"
+		}
+
+		displayGroup = "Advanced"
+		displayName = "Simulation Mesh Points"
+		doc = """Simulation mesh points in local coordinates that define the simulation tetrahedral mesh together with the simulationIndices attribute.
+		      This attribute may be updated from simulation data to reflect the current simulation state."""
+	)
+	
+	point3f[] physxDeformable:simulationRestPoints (
+		customData = {
+			string apiName= "simulationRestPoints"
+		}
+		
+		displayGroup = "Advanced"
+		displayName = "Simulation Mesh Rest Points"
+		doc = """Mesh rest points in local coordinates that define the rest pose of the simulation tetrahedral mesh together with the simulationIndices attribute."""
+	)
+}
+
+class "PhysxDeformableSurfaceAPI"
+(
+    customData = {
+        string className = "PhysxDeformableSurfaceAPI"
+    }
+	
+	doc = """Applied to a UsdGeomMesh that is to be simulated as a deformable surface.
+	      See PhysxDeformableAPI for information on how to define the deformable surface's material properties."""
+	inherits = </PhysxDeformableAPI>
+)
+{
+	token physxDeformable:solverAlgorithm = "SIMPLIFIED_NEOHOOKEAN_ENERGY_CONSTRAINT" (
+		customData = {
+			string apiName= "solverAlgorithm"
+		}
+		allowedTokens = ["GINGOLD_XPBD", "SIMPLIFIED_NEOHOOKEAN_ENERGY_CONSTRAINT"]
+		
+		displayName = "Solver Algorithm"
+		doc = """Algorithm to solve FEM cloth with."""
+	)
+
+	float physxDeformable:lift = 0.0 (
+		customData = {
+			string apiName= "lift"
+		}
+		
+		displayName = "Lift"
+		doc = """Coefficient for approximated aerodynamic lift.
+			  Range: [0, inf)
+			  Units: mass/seconds"""
+	)
+
+	float physxDeformable:drag = 0.0 (
+		customData = {
+			string apiName= "drag"
+		}
+		
+		displayName = "Drag"
+		doc = """Coefficient for aerodynamic drag force on cloth faces.
+			  Range: [0, inf)
+			  Units: mass / seconds"""
+	)
+
+	float physxDeformable:areaLossTolerance = 0.05 (
+		customData = {
+			string apiName= "areaLossTolerance"
+		}
+		
+		displayName = "Area Loss Tolerance"
+		doc = """Threshold that controls when area-constraint forces are applied.
+		      Range: [0, 1]
+			  Units: dimensionless"""
+	)
+
+	float physxDeformable:bendingStiffnessScale = 1.0 (
+		customData = {
+			string apiName= "bendingStiffnessScale"
+		}
+		
+		displayName = "Bending Stiffness Scale"
+		doc = """Scales bending stiffness computed from young's modulus and the cloth thickness.
+		      Range: [0, inf)
+			  Units: dimensionless"""
+	)
+}
+
+class PhysxPhysicsAttachment "PhysxPhysicsAttachment"
+(
+    customData = {
+        string className = "PhysxPhysicsAttachment"
+    }
+
+    doc = """Represents attachments between physics actors, for example, between a rigid body and a deformable body, or a deformable body and a particle cloth."""
+	inherits = </Typed>
+)
+{
+    bool attachmentEnabled = True (
+        customData = {
+            string apiName = "attachmentEnabled"
+        }
+
+        displayName = "Attachment Enabled"
+		doc = """Enable or disable the attachment."""
+	)
+
+    rel actor0 (
+        customData = {
+            string apiName = "actor0"
+        }
+
+        displayName = "Actor 0"
+        doc = """Reference to the first actor."""
+    )
+
+    rel actor1 (
+        customData = {
+            string apiName = "actor1"
+        }
+
+        displayName = "Actor 1"
+        doc = """Reference to the second actor."""
+    )
+
+    point3f[] points0 (
+        customData = {
+            string apiName = "points0"
+        }
+        displayGroup = "Advanced"
+        displayName = "Points Actor 0"
+        doc = """Attachment points in Actor 0 local space, defined in the actor's rest state, if it is deformable. Elements correspond one-to-one to elements in points1 attribute."""
+    )
+
+    point3f[] points1 (
+        customData = {
+            string apiName = "points1"
+        }
+        displayGroup = "Advanced"
+        displayName = "Points Actor 1"
+        doc = """Attachment points in Actor 1 local space, defined in the actor's rest state, if it is deformable. Elements correspond one-to-one to elements in points0 attribute."""
+    )
+
+    uint[] collisionFilterIndices0 (
+        customData = {
+            string apiName = "collisionFilterIndices0"
+        }
+        displayGroup = "Advanced"
+        displayName = "Collision Filter Indices Actor 0"
+        doc = """Indices to geometry of Actor 0 that should not generate collisions with Actor 1 as specified by filterType0. Ignored for rigid bodies."""
+    )
+
+    uniform token filterType0 (
+        customData = {
+            string apiName = "filterType0"
+        }
+        displayGroup = "Advanced"
+        displayName = "Filter Type 0"
+        allowedTokens = ["Vertices", "Geometry"]
+        doc = """Specify if indices in collisionFilterIndices0 correspond to vertices; or mesh cell-geometry, i.e. triangles, tetrahedrons, etc."""
+    )
+
+    uint[] collisionFilterIndices1 (
+        customData = {
+            string apiName = "collisionFilterIndices1"
+        }
+        displayGroup = "Advanced"
+        displayName = "Collision Filter Indices Actor 1"
+        doc = """Indices to mesh triangle/tet/hex/etc. of Actor 1 that should not generate collisions with Actor 0. Ignored for rigid bodies."""
+    )
+
+    uniform token filterType1 (
+        customData = {
+            string apiName = "filterType1"
+        }
+        displayGroup = "Advanced"
+        displayName = "Filter Type 1"
+        allowedTokens = ["Vertices", "Geometry"]
+        doc = """Specify if indices in collisionFilterIndices1 correspond to vertices; or mesh cell-geometry, i.e. triangles, tetrahedrons, etc."""
+    )
+}
+
+class "PhysxAutoAttachmentAPI"
+(
+    customData = {
+        string className = "PhysxAutoAttachmentAPI"
+    }
+
+    doc = """Auto generates the attachment points and filtering ids based on the attributes defined in the API."""
+    inherits = </APISchemaBase>
+)
+{
+    bool physxAutoAttachment:enableDeformableVertexAttachments = true (
+        customData = {
+            string apiName = "enableDeformableVertexAttachments"
+        }
+
+        displayName = "Enable Deformable Vertex Attachments"
+        doc = """Enables attaching deformable mesh vertices which overlap with the other actor's volume."""
+    )
+
+    float physxAutoAttachment:deformableVertexOverlapOffset = 0.0 (
+        customData = {
+            string apiName= "deformableVertexOverlapOffset"
+        }
+        
+        displayName = "Deformable Vertex Overlap Offset"
+        doc = """Deformable mesh vertices are attached if their distance to the other actor's volume is smaller than the offset.
+              Range: [0, max_float)
+              Units: distance"""
+    )
+
+    bool physxAutoAttachment:enableRigidSurfaceAttachments = false (
+        customData = {
+            string apiName = "enableRigidSurfaceAttachments"
+        }
+
+        displayName = "Enable Rigid Surface Attachments"
+        doc = """Enables sampling attachment points on the rigid actor's surface."""
+    )
+
+    float physxAutoAttachment:rigidSurfaceSamplingDistance = -inf (
+        customData = {
+            string apiName= "rigidSurfaceSamplingDistance"
+        }
+        
+        displayName = "Rigid Surface Sampling Distance"
+        doc = """Attachment points on the rigid surface are positioned such that their typical neighbor distance matches the sampling distance. Use heuristic by default.
+              Range: [0, max_float)
+              Units: distance"""
+    )
+
+    bool physxAutoAttachment:enableCollisionFiltering = true (
+        customData = {
+            string apiName = "enableCollisionFiltering"
+        }
+
+        displayName = "Enable Collision Filtering"
+        doc = """Enables adding collision filtering in the vicinity of the attachment points."""
+    )
+
+    float physxAutoAttachment:collisionFilteringOffset = -inf (
+        customData = {
+            string apiName= "collisionFilteringOffset"
+        }
+        
+        displayName = "Collision Filtering Offset"
+        doc = """Filering ids are generated for deformable mesh vertices if their distance to the other actor's volume is smaller than the offset. Use heuristic by default.
+              Range: [0, max_float)
+              Units: distance"""
+    )
+}

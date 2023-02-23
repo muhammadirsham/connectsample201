@@ -1,0 +1,1014 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_usd_physics_tokens_type" kind="class" prot="public">
+    <compoundname>UsdPhysicsTokensType</compoundname>
+    <includes refid="usd_physics_2tokens_8h" local="no">tokens.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1ab8e551727686089fe560592666488b62" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken acceleration</definition>
+        <argsstring></argsstring>
+        <name>acceleration</name>
+        <briefdescription>
+<para>&quot;acceleration&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsDriveAPI::GetPhysicsTypeAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="68" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a7000770a2eca2853e9016a0e67789ba4" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken angular</definition>
+        <argsstring></argsstring>
+        <name>angular</name>
+        <briefdescription>
+<para>&quot;angular&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the angular degree of freedom used in Revolute Joint Drive. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="72" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a88d8087092ddc552eb687b304594d940" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken boundingCube</definition>
+        <argsstring></argsstring>
+        <name>boundingCube</name>
+        <briefdescription>
+<para>&quot;boundingCube&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsMeshCollisionAPI::GetPhysicsApproximationAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="76" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a673b030393099c5ba4e762555d44d6cd" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken boundingSphere</definition>
+        <argsstring></argsstring>
+        <name>boundingSphere</name>
+        <briefdescription>
+<para>&quot;boundingSphere&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsMeshCollisionAPI::GetPhysicsApproximationAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="80" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a851e05a7572403ec3f6ac5c569aadcc0" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken colliders</definition>
+        <argsstring></argsstring>
+        <name>colliders</name>
+        <briefdescription>
+<para>&quot;colliders&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the collection name to use with UsdCollectionAPI to represent colliders of a CollisionGroup prim. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="84" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1af02b078fca760513bfe3f691d88f04ea" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken convexDecomposition</definition>
+        <argsstring></argsstring>
+        <name>convexDecomposition</name>
+        <briefdescription>
+<para>&quot;convexDecomposition&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsMeshCollisionAPI::GetPhysicsApproximationAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="88" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a3d3ecb39ccf464b66ac91cc44f77945a" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken convexHull</definition>
+        <argsstring></argsstring>
+        <name>convexHull</name>
+        <briefdescription>
+<para>&quot;convexHull&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsMeshCollisionAPI::GetPhysicsApproximationAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="92" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1acd4a16020e7936268a0244ad11a099bf" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+<para>&quot;distance&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the distance limit used for generic D6 joint. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="96" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aa900b66edb538ee4ebd19c39e5296ddd" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken drive</definition>
+        <argsstring></argsstring>
+        <name>drive</name>
+        <briefdescription>
+<para>&quot;drive&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Property namespace prefix for the <ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref> schema. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="100" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a06632e06794d45ccf6a537cffae9d0d9" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken force</definition>
+        <argsstring></argsstring>
+        <name>force</name>
+        <briefdescription>
+<para>&quot;force&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsDriveAPI::GetPhysicsTypeAttr(), Default value for UsdPhysicsDriveAPI::GetPhysicsTypeAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="104" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a24c37003b1414e39167b1132f765dfec" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken kilogramsPerUnit</definition>
+        <argsstring></argsstring>
+        <name>kilogramsPerUnit</name>
+        <briefdescription>
+<para>&quot;kilogramsPerUnit&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Stage-level metadata that encodes a scene&apos;s linear unit of measure to scale the weight (in kilograms) of an object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="108" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a8565c64e7f49fdf5478ac80999284a82" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <briefdescription>
+<para>&quot;limit&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Property namespace prefix for the <ref refid="class_usd_physics_limit_a_p_i" kindref="compound">UsdPhysicsLimitAPI</ref> schema. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="112" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a708efed05b6cb58e7c7de407519b045a" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken linear</definition>
+        <argsstring></argsstring>
+        <name>linear</name>
+        <briefdescription>
+<para>&quot;linear&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the linear degree of freedom used in Prismatic Joint Drive. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="116" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1af9f5a93b9623fe85d49b58831259be9c" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken meshSimplification</definition>
+        <argsstring></argsstring>
+        <name>meshSimplification</name>
+        <briefdescription>
+<para>&quot;meshSimplification&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsMeshCollisionAPI::GetPhysicsApproximationAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="120" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a96a49c29f4f7aed35b1ee919b37223bf" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken none</definition>
+        <argsstring></argsstring>
+        <name>none</name>
+        <briefdescription>
+<para>&quot;none&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsMeshCollisionAPI::GetPhysicsApproximationAttr(), Default value for UsdPhysicsMeshCollisionAPI::GetPhysicsApproximationAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="124" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a5cace409d47714028aedf9ab933848f7" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsAngularVelocity</definition>
+        <argsstring></argsstring>
+        <name>physicsAngularVelocity</name>
+        <briefdescription>
+<para>&quot;physics:angularVelocity&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="128" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a1e94ac00b479ce5c2960ff1136cd0d5d" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsApproximation</definition>
+        <argsstring></argsstring>
+        <name>physicsApproximation</name>
+        <briefdescription>
+<para>&quot;physics:approximation&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_mesh_collision_a_p_i" kindref="compound">UsdPhysicsMeshCollisionAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="132" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a0460d5f194945164f898979c1e883bc0" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsAxis</definition>
+        <argsstring></argsstring>
+        <name>physicsAxis</name>
+        <briefdescription>
+<para>&quot;physics:axis&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_spherical_joint" kindref="compound">UsdPhysicsSphericalJoint</ref>, <ref refid="class_usd_physics_prismatic_joint" kindref="compound">UsdPhysicsPrismaticJoint</ref>, <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="136" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a0e22c8829b1680d1b2b3996f67cb8f36" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsBody0</definition>
+        <argsstring></argsstring>
+        <name>physicsBody0</name>
+        <briefdescription>
+<para>&quot;physics:body0&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="140" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a679e58dbae01e69628fdc648d1674e01" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsBody1</definition>
+        <argsstring></argsstring>
+        <name>physicsBody1</name>
+        <briefdescription>
+<para>&quot;physics:body1&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="144" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a8e9813aa1635d80758442dc2abfa24cc" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsBreakForce</definition>
+        <argsstring></argsstring>
+        <name>physicsBreakForce</name>
+        <briefdescription>
+<para>&quot;physics:breakForce&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="148" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a30b1c3e3b06b11c97d40bab23670f7be" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsBreakTorque</definition>
+        <argsstring></argsstring>
+        <name>physicsBreakTorque</name>
+        <briefdescription>
+<para>&quot;physics:breakTorque&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="152" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a60ee5f7ab0c6a79ada7a5477d7acf6f7" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsCenterOfMass</definition>
+        <argsstring></argsstring>
+        <name>physicsCenterOfMass</name>
+        <briefdescription>
+<para>&quot;physics:centerOfMass&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="156" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a82f217bdc2abf2f5195214c82b0da860" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsCollisionEnabled</definition>
+        <argsstring></argsstring>
+        <name>physicsCollisionEnabled</name>
+        <briefdescription>
+<para>&quot;physics:collisionEnabled&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref>, <ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="160" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a7f0de5e3cd06a2a1e37a4e8787964c23" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsConeAngle0Limit</definition>
+        <argsstring></argsstring>
+        <name>physicsConeAngle0Limit</name>
+        <briefdescription>
+<para>&quot;physics:coneAngle0Limit&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_spherical_joint" kindref="compound">UsdPhysicsSphericalJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="164" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a0ed7155cc0636f9db3bad86a1a0c624f" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsConeAngle1Limit</definition>
+        <argsstring></argsstring>
+        <name>physicsConeAngle1Limit</name>
+        <briefdescription>
+<para>&quot;physics:coneAngle1Limit&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_spherical_joint" kindref="compound">UsdPhysicsSphericalJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="168" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aa91651bd0be874dea158395fe990e205" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsDamping</definition>
+        <argsstring></argsstring>
+        <name>physicsDamping</name>
+        <briefdescription>
+<para>&quot;physics:damping&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="172" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a17917c0c52ddcf8d3fb80b0a1c5bce0a" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsDensity</definition>
+        <argsstring></argsstring>
+        <name>physicsDensity</name>
+        <briefdescription>
+<para>&quot;physics:density&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_material_a_p_i" kindref="compound">UsdPhysicsMaterialAPI</ref>, <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="176" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1abfbb2a5404a8efdf4577b4181c32e358" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsDiagonalInertia</definition>
+        <argsstring></argsstring>
+        <name>physicsDiagonalInertia</name>
+        <briefdescription>
+<para>&quot;physics:diagonalInertia&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="180" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aa386a9a92fa3340717d6374437b451ed" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsDynamicFriction</definition>
+        <argsstring></argsstring>
+        <name>physicsDynamicFriction</name>
+        <briefdescription>
+<para>&quot;physics:dynamicFriction&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_material_a_p_i" kindref="compound">UsdPhysicsMaterialAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="184" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a370a8b36d2a668a9fdf9e4314b7b1459" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsExcludeFromArticulation</definition>
+        <argsstring></argsstring>
+        <name>physicsExcludeFromArticulation</name>
+        <briefdescription>
+<para>&quot;physics:excludeFromArticulation&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="188" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a1b5c0ed6a9910296d03be3dacae6a2c9" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsFilteredGroups</definition>
+        <argsstring></argsstring>
+        <name>physicsFilteredGroups</name>
+        <briefdescription>
+<para>&quot;physics:filteredGroups&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_collision_group" kindref="compound">UsdPhysicsCollisionGroup</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="192" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aec285266ee4f56361b96631d2986e99a" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsFilteredPairs</definition>
+        <argsstring></argsstring>
+        <name>physicsFilteredPairs</name>
+        <briefdescription>
+<para>&quot;physics:filteredPairs&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_filtered_pairs_a_p_i" kindref="compound">UsdPhysicsFilteredPairsAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="196" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a7fb5b745169ae6d39f9e1c7049b6c399" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsGravityDirection</definition>
+        <argsstring></argsstring>
+        <name>physicsGravityDirection</name>
+        <briefdescription>
+<para>&quot;physics:gravityDirection&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_scene" kindref="compound">UsdPhysicsScene</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="200" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a5d0f8985d09191005832c9a39c9b91c5" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsGravityMagnitude</definition>
+        <argsstring></argsstring>
+        <name>physicsGravityMagnitude</name>
+        <briefdescription>
+<para>&quot;physics:gravityMagnitude&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_scene" kindref="compound">UsdPhysicsScene</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="204" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a5bdd788d1a4ccfcc95a22f96bff47348" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsHigh</definition>
+        <argsstring></argsstring>
+        <name>physicsHigh</name>
+        <briefdescription>
+<para>&quot;physics:high&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_limit_a_p_i" kindref="compound">UsdPhysicsLimitAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="208" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aa9f4f77ac84ee5a380d9b33d503cbb4c" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsJointEnabled</definition>
+        <argsstring></argsstring>
+        <name>physicsJointEnabled</name>
+        <briefdescription>
+<para>&quot;physics:jointEnabled&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="212" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a480125ca509f610a9cd2de8540ec0795" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsKinematicEnabled</definition>
+        <argsstring></argsstring>
+        <name>physicsKinematicEnabled</name>
+        <briefdescription>
+<para>&quot;physics:kinematicEnabled&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="216" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1ae820e938706fe024aa7c4026fe9f0e4d" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsLocalPos0</definition>
+        <argsstring></argsstring>
+        <name>physicsLocalPos0</name>
+        <briefdescription>
+<para>&quot;physics:localPos0&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="220" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1ad0fed3209481de45d88fd8142f4779a6" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsLocalPos1</definition>
+        <argsstring></argsstring>
+        <name>physicsLocalPos1</name>
+        <briefdescription>
+<para>&quot;physics:localPos1&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="224" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1ac3602bb444bdd24064cb2cf5e65eea26" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsLocalRot0</definition>
+        <argsstring></argsstring>
+        <name>physicsLocalRot0</name>
+        <briefdescription>
+<para>&quot;physics:localRot0&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="228" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aca8926b4a6d73422dddc24b3943ec9c9" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsLocalRot1</definition>
+        <argsstring></argsstring>
+        <name>physicsLocalRot1</name>
+        <briefdescription>
+<para>&quot;physics:localRot1&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_joint" kindref="compound">UsdPhysicsJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="232" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a440b51be819f5e0f9c4569c5f60eb117" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsLow</definition>
+        <argsstring></argsstring>
+        <name>physicsLow</name>
+        <briefdescription>
+<para>&quot;physics:low&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_limit_a_p_i" kindref="compound">UsdPhysicsLimitAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="236" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a3bc3ca95908d9f0571979c8783e21c80" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsLowerLimit</definition>
+        <argsstring></argsstring>
+        <name>physicsLowerLimit</name>
+        <briefdescription>
+<para>&quot;physics:lowerLimit&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_prismatic_joint" kindref="compound">UsdPhysicsPrismaticJoint</ref>, <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="240" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a16b3916fdd6c02723d4ba895ddf25f7f" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsMass</definition>
+        <argsstring></argsstring>
+        <name>physicsMass</name>
+        <briefdescription>
+<para>&quot;physics:mass&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="244" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aee34a613dfbc66a6e956a8adc90f3955" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsMaxDistance</definition>
+        <argsstring></argsstring>
+        <name>physicsMaxDistance</name>
+        <briefdescription>
+<para>&quot;physics:maxDistance&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_distance_joint" kindref="compound">UsdPhysicsDistanceJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="248" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a478a3e61cb6f1a87e6811b1fb108d4e1" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsMaxForce</definition>
+        <argsstring></argsstring>
+        <name>physicsMaxForce</name>
+        <briefdescription>
+<para>&quot;physics:maxForce&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="252" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a8b7620d4109540838dcb6fe59dc4b639" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsMinDistance</definition>
+        <argsstring></argsstring>
+        <name>physicsMinDistance</name>
+        <briefdescription>
+<para>&quot;physics:minDistance&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_distance_joint" kindref="compound">UsdPhysicsDistanceJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="256" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1af9ac12451ac5702cb2d2bb04ee5340c2" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsPrincipalAxes</definition>
+        <argsstring></argsstring>
+        <name>physicsPrincipalAxes</name>
+        <briefdescription>
+<para>&quot;physics:principalAxes&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="260" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1aef6d767844fd17ad951a736b8cc3698b" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsRestitution</definition>
+        <argsstring></argsstring>
+        <name>physicsRestitution</name>
+        <briefdescription>
+<para>&quot;physics:restitution&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_material_a_p_i" kindref="compound">UsdPhysicsMaterialAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="264" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1acd8e590f968e7fd258a873ff3145969c" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsRigidBodyEnabled</definition>
+        <argsstring></argsstring>
+        <name>physicsRigidBodyEnabled</name>
+        <briefdescription>
+<para>&quot;physics:rigidBodyEnabled&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="268" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a23e5386cede9829aa6a380394326fc06" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsSimulationOwner</definition>
+        <argsstring></argsstring>
+        <name>physicsSimulationOwner</name>
+        <briefdescription>
+<para>&quot;physics:simulationOwner&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_collision_a_p_i" kindref="compound">UsdPhysicsCollisionAPI</ref>, <ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="272" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a661e1647f4571f1d5f741917848fac0c" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsStartsAsleep</definition>
+        <argsstring></argsstring>
+        <name>physicsStartsAsleep</name>
+        <briefdescription>
+<para>&quot;physics:startsAsleep&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="276" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1ac9b5090e23fb4e4750126ba365f11d19" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsStaticFriction</definition>
+        <argsstring></argsstring>
+        <name>physicsStaticFriction</name>
+        <briefdescription>
+<para>&quot;physics:staticFriction&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_material_a_p_i" kindref="compound">UsdPhysicsMaterialAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="280" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1af497c68ddc35ccd0b0ae17dc8a114c31" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsStiffness</definition>
+        <argsstring></argsstring>
+        <name>physicsStiffness</name>
+        <briefdescription>
+<para>&quot;physics:stiffness&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="284" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a29566c6f745da5647fac0f8e3a95b7ce" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsTargetPosition</definition>
+        <argsstring></argsstring>
+        <name>physicsTargetPosition</name>
+        <briefdescription>
+<para>&quot;physics:targetPosition&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="288" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1abb5c3d767f353ae9cbe5b71c69adcfd0" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsTargetVelocity</definition>
+        <argsstring></argsstring>
+        <name>physicsTargetVelocity</name>
+        <briefdescription>
+<para>&quot;physics:targetVelocity&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="292" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a465654f735861c1e16cb0b1169f350bd" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsType</definition>
+        <argsstring></argsstring>
+        <name>physicsType</name>
+        <briefdescription>
+<para>&quot;physics:type&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_drive_a_p_i" kindref="compound">UsdPhysicsDriveAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="296" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a7a19dc83453f60f8293d45fc1b85dabd" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsUpperLimit</definition>
+        <argsstring></argsstring>
+        <name>physicsUpperLimit</name>
+        <briefdescription>
+<para>&quot;physics:upperLimit&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_prismatic_joint" kindref="compound">UsdPhysicsPrismaticJoint</ref>, <ref refid="class_usd_physics_revolute_joint" kindref="compound">UsdPhysicsRevoluteJoint</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="300" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a0369d0fca9011840fcf6800e9c645874" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken physicsVelocity</definition>
+        <argsstring></argsstring>
+        <name>physicsVelocity</name>
+        <briefdescription>
+<para>&quot;physics:velocity&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_usd_physics_rigid_body_a_p_i" kindref="compound">UsdPhysicsRigidBodyAPI</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="304" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1accb2d2d1b5a4b0e16d916389194ba55e" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken rotX</definition>
+        <argsstring></argsstring>
+        <name>rotX</name>
+        <briefdescription>
+<para>&quot;rotX&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the rotate around X axis degree of freedom used in Joint Limits and Drives. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="308" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a5303765112cb2c4f0ea42828f43219a8" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken rotY</definition>
+        <argsstring></argsstring>
+        <name>rotY</name>
+        <briefdescription>
+<para>&quot;rotY&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the rotate around Y axis degree of freedom used in Joint Limits and Drives. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="312" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a5600f0eee192deaabd7ff68a77a8d2fc" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken rotZ</definition>
+        <argsstring></argsstring>
+        <name>rotZ</name>
+        <briefdescription>
+<para>&quot;rotZ&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the rotate around Z axis degree of freedom used in Joint Limits and Drives. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="316" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a3bdf89b8ab6d381ce3b971940a3c1243" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken transX</definition>
+        <argsstring></argsstring>
+        <name>transX</name>
+        <briefdescription>
+<para>&quot;transX&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the translate around X axis degree of freedom used in Joint Limits and Drives. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="320" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1ab074c894e5b94a1f4a20891752e81c3e" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken transY</definition>
+        <argsstring></argsstring>
+        <name>transY</name>
+        <briefdescription>
+<para>&quot;transY&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the translate around Y axis degree of freedom used in Joint Limits and Drives. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="324" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a65b4f60f101d93593ae11bd105d4d2fa" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken transZ</definition>
+        <argsstring></argsstring>
+        <name>transZ</name>
+        <briefdescription>
+<para>&quot;transZ&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>This token represents the translate around Z axis degree of freedom used in Joint Limits and Drives. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="328" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1abfef76d513c400fd1cdb12b29b37f2f8" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>&quot;X&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsSphericalJoint::GetPhysicsAxisAttr(), Default value for UsdPhysicsSphericalJoint::GetPhysicsAxisAttr(), Possible value for UsdPhysicsPrismaticJoint::GetPhysicsAxisAttr(), Default value for UsdPhysicsPrismaticJoint::GetPhysicsAxisAttr(), Possible value for UsdPhysicsRevoluteJoint::GetPhysicsAxisAttr(), Default value for UsdPhysicsRevoluteJoint::GetPhysicsAxisAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="332" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a84410b1963dd5000efae800ef0ce2054" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+<para>&quot;Y&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsSphericalJoint::GetPhysicsAxisAttr(), Possible value for UsdPhysicsPrismaticJoint::GetPhysicsAxisAttr(), Possible value for UsdPhysicsRevoluteJoint::GetPhysicsAxisAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="336" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a78152d0374c642006112dd29d48192a2" prot="public" static="no" mutable="no">
+        <type>const TfToken</type>
+        <definition>const TfToken z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+<para>&quot;Z&quot; </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible value for UsdPhysicsSphericalJoint::GetPhysicsAxisAttr(), Possible value for UsdPhysicsPrismaticJoint::GetPhysicsAxisAttr(), Possible value for UsdPhysicsRevoluteJoint::GetPhysicsAxisAttr() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="340" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_usd_physics_tokens_type_1a06ed732eeddfeba03daedd49167195fa" prot="public" static="no" mutable="no">
+        <type>const std::vector&lt; TfToken &gt;</type>
+        <definition>const std::vector&lt;TfToken&gt; allTokens</definition>
+        <argsstring></argsstring>
+        <name>allTokens</name>
+        <briefdescription>
+<para>A vector of all of the tokens listed above. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="342" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_usd_physics_tokens_type_1ab61ebd124237a2ba7e0d2de203e29010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API</type>
+        <definition>USDPHYSICS_API UsdPhysicsTokensType</definition>
+        <argsstring>()</argsstring>
+        <name>UsdPhysicsTokensType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="usd_physics_2tokens_8h_1abecb2253be1aa39fd5a77f62b5dc1adc" kindref="member">UsdPhysicsTokens</ref> provides static, efficient <ref refid="" kindref="compound">TfTokens</ref> for use in all public USD API. </para>    </briefdescription>
+    <detaileddescription>
+<para>These tokens are auto-generated from the module&apos;s schema, representing property names, for when you need to fetch an attribute or relationship directly by name, e.g. UsdPrim::GetAttribute(), in the most efficient manner, and allow the compiler to verify that you spelled the name correctly.</para><para>UsdPhysicsTokens also contains all of the <emphasis>allowedTokens</emphasis> values declared for schema builtin attributes of &apos;token&apos; scene description type. Use UsdPhysicsTokens like so:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/>gprim.GetMyTokenValuedAttr().Set(<ref refid="usd_physics_2tokens_8h_1abecb2253be1aa39fd5a77f62b5dc1adc" kindref="member">UsdPhysicsTokens</ref>-&gt;acceleration);</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/tokens.h" bodystart="63" bodyend="343"/>
+    <listofallmembers>
+      <member refid="struct_usd_physics_tokens_type_1ab8e551727686089fe560592666488b62" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>acceleration</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a06ed732eeddfeba03daedd49167195fa" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>allTokens</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a7000770a2eca2853e9016a0e67789ba4" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>angular</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a88d8087092ddc552eb687b304594d940" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>boundingCube</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a673b030393099c5ba4e762555d44d6cd" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>boundingSphere</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a851e05a7572403ec3f6ac5c569aadcc0" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>colliders</name></member>
+      <member refid="struct_usd_physics_tokens_type_1af02b078fca760513bfe3f691d88f04ea" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>convexDecomposition</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a3d3ecb39ccf464b66ac91cc44f77945a" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>convexHull</name></member>
+      <member refid="struct_usd_physics_tokens_type_1acd4a16020e7936268a0244ad11a099bf" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>distance</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aa900b66edb538ee4ebd19c39e5296ddd" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>drive</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a06632e06794d45ccf6a537cffae9d0d9" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>force</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a24c37003b1414e39167b1132f765dfec" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>kilogramsPerUnit</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a8565c64e7f49fdf5478ac80999284a82" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>limit</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a708efed05b6cb58e7c7de407519b045a" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>linear</name></member>
+      <member refid="struct_usd_physics_tokens_type_1af9f5a93b9623fe85d49b58831259be9c" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>meshSimplification</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a96a49c29f4f7aed35b1ee919b37223bf" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>none</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a5cace409d47714028aedf9ab933848f7" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsAngularVelocity</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a1e94ac00b479ce5c2960ff1136cd0d5d" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsApproximation</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a0460d5f194945164f898979c1e883bc0" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsAxis</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a0e22c8829b1680d1b2b3996f67cb8f36" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsBody0</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a679e58dbae01e69628fdc648d1674e01" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsBody1</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a8e9813aa1635d80758442dc2abfa24cc" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsBreakForce</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a30b1c3e3b06b11c97d40bab23670f7be" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsBreakTorque</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a60ee5f7ab0c6a79ada7a5477d7acf6f7" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsCenterOfMass</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a82f217bdc2abf2f5195214c82b0da860" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsCollisionEnabled</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a7f0de5e3cd06a2a1e37a4e8787964c23" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsConeAngle0Limit</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a0ed7155cc0636f9db3bad86a1a0c624f" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsConeAngle1Limit</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aa91651bd0be874dea158395fe990e205" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsDamping</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a17917c0c52ddcf8d3fb80b0a1c5bce0a" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsDensity</name></member>
+      <member refid="struct_usd_physics_tokens_type_1abfbb2a5404a8efdf4577b4181c32e358" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsDiagonalInertia</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aa386a9a92fa3340717d6374437b451ed" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsDynamicFriction</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a370a8b36d2a668a9fdf9e4314b7b1459" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsExcludeFromArticulation</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a1b5c0ed6a9910296d03be3dacae6a2c9" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsFilteredGroups</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aec285266ee4f56361b96631d2986e99a" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsFilteredPairs</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a7fb5b745169ae6d39f9e1c7049b6c399" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsGravityDirection</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a5d0f8985d09191005832c9a39c9b91c5" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsGravityMagnitude</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a5bdd788d1a4ccfcc95a22f96bff47348" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsHigh</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aa9f4f77ac84ee5a380d9b33d503cbb4c" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsJointEnabled</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a480125ca509f610a9cd2de8540ec0795" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsKinematicEnabled</name></member>
+      <member refid="struct_usd_physics_tokens_type_1ae820e938706fe024aa7c4026fe9f0e4d" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsLocalPos0</name></member>
+      <member refid="struct_usd_physics_tokens_type_1ad0fed3209481de45d88fd8142f4779a6" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsLocalPos1</name></member>
+      <member refid="struct_usd_physics_tokens_type_1ac3602bb444bdd24064cb2cf5e65eea26" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsLocalRot0</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aca8926b4a6d73422dddc24b3943ec9c9" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsLocalRot1</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a440b51be819f5e0f9c4569c5f60eb117" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsLow</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a3bc3ca95908d9f0571979c8783e21c80" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsLowerLimit</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a16b3916fdd6c02723d4ba895ddf25f7f" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsMass</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aee34a613dfbc66a6e956a8adc90f3955" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsMaxDistance</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a478a3e61cb6f1a87e6811b1fb108d4e1" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsMaxForce</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a8b7620d4109540838dcb6fe59dc4b639" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsMinDistance</name></member>
+      <member refid="struct_usd_physics_tokens_type_1af9ac12451ac5702cb2d2bb04ee5340c2" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsPrincipalAxes</name></member>
+      <member refid="struct_usd_physics_tokens_type_1aef6d767844fd17ad951a736b8cc3698b" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsRestitution</name></member>
+      <member refid="struct_usd_physics_tokens_type_1acd8e590f968e7fd258a873ff3145969c" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsRigidBodyEnabled</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a23e5386cede9829aa6a380394326fc06" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsSimulationOwner</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a661e1647f4571f1d5f741917848fac0c" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsStartsAsleep</name></member>
+      <member refid="struct_usd_physics_tokens_type_1ac9b5090e23fb4e4750126ba365f11d19" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsStaticFriction</name></member>
+      <member refid="struct_usd_physics_tokens_type_1af497c68ddc35ccd0b0ae17dc8a114c31" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsStiffness</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a29566c6f745da5647fac0f8e3a95b7ce" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsTargetPosition</name></member>
+      <member refid="struct_usd_physics_tokens_type_1abb5c3d767f353ae9cbe5b71c69adcfd0" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsTargetVelocity</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a465654f735861c1e16cb0b1169f350bd" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsType</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a7a19dc83453f60f8293d45fc1b85dabd" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsUpperLimit</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a0369d0fca9011840fcf6800e9c645874" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>physicsVelocity</name></member>
+      <member refid="struct_usd_physics_tokens_type_1accb2d2d1b5a4b0e16d916389194ba55e" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>rotX</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a5303765112cb2c4f0ea42828f43219a8" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>rotY</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a5600f0eee192deaabd7ff68a77a8d2fc" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>rotZ</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a3bdf89b8ab6d381ce3b971940a3c1243" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>transX</name></member>
+      <member refid="struct_usd_physics_tokens_type_1ab074c894e5b94a1f4a20891752e81c3e" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>transY</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a65b4f60f101d93593ae11bd105d4d2fa" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>transZ</name></member>
+      <member refid="struct_usd_physics_tokens_type_1ab61ebd124237a2ba7e0d2de203e29010" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>UsdPhysicsTokensType</name></member>
+      <member refid="struct_usd_physics_tokens_type_1abfef76d513c400fd1cdb12b29b37f2f8" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>x</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a84410b1963dd5000efae800ef0ce2054" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>y</name></member>
+      <member refid="struct_usd_physics_tokens_type_1a78152d0374c642006112dd29d48192a2" prot="public" virt="non-virtual"><scope>UsdPhysicsTokensType</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

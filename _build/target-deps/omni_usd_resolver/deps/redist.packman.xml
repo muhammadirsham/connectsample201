@@ -1,0 +1,14 @@
+<project toolsVersion="5.0">
+  <dependency name="python37" linkPath="../_build/target-deps/python37">
+    <package name="python" version="3.7.12+nv3-${platform}" />
+  </dependency>
+  <dependency name="usd_debug" linkPath="../_build/target-deps/usd/debug">
+    <package name="nv-usd" version="20.08.nv.1.2.2531.5c573672-win64_py37_debug-main" platforms="windows-x86_64"/>
+  </dependency>
+  <dependency name="usd_release" linkPath="../_build/target-deps/usd/release">
+    <package name="nv-usd" version="20.08.nv.1.2.2531.5c573672-win64_py37_release-main" platforms="windows-x86_64"/>
+  </dependency>
+  <dependency name="omni_client_library" linkPath="../_build/target-deps/omni_client_library">
+    <package name="omni_client_library.windows-x86_64" version="2.21.0" />
+  </dependency>
+</project>

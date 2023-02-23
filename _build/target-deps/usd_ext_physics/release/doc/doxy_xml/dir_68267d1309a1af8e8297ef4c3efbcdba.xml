@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>W:/919a5455eee1e83c/src</compoundname>
+    <innerdir refid="dir_1de435de5e970c5f4e541819667ffd1f">W:/919a5455eee1e83c/src/physxSchema</innerdir>
+    <innerdir refid="dir_e0c12ce17bae69b4467b9db4c304ac64">W:/919a5455eee1e83c/src/usdPhysics</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/"/>
+  </compounddef>
+</doxygen>

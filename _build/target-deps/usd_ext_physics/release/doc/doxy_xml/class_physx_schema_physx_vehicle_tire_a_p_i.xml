@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_vehicle_tire_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxVehicleTireAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_vehicle_tire_a_p_i_8h" local="no">physxVehicleTireAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_vehicle_tire_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="66" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_vehicle_tire_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="137" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a777c97c8bc291e95bdb5da06a203f33b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleTireAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxVehicleTireAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1afba31779884961709af36718516d6136" kindref="member">PhysxSchemaPhysxVehicleTireAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="72" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1ad0733face0f60eeaa6ce852e4d6f2079" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleTireAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxVehicleTireAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="80" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1aa283546eb9459c8b86c3f2ae2b812e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxVehicleTireAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxVehicleTireAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a1d7d2be03dbe34e67b1d82b9dd8df824" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLatStiffXAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLatStiffXAttr</name>
+        <briefdescription>
+<para>Tire lateral stiffness is a graph of tire load that has linear behavior near zero load and flattens at large loads. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parameter describes the minimum normalized load (load/restLoad) that gives a flat lateral stiffness response to load.</para><para>Note: if not defined, the value 2.0 will be used.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleTire:latStiffX</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1afe99b3b68b6c0aa3d5d6bebae90e8dfe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLatStiffXAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLatStiffXAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a1d7d2be03dbe34e67b1d82b9dd8df824" kindref="member">GetLatStiffXAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a36b5ff40ed6f8b8bc37963020b8d6f50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLatStiffYAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLatStiffYAttr</name>
+        <briefdescription>
+<para>Tire lateral stiffness is a graph of tire load that has linear behavior near zero load and flattens at large loads. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parameter describes the maximum possible value of lateralStiffness/restLoad that occurs when (load/restLoad) &gt;= latStiffX. If load/restLoad is greater than latStiffX then the lateral stiffness is latStiffY*restLoad, else the lateral stiffness is latStiffY*(load/latStiffX).</para><para>Note: if not defined, the value 17.095 will be used.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleTire:latStiffY</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a2a75edeb834674040ce605bf3159f504" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLatStiffYAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLatStiffYAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a36b5ff40ed6f8b8bc37963020b8d6f50" kindref="member">GetLatStiffYAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1ac00260176f4eb41fdc668a553fa600ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetLongitudinalStiffnessPerUnitGravityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLongitudinalStiffnessPerUnitGravityAttr</name>
+        <briefdescription>
+<para>Tire longitudinal stiffness per unit gravitational acceleration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Longitudinal stiffness of the tire is calculated as gravitationalAcceleration*mLongitudinalStiffnessPerUnitGravity.</para><para>Note: if not defined, the value 1000 will be used.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleTire:longitudinalStiffnessPerUnitGravity</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a97c368409e0c26b8313ea29583a7f8f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateLongitudinalStiffnessPerUnitGravityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateLongitudinalStiffnessPerUnitGravityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1ac00260176f4eb41fdc668a553fa600ac" kindref="member">GetLongitudinalStiffnessPerUnitGravityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a3264ca5c30c7e318ad8c036835891d90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetCamberStiffnessPerUnitGravityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCamberStiffnessPerUnitGravityAttr</name>
+        <briefdescription>
+<para>Tire camber stiffness per unit gravitational acceleration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Camber stiffness of the tire is calculated as gravitationalAcceleration*mCamberStiffnessPerUnitGravity.</para><para>Note: if not defined, the value 5.7296 will be used.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleTire:camberStiffnessPerUnitGravity</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a3405e321d6b3b842d967da5cf2658ba8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateCamberStiffnessPerUnitGravityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCamberStiffnessPerUnitGravityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a3264ca5c30c7e318ad8c036835891d90" kindref="member">GetCamberStiffnessPerUnitGravityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1ad80913d9fa2df97b0b4af0e7334184c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetFrictionVsSlipGraphAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrictionVsSlipGraphAttr</name>
+        <briefdescription>
+<para>Graph of friction vs longitudinal slip with 3 points. </para>        </briefdescription>
+        <detaileddescription>
+<para>The friction value extracted from this graph will be multiplied with the friction value of the combination of ground material and tire type. The array is expected to have 3 entries/points. For the first point, the first value is always zero and the second value is the friction available at zero longitudinal slip. For the second point, the first value is the longitudinal slip with maximum friction and the second value is the maximum friction. For the third point, the first value is the end point of the graph and the second value is the friction for slips greater than the end point of the graph. Note that the friction value of the first point is typically smaller than the friction value of the second point and the friction value of the second point is typically larger than the friction value of the third point.</para><para>Note: if not defined, the following values will be used: [(0.0, 1.0), (0.1, 1.0), (1.0, 1.0)].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float2[] physxVehicleTire:frictionVsSlipGraph</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>VtArray&lt;GfVec2f&gt; </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float2Array </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a739767e42d92673e0f092e28f4456cb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateFrictionVsSlipGraphAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateFrictionVsSlipGraphAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1ad80913d9fa2df97b0b4af0e7334184c9" kindref="member">GetFrictionVsSlipGraphAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1aae7c79d305f74844b2c5882127071dd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship GetFrictionTableRel</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFrictionTableRel</name>
+        <briefdescription>
+<para>A relationship to a PhysxVehicleTireFrictionTable instance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: if not defined, any available table will be used. If there is no table in the whole stage, a default will be provided. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="293" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a0a31a75aecd3d8a011cb060f20f211ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdRelationship</type>
+        <definition>PHYSXSCHEMA_API UsdRelationship CreateFrictionTableRel</definition>
+        <argsstring>() const </argsstring>
+        <name>CreateFrictionTableRel</name>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1aae7c79d305f74844b2c5882127071dd6" kindref="member">GetFrictionTableRel()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="298" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1afba31779884961709af36718516d6136" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleTireAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a777c97c8bc291e95bdb5da06a203f33b" kindref="member">PhysxSchemaPhysxVehicleTireAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a6ba3343b877572ef249de7e4bd2bef3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleTireAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxVehicleTireAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="126" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="133" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="141" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_tire_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="145" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties of a PhysX vehicle tire. </para>    </briefdescription>
+    <detaileddescription>
+<para>If the tire setup does not need to be shared among vehicle instances, it can be applied to the prim which has PhysxVehicleWheelAttachmentAPI applied. If the intent is to share the tire setup, PhysxVehicleTireAPI can be applied to a separate prim which can be linked to (see PhysxVehicleWheelAttachmentAPI). </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" line="61" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleTireAPI.h" bodystart="60" bodyend="311"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a6ba3343b877572ef249de7e4bd2bef3e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a3405e321d6b3b842d967da5cf2658ba8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>CreateCamberStiffnessPerUnitGravityAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a0a31a75aecd3d8a011cb060f20f211ff" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>CreateFrictionTableRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a739767e42d92673e0f092e28f4456cb1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>CreateFrictionVsSlipGraphAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1afe99b3b68b6c0aa3d5d6bebae90e8dfe" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>CreateLatStiffXAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a2a75edeb834674040ce605bf3159f504" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>CreateLatStiffYAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a97c368409e0c26b8313ea29583a7f8f4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>CreateLongitudinalStiffnessPerUnitGravityAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1afba31779884961709af36718516d6136" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a3264ca5c30c7e318ad8c036835891d90" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>GetCamberStiffnessPerUnitGravityAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1aae7c79d305f74844b2c5882127071dd6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>GetFrictionTableRel</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1ad80913d9fa2df97b0b4af0e7334184c9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>GetFrictionVsSlipGraphAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a1d7d2be03dbe34e67b1d82b9dd8df824" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>GetLatStiffXAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a36b5ff40ed6f8b8bc37963020b8d6f50" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>GetLatStiffYAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1ac00260176f4eb41fdc668a553fa600ac" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>GetLongitudinalStiffnessPerUnitGravityAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1a777c97c8bc291e95bdb5da06a203f33b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>PhysxSchemaPhysxVehicleTireAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1ad0733face0f60eeaa6ce852e4d6f2079" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>PhysxSchemaPhysxVehicleTireAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_vehicle_tire_a_p_i_1aa283546eb9459c8b86c3f2ae2b812e18" prot="public" virt="virtual"><scope>PhysxSchemaPhysxVehicleTireAPI</scope><name>~PhysxSchemaPhysxVehicleTireAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

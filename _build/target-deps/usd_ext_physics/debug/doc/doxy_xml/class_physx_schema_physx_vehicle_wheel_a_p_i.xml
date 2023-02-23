@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_vehicle_wheel_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxVehicleWheelAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_vehicle_wheel_a_p_i_8h" local="no">physxVehicleWheelAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="66" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="137" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a7d1ea940ac3c849db91ea8e280edf491" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleWheelAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxVehicleWheelAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1aaafb001ee6e7db768fe27a5b78a9c47c" kindref="member">PhysxSchemaPhysxVehicleWheelAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="72" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a74207e3337e3f2a912782da003b23d4a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxVehicleWheelAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxVehicleWheelAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="80" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1abc20eb9fc62d4c3de0122671ed4a649b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxVehicleWheelAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxVehicleWheelAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a4933c0ef23cd4f93c7ea0d168ae545b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetRadiusAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRadiusAttr</name>
+        <briefdescription>
+<para>The radius of the wheel (metal wheel plus tire). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:radius</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a42dc45c80d7c4acb97f17503b2a4d8c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateRadiusAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateRadiusAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a4933c0ef23cd4f93c7ea0d168ae545b5" kindref="member">GetRadiusAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a50502d0bbaed806b366cc2e0710f9e37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetWidthAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetWidthAttr</name>
+        <briefdescription>
+<para>The width of the wheel (metal wheel plus tire). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:width</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1abd3c0adab0c1a9d1679b4582a4ecb9fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateWidthAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateWidthAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a50502d0bbaed806b366cc2e0710f9e37" kindref="member">GetWidthAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1abac1475e3f278a28b85bbcdb0b5917ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMassAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMassAttr</name>
+        <briefdescription>
+<para>The mass of the wheel (metal wheel plus tire). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:mass</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae9ae22c6f377a876d9d64c8ebce72a4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMassAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMassAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1abac1475e3f278a28b85bbcdb0b5917ef" kindref="member">GetMassAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1aeb842ab43c344d08169757925351e7d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMoiAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMoiAttr</name>
+        <briefdescription>
+<para>The moment of inertia (metal wheel plus tire) about the rolling axis. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:moi</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="233" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae1b6541293a679816ae351186f3075c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMoiAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMoiAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1aeb842ab43c344d08169757925351e7d9" kindref="member">GetMoiAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a9aa308e181a02f400d1fb550a53ee20c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDampingRateAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDampingRateAttr</name>
+        <briefdescription>
+<para>The damping rate applied to the wheel (default unit is kilograms metres-squared per second [kg m^2 s^-1]). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:dampingRate</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a4e87a297725867f21902b4bba7c0d7e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDampingRateAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDampingRateAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a9aa308e181a02f400d1fb550a53ee20c" kindref="member">GetDampingRateAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a02006cee5cdeffcc5798eb4197f3ed88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxBrakeTorqueAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxBrakeTorqueAttr</name>
+        <briefdescription>
+<para>The maximum brake torque that can be applied to the wheel (default unit is kilograms metres-squared per second-squared [kg m^2 s^-2]). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:maxBrakeTorque</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a9c9cba25cd59fea7c3c1e3b57b22ea49" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxBrakeTorqueAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxBrakeTorqueAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a02006cee5cdeffcc5798eb4197f3ed88" kindref="member">GetMaxBrakeTorqueAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a0e4da9b463d63fa1e8a5a2c07aedd55d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxHandBrakeTorqueAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxHandBrakeTorqueAttr</name>
+        <briefdescription>
+<para>The maximum hand brake torque that can be applied to the wheel (default unit is kilograms metres-squared per second-squared [kg m^2 s^-2]). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:maxHandBrakeTorque</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="307" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a2956ef6238f8cc1c43258c6ecbbef905" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxHandBrakeTorqueAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxHandBrakeTorqueAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a0e4da9b463d63fa1e8a5a2c07aedd55d" kindref="member">GetMaxHandBrakeTorqueAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a1078a1784f618e30eaa0b99b30d77c6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetMaxSteerAngleAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMaxSteerAngleAttr</name>
+        <briefdescription>
+<para>The maximum steer angle (in radians) that can be achieved by the wheel. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:maxSteerAngle</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae50a69975510984796c9a8068b30457f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateMaxSteerAngleAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMaxSteerAngleAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a1078a1784f618e30eaa0b99b30d77c6a" kindref="member">GetMaxSteerAngleAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="339" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae90982a7fd80ea3dc19a4b2c3839285c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetToeAngleAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetToeAngleAttr</name>
+        <briefdescription>
+<para>The wheel toe angle (in radians). </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: currently, this attribute is only considered for vehicles using the PhysxVehicleDriveStandard drive type.</para><para>Note: this attribute has to be specified (there is no default).</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxVehicleWheel:toeAngle</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a9ae5e2e3797f65d4684b7f89d24a44f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateToeAngleAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateToeAngleAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae90982a7fd80ea3dc19a4b2c3839285c" kindref="member">GetToeAngleAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="366" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1aaafb001ee6e7db768fe27a5b78a9c47c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleWheelAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a7d1ea940ac3c849db91ea8e280edf491" kindref="member">PhysxSchemaPhysxVehicleWheelAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a10722a4f832231e5e8468862d47138c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxVehicleWheelAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxVehicleWheelAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="126" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="133" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="141" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_vehicle_wheel_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="145" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Properties of a PhysX vehicle wheel. </para>    </briefdescription>
+    <detaileddescription>
+<para>If the wheel setup does not need to be shared among vehicle instances, it can be applied to the prim which has PhysxVehicleWheelAttachmentAPI applied. If the intent is to share the wheel setup, PhysxVehicleWheelAPI can be applied to a separate prim which can be linked to (see PhysxVehicleWheelAttachmentAPI). </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" line="61" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxVehicleWheelAPI.h" bodystart="60" bodyend="379"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a10722a4f832231e5e8468862d47138c6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a4e87a297725867f21902b4bba7c0d7e6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateDampingRateAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae9ae22c6f377a876d9d64c8ebce72a4b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateMassAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a9c9cba25cd59fea7c3c1e3b57b22ea49" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateMaxBrakeTorqueAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a2956ef6238f8cc1c43258c6ecbbef905" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateMaxHandBrakeTorqueAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae50a69975510984796c9a8068b30457f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateMaxSteerAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae1b6541293a679816ae351186f3075c7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateMoiAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a42dc45c80d7c4acb97f17503b2a4d8c9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a9ae5e2e3797f65d4684b7f89d24a44f5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateToeAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1abd3c0adab0c1a9d1679b4582a4ecb9fb" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>CreateWidthAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1aaafb001ee6e7db768fe27a5b78a9c47c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a9aa308e181a02f400d1fb550a53ee20c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetDampingRateAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1abac1475e3f278a28b85bbcdb0b5917ef" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetMassAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a02006cee5cdeffcc5798eb4197f3ed88" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetMaxBrakeTorqueAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a0e4da9b463d63fa1e8a5a2c07aedd55d" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetMaxHandBrakeTorqueAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a1078a1784f618e30eaa0b99b30d77c6a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetMaxSteerAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1aeb842ab43c344d08169757925351e7d9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetMoiAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a4933c0ef23cd4f93c7ea0d168ae545b5" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetRadiusAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1ae90982a7fd80ea3dc19a4b2c3839285c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetToeAngleAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a50502d0bbaed806b366cc2e0710f9e37" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>GetWidthAttr</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a7d1ea940ac3c849db91ea8e280edf491" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>PhysxSchemaPhysxVehicleWheelAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1a74207e3337e3f2a912782da003b23d4a" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>PhysxSchemaPhysxVehicleWheelAPI</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_vehicle_wheel_a_p_i_1abc20eb9fc62d4c3de0122671ed4a649b" prot="public" virt="virtual"><scope>PhysxSchemaPhysxVehicleWheelAPI</scope><name>~PhysxSchemaPhysxVehicleWheelAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

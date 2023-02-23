@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="md__w_1_919a5455eee1e83c_src_physx_schema__m_i_g_r_a_t_i_o_n_g_u_i_d_e" kind="page">
+    <compoundname>md_W:_919a5455eee1e83c_src_physxSchema_MIGRATIONGUIDE</compoundname>
+    <title>PhysxSchema Migration Guide</title>
+    <detaileddescription>
+<para><heading level="2">May 2021 </heading>
+</para><para><itemizedlist>
+<listitem><para>PhysxMeshCollisionAPI was removed. It was replaced by PhysxConvexHullCollisionAPI, PhysxConvexDecompositionCollisionAPI and PhysxTriangleMeshSimplificationCollisionAPI. Based on the <ref refid="class_usd_physics_mesh_collision_a_p_i" kindref="compound">UsdPhysicsMeshCollisionAPI</ref>:approximation attribute the matching schema is used.</para></listitem><listitem><para>PhysxCookingDataAPI was changed to multiple applied schema, the schema token defines which cooked data are stored. This allows us to store multiple versions of cooked data per mesh, for example convex approximation for a dynamic collision and triangle mesh for a static collision.</para></listitem></itemizedlist>
+</para><para><heading level="2">March 2021 </heading>
+</para><para><itemizedlist>
+<listitem><para>General:<itemizedlist>
+<listitem><para>For vehicles, many IsA schemas have been converted to API schemas. This allows for a more compact (fewer prims) vehicle setup for cases where there is no intent to share vehicle components among vehicle instances. For details, see further below.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleGlobalSettings:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_context_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleContextAPI</ref> and is now an API schema.</para></listitem><listitem><para>In addition, this API has to be applied to a <ref refid="class_usd_physics_scene" kindref="compound">UsdPhysicsScene</ref> prim now.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleWheel:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_wheel_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> applied instead of using the physxVehicleWheelAttachment:wheel relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleTire:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_tire_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleTireAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> applied instead of using the physxVehicleWheelAttachment:tire relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleSuspension:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_suspension_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleSuspensionAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_wheel_attachment_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleWheelAttachmentAPI</ref> applied instead of using the physxVehicleWheelAttachment:suspension relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleEngine:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_engine_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleEngineAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> applied instead of using the physxVehicleDriveStandard:engine relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleGears:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_gears_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleGearsAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> applied instead of using the physxVehicleDriveStandard:gears relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleAutoGearBox:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_auto_gear_box_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAutoGearBoxAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> applied instead of using the physxVehicleDriveStandard:autoGearBox relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleClutch:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_clutch_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleClutchAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> applied instead of using the physxVehicleDriveStandard:clutch relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleDriveBasic:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_drive_basic_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveBasicAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAPI</ref> applied instead of using the physxVehicle:drive relationship</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PhysxVehicleDriveStandard:<itemizedlist>
+<listitem><para>Was renamed to <ref refid="class_physx_schema_physx_vehicle_drive_standard_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleDriveStandardAPI</ref> and is now an API schema.</para></listitem><listitem><para>Optionally, this API can be applied directly to the prim that has <ref refid="class_physx_schema_physx_vehicle_a_p_i" kindref="compound">PhysxSchemaPhysxVehicleAPI</ref> applied instead of using the physxVehicle:drive relationship </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

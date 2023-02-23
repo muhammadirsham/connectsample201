@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_articulation_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxArticulationAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_articulation_a_p_i_8h" local="no">physxArticulationAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_articulation_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_articulation_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="134" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a3326e54275842f8492b8f3d9ea62adc7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxArticulationAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxArticulationAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_articulation_a_p_i_1a90edec5736db7c02e417709448a9a4d3" kindref="member">PhysxSchemaPhysxArticulationAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a8a69eea1e985b7e87132f9fc1ed748c0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxArticulationAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxArticulationAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a14719dd4ed69a46284c901b8f7fc59f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxArticulationAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxArticulationAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1ae4ea86fd26ebdc76b2a92331a3fd7de6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetArticulationEnabledAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetArticulationEnabledAttr</name>
+        <briefdescription>
+<para>Boolean defining whether articulation is enabled or disabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxArticulation:articulationEnabled = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a22215f98f8ed5b5a300aa2448f09538b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateArticulationEnabledAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateArticulationEnabledAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_articulation_a_p_i_1ae4ea86fd26ebdc76b2a92331a3fd7de6" kindref="member">GetArticulationEnabledAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a11def6394943c1faee60dd78e842c9c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSolverPositionIterationCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSolverPositionIterationCountAttr</name>
+        <briefdescription>
+<para>Solver position iteration counts for the body. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [1, 255].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxArticulation:solverPositionIterationCount = 32</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a7fb0c52bd04dbacddba4355e02aa790e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSolverPositionIterationCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSolverPositionIterationCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_articulation_a_p_i_1a11def6394943c1faee60dd78e842c9c1" kindref="member">GetSolverPositionIterationCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a8b3902f02ae055c4c42ee2333d4c4f84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSolverVelocityIterationCountAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSolverVelocityIterationCountAttr</name>
+        <briefdescription>
+<para>Solver velocity iteration counts for the body. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [1, 255].</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>int physxArticulation:solverVelocityIterationCount = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>int </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Int </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a48b897c597c3184abdbc2b492510a1ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSolverVelocityIterationCountAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSolverVelocityIterationCountAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_articulation_a_p_i_1a8b3902f02ae055c4c42ee2333d4c4f84" kindref="member">GetSolverVelocityIterationCountAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1ab3c234ffc5c1c704a5c0d1c1641ed6fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetSleepThresholdAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSleepThresholdAttr</name>
+        <briefdescription>
+<para>Mass-normalized kinetic energy threshold below which an actor may go to sleep. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float). Default value 0.00005*tolerancesSpeed*tolerancesSpeed.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxArticulation:sleepThreshold = 0.00005</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1acea04b46c42f5ad3a81e382776fac018" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateSleepThresholdAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateSleepThresholdAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_articulation_a_p_i_1ab3c234ffc5c1c704a5c0d1c1641ed6fa" kindref="member">GetSleepThresholdAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a108cce092ff5d825759eaf6b14376f92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetStabilizationThresholdAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStabilizationThresholdAttr</name>
+        <briefdescription>
+<para>The mass-normalized kinetic energy threshold below which an articulation may participate in stabilization. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allowed range [0, max_float). Default value 0.00005*tolerancesSpeed*tolerancesSpeed.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxArticulation:stabilizationThreshold = 0.00001</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1ae068d7adccbf69750b2bd72897aafc5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateStabilizationThresholdAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateStabilizationThresholdAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_articulation_a_p_i_1a108cce092ff5d825759eaf6b14376f92" kindref="member">GetStabilizationThresholdAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a8255438fee6d5ca5553a44c1bd1341ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetEnabledSelfCollisionsAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEnabledSelfCollisionsAttr</name>
+        <briefdescription>
+<para>Boolean defining whether self collisions should be enabled or disabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>bool physxArticulation:enabledSelfCollisions = 1</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>bool </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Bool </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1ae9938f6b2915a30ef5f03e99a10870b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateEnabledSelfCollisionsAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateEnabledSelfCollisionsAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_articulation_a_p_i_1a8255438fee6d5ca5553a44c1bd1341ca" kindref="member">GetEnabledSelfCollisionsAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="274" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a90edec5736db7c02e417709448a9a4d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxArticulationAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_articulation_a_p_i_1a3326e54275842f8492b8f3d9ea62adc7" kindref="member">PhysxSchemaPhysxArticulationAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a92da3cbb06eab602eaddf6a03c61f050" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxArticulationAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxArticulationAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_articulation_a_p_i" kindref="compound">PhysxSchemaPhysxArticulationAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_articulation_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PhysX articulation extended parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxArticulationAPI.h" bodystart="57" bodyend="287"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a92da3cbb06eab602eaddf6a03c61f050" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a22215f98f8ed5b5a300aa2448f09538b" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>CreateArticulationEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1ae9938f6b2915a30ef5f03e99a10870b6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>CreateEnabledSelfCollisionsAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1acea04b46c42f5ad3a81e382776fac018" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>CreateSleepThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a7fb0c52bd04dbacddba4355e02aa790e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>CreateSolverPositionIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a48b897c597c3184abdbc2b492510a1ae" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>CreateSolverVelocityIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1ae068d7adccbf69750b2bd72897aafc5f" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>CreateStabilizationThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a90edec5736db7c02e417709448a9a4d3" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1ae4ea86fd26ebdc76b2a92331a3fd7de6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>GetArticulationEnabledAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a8255438fee6d5ca5553a44c1bd1341ca" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>GetEnabledSelfCollisionsAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1ab3c234ffc5c1c704a5c0d1c1641ed6fa" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>GetSleepThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a11def6394943c1faee60dd78e842c9c1" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>GetSolverPositionIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a8b3902f02ae055c4c42ee2333d4c4f84" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>GetSolverVelocityIterationCountAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a108cce092ff5d825759eaf6b14376f92" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>GetStabilizationThresholdAttr</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a3326e54275842f8492b8f3d9ea62adc7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>PhysxSchemaPhysxArticulationAPI</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a8a69eea1e985b7e87132f9fc1ed748c0" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>PhysxSchemaPhysxArticulationAPI</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_articulation_a_p_i_1a14719dd4ed69a46284c901b8f7fc59f3" prot="public" virt="virtual"><scope>PhysxSchemaPhysxArticulationAPI</scope><name>~PhysxSchemaPhysxArticulationAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

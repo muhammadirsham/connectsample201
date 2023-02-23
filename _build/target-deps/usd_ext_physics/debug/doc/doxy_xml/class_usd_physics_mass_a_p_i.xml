@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_usd_physics_mass_a_p_i" kind="class" prot="public">
+    <compoundname>UsdPhysicsMassAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="mass_a_p_i_8h" local="no">massAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_usd_physics_mass_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="65" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_usd_physics_mass_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="136" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a5d359a8c0a60cf4760b57ce1216f8121" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsMassAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>UsdPhysicsMassAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_usd_physics_mass_a_p_i_1a27f5af165faf937aac38339bad64dc09" kindref="member">UsdPhysicsMassAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="71" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a81ea3a78276afb1ab437ecb48248a29a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UsdPhysicsMassAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>UsdPhysicsMassAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="79" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1ae6ce53001e5393a2cb52eabc6ec5c44e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>USDPHYSICS_API</type>
+        <definition>virtual USDPHYSICS_API ~UsdPhysicsMassAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~UsdPhysicsMassAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a5bd3e16a2be031ad9d88304e71cd8318" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetMassAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMassAttr</name>
+        <briefdescription>
+<para>If non-zero, directly specifies the mass of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that any child prim can also have a mass when they apply massAPI. In this case, the precedence rule is &apos;parent mass overrides the child&apos;s&apos;. This may come as counter-intuitive, but mass is a computed quantity and in general not accumulative. For example, if a parent has mass of 10, and one of two children has mass of 20, allowing child&apos;s mass to override its parent results in a mass of -10 for the other child. Note if mass is 0.0 it is ignored. Units: mass.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physics:mass = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a17c74a7b1695dbe075eb99c2d86914d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateMassAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateMassAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_mass_a_p_i_1a5bd3e16a2be031ad9d88304e71cd8318" kindref="member">GetMassAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1ae5f97f89b2ef4ccb9a50ab5a62743c71" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetDensityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDensityAttr</name>
+        <briefdescription>
+<para>If non-zero, specifies the density of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the context of rigid body physics, density indirectly results in setting mass via (mass = density x volume of the object). How the volume is computed is up to implementation of the physics system. It is generally computed from the collision approximation rather than the graphical mesh. In the case where both density and mass are specified for the same object, mass has precedence over density. Unlike mass, child&apos;s prim&apos;s density overrides parent prim&apos;s density as it is accumulative. Note that density of a collisionAPI can be also alternatively set through a pPhysicsMaterialAPI rel. The material density has the weakest precedence in density definition. Note if density is 0.0 it is ignored. Units: mass/distance/distance/distance.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physics:density = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1ac2bd3353f4beb5096cc7f081631963f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateDensityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDensityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_mass_a_p_i_1ae5f97f89b2ef4ccb9a50ab5a62743c71" kindref="member">GetDensityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a76ade6339f5e5e3cf1dde863ce89b3a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetCenterOfMassAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCenterOfMassAttr</name>
+        <briefdescription>
+<para>Center of mass in the prim&apos;s local space. </para>        </briefdescription>
+        <detaileddescription>
+<para>Units: distance.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>point3f physics:centerOfMass = (0, 0, 0)</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfVec3f </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Point3f </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a14ed3cec2d2b290df5b78f60fbc1b0c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateCenterOfMassAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateCenterOfMassAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_mass_a_p_i_1a76ade6339f5e5e3cf1dde863ce89b3a6" kindref="member">GetCenterOfMassAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a732524e4e22cc3027a897d4b509c315d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetDiagonalInertiaAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDiagonalInertiaAttr</name>
+        <briefdescription>
+<para>If non-zero, specifies diagonalized inertia tensor along the principal axes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note if diagonalInertial is (0.0, 0.0, 0.0) it is ignored. Units: mass*distance*distance.</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float3 physics:diagonalInertia = (0, 0, 0)</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfVec3f </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float3 </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a3b884e2ba3d3ca1b713a8b97748f11fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreateDiagonalInertiaAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDiagonalInertiaAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_mass_a_p_i_1a732524e4e22cc3027a897d4b509c315d" kindref="member">GetDiagonalInertiaAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1adbfec9620aa388ea101407c2644deffe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute GetPrincipalAxesAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetPrincipalAxesAttr</name>
+        <briefdescription>
+<para>Orientation of the inertia tensor&apos;s principal axes in the prim&apos;s local space. </para>        </briefdescription>
+        <detaileddescription>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>quatf physics:principalAxes = (1, 0, 0, 0)</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>GfQuatf </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Quatf </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1af4417b6644cc6b124a180fdfba4e0b97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdAttribute</type>
+        <definition>USDPHYSICS_API UsdAttribute CreatePrincipalAxesAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreatePrincipalAxesAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_usd_physics_mass_a_p_i_1adbfec9620aa388ea101407c2644deffe" kindref="member">GetPrincipalAxesAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="276" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfTokenVector &amp;</type>
+        <definition>static USDPHYSICS_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a27f5af165faf937aac38339bad64dc09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsMassAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_usd_physics_mass_a_p_i_1a5d359a8c0a60cf4760b57ce1216f8121" kindref="member">UsdPhysicsMassAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a819c33c2f16421126d817930bfd76abe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref></type>
+        <definition>static USDPHYSICS_API UsdPhysicsMassAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysicsMassAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_usd_physics_mass_a_p_i" kindref="compound">UsdPhysicsMassAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API UsdSchemaType</type>
+        <definition>USDPHYSICS_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1adade0ff4639afd184e30c5708ae86f8d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>static USDPHYSICS_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="140" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_usd_physics_mass_a_p_i_1a96538019a0566b8f54f05953ac1c6615" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>USDPHYSICS_API const TfType &amp;</type>
+        <definition>USDPHYSICS_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="144" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines explicit mass properties (mass, density, inertia etc.). </para>    </briefdescription>
+    <detaileddescription>
+<para>MassAPI can be applied to any object that has a PhysicsCollisionAPI or a PhysicsRigidBodyAPI. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" line="60" column="1" bodyfile="W:/919a5455eee1e83c/src/usdPhysics/massAPI.h" bodystart="59" bodyend="289"/>
+    <listofallmembers>
+      <member refid="class_usd_physics_mass_a_p_i_1a14550550753e6be849eb8e7d9607f2d5" prot="protected" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1adade0ff4639afd184e30c5708ae86f8d" prot="private" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a96538019a0566b8f54f05953ac1c6615" prot="private" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a819c33c2f16421126d817930bfd76abe" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>Apply</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a14ed3cec2d2b290df5b78f60fbc1b0c0" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>CreateCenterOfMassAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1ac2bd3353f4beb5096cc7f081631963f6" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>CreateDensityAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a3b884e2ba3d3ca1b713a8b97748f11fc" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>CreateDiagonalInertiaAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a17c74a7b1695dbe075eb99c2d86914d8" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>CreateMassAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1af4417b6644cc6b124a180fdfba4e0b97" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>CreatePrincipalAxesAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a27f5af165faf937aac38339bad64dc09" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>Get</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a76ade6339f5e5e3cf1dde863ce89b3a6" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>GetCenterOfMassAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1ae5f97f89b2ef4ccb9a50ab5a62743c71" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>GetDensityAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a732524e4e22cc3027a897d4b509c315d" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>GetDiagonalInertiaAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a5bd3e16a2be031ad9d88304e71cd8318" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>GetMassAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1adbfec9620aa388ea101407c2644deffe" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>GetPrincipalAxesAttr</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a7cad138857a9fbc4db1a366dc8168d90" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>schemaType</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a5d359a8c0a60cf4760b57ce1216f8121" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>UsdPhysicsMassAPI</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1a81ea3a78276afb1ab437ecb48248a29a" prot="public" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>UsdPhysicsMassAPI</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>UsdPhysicsMassAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_usd_physics_mass_a_p_i_1ae6ce53001e5393a2cb52eabc6ec5c44e" prot="public" virt="virtual"><scope>UsdPhysicsMassAPI</scope><name>~UsdPhysicsMassAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_physx_schema_physx_deformable_a_p_i.html" title="Do not apply. " alt="" coords="5,46,236,73"/>
+<area shape="rect" id="node2" href="$class_physx_schema_physx_deformable_body_a_p_i.html" title="Applied to a UsdGeomMesh that is to be driven by a deformable body simulation. " alt="" coords="284,5,493,47"/>
+<area shape="rect" id="node3" href="$class_physx_schema_physx_deformable_surface_a_p_i.html" title="Applied to a UsdGeomMesh that is to be simulated as a deformable surface. " alt="" coords="284,71,493,112"/>
+</map>

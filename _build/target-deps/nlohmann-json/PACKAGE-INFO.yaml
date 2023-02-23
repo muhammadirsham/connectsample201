@@ -1,0 +1,9 @@
+Package : nlohmann-json
+Description : JSON for Modern C++
+Maintainers : ksadov@nvidia.com dduka@nvidia.com
+SWIPAT NvBug : http://nvbugs/2825992
+Repository : https://gitlab-master.nvidia.com/carbon/Carbonite-externals/nlohmann-json
+Version : 3.7.3-3fff8cd2-repackaged
+Branch : v3.7.3
+Commit : 3fff8cd28bb70b7679132f238593032e247b3ea5
+Time : Fri Aug  6 18:08:05 2021

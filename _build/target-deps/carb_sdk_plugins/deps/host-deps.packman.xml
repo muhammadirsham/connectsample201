@@ -1,0 +1,16 @@
+<project toolsVersion="5.0">
+  <dependency name="premake" linkPath="../_build/host-deps/premake" tags="non-redist">
+    <package name="premake" version="5.0.0-beta1+nv1-${platform}" platforms="windows-x86_64 linux-x86_64 linux-aarch64" />
+    <package name="premake" version="5.0.0-beta1+nv1-macos-universal" platforms="macos-x86_64 macos-aarch64" />
+  </dependency>
+  <!-- make sure to update MSVC_Toolset_Ver in premake5.lua when this changes -->
+  <dependency name="msvc" linkPath="../_build/host-deps/msvc" tags="non-redist">
+    <package name="msvc" version="2019-16.11.17-2" platforms="windows-x86_64" />
+  </dependency>
+  <dependency name="winsdk" linkPath="../_build/host-deps/winsdk" tags="non-redist">
+    <package name="winsdk" version="10.0.17763.0" platforms="windows-x86_64"/>
+  </dependency>
+  <dependency name="llvm" linkPath="../_build/host-deps/llvm">
+    <package name="llvm" version="6.0.0-linux-x86_64" platforms="linux-x86_64 linux-aarch64"/>
+  </dependency>
+</project>

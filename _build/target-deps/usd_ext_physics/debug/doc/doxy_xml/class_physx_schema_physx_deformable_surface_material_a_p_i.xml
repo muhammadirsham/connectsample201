@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_physx_schema_physx_deformable_surface_material_a_p_i" kind="class" prot="public">
+    <compoundname>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UsdAPISchemaBase</basecompoundref>
+    <includes refid="physx_deformable_surface_material_a_p_i_8h" local="no">physxDeformableSurfaceMaterialAPI.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" static="yes" mutable="no">
+        <type>const UsdSchemaType</type>
+        <definition>const UsdSchemaType schemaType</definition>
+        <argsstring></argsstring>
+        <name>schemaType</name>
+        <initializer>= UsdSchemaType::SingleApplyAPI</initializer>
+        <briefdescription>
+<para>Compile time constant representing what kind of schema this class is. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="63" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class UsdSchemaRegistry</definition>
+        <argsstring></argsstring>
+        <name>UsdSchemaRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="134" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5c95dd15149828e21538bbabc5dcf922" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</definition>
+        <argsstring>(const UsdPrim &amp;prim=UsdPrim())</argsstring>
+        <name>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+          <defval>UsdPrim()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref> on UsdPrim <computeroutput>prim</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a003f372b6c3172778cf6ae8c42e119ad" kindref="member">PhysxSchemaPhysxDeformableSurfaceMaterialAPI::Get</ref>(prim.GetStage(), prim.GetPath()) for a <emphasis>valid</emphasis> <computeroutput>prim</computeroutput>, but will not immediately throw an error for an invalid <computeroutput>prim</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="69" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1abbc1e1e582b5fcf5619513dc2485665c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</definition>
+        <argsstring>(const UsdSchemaBase &amp;schemaObj)</argsstring>
+        <name>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</name>
+        <param>
+          <type>const UsdSchemaBase &amp;</type>
+          <declname>schemaObj</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref> on the prim held by <computeroutput>schemaObj</computeroutput> . </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be preferred over <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref>(schemaObj.GetPrim()), as it preserves SchemaBase state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="77" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1ae6ffc5dd19d4bbe800513192bc8e754a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PHYSXSCHEMA_API</type>
+        <definition>virtual PHYSXSCHEMA_API ~PhysxSchemaPhysxDeformableSurfaceMaterialAPI</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysxSchemaPhysxDeformableSurfaceMaterialAPI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a1ac40a17b3d5fbcb504d4ca2108a252e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDensityAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDensityAttr</name>
+        <briefdescription>
+<para>Material density. </para>        </briefdescription>
+        <detaileddescription>
+<para>If set to 0.0, the simulation determines a default density. A density or mass set with a PhysicsMassAPI overrides the material density. Range: [0, inf) Units: mass / distance / distance / distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxDeformableSurfaceMaterial:density = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1ac6575d2da279d702e06c2fb149164157" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDensityAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDensityAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a1ac40a17b3d5fbcb504d4ca2108a252e" kindref="member">GetDensityAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a13aff94dd6eae6643324ee269660a7fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetElasticityDampingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetElasticityDampingAttr</name>
+        <briefdescription>
+<para>Material damping parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use values much smaller than one for good results. Range: [0, inf) Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxDeformableSurfaceMaterial:elasticityDamping = 0.005</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a615e47bd119c0be40eb1cf4521d5173c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateElasticityDampingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateElasticityDampingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a13aff94dd6eae6643324ee269660a7fd" kindref="member">GetElasticityDampingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1acde9519d14532aaa3a4caa5ffae04f40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetDynamicFrictionAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDynamicFrictionAttr</name>
+        <briefdescription>
+<para>Dynamic friction coefficient. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, inf) Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxDeformableSurfaceMaterial:dynamicFriction = 0.25</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1aa701ad76446561567d323bc539fe99b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateDynamicFrictionAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateDynamicFrictionAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1acde9519d14532aaa3a4caa5ffae04f40" kindref="member">GetDynamicFrictionAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1aa9742f03379a04cf81d4c067633c95ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetYoungsModulusAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetYoungsModulusAttr</name>
+        <briefdescription>
+<para>Young&apos;s modulus, i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>the tensile stiffness of the material; used to determine bending stiffness. Range: [0, inf) Units: force / area = mass/distance/seconds/seconds</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxDeformableSurfaceMaterial:youngsModulus = 50000000</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1ad44188cbad74d3f4c2b98a7a564599b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateYoungsModulusAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateYoungsModulusAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1aa9742f03379a04cf81d4c067633c95ee" kindref="member">GetYoungsModulusAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5be2e90c499689bd098c1c130d88dce4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetPoissonsRatioAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetPoissonsRatioAttr</name>
+        <briefdescription>
+<para>Poissons&apos;s ratio which defines the material&apos;s volume preservation under stress. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, 0.5] Units: dimensionless</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxDeformableSurfaceMaterial:poissonsRatio = 0.45</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a62765b7e413a1804c07ced726dea8bc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreatePoissonsRatioAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreatePoissonsRatioAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5be2e90c499689bd098c1c130d88dce4" kindref="member">GetPoissonsRatioAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1ab05e8435f0ff00d414d8ae76aabe80a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetThicknessAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetThicknessAttr</name>
+        <briefdescription>
+<para>Virtual thickness of cloth mesh. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used to determine bending stiffness, and mass from density. Range: [0.0, inf) Units: distance</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxDeformableSurfaceMaterial:thickness = 0.001</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="278" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5ece81d118e272587a6472508214aae9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateThicknessAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateThicknessAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1ab05e8435f0ff00d414d8ae76aabe80a8" kindref="member">GetThicknessAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1af02b958dd6b7717504f714414e356498" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute GetBendingDampingAttr</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBendingDampingAttr</name>
+        <briefdescription>
+<para>Cloth material damping on bending constraints. </para>        </briefdescription>
+        <detaileddescription>
+<para>Range: [0, 1] Units: torque * seconds / degrees = mass * distance * distance / seconds / degrees</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para></para></entry><entry thead="yes"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Declaration </para></entry><entry thead="no"><para><computeroutput>float physxDeformableSurfaceMaterial:bendingDamping = 0</computeroutput> </para></entry></row>
+<row>
+<entry thead="no"><para>C++ Type </para></entry><entry thead="no"><para>float </para></entry></row>
+<row>
+<entry thead="no"><para>Usd Type </para></entry><entry thead="no"><para>SdfValueTypeNames-&gt;Float </para></entry></row>
+</table>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a2b1ca03a5e54399a73348b218d2ff4e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdAttribute</type>
+        <definition>PHYSXSCHEMA_API UsdAttribute CreateBendingDampingAttr</definition>
+        <argsstring>(VtValue const &amp;defaultValue=VtValue(), bool writeSparsely=false) const </argsstring>
+        <name>CreateBendingDampingAttr</name>
+        <param>
+          <type>VtValue const &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>VtValue()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>writeSparsely</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>See <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1af02b958dd6b7717504f714414e356498" kindref="member">GetBendingDampingAttr()</ref>, and also Usd_Create_Or_Get_Property for when to use Get vs Create. </para>        </briefdescription>
+        <detaileddescription>
+<para>If specified, author <computeroutput>defaultValue</computeroutput> as the attribute&apos;s default, sparsely (when it makes sense to do so) if <computeroutput>writeSparsely</computeroutput> is <computeroutput>true</computeroutput> - the default for <computeroutput>writeSparsely</computeroutput> is <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="310" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfTokenVector &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfTokenVector&amp; GetSchemaAttributeNames</definition>
+        <argsstring>(bool includeInherited=true)</argsstring>
+        <name>GetSchemaAttributeNames</name>
+        <param>
+          <type>bool</type>
+          <declname>includeInherited</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a vector of names of all pre-declared attributes for this schema class and all its ancestor classes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Does not include attributes that may be authored by custom/extended methods of the schemas involved. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a003f372b6c3172778cf6ae8c42e119ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxDeformableSurfaceMaterialAPI Get</definition>
+        <argsstring>(const UsdStagePtr &amp;stage, const SdfPath &amp;path)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const UsdStagePtr &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const SdfPath &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref> holding the prim adhering to this schema at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no prim exists at <computeroutput>path</computeroutput> on <computeroutput>stage</computeroutput>, or if the prim at that path does not adhere to this schema, return an invalid schema object. This is shorthand for the following:</para><para><programlisting><codeline><highlight class="normal">*<sp/><sp/><ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5c95dd15149828e21538bbabc5dcf922" kindref="member">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref>(stage-&gt;GetPrimAtPath(path));</highlight></codeline>
+<codeline><highlight class="normal">*<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a813aa8b2758a1dc1d50d05eb055eb023" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref></type>
+        <definition>static PHYSXSCHEMA_API PhysxSchemaPhysxDeformableSurfaceMaterialAPI Apply</definition>
+        <argsstring>(const UsdPrim &amp;prim)</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const UsdPrim &amp;</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+<para>Applies this <bold>single-apply</bold> API schema to the given <computeroutput>prim</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This information is stored by adding &quot;PhysxDeformableSurfaceMaterialAPI&quot; to the token-valued, listOp metadata <emphasis>apiSchemas</emphasis> on the prim.</para><para><simplesect kind="return"><para>A valid <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref> object is returned upon success. An invalid (or empty) <ref refid="class_physx_schema_physx_deformable_surface_material_a_p_i" kindref="compound">PhysxSchemaPhysxDeformableSurfaceMaterialAPI</ref> object is returned upon failure. See UsdPrim::ApplyAPI() for conditions resulting in failure.</para></simplesect>
+<simplesect kind="see"><para>UsdPrim::GetAppliedSchemas() </para><simplesectsep/><para>UsdPrim::HasAPI() </para><simplesectsep/><para>UsdPrim::ApplyAPI() </para><simplesectsep/><para>UsdPrim::RemoveAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API UsdSchemaType</type>
+        <definition>PHYSXSCHEMA_API UsdSchemaType _GetSchemaType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetSchemaType</name>
+        <briefdescription>
+<para>Returns the type of schema this class belongs to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>UsdSchemaType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>static PHYSXSCHEMA_API const TfType&amp; _GetStaticTfType</definition>
+        <argsstring>()</argsstring>
+        <name>_GetStaticTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool _IsTypedSchema</definition>
+        <argsstring>()</argsstring>
+        <name>_IsTypedSchema</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_physx_schema_physx_deformable_surface_material_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PHYSXSCHEMA_API const TfType &amp;</type>
+        <definition>PHYSXSCHEMA_API const TfType&amp; _GetTfType</definition>
+        <argsstring>() const override</argsstring>
+        <name>_GetTfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Applied to USD Material. </para>    </briefdescription>
+    <detaileddescription>
+<para>Defines material properties for deformable surfaces. See PhysxDeformableAPI for more information on how to bind a material to the entire mesh, or multiple materials to UsdGeomSubsets of the mesh. </para>    </detaileddescription>
+    <location file="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" line="58" column="1" bodyfile="W:/919a5455eee1e83c/src/physxSchema/physxDeformableSurfaceMaterialAPI.h" bodystart="57" bodyend="323"/>
+    <listofallmembers>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a1cf3042cb6534cfb5768a029099cd2f1" prot="protected" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>_GetSchemaType</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a3014e93c3ab2a0b4770d0ce561a03b9d" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>_GetStaticTfType</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1ac9917b582d82c9a980c227a7de3d4352" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>_GetTfType</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1abbc02364dd87e9f147201cbd8d260d43" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>_IsTypedSchema</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a813aa8b2758a1dc1d50d05eb055eb023" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>Apply</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a2b1ca03a5e54399a73348b218d2ff4e6" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>CreateBendingDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1ac6575d2da279d702e06c2fb149164157" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>CreateDensityAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1aa701ad76446561567d323bc539fe99b9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>CreateDynamicFrictionAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a615e47bd119c0be40eb1cf4521d5173c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>CreateElasticityDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a62765b7e413a1804c07ced726dea8bc2" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>CreatePoissonsRatioAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5ece81d118e272587a6472508214aae9" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>CreateThicknessAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1ad44188cbad74d3f4c2b98a7a564599b8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>CreateYoungsModulusAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a003f372b6c3172778cf6ae8c42e119ad" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>Get</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1af02b958dd6b7717504f714414e356498" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetBendingDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a1ac40a17b3d5fbcb504d4ca2108a252e" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetDensityAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1acde9519d14532aaa3a4caa5ffae04f40" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetDynamicFrictionAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a13aff94dd6eae6643324ee269660a7fd" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetElasticityDampingAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5be2e90c499689bd098c1c130d88dce4" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetPoissonsRatioAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a4acc8a487a53fd3129d77bb286d75140" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetSchemaAttributeNames</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1ab05e8435f0ff00d414d8ae76aabe80a8" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetThicknessAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1aa9742f03379a04cf81d4c067633c95ee" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>GetYoungsModulusAttr</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1a5c95dd15149828e21538bbabc5dcf922" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1abbc1e1e582b5fcf5619513dc2485665c" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1aac43c1afa0b9b55b44c30dc3bb91b0e7" prot="public" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>schemaType</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1aff8b8d83211f127c6c4cba48fb7d3334" prot="private" virt="non-virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>UsdSchemaRegistry</name></member>
+      <member refid="class_physx_schema_physx_deformable_surface_material_a_p_i_1ae6ffc5dd19d4bbe800513192bc8e754a" prot="public" virt="virtual"><scope>PhysxSchemaPhysxDeformableSurfaceMaterialAPI</scope><name>~PhysxSchemaPhysxDeformableSurfaceMaterialAPI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

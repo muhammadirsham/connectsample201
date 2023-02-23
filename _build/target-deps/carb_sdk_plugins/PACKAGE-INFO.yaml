@@ -1,0 +1,18 @@
+Package: carbonite
+Version: 137.0+release137.tc7044.d7c525f0
+Maintainers: ncournia@nvidia.com
+Description: Foundational SDK for the creation of Omniverse applications, microservices,
+  tools, plugins, Connectors, and SDKs.
+SWIPAT NvBug: null
+Repository: https://gitlab-master.nvidia.com/omniverse/carbonite.git
+License Type: NVIDIA
+Branch: release_137
+Commit: d7c525f055a26ae4f0cfe49736a4054ce21549a0
+Time: Sat Nov 19 00:49:35 2022
+Builder Name: DESKTOP-UCUIBJT
+Packman Version: '6.52'
+Packagemaker Version: 1.9.1
+CI Build ID: 12713926
+CI Build Number: 137.0+release137.tc7044.d7c525f0
+CI System: Teamcity
+CI Version: 2022.04.2 (build 108655)
